@@ -1,0 +1,5 @@
+package: redmine
+output: pkg/redmine/client.go
+generate:
+  models: true
+  client: true

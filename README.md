@@ -1,72 +1,23 @@
-# Template for Go Module
+# Redmine Client for Go
 
-This repository provides a template for Go module.
+This repository provides Redmine server Web API client.
 
-## Prepare
+## API Versions
 
-1. Rename module name in *go.mod*.
-2. Remove example package module.
+* 6.0.0
 
-## Development
+## Generating
 
-### Formatting
-
-Format source code.
+Generate REST API client.
 
 ```sh
-go fmt ./...
+./scripts/gen.sh
 ```
 
-### Linting
+## Examples
 
-Lint source code.
+see [examples](./examples/).
 
-```sh
-go tool staticcheck ./...
-```
+## Testing
 
-### Testing
-
-Execute test code.
-
-```sh
-go test ./...
-```
-
-### Updating
-
-Update dependency tools.
-
-```sh
-go get -u tool
-```
-
-### License Checking
-
-Check dependency license.
-
-```sh
-go tool go-licenses report ./...
-```
-
-Dump dependency licenses.
-
-```sh
-go tool go-licenses save ./... --save_path ./licenses
-```
-
-### Documentation
-
-Generate API document.
-
-```sh
-./scripts/gen-docs.sh
-```
-
-### Building Artifacts
-
-Build binary.
-
-```sh
-go build cmd/shell/main.go
-```
+TODO

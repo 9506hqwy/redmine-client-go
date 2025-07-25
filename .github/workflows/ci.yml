@@ -40,6 +40,7 @@ jobs:
         go tool cover -html=cover.out -o coverage.html
 
         mkdir ./artifacts
+        mkdir ./bin
         tar -zcf ./artifacts/coverage.tar.gz coverage.html
 
     - name: Generate Coverage Report (Windows)
@@ -48,6 +49,7 @@ jobs:
         go tool cover -html cover.out -o coverage.html
 
         mkdir .\artifacts
+        mkdir .\bin
         Compress-Archive -Path 'coverage.html' -DestinationPath ".\artifacts\coverage.zip"
 
     - name: Report Coverage (Ubuntu)
@@ -73,6 +75,8 @@ jobs:
     - name: Create Artifacts (Windows)
       if: matrix.os == 'windows-latest'
       run: |
+        New-Item -Type Directory cmd -Force
+
         Get-ChildItem .\cmd -Directory |% {
           $Name = $_.Name;
           go build -trimpath -o ".\bin\${Name}.exe" ".\cmd\$Name"
