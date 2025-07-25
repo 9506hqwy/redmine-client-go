@@ -1,0 +1,122 @@
+name: Release
+
+on:
+  push:
+    tags: [ '**' ]
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Download Module
+      run: go mod download
+
+    - name: Create Artifacts (Ubuntu)
+      if: matrix.os == 'ubuntu-latest'
+      run: |
+        mkdir -p bin
+
+        for CMD in ./cmd/*
+        do
+            pushd "${CMD}" || exit 1
+                CMD_NAME=$(basename "${CMD}")
+                GOOS=$(go env GOOS)
+                GOARCH=$(go env GOARCH)
+
+                rm -rf "${GOOS}" && mkdir "${GOOS}"
+
+                go build \
+                    -trimpath \
+                    -ldflags "-s -w -X main.version=${GITHUB_REF_NAME#v} -X main.commit=${GITHUB_SHA}" \
+                    -o "./${GOOS}/${CMD_NAME}"
+
+                go tool go-licenses save . --save_path "./${GOOS}/licenses"
+
+                pushd ./${GOOS} || exit 1
+                    tar -zcf "${GITHUB_WORKSPACE}/bin/${CMD_NAME}-${GOOS}-${GOARCH}.tar.gz" *
+                popd || exit 1
+            popd || exit 1
+        done
+
+    - name: Create Artifacts (Windows)
+      if: matrix.os == 'windows-latest'
+      run: |
+        New-Item -Type Directory bin -Force
+
+        Get-ChildItem .\cmd -Directory |% {
+            $CMD_NAME = $_.Name;
+            $GOOS = go env GOOS
+            $GOARCH = go env GOARCH
+            $CMD_PATH = "${_}\${GOOS}"
+
+            New-Item -Type Directory "$CMD_PATH" -Force
+
+            go build `
+                -trimpath `
+                -ldflags "-s -w -X main.version=$(${env:GITHUB_REF_NAME}.TrimStart('v')) -X main.commit=${env:GITHUB_SHA}" `
+                -o "${CMD_PATH}\${CMD_NAME}.exe" `
+                "${_}\main.go"
+
+            go tool go-licenses save "${_}" --save_path "${CMD_PATH}\licenses"
+
+            Compress-Archive -Path "${CMD_PATH}\*" -DestinationPath "${env:GITHUB_WORKSPACE}\bin\${CMD_NAME}-${GOOS}-${GOARCH}.zip"
+        }
+
+    - name: Create Archive (Ubuntu)
+      if: matrix.os == 'ubuntu-latest'
+      run: |
+        GO_TARGET="$(go env GOARCH)-$(go env GOOS)-$(go env GOVERSION)"
+
+        mkdir -p artifacts
+
+        cp -f ./bin/*.tar.gz ./artifacts/
+
+        ./scripts/gen-docs.sh
+
+        echo "GO_TARGET=${GO_TARGET}" >> $GITHUB_ENV
+
+    - name: Create Archive (Windows)
+      if: matrix.os == 'windows-latest'
+      run: |
+        $GO_TARGET = "$(go env GOARCH)-$(go env GOOS)-$(go env GOVERSION)"
+
+        New-Item -Type Directory artifacts -Force
+
+        Copy-Item -Path '.\bin\*.zip' -Destination '.\artifacts\'
+
+        Write-Output "GO_TARGET=$GO_TARGET" >> $env:GITHUB_ENV
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ env.GO_TARGET }}
+        path: artifacts/
+        retention-days: 1
+
+  release:
+
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/download-artifact@v4
+      with:
+        path: artifacts
+
+    - name: Create Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh config set prompt disabled
+        gh release create ${GITHUB_REF_NAME} ./artifacts/*/*  -t ${GITHUB_REF_NAME} -d
