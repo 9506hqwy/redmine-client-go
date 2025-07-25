@@ -9,7 +9,7 @@ tool (
 	honnef.co/go/tools/cmd/staticcheck
 )
 
-require github.com/oapi-codegen/runtime v1.1.1
+require github.com/oapi-codegen/runtime v1.1.2
 
 require (
 	github.com/BurntSushi/toml v1.5.0 // indirect
