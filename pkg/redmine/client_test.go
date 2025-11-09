@@ -93,27 +93,27 @@ func assertLength(t *testing.T, data any, source []byte) {
 }
 
 func assertCustomField(t *testing.T, cf *struct {
-	Id       *int         `json:"id,omitempty"`
-	Multiple *bool        `json:"multiple,omitempty"`
-	Name     *string      `json:"name,omitempty"`
-	Value    *interface{} `json:"value,omitempty"`
+	Id       *int        `json:"id,omitempty"`
+	Multiple *bool       `json:"multiple,omitempty"`
+	Name     *string     `json:"name,omitempty"`
+	Value    interface{} `json:"value,omitempty"`
 }) {
 	if cf.Multiple != nil && *cf.Multiple {
-		arr, ok := (*cf.Value).([]interface{})
+		arr, ok := (cf.Value).([]interface{})
 		if !ok {
-			t.Errorf("%s = %v", *cf.Name, *cf.Value)
+			t.Errorf("%s = %v", *cf.Name, cf.Value)
 		}
 
 		for _, v := range arr {
 			_, ok := v.(string)
 			if !ok {
-				t.Errorf("%s = %v", *cf.Name, *cf.Value)
+				t.Errorf("%s = %v", *cf.Name, cf.Value)
 			}
 		}
 	} else {
-		_, ok := (*cf.Value).(string)
+		_, ok := (cf.Value).(string)
 		if !ok {
-			t.Errorf("%s = %v", *cf.Name, *cf.Value)
+			t.Errorf("%s = %v", *cf.Name, cf.Value)
 		}
 	}
 }
@@ -388,10 +388,10 @@ func TestGroupsCreateWithResponse(t *testing.T) {
 		Group: &struct {
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Name          *string "json:\"name,omitempty\""
 			TwofaRequired *bool   "json:\"twofa_required,omitempty\""
@@ -466,10 +466,10 @@ func TestGroupsUpdatePatchWithResponse(t *testing.T) {
 		Group: &struct {
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Name          *string "json:\"name,omitempty\""
 			TwofaRequired *bool   "json:\"twofa_required,omitempty\""
@@ -499,10 +499,10 @@ func TestGroupsUpdatePutWithResponse(t *testing.T) {
 		Group: &struct {
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Name          *string "json:\"name,omitempty\""
 			TwofaRequired *bool   "json:\"twofa_required,omitempty\""
@@ -510,10 +510,10 @@ func TestGroupsUpdatePutWithResponse(t *testing.T) {
 		}{
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			}{
 				{
 					Id:    &custom_field_id,
@@ -686,10 +686,10 @@ func TestIssuesCreateProjectWithResponse(t *testing.T) {
 			CategoryId        *int                    "json:\"category_id,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			DeletedAttachmentIds *[]int              "json:\"deleted_attachment_ids,omitempty\""
 			Description          *string             "json:\"description,omitempty\""
@@ -731,10 +731,10 @@ func TestIssuesCreateWithResponse(t *testing.T) {
 			CategoryId        *int                    `json:"category_id,omitempty"`
 			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
 			CustomFields      *[]struct {
-				Id       *int         `json:"id,omitempty"`
-				Multiple *bool        `json:"multiple,omitempty"`
-				Name     *string      `json:"name,omitempty"`
-				Value    *interface{} `json:"value,omitempty"`
+				Id       *int        `json:"id,omitempty"`
+				Multiple *bool       `json:"multiple,omitempty"`
+				Name     *string     `json:"name,omitempty"`
+				Value    interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 			DeletedAttachmentIds *[]int              `json:"deleted_attachment_ids,omitempty"`
 			Description          *string             `json:"description,omitempty"`
@@ -910,10 +910,10 @@ func TestIssuesUpdatePatchWithResponse(t *testing.T) {
 			CategoryId        *int                    "json:\"category_id,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			DeletedAttachmentIds *[]int              "json:\"deleted_attachment_ids,omitempty\""
 			Description          *string             "json:\"description,omitempty\""
@@ -970,10 +970,10 @@ func TestIssuesUpdatePutWithResponse(t *testing.T) {
 			CategoryId        *int                    "json:\"category_id,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			DeletedAttachmentIds *[]int              "json:\"deleted_attachment_ids,omitempty\""
 			Description          *string             "json:\"description,omitempty\""
@@ -997,10 +997,10 @@ func TestIssuesUpdatePutWithResponse(t *testing.T) {
 			CategoryId:        &issueCategoryId,
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			}{
 				{
 					Id:    &custom_field_id,
@@ -1172,10 +1172,10 @@ func TestMyAccountPutWithResponse(t *testing.T) {
 			AuthSourceId      *int                    "json:\"auth_source_id,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Firstname          *string   "json:\"firstname,omitempty\""
 			GeneratePassword   *bool     "json:\"generate_password,omitempty\""
@@ -1383,10 +1383,10 @@ func TestProjectsCreateWithResponse(t *testing.T) {
 	body.Project = &struct {
 		CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 		CustomFields      *[]struct {
-			Id       *int         "json:\"id,omitempty\""
-			Multiple *bool        "json:\"multiple,omitempty\""
-			Name     *string      "json:\"name,omitempty\""
-			Value    *interface{} "json:\"value,omitempty\""
+			Id       *int        "json:\"id,omitempty\""
+			Multiple *bool       "json:\"multiple,omitempty\""
+			Name     *string     "json:\"name,omitempty\""
+			Value    interface{} "json:\"value,omitempty\""
 		} "json:\"custom_fields,omitempty\""
 		DefaultAssignedToId *int      "json:\"default_assigned_to_id,omitempty\""
 		DefaultIssueQueryId *int      "json:\"default_issue_query_id,omitempty\""
@@ -1514,10 +1514,10 @@ func TestProjectsUpdatePatchWithResponse(t *testing.T) {
 		Project: &struct {
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			DefaultAssignedToId *int      "json:\"default_assigned_to_id,omitempty\""
 			DefaultIssueQueryId *int      "json:\"default_issue_query_id,omitempty\""
@@ -1564,10 +1564,10 @@ func TestProjectsUpdatePutWithResponse(t *testing.T) {
 		Project: &struct {
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			DefaultAssignedToId *int      "json:\"default_assigned_to_id,omitempty\""
 			DefaultIssueQueryId *int      "json:\"default_issue_query_id,omitempty\""
@@ -1585,10 +1585,10 @@ func TestProjectsUpdatePutWithResponse(t *testing.T) {
 		}{
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			}{
 				{
 					Id:    &custom_field_id,
@@ -1713,10 +1713,10 @@ func TestTimelogCreateIssueWithResponse(t *testing.T) {
 			Comments          *string                 "json:\"comments,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Hours     *float32            "json:\"hours,omitempty\""
 			IssueId   *int                "json:\"issue_id,omitempty\""
@@ -1744,10 +1744,10 @@ func TestTimelogCreateProjectWithResponse(t *testing.T) {
 			Comments          *string                 "json:\"comments,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Hours     *float32            "json:\"hours,omitempty\""
 			IssueId   *int                "json:\"issue_id,omitempty\""
@@ -1775,10 +1775,10 @@ func TestTimelogCreateWithResponse(t *testing.T) {
 			Comments          *string                 "json:\"comments,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Hours     *float32            "json:\"hours,omitempty\""
 			IssueId   *int                "json:\"issue_id,omitempty\""
@@ -1872,10 +1872,10 @@ func TestTimelogUpdatePatchWithResponse(t *testing.T) {
 			Comments          *string                 "json:\"comments,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Hours     *float32            "json:\"hours,omitempty\""
 			IssueId   *int                "json:\"issue_id,omitempty\""
@@ -1910,10 +1910,10 @@ func TestTimelogUpdatePutWithResponse(t *testing.T) {
 			Comments          *string                 "json:\"comments,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Hours     *float32            "json:\"hours,omitempty\""
 			IssueId   *int                "json:\"issue_id,omitempty\""
@@ -1925,10 +1925,10 @@ func TestTimelogUpdatePutWithResponse(t *testing.T) {
 			Comments:          &comments,
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			}{
 				{
 					Id:    &custom_field_id,
@@ -1974,10 +1974,10 @@ func TestUsersCreateWithResponse(t *testing.T) {
 		AuthSourceId      *int                    "json:\"auth_source_id,omitempty\""
 		CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 		CustomFields      *[]struct {
-			Id       *int         "json:\"id,omitempty\""
-			Multiple *bool        "json:\"multiple,omitempty\""
-			Name     *string      "json:\"name,omitempty\""
-			Value    *interface{} "json:\"value,omitempty\""
+			Id       *int        "json:\"id,omitempty\""
+			Multiple *bool       "json:\"multiple,omitempty\""
+			Name     *string     "json:\"name,omitempty\""
+			Value    interface{} "json:\"value,omitempty\""
 		} "json:\"custom_fields,omitempty\""
 		Firstname          *string   "json:\"firstname,omitempty\""
 		GeneratePassword   *bool     "json:\"generate_password,omitempty\""
@@ -2076,10 +2076,10 @@ func TestUsersUpdatePatchWithResponse(t *testing.T) {
 			AuthSourceId      *int                    "json:\"auth_source_id,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Firstname          *string   "json:\"firstname,omitempty\""
 			GeneratePassword   *bool     "json:\"generate_password,omitempty\""
@@ -2172,10 +2172,10 @@ func TestUsersUpdatePutWithResponse(t *testing.T) {
 			AuthSourceId      *int                    "json:\"auth_source_id,omitempty\""
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			Firstname          *string   "json:\"firstname,omitempty\""
 			GeneratePassword   *bool     "json:\"generate_password,omitempty\""
@@ -2193,10 +2193,10 @@ func TestUsersUpdatePutWithResponse(t *testing.T) {
 			Admin:             &admin,
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			}{
 				{
 					Id:    &custom_field_id,
@@ -2230,10 +2230,10 @@ func TestVersionsCreateWithResponse(t *testing.T) {
 		Version: &struct {
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			DefaultProjectVersion *bool               "json:\"default_project_version,omitempty\""
 			Description           *string             "json:\"description,omitempty\""
@@ -2305,10 +2305,10 @@ func TestVersionsUpdatePatchWithResponse(t *testing.T) {
 		Version: &struct {
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			DefaultProjectVersion *bool               "json:\"default_project_version,omitempty\""
 			Description           *string             "json:\"description,omitempty\""
@@ -2346,10 +2346,10 @@ func TestVersionsUpdatePutWithResponse(t *testing.T) {
 		Version: &struct {
 			CustomFieldValues *map[string]interface{} "json:\"custom_field_values,omitempty\""
 			CustomFields      *[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			} "json:\"custom_fields,omitempty\""
 			DefaultProjectVersion *bool               "json:\"default_project_version,omitempty\""
 			Description           *string             "json:\"description,omitempty\""
@@ -2362,10 +2362,10 @@ func TestVersionsUpdatePutWithResponse(t *testing.T) {
 		}{
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int         "json:\"id,omitempty\""
-				Multiple *bool        "json:\"multiple,omitempty\""
-				Name     *string      "json:\"name,omitempty\""
-				Value    *interface{} "json:\"value,omitempty\""
+				Id       *int        "json:\"id,omitempty\""
+				Multiple *bool       "json:\"multiple,omitempty\""
+				Name     *string     "json:\"name,omitempty\""
+				Value    interface{} "json:\"value,omitempty\""
 			}{
 				{
 					Id:    &custom_field_id,
