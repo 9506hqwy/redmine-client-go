@@ -28,48 +28,48 @@ const (
 type AttachmentsDownloadParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // AttachmentsThumbnailParams defines parameters for AttachmentsThumbnail.
 type AttachmentsThumbnailParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // AttachmentsThumbnailSizeParams defines parameters for AttachmentsThumbnailSize.
 type AttachmentsThumbnailSizeParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // AttachmentsDestroyParams defines parameters for AttachmentsDestroy.
 type AttachmentsDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // AttachmentsShowParams defines parameters for AttachmentsShow.
 type AttachmentsShowParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // AttachmentsUpdatePatchJSONBody defines parameters for AttachmentsUpdatePatch.
 type AttachmentsUpdatePatchJSONBody struct {
 	Attachment *struct {
 		// ContentType The content type of the attachment.
-		ContentType *string `json:"content_type,omitempty"`
+		ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 		// Description The description of the attachment.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 		// Filename The filename of the attachment.
-		Filename *string `json:"filename,omitempty"`
+		Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 	} `json:"attachment,omitempty"`
 }
 
@@ -77,20 +77,20 @@ type AttachmentsUpdatePatchJSONBody struct {
 type AttachmentsUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // AttachmentsUpdatePutJSONBody defines parameters for AttachmentsUpdatePut.
 type AttachmentsUpdatePutJSONBody struct {
 	Attachment *struct {
 		// ContentType The content type of the attachment.
-		ContentType *string `json:"content_type,omitempty"`
+		ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 		// Description The description of the attachment.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 		// Filename The filename of the attachment.
-		Filename *string `json:"filename,omitempty"`
+		Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 	} `json:"attachment,omitempty"`
 }
 
@@ -98,42 +98,42 @@ type AttachmentsUpdatePutJSONBody struct {
 type AttachmentsUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // AttachmentsDownloadAllParams defines parameters for AttachmentsDownloadAll.
 type AttachmentsDownloadAllParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // CustomFieldsIndexParams defines parameters for CustomFieldsIndex.
 type CustomFieldsIndexParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // EnumerationsIndexDocumentCategoryParams defines parameters for EnumerationsIndexDocumentCategory.
 type EnumerationsIndexDocumentCategoryParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // EnumerationsIndexIssuePriorityParams defines parameters for EnumerationsIndexIssuePriority.
 type EnumerationsIndexIssuePriorityParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // EnumerationsIndexTimeEntryActivityParams defines parameters for EnumerationsIndexTimeEntryActivity.
 type EnumerationsIndexTimeEntryActivityParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GroupsIndexParams defines parameters for GroupsIndex.
@@ -143,22 +143,22 @@ type GroupsIndexParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GroupsCreateJSONBody defines parameters for GroupsCreate.
@@ -166,53 +166,53 @@ type GroupsCreateJSONBody struct {
 	// Group A single group.
 	Group *struct {
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Name The name of the group.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 
 		// TwofaRequired The 2FA required of the group.
-		TwofaRequired *bool `json:"twofa_required,omitempty"`
+		TwofaRequired *bool `json:"twofa_required,omitempty" jsonschema:"description=The 2FA required of the group."`
 
 		// UserIds The user id of the group.
-		UserIds *[]int `json:"user_ids,omitempty"`
-	} `json:"group,omitempty"`
+		UserIds *[]int `json:"user_ids,omitempty" jsonschema:"description=The user id of the group."`
+	} `json:"group,omitempty" jsonschema:"description=A single group."`
 }
 
 // GroupsCreateParams defines parameters for GroupsCreate.
 type GroupsCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GroupsDestroyParams defines parameters for GroupsDestroy.
 type GroupsDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GroupsShowParams defines parameters for GroupsShow.
 type GroupsShowParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `users`, `memberships`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"users\"\\, \"memberships\".,enum=users,enum=memberships"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GroupsUpdatePatchJSONBody defines parameters for GroupsUpdatePatch.
@@ -220,35 +220,35 @@ type GroupsUpdatePatchJSONBody struct {
 	// Group A single group.
 	Group *struct {
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Name The name of the group.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 
 		// TwofaRequired The 2FA required of the group.
-		TwofaRequired *bool `json:"twofa_required,omitempty"`
+		TwofaRequired *bool `json:"twofa_required,omitempty" jsonschema:"description=The 2FA required of the group."`
 
 		// UserIds The user id of the group.
-		UserIds *[]int `json:"user_ids,omitempty"`
-	} `json:"group,omitempty"`
+		UserIds *[]int `json:"user_ids,omitempty" jsonschema:"description=The user id of the group."`
+	} `json:"group,omitempty" jsonschema:"description=A single group."`
 }
 
 // GroupsUpdatePatchParams defines parameters for GroupsUpdatePatch.
 type GroupsUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GroupsUpdatePutJSONBody defines parameters for GroupsUpdatePut.
@@ -256,35 +256,35 @@ type GroupsUpdatePutJSONBody struct {
 	// Group A single group.
 	Group *struct {
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Name The name of the group.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 
 		// TwofaRequired The 2FA required of the group.
-		TwofaRequired *bool `json:"twofa_required,omitempty"`
+		TwofaRequired *bool `json:"twofa_required,omitempty" jsonschema:"description=The 2FA required of the group."`
 
 		// UserIds The user id of the group.
-		UserIds *[]int `json:"user_ids,omitempty"`
-	} `json:"group,omitempty"`
+		UserIds *[]int `json:"user_ids,omitempty" jsonschema:"description=The user id of the group."`
+	} `json:"group,omitempty" jsonschema:"description=A single group."`
 }
 
 // GroupsUpdatePutParams defines parameters for GroupsUpdatePut.
 type GroupsUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GroupsAddUsersJSONBody defines parameters for GroupsAddUsers.
@@ -296,31 +296,31 @@ type GroupsAddUsersJSONBody struct {
 type GroupsAddUsersParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GroupsRemoveUserParams defines parameters for GroupsRemoveUser.
 type GroupsRemoveUserParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueCategoriesDestroyParams defines parameters for IssueCategoriesDestroy.
 type IssueCategoriesDestroyParams struct {
 	// ReassignToId The ID of the issue category.
-	ReassignToId *int `form:"reassign_to_id,omitempty" json:"reassign_to_id,omitempty"`
+	ReassignToId *int `form:"reassign_to_id,omitempty" json:"reassign_to_id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueCategoriesShowParams defines parameters for IssueCategoriesShow.
 type IssueCategoriesShowParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueCategoriesUpdatePatchJSONBody defines parameters for IssueCategoriesUpdatePatch.
@@ -328,18 +328,18 @@ type IssueCategoriesUpdatePatchJSONBody struct {
 	// IssueCategory A single issue_category.
 	IssueCategory *struct {
 		// AssignedToId The ID of the assinged to.
-		AssignedToId *int `json:"assigned_to_id,omitempty"`
+		AssignedToId *int `json:"assigned_to_id,omitempty" jsonschema:"description=The ID of the assinged to."`
 
 		// Name The name of the issue category.
-		Name *string `json:"name,omitempty"`
-	} `json:"issue_category,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
+	} `json:"issue_category,omitempty" jsonschema:"description=A single issue_category."`
 }
 
 // IssueCategoriesUpdatePatchParams defines parameters for IssueCategoriesUpdatePatch.
 type IssueCategoriesUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueCategoriesUpdatePutJSONBody defines parameters for IssueCategoriesUpdatePut.
@@ -347,198 +347,198 @@ type IssueCategoriesUpdatePutJSONBody struct {
 	// IssueCategory A single issue_category.
 	IssueCategory *struct {
 		// AssignedToId The ID of the assinged to.
-		AssignedToId *int `json:"assigned_to_id,omitempty"`
+		AssignedToId *int `json:"assigned_to_id,omitempty" jsonschema:"description=The ID of the assinged to."`
 
 		// Name The name of the issue category.
-		Name *string `json:"name,omitempty"`
-	} `json:"issue_category,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
+	} `json:"issue_category,omitempty" jsonschema:"description=A single issue_category."`
 }
 
 // IssueCategoriesUpdatePutParams defines parameters for IssueCategoriesUpdatePut.
 type IssueCategoriesUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueStatusesIndexParams defines parameters for IssueStatusesIndex.
 type IssueStatusesIndexParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesIndexCsvParams_Query defines parameters for IssuesIndexCsv.
 type IssuesIndexCsvParams_Query struct {
 	// AnySearchable The expression of any searchable of the issue.
 	// The expression format is "[operator]\<value>".
-	AnySearchable *string `json:"any_searchable,omitempty"`
+	AnySearchable *string `json:"any_searchable,omitempty" jsonschema:"description=The expression of any searchable of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AssignedToId The expression of assigned to id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToId *string `json:"assigned_to_id,omitempty"`
+	AssignedToId *string `json:"assigned_to_id,omitempty" jsonschema:"description=The expression of assigned to id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AssignedToRole The expression of assigned to role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToRole *string `json:"assigned_to_role,omitempty"`
+	AssignedToRole *string `json:"assigned_to_role,omitempty" jsonschema:"description=The expression of assigned to role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Attachment The expression of attachment of the issue.
 	// The expression format is "[operator]\<value>".
-	Attachment *string `json:"attachment,omitempty"`
+	Attachment *string `json:"attachment,omitempty" jsonschema:"description=The expression of attachment of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AttachmentDescription The expression of attachment description of the issue.
 	// The expression format is "[operator]\<value>".
-	AttachmentDescription *string `json:"attachment_description,omitempty"`
+	AttachmentDescription *string `json:"attachment_description,omitempty" jsonschema:"description=The expression of attachment description of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AuthorGroup The expression of author group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorGroup *string `json:"author.group,omitempty"`
+	AuthorGroup *string `json:"author.group,omitempty" jsonschema:"description=The expression of author group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorRole The expression of author role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorRole *string `json:"author.role,omitempty"`
+	AuthorRole *string `json:"author.role,omitempty" jsonschema:"description=The expression of author role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// CategoryId The expression of category id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	CategoryId *string `json:"category_id,omitempty"`
+	CategoryId *string `json:"category_id,omitempty" jsonschema:"description=The expression of category id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ChildId The expression of child id of the issue.
 	// The expression format is "[operator]\<value>".
-	ChildId *string `json:"child_id,omitempty"`
+	ChildId *string `json:"child_id,omitempty" jsonschema:"description=The expression of child id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// ClosedOn The expression of closed_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	ClosedOn *string `json:"closed_on,omitempty"`
+	ClosedOn *string `json:"closed_on,omitempty" jsonschema:"description=The expression of closed_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// CreatedOn The expression of created_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Description The expression of description of the issue.
 	// The expression format is "\<operator>\<value>".
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The expression of description of the issue. The expression format is \"<operator><value>\"."`
 
 	// DoneRatio The expression of done ratio of the issue.
 	// The expression format is "[operator]\<value>".
-	DoneRatio *string `json:"done_ratio,omitempty"`
+	DoneRatio *string `json:"done_ratio,omitempty" jsonschema:"description=The expression of done ratio of the issue. The expression format is \"[operator]<value>\"."`
 
 	// DueDate The expression of due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	DueDate *string `json:"due_date,omitempty"`
+	DueDate *string `json:"due_date,omitempty" jsonschema:"description=The expression of due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// EstimatedHours The expression of estimated hours of the issue.
 	// The expression format is "[operator]\<value>".
-	EstimatedHours *string `json:"estimated_hours,omitempty"`
+	EstimatedHours *string `json:"estimated_hours,omitempty" jsonschema:"description=The expression of estimated hours of the issue. The expression format is \"[operator]<value>\"."`
 
 	// FixedVersionDueDate The expression of fixed version due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty"`
+	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty" jsonschema:"description=The expression of fixed version due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// FixedVersionStatus The expression of fixed version status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionStatus *string `json:"fixed_version.status,omitempty"`
+	FixedVersionStatus *string `json:"fixed_version.status,omitempty" jsonschema:"description=The expression of fixed version status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// FixedVersionId The expression of fixed version id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionId *string `json:"fixed_version_id,omitempty"`
+	FixedVersionId *string `json:"fixed_version_id,omitempty" jsonschema:"description=The expression of fixed version id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IsPrivate The expression of private id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IsPrivate *string `json:"is_private,omitempty"`
+	IsPrivate *string `json:"is_private,omitempty" jsonschema:"description=The expression of private id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the issue.
 	// The expression format is "[operator]\<value>".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// LastUpdatedBy The expression of last updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	LastUpdatedBy *string `json:"last_updated_by,omitempty"`
+	LastUpdatedBy *string `json:"last_updated_by,omitempty" jsonschema:"description=The expression of last updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// MemberOfGroup The expression of member of group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	MemberOfGroup *string `json:"member_of_group,omitempty"`
+	MemberOfGroup *string `json:"member_of_group,omitempty" jsonschema:"description=The expression of member of group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Notes The expression of notes of the issue.
 	// The expression format is "\<operator>\<value>".
-	Notes *string `json:"notes,omitempty"`
+	Notes *string `json:"notes,omitempty" jsonschema:"description=The expression of notes of the issue. The expression format is \"<operator><value>\"."`
 
 	// ParentId The expression of parent id of the issue.
 	// The expression format is "[operator]\<value>".
-	ParentId *string `json:"parent_id,omitempty"`
+	ParentId *string `json:"parent_id,omitempty" jsonschema:"description=The expression of parent id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// PriorityId The expression of priority id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	PriorityId *string `json:"priority_id,omitempty"`
+	PriorityId *string `json:"priority_id,omitempty" jsonschema:"description=The expression of priority id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// RelationType The expression of relation type of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	RelationType *string `json:"relation_type,omitempty"`
+	RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The expression of relation type of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentTime The expression of spent time of the issue.
 	// The expression format is "[operator]\<value>".
-	SpentTime *string `json:"spent_time,omitempty"`
+	SpentTime *string `json:"spent_time,omitempty" jsonschema:"description=The expression of spent time of the issue. The expression format is \"[operator]<value>\"."`
 
 	// StartDate The expression of start date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	StartDate *string `json:"start_date,omitempty"`
+	StartDate *string `json:"start_date,omitempty" jsonschema:"description=The expression of start date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// StatusId The expression of status id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	StatusId *string `json:"status_id,omitempty"`
+	StatusId *string `json:"status_id,omitempty" jsonschema:"description=The expression of status id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Subject The expression of subject of the issue.
 	// The expression format is "\<operator>\<value>".
-	Subject *string `json:"subject,omitempty"`
+	Subject *string `json:"subject,omitempty" jsonschema:"description=The expression of subject of the issue. The expression format is \"<operator><value>\"."`
 
 	// SubprojectId The expression of sub project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// TrackerId The expression of tracker id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	TrackerId *string `json:"tracker_id,omitempty"`
+	TrackerId *string `json:"tracker_id,omitempty" jsonschema:"description=The expression of tracker id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedBy The expression of updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UpdatedBy *string `json:"updated_by,omitempty"`
+	UpdatedBy *string `json:"updated_by,omitempty" jsonschema:"description=The expression of updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedOn The expression of updated_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	UpdatedOn *string `json:"updated_on,omitempty"`
+	UpdatedOn *string `json:"updated_on,omitempty" jsonschema:"description=The expression of updated_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// WatcherId The expression of watcher id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	WatcherId            *string           `json:"watcher_id,omitempty"`
+	WatcherId            *string           `json:"watcher_id,omitempty" jsonschema:"description=The expression of watcher id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -549,200 +549,200 @@ type IssuesIndexCsvParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *IssuesIndexCsvParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `allowed_statuses`, `attachments`, `changesets`, `children`, `journals`, `relations`, `watchers`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"allowed_statuses\"\\, \"attachments\"\\, \"changesets\"\\, \"children\"\\, \"journals\"\\, \"relations\"\\, \"watchers\".,enum=allowed_statuses,enum=attachments,enum=changesets,enum=children,enum=journals,enum=relations,enum=watchers"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesIndexParams_Query defines parameters for IssuesIndex.
 type IssuesIndexParams_Query struct {
 	// AnySearchable The expression of any searchable of the issue.
 	// The expression format is "[operator]\<value>".
-	AnySearchable *string `json:"any_searchable,omitempty"`
+	AnySearchable *string `json:"any_searchable,omitempty" jsonschema:"description=The expression of any searchable of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AssignedToId The expression of assigned to id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToId *string `json:"assigned_to_id,omitempty"`
+	AssignedToId *string `json:"assigned_to_id,omitempty" jsonschema:"description=The expression of assigned to id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AssignedToRole The expression of assigned to role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToRole *string `json:"assigned_to_role,omitempty"`
+	AssignedToRole *string `json:"assigned_to_role,omitempty" jsonschema:"description=The expression of assigned to role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Attachment The expression of attachment of the issue.
 	// The expression format is "[operator]\<value>".
-	Attachment *string `json:"attachment,omitempty"`
+	Attachment *string `json:"attachment,omitempty" jsonschema:"description=The expression of attachment of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AttachmentDescription The expression of attachment description of the issue.
 	// The expression format is "[operator]\<value>".
-	AttachmentDescription *string `json:"attachment_description,omitempty"`
+	AttachmentDescription *string `json:"attachment_description,omitempty" jsonschema:"description=The expression of attachment description of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AuthorGroup The expression of author group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorGroup *string `json:"author.group,omitempty"`
+	AuthorGroup *string `json:"author.group,omitempty" jsonschema:"description=The expression of author group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorRole The expression of author role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorRole *string `json:"author.role,omitempty"`
+	AuthorRole *string `json:"author.role,omitempty" jsonschema:"description=The expression of author role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// CategoryId The expression of category id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	CategoryId *string `json:"category_id,omitempty"`
+	CategoryId *string `json:"category_id,omitempty" jsonschema:"description=The expression of category id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ChildId The expression of child id of the issue.
 	// The expression format is "[operator]\<value>".
-	ChildId *string `json:"child_id,omitempty"`
+	ChildId *string `json:"child_id,omitempty" jsonschema:"description=The expression of child id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// ClosedOn The expression of closed_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	ClosedOn *string `json:"closed_on,omitempty"`
+	ClosedOn *string `json:"closed_on,omitempty" jsonschema:"description=The expression of closed_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// CreatedOn The expression of created_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Description The expression of description of the issue.
 	// The expression format is "\<operator>\<value>".
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The expression of description of the issue. The expression format is \"<operator><value>\"."`
 
 	// DoneRatio The expression of done ratio of the issue.
 	// The expression format is "[operator]\<value>".
-	DoneRatio *string `json:"done_ratio,omitempty"`
+	DoneRatio *string `json:"done_ratio,omitempty" jsonschema:"description=The expression of done ratio of the issue. The expression format is \"[operator]<value>\"."`
 
 	// DueDate The expression of due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	DueDate *string `json:"due_date,omitempty"`
+	DueDate *string `json:"due_date,omitempty" jsonschema:"description=The expression of due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// EstimatedHours The expression of estimated hours of the issue.
 	// The expression format is "[operator]\<value>".
-	EstimatedHours *string `json:"estimated_hours,omitempty"`
+	EstimatedHours *string `json:"estimated_hours,omitempty" jsonschema:"description=The expression of estimated hours of the issue. The expression format is \"[operator]<value>\"."`
 
 	// FixedVersionDueDate The expression of fixed version due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty"`
+	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty" jsonschema:"description=The expression of fixed version due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// FixedVersionStatus The expression of fixed version status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionStatus *string `json:"fixed_version.status,omitempty"`
+	FixedVersionStatus *string `json:"fixed_version.status,omitempty" jsonschema:"description=The expression of fixed version status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// FixedVersionId The expression of fixed version id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionId *string `json:"fixed_version_id,omitempty"`
+	FixedVersionId *string `json:"fixed_version_id,omitempty" jsonschema:"description=The expression of fixed version id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IsPrivate The expression of private id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IsPrivate *string `json:"is_private,omitempty"`
+	IsPrivate *string `json:"is_private,omitempty" jsonschema:"description=The expression of private id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the issue.
 	// The expression format is "[operator]\<value>".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// LastUpdatedBy The expression of last updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	LastUpdatedBy *string `json:"last_updated_by,omitempty"`
+	LastUpdatedBy *string `json:"last_updated_by,omitempty" jsonschema:"description=The expression of last updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// MemberOfGroup The expression of member of group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	MemberOfGroup *string `json:"member_of_group,omitempty"`
+	MemberOfGroup *string `json:"member_of_group,omitempty" jsonschema:"description=The expression of member of group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Notes The expression of notes of the issue.
 	// The expression format is "\<operator>\<value>".
-	Notes *string `json:"notes,omitempty"`
+	Notes *string `json:"notes,omitempty" jsonschema:"description=The expression of notes of the issue. The expression format is \"<operator><value>\"."`
 
 	// ParentId The expression of parent id of the issue.
 	// The expression format is "[operator]\<value>".
-	ParentId *string `json:"parent_id,omitempty"`
+	ParentId *string `json:"parent_id,omitempty" jsonschema:"description=The expression of parent id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// PriorityId The expression of priority id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	PriorityId *string `json:"priority_id,omitempty"`
+	PriorityId *string `json:"priority_id,omitempty" jsonschema:"description=The expression of priority id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// RelationType The expression of relation type of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	RelationType *string `json:"relation_type,omitempty"`
+	RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The expression of relation type of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentTime The expression of spent time of the issue.
 	// The expression format is "[operator]\<value>".
-	SpentTime *string `json:"spent_time,omitempty"`
+	SpentTime *string `json:"spent_time,omitempty" jsonschema:"description=The expression of spent time of the issue. The expression format is \"[operator]<value>\"."`
 
 	// StartDate The expression of start date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	StartDate *string `json:"start_date,omitempty"`
+	StartDate *string `json:"start_date,omitempty" jsonschema:"description=The expression of start date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// StatusId The expression of status id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	StatusId *string `json:"status_id,omitempty"`
+	StatusId *string `json:"status_id,omitempty" jsonschema:"description=The expression of status id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Subject The expression of subject of the issue.
 	// The expression format is "\<operator>\<value>".
-	Subject *string `json:"subject,omitempty"`
+	Subject *string `json:"subject,omitempty" jsonschema:"description=The expression of subject of the issue. The expression format is \"<operator><value>\"."`
 
 	// SubprojectId The expression of sub project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// TrackerId The expression of tracker id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	TrackerId *string `json:"tracker_id,omitempty"`
+	TrackerId *string `json:"tracker_id,omitempty" jsonschema:"description=The expression of tracker id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedBy The expression of updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UpdatedBy *string `json:"updated_by,omitempty"`
+	UpdatedBy *string `json:"updated_by,omitempty" jsonschema:"description=The expression of updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedOn The expression of updated_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	UpdatedOn *string `json:"updated_on,omitempty"`
+	UpdatedOn *string `json:"updated_on,omitempty" jsonschema:"description=The expression of updated_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// WatcherId The expression of watcher id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	WatcherId            *string           `json:"watcher_id,omitempty"`
+	WatcherId            *string           `json:"watcher_id,omitempty" jsonschema:"description=The expression of watcher id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -753,27 +753,27 @@ type IssuesIndexParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *IssuesIndexParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `allowed_statuses`, `attachments`, `changesets`, `children`, `journals`, `relations`, `watchers`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"allowed_statuses\"\\, \"attachments\"\\, \"changesets\"\\, \"children\"\\, \"journals\"\\, \"relations\"\\, \"watchers\".,enum=allowed_statuses,enum=attachments,enum=changesets,enum=children,enum=journals,enum=relations,enum=watchers"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesCreateJSONBody defines parameters for IssuesCreate.
@@ -781,252 +781,252 @@ type IssuesCreateJSONBody struct {
 	// Issue A single issue.
 	Issue *struct {
 		// AssignedToId The assigned to id id of the issue.
-		AssignedToId *int `json:"assigned_to_id,omitempty"`
+		AssignedToId *int `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
 
 		// CategoryId The category id of the issue.
-		CategoryId *int `json:"category_id,omitempty"`
+		CategoryId *int `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 		DeletedAttachmentIds *[]int `json:"deleted_attachment_ids,omitempty"`
 
 		// Description The description of the issue.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 		// DoneRatio The done ratio of the issue.
-		DoneRatio *int `json:"done_ratio,omitempty"`
+		DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 		// DueDate The due date of the issue.
-		DueDate *openapi_types.Date `json:"due_date,omitempty"`
+		DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 		// EstimatedHours The estimated hours of the issue.
-		EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+		EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 
 		// FixedVersionId The fixed version id of the issue.
-		FixedVersionId *int `json:"fixed_version_id,omitempty"`
+		FixedVersionId *int `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
 
 		// IsPrivate The private of the issue.
-		IsPrivate *bool `json:"is_private,omitempty"`
+		IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 
 		// Notes The notes of the issue.
-		Notes *string `json:"notes,omitempty"`
+		Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
 
 		// ParentIssueId The parent ID of the issue.
-		ParentIssueId *int `json:"parent_issue_id,omitempty"`
+		ParentIssueId *int `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
 
 		// PriorityId The priority id of the issue.
-		PriorityId *int `json:"priority_id,omitempty"`
+		PriorityId *int `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
 
 		// PrivateNotes The private notes of the issue.
-		PrivateNotes *bool `json:"private_notes,omitempty"`
+		PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
 
 		// ProjectId The project ID or identifier of the issue.
-		ProjectId *string `json:"project_id,omitempty"`
+		ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
 
 		// StartDate The start date of the issue.
-		StartDate *openapi_types.Date `json:"start_date,omitempty"`
+		StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 
 		// StatusId The status id of the issue.
-		StatusId *int `json:"status_id,omitempty"`
+		StatusId *int `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
 
 		// Subject The subject of the issue.
-		Subject *string `json:"subject,omitempty"`
+		Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 		// TrackerId The tracker id of the issue.
-		TrackerId      *int   `json:"tracker_id,omitempty"`
+		TrackerId      *int   `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
 		WatcherUserIds *[]int `json:"watcher_user_ids,omitempty"`
-	} `json:"issue,omitempty"`
+	} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 }
 
 // IssuesCreateParams defines parameters for IssuesCreate.
 type IssuesCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesIndexPdfParams_Query defines parameters for IssuesIndexPdf.
 type IssuesIndexPdfParams_Query struct {
 	// AnySearchable The expression of any searchable of the issue.
 	// The expression format is "[operator]\<value>".
-	AnySearchable *string `json:"any_searchable,omitempty"`
+	AnySearchable *string `json:"any_searchable,omitempty" jsonschema:"description=The expression of any searchable of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AssignedToId The expression of assigned to id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToId *string `json:"assigned_to_id,omitempty"`
+	AssignedToId *string `json:"assigned_to_id,omitempty" jsonschema:"description=The expression of assigned to id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AssignedToRole The expression of assigned to role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToRole *string `json:"assigned_to_role,omitempty"`
+	AssignedToRole *string `json:"assigned_to_role,omitempty" jsonschema:"description=The expression of assigned to role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Attachment The expression of attachment of the issue.
 	// The expression format is "[operator]\<value>".
-	Attachment *string `json:"attachment,omitempty"`
+	Attachment *string `json:"attachment,omitempty" jsonschema:"description=The expression of attachment of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AttachmentDescription The expression of attachment description of the issue.
 	// The expression format is "[operator]\<value>".
-	AttachmentDescription *string `json:"attachment_description,omitempty"`
+	AttachmentDescription *string `json:"attachment_description,omitempty" jsonschema:"description=The expression of attachment description of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AuthorGroup The expression of author group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorGroup *string `json:"author.group,omitempty"`
+	AuthorGroup *string `json:"author.group,omitempty" jsonschema:"description=The expression of author group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorRole The expression of author role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorRole *string `json:"author.role,omitempty"`
+	AuthorRole *string `json:"author.role,omitempty" jsonschema:"description=The expression of author role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// CategoryId The expression of category id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	CategoryId *string `json:"category_id,omitempty"`
+	CategoryId *string `json:"category_id,omitempty" jsonschema:"description=The expression of category id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ChildId The expression of child id of the issue.
 	// The expression format is "[operator]\<value>".
-	ChildId *string `json:"child_id,omitempty"`
+	ChildId *string `json:"child_id,omitempty" jsonschema:"description=The expression of child id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// ClosedOn The expression of closed_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	ClosedOn *string `json:"closed_on,omitempty"`
+	ClosedOn *string `json:"closed_on,omitempty" jsonschema:"description=The expression of closed_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// CreatedOn The expression of created_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Description The expression of description of the issue.
 	// The expression format is "\<operator>\<value>".
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The expression of description of the issue. The expression format is \"<operator><value>\"."`
 
 	// DoneRatio The expression of done ratio of the issue.
 	// The expression format is "[operator]\<value>".
-	DoneRatio *string `json:"done_ratio,omitempty"`
+	DoneRatio *string `json:"done_ratio,omitempty" jsonschema:"description=The expression of done ratio of the issue. The expression format is \"[operator]<value>\"."`
 
 	// DueDate The expression of due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	DueDate *string `json:"due_date,omitempty"`
+	DueDate *string `json:"due_date,omitempty" jsonschema:"description=The expression of due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// EstimatedHours The expression of estimated hours of the issue.
 	// The expression format is "[operator]\<value>".
-	EstimatedHours *string `json:"estimated_hours,omitempty"`
+	EstimatedHours *string `json:"estimated_hours,omitempty" jsonschema:"description=The expression of estimated hours of the issue. The expression format is \"[operator]<value>\"."`
 
 	// FixedVersionDueDate The expression of fixed version due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty"`
+	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty" jsonschema:"description=The expression of fixed version due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// FixedVersionStatus The expression of fixed version status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionStatus *string `json:"fixed_version.status,omitempty"`
+	FixedVersionStatus *string `json:"fixed_version.status,omitempty" jsonschema:"description=The expression of fixed version status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// FixedVersionId The expression of fixed version id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionId *string `json:"fixed_version_id,omitempty"`
+	FixedVersionId *string `json:"fixed_version_id,omitempty" jsonschema:"description=The expression of fixed version id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IsPrivate The expression of private id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IsPrivate *string `json:"is_private,omitempty"`
+	IsPrivate *string `json:"is_private,omitempty" jsonschema:"description=The expression of private id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the issue.
 	// The expression format is "[operator]\<value>".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// LastUpdatedBy The expression of last updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	LastUpdatedBy *string `json:"last_updated_by,omitempty"`
+	LastUpdatedBy *string `json:"last_updated_by,omitempty" jsonschema:"description=The expression of last updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// MemberOfGroup The expression of member of group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	MemberOfGroup *string `json:"member_of_group,omitempty"`
+	MemberOfGroup *string `json:"member_of_group,omitempty" jsonschema:"description=The expression of member of group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Notes The expression of notes of the issue.
 	// The expression format is "\<operator>\<value>".
-	Notes *string `json:"notes,omitempty"`
+	Notes *string `json:"notes,omitempty" jsonschema:"description=The expression of notes of the issue. The expression format is \"<operator><value>\"."`
 
 	// ParentId The expression of parent id of the issue.
 	// The expression format is "[operator]\<value>".
-	ParentId *string `json:"parent_id,omitempty"`
+	ParentId *string `json:"parent_id,omitempty" jsonschema:"description=The expression of parent id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// PriorityId The expression of priority id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	PriorityId *string `json:"priority_id,omitempty"`
+	PriorityId *string `json:"priority_id,omitempty" jsonschema:"description=The expression of priority id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// RelationType The expression of relation type of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	RelationType *string `json:"relation_type,omitempty"`
+	RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The expression of relation type of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentTime The expression of spent time of the issue.
 	// The expression format is "[operator]\<value>".
-	SpentTime *string `json:"spent_time,omitempty"`
+	SpentTime *string `json:"spent_time,omitempty" jsonschema:"description=The expression of spent time of the issue. The expression format is \"[operator]<value>\"."`
 
 	// StartDate The expression of start date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	StartDate *string `json:"start_date,omitempty"`
+	StartDate *string `json:"start_date,omitempty" jsonschema:"description=The expression of start date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// StatusId The expression of status id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	StatusId *string `json:"status_id,omitempty"`
+	StatusId *string `json:"status_id,omitempty" jsonschema:"description=The expression of status id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Subject The expression of subject of the issue.
 	// The expression format is "\<operator>\<value>".
-	Subject *string `json:"subject,omitempty"`
+	Subject *string `json:"subject,omitempty" jsonschema:"description=The expression of subject of the issue. The expression format is \"<operator><value>\"."`
 
 	// SubprojectId The expression of sub project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// TrackerId The expression of tracker id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	TrackerId *string `json:"tracker_id,omitempty"`
+	TrackerId *string `json:"tracker_id,omitempty" jsonschema:"description=The expression of tracker id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedBy The expression of updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UpdatedBy *string `json:"updated_by,omitempty"`
+	UpdatedBy *string `json:"updated_by,omitempty" jsonschema:"description=The expression of updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedOn The expression of updated_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	UpdatedOn *string `json:"updated_on,omitempty"`
+	UpdatedOn *string `json:"updated_on,omitempty" jsonschema:"description=The expression of updated_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// WatcherId The expression of watcher id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	WatcherId            *string           `json:"watcher_id,omitempty"`
+	WatcherId            *string           `json:"watcher_id,omitempty" jsonschema:"description=The expression of watcher id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -1037,59 +1037,59 @@ type IssuesIndexPdfParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *IssuesIndexPdfParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `allowed_statuses`, `attachments`, `changesets`, `children`, `journals`, `relations`, `watchers`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"allowed_statuses\"\\, \"attachments\"\\, \"changesets\"\\, \"children\"\\, \"journals\"\\, \"relations\"\\, \"watchers\".,enum=allowed_statuses,enum=attachments,enum=changesets,enum=children,enum=journals,enum=relations,enum=watchers"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GanttsShowPdfParams defines parameters for GanttsShowPdf.
 type GanttsShowPdfParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GanttsShowPngParams defines parameters for GanttsShowPng.
 type GanttsShowPngParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesDestroyParams defines parameters for IssuesDestroy.
 type IssuesDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesShowParams defines parameters for IssuesShow.
 type IssuesShowParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `allowed_statuses`, `attachments`, `changesets`, `children`, `journals`, `relations`, `watchers`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"allowed_statuses\"\\, \"attachments\"\\, \"changesets\"\\, \"children\"\\, \"journals\"\\, \"relations\"\\, \"watchers\".,enum=allowed_statuses,enum=attachments,enum=changesets,enum=children,enum=journals,enum=relations,enum=watchers"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesUpdatePatchJSONBody defines parameters for IssuesUpdatePatch.
@@ -1097,79 +1097,79 @@ type IssuesUpdatePatchJSONBody struct {
 	// Issue A single issue.
 	Issue *struct {
 		// AssignedToId The assigned to id id of the issue.
-		AssignedToId *int `json:"assigned_to_id,omitempty"`
+		AssignedToId *int `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
 
 		// CategoryId The category id of the issue.
-		CategoryId *int `json:"category_id,omitempty"`
+		CategoryId *int `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 		DeletedAttachmentIds *[]int `json:"deleted_attachment_ids,omitempty"`
 
 		// Description The description of the issue.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 		// DoneRatio The done ratio of the issue.
-		DoneRatio *int `json:"done_ratio,omitempty"`
+		DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 		// DueDate The due date of the issue.
-		DueDate *openapi_types.Date `json:"due_date,omitempty"`
+		DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 		// EstimatedHours The estimated hours of the issue.
-		EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+		EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 
 		// FixedVersionId The fixed version id of the issue.
-		FixedVersionId *int `json:"fixed_version_id,omitempty"`
+		FixedVersionId *int `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
 
 		// IsPrivate The private of the issue.
-		IsPrivate *bool `json:"is_private,omitempty"`
+		IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 
 		// Notes The notes of the issue.
-		Notes *string `json:"notes,omitempty"`
+		Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
 
 		// ParentIssueId The parent ID of the issue.
-		ParentIssueId *int `json:"parent_issue_id,omitempty"`
+		ParentIssueId *int `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
 
 		// PriorityId The priority id of the issue.
-		PriorityId *int `json:"priority_id,omitempty"`
+		PriorityId *int `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
 
 		// PrivateNotes The private notes of the issue.
-		PrivateNotes *bool `json:"private_notes,omitempty"`
+		PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
 
 		// ProjectId The project ID or identifier of the issue.
-		ProjectId *string `json:"project_id,omitempty"`
+		ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
 
 		// StartDate The start date of the issue.
-		StartDate *openapi_types.Date `json:"start_date,omitempty"`
+		StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 
 		// StatusId The status id of the issue.
-		StatusId *int `json:"status_id,omitempty"`
+		StatusId *int `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
 
 		// Subject The subject of the issue.
-		Subject *string `json:"subject,omitempty"`
+		Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 		// TrackerId The tracker id of the issue.
-		TrackerId      *int   `json:"tracker_id,omitempty"`
+		TrackerId      *int   `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
 		WatcherUserIds *[]int `json:"watcher_user_ids,omitempty"`
-	} `json:"issue,omitempty"`
+	} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 }
 
 // IssuesUpdatePatchParams defines parameters for IssuesUpdatePatch.
 type IssuesUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesUpdatePutJSONBody defines parameters for IssuesUpdatePut.
@@ -1177,97 +1177,97 @@ type IssuesUpdatePutJSONBody struct {
 	// Issue A single issue.
 	Issue *struct {
 		// AssignedToId The assigned to id id of the issue.
-		AssignedToId *int `json:"assigned_to_id,omitempty"`
+		AssignedToId *int `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
 
 		// CategoryId The category id of the issue.
-		CategoryId *int `json:"category_id,omitempty"`
+		CategoryId *int `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 		DeletedAttachmentIds *[]int `json:"deleted_attachment_ids,omitempty"`
 
 		// Description The description of the issue.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 		// DoneRatio The done ratio of the issue.
-		DoneRatio *int `json:"done_ratio,omitempty"`
+		DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 		// DueDate The due date of the issue.
-		DueDate *openapi_types.Date `json:"due_date,omitempty"`
+		DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 		// EstimatedHours The estimated hours of the issue.
-		EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+		EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 
 		// FixedVersionId The fixed version id of the issue.
-		FixedVersionId *int `json:"fixed_version_id,omitempty"`
+		FixedVersionId *int `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
 
 		// IsPrivate The private of the issue.
-		IsPrivate *bool `json:"is_private,omitempty"`
+		IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 
 		// Notes The notes of the issue.
-		Notes *string `json:"notes,omitempty"`
+		Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
 
 		// ParentIssueId The parent ID of the issue.
-		ParentIssueId *int `json:"parent_issue_id,omitempty"`
+		ParentIssueId *int `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
 
 		// PriorityId The priority id of the issue.
-		PriorityId *int `json:"priority_id,omitempty"`
+		PriorityId *int `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
 
 		// PrivateNotes The private notes of the issue.
-		PrivateNotes *bool `json:"private_notes,omitempty"`
+		PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
 
 		// ProjectId The project ID or identifier of the issue.
-		ProjectId *string `json:"project_id,omitempty"`
+		ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
 
 		// StartDate The start date of the issue.
-		StartDate *openapi_types.Date `json:"start_date,omitempty"`
+		StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 
 		// StatusId The status id of the issue.
-		StatusId *int `json:"status_id,omitempty"`
+		StatusId *int `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
 
 		// Subject The subject of the issue.
-		Subject *string `json:"subject,omitempty"`
+		Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 		// TrackerId The tracker id of the issue.
-		TrackerId      *int   `json:"tracker_id,omitempty"`
+		TrackerId      *int   `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
 		WatcherUserIds *[]int `json:"watcher_user_ids,omitempty"`
-	} `json:"issue,omitempty"`
+	} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 }
 
 // IssuesUpdatePutParams defines parameters for IssuesUpdatePut.
 type IssuesUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesShowPdfParams defines parameters for IssuesShowPdf.
 type IssuesShowPdfParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `allowed_statuses`, `attachments`, `changesets`, `children`, `journals`, `relations`, `watchers`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"allowed_statuses\"\\, \"attachments\"\\, \"changesets\"\\, \"children\"\\, \"journals\"\\, \"relations\"\\, \"watchers\".,enum=allowed_statuses,enum=attachments,enum=changesets,enum=children,enum=journals,enum=relations,enum=watchers"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueRelationsIndexParams defines parameters for IssueRelationsIndex.
 type IssueRelationsIndexParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueRelationsCreateJSONBody defines parameters for IssueRelationsCreate.
@@ -1275,7 +1275,7 @@ type IssueRelationsCreateJSONBody struct {
 	// Relation Represents a new issue relation to be created.
 	Relation *struct {
 		// IssueToId The ID of the issue to. Values should be separated by a comma ",".
-		IssueToId *string `json:"issue_to_id,omitempty"`
+		IssueToId *string `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue to. Values should be separated by a comma \"\\,\"."`
 
 		// RelationType The relation type of the relation.
 		//  Possible values are:
@@ -1288,15 +1288,15 @@ type IssueRelationsCreateJSONBody struct {
 		//  - `follows`
 		//  - `copied_to`
 		//  - `copied_from`
-		RelationType *string `json:"relation_type,omitempty"`
-	} `json:"relation,omitempty"`
+		RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation.  Possible values are:  - \"relates\"  - \"duplicates\"  - \"duplicated\"  - \"blocks\"  - \"blocked\"  - \"precedes\"  - \"follows\"  - \"copied_to\"  - \"copied_from\",enum=relates,enum=duplicates,enum=duplicated,enum=blocks,enum=blocked,enum=precedes,enum=follows,enum=copied_to,enum=copied_from"`
+	} `json:"relation,omitempty" jsonschema:"description=Represents a new issue relation to be created."`
 }
 
 // IssueRelationsCreateParams defines parameters for IssueRelationsCreate.
 type IssueRelationsCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogCreateIssueJSONBody defines parameters for TimelogCreateIssue.
@@ -1304,77 +1304,77 @@ type TimelogCreateIssueJSONBody struct {
 	// TimeEntry A single time entry.
 	TimeEntry *struct {
 		// ActivityId The activity ID of the time entry.
-		ActivityId *int `json:"activity_id,omitempty"`
+		ActivityId *int `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
 
 		// Comments The comments of the time entry.
-		Comments *string `json:"comments,omitempty"`
+		Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Hours The hours of the time entry.
-		Hours *float32 `json:"hours,omitempty"`
+		Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 		// IssueId The issue ID of the time entry.
-		IssueId *int `json:"issue_id,omitempty"`
+		IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
 
 		// ProjectId The project ID of the time entry.
-		ProjectId *int `json:"project_id,omitempty"`
+		ProjectId *int `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
 
 		// SpentOn The spent on of the time entry.
-		SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+		SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
 
 		// UserId The user ID of the time entry.
-		UserId *int `json:"user_id,omitempty"`
-	} `json:"time_entry,omitempty"`
+		UserId *int `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+	} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 }
 
 // TimelogCreateIssueParams defines parameters for TimelogCreateIssue.
 type TimelogCreateIssueParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WatchersCreateIssueJSONBody defines parameters for WatchersCreateIssue.
 type WatchersCreateIssueJSONBody struct {
 	// ObjectId The ID of the object.
-	ObjectId *int `json:"object_id,omitempty"`
+	ObjectId *int `json:"object_id,omitempty" jsonschema:"description=The ID of the object."`
 
 	// ObjectType The type of the object.
-	ObjectType *string `json:"object_type,omitempty"`
+	ObjectType *string `json:"object_type,omitempty" jsonschema:"description=The type of the object."`
 
 	// Watcher Represents a single watcher.
 	Watcher *struct {
 		// UserId The ID of the user.
-		UserId  *int   `json:"user_id,omitempty"`
+		UserId  *int   `json:"user_id,omitempty" jsonschema:"description=The ID of the user."`
 		UserIds *[]int `json:"user_ids,omitempty"`
-	} `json:"watcher,omitempty"`
+	} `json:"watcher,omitempty" jsonschema:"description=Represents a single watcher."`
 }
 
 // WatchersCreateIssueParams defines parameters for WatchersCreateIssue.
 type WatchersCreateIssueParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WatchersDestroyIssueParams defines parameters for WatchersDestroyIssue.
 type WatchersDestroyIssueParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // JournalsUpdatePatchJSONBody defines parameters for JournalsUpdatePatch.
@@ -1382,18 +1382,18 @@ type JournalsUpdatePatchJSONBody struct {
 	// Journal Represents a single journal entry.
 	Journal *struct {
 		// Notes The notes for the journal entry.
-		Notes *string `json:"notes,omitempty"`
+		Notes *string `json:"notes,omitempty" jsonschema:"description=The notes for the journal entry."`
 
 		// PrivateNotes Whether the notes is private.
-		PrivateNotes *bool `json:"private_notes,omitempty"`
-	} `json:"journal,omitempty"`
+		PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=Whether the notes is private."`
+	} `json:"journal,omitempty" jsonschema:"description=Represents a single journal entry."`
 }
 
 // JournalsUpdatePatchParams defines parameters for JournalsUpdatePatch.
 type JournalsUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // JournalsUpdatePutJSONBody defines parameters for JournalsUpdatePut.
@@ -1401,32 +1401,32 @@ type JournalsUpdatePutJSONBody struct {
 	// Journal Represents a single journal entry.
 	Journal *struct {
 		// Notes The notes for the journal entry.
-		Notes *string `json:"notes,omitempty"`
+		Notes *string `json:"notes,omitempty" jsonschema:"description=The notes for the journal entry."`
 
 		// PrivateNotes Whether the notes is private.
-		PrivateNotes *bool `json:"private_notes,omitempty"`
-	} `json:"journal,omitempty"`
+		PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=Whether the notes is private."`
+	} `json:"journal,omitempty" jsonschema:"description=Represents a single journal entry."`
 }
 
 // JournalsUpdatePutParams defines parameters for JournalsUpdatePut.
 type JournalsUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // MembersDestroyParams defines parameters for MembersDestroy.
 type MembersDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // MembersShowParams defines parameters for MembersShow.
 type MembersShowParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // MembersUpdatePatchJSONBody defines parameters for MembersUpdatePatch.
@@ -1436,16 +1436,16 @@ type MembersUpdatePatchJSONBody struct {
 		RoleIds *[]int `json:"role_ids,omitempty"`
 
 		// UserId The ID of the user.
-		UserId  *int   `json:"user_id,omitempty"`
+		UserId  *int   `json:"user_id,omitempty" jsonschema:"description=The ID of the user."`
 		UserIds *[]int `json:"user_ids,omitempty"`
-	} `json:"membership,omitempty"`
+	} `json:"membership,omitempty" jsonschema:"description=A single membership."`
 }
 
 // MembersUpdatePatchParams defines parameters for MembersUpdatePatch.
 type MembersUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // MembersUpdatePutJSONBody defines parameters for MembersUpdatePut.
@@ -1455,23 +1455,23 @@ type MembersUpdatePutJSONBody struct {
 		RoleIds *[]int `json:"role_ids,omitempty"`
 
 		// UserId The ID of the user.
-		UserId  *int   `json:"user_id,omitempty"`
+		UserId  *int   `json:"user_id,omitempty" jsonschema:"description=The ID of the user."`
 		UserIds *[]int `json:"user_ids,omitempty"`
-	} `json:"membership,omitempty"`
+	} `json:"membership,omitempty" jsonschema:"description=A single membership."`
 }
 
 // MembersUpdatePutParams defines parameters for MembersUpdatePut.
 type MembersUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // MyAccountParams defines parameters for MyAccount.
 type MyAccountParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // MyAccountPutJSONBody defines parameters for MyAccountPut.
@@ -1481,19 +1481,19 @@ type MyAccountPutJSONBody struct {
 		// AutoWatchOn The auto watch setting for the user. Possible values are:
 		// - `issue_created`
 		// - `issue_contributed_to`
-		AutoWatchOn *[]string `json:"auto_watch_on,omitempty"`
+		AutoWatchOn *[]string `json:"auto_watch_on,omitempty" jsonschema:"description=The auto watch setting for the user. Possible values are: - \"issue_created\" - \"issue_contributed_to\""`
 
 		// CommentsSorting The sorting order of comments. Possible values are `asc` and `desc`.
-		CommentsSorting *string `json:"comments_sorting,omitempty"`
+		CommentsSorting *string `json:"comments_sorting,omitempty" jsonschema:"description=The sorting order of comments. Possible values are \"asc\" and \"desc\".,enum=asc,enum=desc"`
 
 		// DefaultIssueQuery The ID of the default issue query for the user.
-		DefaultIssueQuery *int `json:"default_issue_query,omitempty"`
+		DefaultIssueQuery *int `json:"default_issue_query,omitempty" jsonschema:"description=The ID of the default issue query for the user."`
 
 		// DefaultProjectQuery The ID of the default project query for the user.
-		DefaultProjectQuery *int `json:"default_project_query,omitempty"`
+		DefaultProjectQuery *int `json:"default_project_query,omitempty" jsonschema:"description=The ID of the default project query for the user."`
 
 		// HideMail Whether the user's email should be hidden.
-		HideMail *bool `json:"hide_mail,omitempty"`
+		HideMail *bool `json:"hide_mail,omitempty" jsonschema:"description=Whether the user's email should be hidden."`
 
 		// HistoryDefaultTab The default tab for the user's history. Possible values are:
 		// - `notes`
@@ -1502,76 +1502,76 @@ type MyAccountPutJSONBody struct {
 		// - `time_entries`
 		// - `changesets`
 		// - `last_tab_visited`
-		HistoryDefaultTab *string `json:"history_default_tab,omitempty"`
+		HistoryDefaultTab *string `json:"history_default_tab,omitempty" jsonschema:"description=The default tab for the user's history. Possible values are: - \"notes\" - \"history\" - \"properties\" - \"time_entries\" - \"changesets\" - \"last_tab_visited\",enum=notes,enum=history,enum=properties,enum=time_entries,enum=changesets,enum=last_tab_visited"`
 
 		// NoSelfNotified Whether the user should not be notified of their own actions.
-		NoSelfNotified *bool `json:"no_self_notified,omitempty"`
+		NoSelfNotified *bool `json:"no_self_notified,omitempty" jsonschema:"description=Whether the user should not be notified of their own actions."`
 
 		// NotifyAboutHighPriorityIssues Whether the user should be notified about high priority issues.
-		NotifyAboutHighPriorityIssues *bool `json:"notify_about_high_priority_issues,omitempty"`
+		NotifyAboutHighPriorityIssues *bool `json:"notify_about_high_priority_issues,omitempty" jsonschema:"description=Whether the user should be notified about high priority issues."`
 
 		// RecentlyUsedProjects The number of recently used projects to display.
-		RecentlyUsedProjects *int `json:"recently_used_projects,omitempty"`
+		RecentlyUsedProjects *int `json:"recently_used_projects,omitempty" jsonschema:"description=The number of recently used projects to display."`
 
 		// TextareaFont The font used in text areas. Possible values are:
 		// - `monospace`
 		// - `proportional`
-		TextareaFont *string `json:"textarea_font,omitempty"`
+		TextareaFont *string `json:"textarea_font,omitempty" jsonschema:"description=The font used in text areas. Possible values are: - \"monospace\" - \"proportional\",enum=monospace,enum=proportional"`
 
 		// TimeZone The time zone of the user.
-		TimeZone *string `json:"time_zone,omitempty"`
+		TimeZone *string `json:"time_zone,omitempty" jsonschema:"description=The time zone of the user."`
 
 		// ToolbarLanguageOptions The language options for the toolbar.
-		ToolbarLanguageOptions *string `json:"toolbar_language_options,omitempty"`
+		ToolbarLanguageOptions *string `json:"toolbar_language_options,omitempty" jsonschema:"description=The language options for the toolbar."`
 
 		// WarnOnLeavingUnsaved Whether to warn the user when leaving a page with unsaved changes. Possible values are:
 		// - `0`: Disable
 		// - `1`: Enable
-		WarnOnLeavingUnsaved *string `json:"warn_on_leaving_unsaved,omitempty"`
-	} `json:"pref,omitempty"`
+		WarnOnLeavingUnsaved *string `json:"warn_on_leaving_unsaved,omitempty" jsonschema:"description=Whether to warn the user when leaving a page with unsaved changes. Possible values are: - \"0\": Disable - \"1\": Enable"`
+	} `json:"pref,omitempty" jsonschema:"description=The preferences of the user."`
 
 	// User A single user.
 	User *struct {
 		// Admin The administrative of the user.
-		Admin *bool `json:"admin,omitempty"`
+		Admin *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 
 		// AuthSourceId The auth source id of the user.
-		AuthSourceId *int `json:"auth_source_id,omitempty"`
+		AuthSourceId *int `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Firstname The firstname of the user.
-		Firstname *string `json:"firstname,omitempty"`
+		Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 
 		// GeneratePassword The generate password of the user.
-		GeneratePassword *bool `json:"generate_password,omitempty"`
+		GeneratePassword *bool `json:"generate_password,omitempty" jsonschema:"description=The generate password of the user."`
 
 		// GroupIds The group id of the user.
-		GroupIds *[]int `json:"group_ids,omitempty"`
+		GroupIds *[]int `json:"group_ids,omitempty" jsonschema:"description=The group id of the user."`
 
 		// Language The language of the user.
-		Language *string `json:"language,omitempty"`
+		Language *string `json:"language,omitempty" jsonschema:"description=The language of the user."`
 
 		// Lastname The lastname of the user.
-		Lastname *string `json:"lastname,omitempty"`
+		Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 		// Login The login of the user.
-		Login *string `json:"login,omitempty"`
+		Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 		// Mail The mail address of the user.
-		Mail *string `json:"mail,omitempty"`
+		Mail *string `json:"mail,omitempty" jsonschema:"description=The mail address of the user."`
 
 		// MailNotification The mail notification of the user. Possible values are:
 		// - `all`: all events
@@ -1580,31 +1580,31 @@ type MyAccountPutJSONBody struct {
 		// - `only_assigned`: only events assigned to the user
 		// - `only_owner`: only events owned by the user
 		// - `none`: no events
-		MailNotification *string `json:"mail_notification,omitempty"`
+		MailNotification *string `json:"mail_notification,omitempty" jsonschema:"description=The mail notification of the user. Possible values are: - \"all\": all events - \"selected\": only selected events - \"only_my_events\": only events related to the user - \"only_assigned\": only events assigned to the user - \"only_owner\": only events owned by the user - \"none\": no events,enum=all,enum=selected,enum=only_my_events,enum=only_assigned,enum=only_owner,enum=none"`
 
 		// MustChangePasswd The must change passwd of the user.
-		MustChangePasswd *bool `json:"must_change_passwd,omitempty"`
+		MustChangePasswd *bool `json:"must_change_passwd,omitempty" jsonschema:"description=The must change passwd of the user."`
 
 		// NotifiedProjectIds The notified project ID or identifier of the user.
-		NotifiedProjectIds *[]string `json:"notified_project_ids,omitempty"`
+		NotifiedProjectIds *[]string `json:"notified_project_ids,omitempty" jsonschema:"description=The notified project ID or identifier of the user."`
 
 		// Password The password of the user.
-		Password *string `json:"password,omitempty"`
+		Password *string `json:"password,omitempty" jsonschema:"description=The password of the user."`
 
 		// Status The status of the user. Possible values are:
 		// - `0`: anonymous
 		// - `1`: active
 		// - `2`: registered
 		// - `3`: locked
-		Status *int `json:"status,omitempty"`
-	} `json:"user,omitempty"`
+		Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked,enum=0,enum=1,enum=2,enum=3"`
+	} `json:"user,omitempty" jsonschema:"description=A single user."`
 }
 
 // MyAccountPutParams defines parameters for MyAccountPut.
 type MyAccountPutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // NewsIndexParams defines parameters for NewsIndex.
@@ -1614,22 +1614,22 @@ type NewsIndexParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // NewsCreateJSONBody defines parameters for NewsCreate.
@@ -1637,42 +1637,42 @@ type NewsCreateJSONBody struct {
 	// News A single news.
 	News *struct {
 		// Description The description of the news.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 		// Summary The summary of the news.
-		Summary *string `json:"summary,omitempty"`
+		Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 		// Title The title of the news.
-		Title *string `json:"title,omitempty"`
-	} `json:"news,omitempty"`
+		Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
+	} `json:"news,omitempty" jsonschema:"description=A single news."`
 
 	// ProjectId The ID or identifier of the project.
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The ID or identifier of the project."`
 }
 
 // NewsCreateParams defines parameters for NewsCreate.
 type NewsCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // NewsDestroyParams defines parameters for NewsDestroy.
 type NewsDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // NewsShowParams defines parameters for NewsShow.
 type NewsShowParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `attachments`, `comments`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"attachments\"\\, \"comments\".,enum=attachments,enum=comments"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // NewsUpdatePatchJSONBody defines parameters for NewsUpdatePatch.
@@ -1680,21 +1680,21 @@ type NewsUpdatePatchJSONBody struct {
 	// News A single news.
 	News *struct {
 		// Description The description of the news.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 		// Summary The summary of the news.
-		Summary *string `json:"summary,omitempty"`
+		Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 		// Title The title of the news.
-		Title *string `json:"title,omitempty"`
-	} `json:"news,omitempty"`
+		Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
+	} `json:"news,omitempty" jsonschema:"description=A single news."`
 }
 
 // NewsUpdatePatchParams defines parameters for NewsUpdatePatch.
 type NewsUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // NewsUpdatePutJSONBody defines parameters for NewsUpdatePut.
@@ -1702,21 +1702,21 @@ type NewsUpdatePutJSONBody struct {
 	// News A single news.
 	News *struct {
 		// Description The description of the news.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 		// Summary The summary of the news.
-		Summary *string `json:"summary,omitempty"`
+		Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 		// Title The title of the news.
-		Title *string `json:"title,omitempty"`
-	} `json:"news,omitempty"`
+		Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
+	} `json:"news,omitempty" jsonschema:"description=A single news."`
 }
 
 // NewsUpdatePutParams defines parameters for NewsUpdatePut.
 type NewsUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsIndexCsvParams_Query defines parameters for ProjectsIndexCsv.
@@ -1726,18 +1726,18 @@ type ProjectsIndexCsvParams_Query struct {
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the project. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Description The expression of description of the project.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The expression of description of the project. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// Id The expression of identifier of the project.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	Id *string `json:"id,omitempty"`
+	Id *string `json:"id,omitempty" jsonschema:"description=The expression of identifier of the project. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IsPublic The expression of visibility of the project.
 	// The expression format is "\<operator>\<values>". Values should be separated by a pipe "|".
@@ -1748,18 +1748,18 @@ type ProjectsIndexCsvParams_Query struct {
 	// examples:
 	// - public only: `1`
 	// - public or private: `0|1`
-	IsPublic *string `json:"is_public,omitempty"`
+	IsPublic *string `json:"is_public,omitempty" jsonschema:"description=The expression of visibility of the project. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": private - \"1\": public  examples: - public only: \"1\" - public or private: \"0|1\""`
 
 	// Name The expression of name of the project.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	Name *string `json:"name,omitempty"`
+	Name *string `json:"name,omitempty" jsonschema:"description=The expression of name of the project. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// ParentId The expression of parent project id of the project.
 	// The expression format is "\<operator>\<values>". Values should be separated by a pipe "|".
-	ParentId *string `json:"parent_id,omitempty"`
+	ParentId *string `json:"parent_id,omitempty" jsonschema:"description=The expression of parent project id of the project. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\"."`
 
 	// Status The expression of status of the project.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
@@ -1770,14 +1770,14 @@ type ProjectsIndexCsvParams_Query struct {
 	// examples:
 	// - active or closed: `1|5`
 	// - not closed: `!5`
-	Status *string `json:"status,omitempty"`
+	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the project. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"5\": closed  examples: - active or closed: \"1|5\" - not closed: \"!5\""`
 
 	// UpdatedOn The expression of updated_on of the project.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	UpdatedOn            *string           `json:"updated_on,omitempty"`
+	UpdatedOn            *string           `json:"updated_on,omitempty" jsonschema:"description=The expression of updated_on of the project. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -1788,27 +1788,27 @@ type ProjectsIndexCsvParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *ProjectsIndexCsvParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `trackers`, `issue_categories`, `enabled_modules`, `time_entry_activities`, `issue_custom_fields`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"trackers\"\\, \"issue_categories\"\\, \"enabled_modules\"\\, \"time_entry_activities\"\\, \"issue_custom_fields\".,enum=trackers,enum=issue_categories,enum=enabled_modules,enum=time_entry_activities,enum=issue_custom_fields"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsIndexParams_Query defines parameters for ProjectsIndex.
@@ -1818,18 +1818,18 @@ type ProjectsIndexParams_Query struct {
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the project. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Description The expression of description of the project.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The expression of description of the project. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// Id The expression of identifier of the project.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	Id *string `json:"id,omitempty"`
+	Id *string `json:"id,omitempty" jsonschema:"description=The expression of identifier of the project. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IsPublic The expression of visibility of the project.
 	// The expression format is "\<operator>\<values>". Values should be separated by a pipe "|".
@@ -1840,18 +1840,18 @@ type ProjectsIndexParams_Query struct {
 	// examples:
 	// - public only: `1`
 	// - public or private: `0|1`
-	IsPublic *string `json:"is_public,omitempty"`
+	IsPublic *string `json:"is_public,omitempty" jsonschema:"description=The expression of visibility of the project. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": private - \"1\": public  examples: - public only: \"1\" - public or private: \"0|1\""`
 
 	// Name The expression of name of the project.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	Name *string `json:"name,omitempty"`
+	Name *string `json:"name,omitempty" jsonschema:"description=The expression of name of the project. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// ParentId The expression of parent project id of the project.
 	// The expression format is "\<operator>\<values>". Values should be separated by a pipe "|".
-	ParentId *string `json:"parent_id,omitempty"`
+	ParentId *string `json:"parent_id,omitempty" jsonschema:"description=The expression of parent project id of the project. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\"."`
 
 	// Status The expression of status of the project.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
@@ -1862,14 +1862,14 @@ type ProjectsIndexParams_Query struct {
 	// examples:
 	// - active or closed: `1|5`
 	// - not closed: `!5`
-	Status *string `json:"status,omitempty"`
+	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the project. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"5\": closed  examples: - active or closed: \"1|5\" - not closed: \"!5\""`
 
 	// UpdatedOn The expression of updated_on of the project.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	UpdatedOn            *string           `json:"updated_on,omitempty"`
+	UpdatedOn            *string           `json:"updated_on,omitempty" jsonschema:"description=The expression of updated_on of the project. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -1880,27 +1880,27 @@ type ProjectsIndexParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *ProjectsIndexParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `trackers`, `issue_categories`, `enabled_modules`, `time_entry_activities`, `issue_custom_fields`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"trackers\"\\, \"issue_categories\"\\, \"enabled_modules\"\\, \"time_entry_activities\"\\, \"issue_custom_fields\".,enum=trackers,enum=issue_categories,enum=enabled_modules,enum=time_entry_activities,enum=issue_custom_fields"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsCreateJSONBody defines parameters for ProjectsCreate.
@@ -1908,83 +1908,83 @@ type ProjectsCreateJSONBody struct {
 	// Project A single project.
 	Project *struct {
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// DefaultAssignedToId The ID of the default assignee of the project.
-		DefaultAssignedToId *int `json:"default_assigned_to_id,omitempty"`
+		DefaultAssignedToId *int `json:"default_assigned_to_id,omitempty" jsonschema:"description=The ID of the default assignee of the project."`
 
 		// DefaultIssueQueryId The ID of the default issue query of the project
-		DefaultIssueQueryId *int `json:"default_issue_query_id,omitempty"`
+		DefaultIssueQueryId *int `json:"default_issue_query_id,omitempty" jsonschema:"description=The ID of the default issue query of the project"`
 
 		// DefaultVersionId The ID of the default version of the project.
-		DefaultVersionId *int `json:"default_version_id,omitempty"`
+		DefaultVersionId *int `json:"default_version_id,omitempty" jsonschema:"description=The ID of the default version of the project."`
 
 		// Description The description of the project.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the project."`
 
 		// EnabledModuleNames The names of the enabled modules for the project.
-		EnabledModuleNames *[]string `json:"enabled_module_names,omitempty"`
+		EnabledModuleNames *[]string `json:"enabled_module_names,omitempty" jsonschema:"description=The names of the enabled modules for the project."`
 
 		// Homepage The homepage URL of the project.
-		Homepage *string `json:"homepage,omitempty"`
+		Homepage *string `json:"homepage,omitempty" jsonschema:"description=The homepage URL of the project."`
 
 		// Identifier The identifier of the project.
-		Identifier *string `json:"identifier,omitempty"`
+		Identifier *string `json:"identifier,omitempty" jsonschema:"description=The identifier of the project."`
 
 		// InheritMembers Whether the project inherits members from its parent project. `true` if it does, `false` if it does not.
-		InheritMembers *bool `json:"inherit_members,omitempty"`
+		InheritMembers *bool `json:"inherit_members,omitempty" jsonschema:"description=Whether the project inherits members from its parent project. \"true\" if it does\\, \"false\" if it does not."`
 
 		// IsPublic The visibility of the project. `true` if the project is public, `false` if it is private.
-		IsPublic *bool `json:"is_public,omitempty"`
+		IsPublic *bool `json:"is_public,omitempty" jsonschema:"description=The visibility of the project. \"true\" if the project is public\\, \"false\" if it is private."`
 
 		// IssueCustomFieldIds The IDs of the issue custom fields associated with the project.
-		IssueCustomFieldIds *[]int `json:"issue_custom_field_ids,omitempty"`
+		IssueCustomFieldIds *[]int `json:"issue_custom_field_ids,omitempty" jsonschema:"description=The IDs of the issue custom fields associated with the project."`
 
 		// Name The name of the project.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 
 		// ParentId The ID of the parent project.
-		ParentId *int `json:"parent_id,omitempty"`
+		ParentId *int `json:"parent_id,omitempty" jsonschema:"description=The ID of the parent project."`
 
 		// TrackerIds The IDs of the trackers associated with the project.
-		TrackerIds *[]int `json:"tracker_ids,omitempty"`
-	} `json:"project,omitempty"`
+		TrackerIds *[]int `json:"tracker_ids,omitempty" jsonschema:"description=The IDs of the trackers associated with the project."`
+	} `json:"project,omitempty" jsonschema:"description=A single project."`
 }
 
 // ProjectsCreateParams defines parameters for ProjectsCreate.
 type ProjectsCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsDestroyParams defines parameters for ProjectsDestroy.
 type ProjectsDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsShowParams defines parameters for ProjectsShow.
 type ProjectsShowParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `trackers`, `issue_categories`, `enabled_modules`, `time_entry_activities`, `issue_custom_fields`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"trackers\"\\, \"issue_categories\"\\, \"enabled_modules\"\\, \"time_entry_activities\"\\, \"issue_custom_fields\".,enum=trackers,enum=issue_categories,enum=enabled_modules,enum=time_entry_activities,enum=issue_custom_fields"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsUpdatePatchJSONBody defines parameters for ProjectsUpdatePatch.
@@ -1992,65 +1992,65 @@ type ProjectsUpdatePatchJSONBody struct {
 	// Project A single project.
 	Project *struct {
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// DefaultAssignedToId The ID of the default assignee of the project.
-		DefaultAssignedToId *int `json:"default_assigned_to_id,omitempty"`
+		DefaultAssignedToId *int `json:"default_assigned_to_id,omitempty" jsonschema:"description=The ID of the default assignee of the project."`
 
 		// DefaultIssueQueryId The ID of the default issue query of the project
-		DefaultIssueQueryId *int `json:"default_issue_query_id,omitempty"`
+		DefaultIssueQueryId *int `json:"default_issue_query_id,omitempty" jsonschema:"description=The ID of the default issue query of the project"`
 
 		// DefaultVersionId The ID of the default version of the project.
-		DefaultVersionId *int `json:"default_version_id,omitempty"`
+		DefaultVersionId *int `json:"default_version_id,omitempty" jsonschema:"description=The ID of the default version of the project."`
 
 		// Description The description of the project.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the project."`
 
 		// EnabledModuleNames The names of the enabled modules for the project.
-		EnabledModuleNames *[]string `json:"enabled_module_names,omitempty"`
+		EnabledModuleNames *[]string `json:"enabled_module_names,omitempty" jsonschema:"description=The names of the enabled modules for the project."`
 
 		// Homepage The homepage URL of the project.
-		Homepage *string `json:"homepage,omitempty"`
+		Homepage *string `json:"homepage,omitempty" jsonschema:"description=The homepage URL of the project."`
 
 		// Identifier The identifier of the project.
-		Identifier *string `json:"identifier,omitempty"`
+		Identifier *string `json:"identifier,omitempty" jsonschema:"description=The identifier of the project."`
 
 		// InheritMembers Whether the project inherits members from its parent project. `true` if it does, `false` if it does not.
-		InheritMembers *bool `json:"inherit_members,omitempty"`
+		InheritMembers *bool `json:"inherit_members,omitempty" jsonschema:"description=Whether the project inherits members from its parent project. \"true\" if it does\\, \"false\" if it does not."`
 
 		// IsPublic The visibility of the project. `true` if the project is public, `false` if it is private.
-		IsPublic *bool `json:"is_public,omitempty"`
+		IsPublic *bool `json:"is_public,omitempty" jsonschema:"description=The visibility of the project. \"true\" if the project is public\\, \"false\" if it is private."`
 
 		// IssueCustomFieldIds The IDs of the issue custom fields associated with the project.
-		IssueCustomFieldIds *[]int `json:"issue_custom_field_ids,omitempty"`
+		IssueCustomFieldIds *[]int `json:"issue_custom_field_ids,omitempty" jsonschema:"description=The IDs of the issue custom fields associated with the project."`
 
 		// Name The name of the project.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 
 		// ParentId The ID of the parent project.
-		ParentId *int `json:"parent_id,omitempty"`
+		ParentId *int `json:"parent_id,omitempty" jsonschema:"description=The ID of the parent project."`
 
 		// TrackerIds The IDs of the trackers associated with the project.
-		TrackerIds *[]int `json:"tracker_ids,omitempty"`
-	} `json:"project,omitempty"`
+		TrackerIds *[]int `json:"tracker_ids,omitempty" jsonschema:"description=The IDs of the trackers associated with the project."`
+	} `json:"project,omitempty" jsonschema:"description=A single project."`
 }
 
 // ProjectsUpdatePatchParams defines parameters for ProjectsUpdatePatch.
 type ProjectsUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsUpdatePutJSONBody defines parameters for ProjectsUpdatePut.
@@ -2058,120 +2058,120 @@ type ProjectsUpdatePutJSONBody struct {
 	// Project A single project.
 	Project *struct {
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// DefaultAssignedToId The ID of the default assignee of the project.
-		DefaultAssignedToId *int `json:"default_assigned_to_id,omitempty"`
+		DefaultAssignedToId *int `json:"default_assigned_to_id,omitempty" jsonschema:"description=The ID of the default assignee of the project."`
 
 		// DefaultIssueQueryId The ID of the default issue query of the project
-		DefaultIssueQueryId *int `json:"default_issue_query_id,omitempty"`
+		DefaultIssueQueryId *int `json:"default_issue_query_id,omitempty" jsonschema:"description=The ID of the default issue query of the project"`
 
 		// DefaultVersionId The ID of the default version of the project.
-		DefaultVersionId *int `json:"default_version_id,omitempty"`
+		DefaultVersionId *int `json:"default_version_id,omitempty" jsonschema:"description=The ID of the default version of the project."`
 
 		// Description The description of the project.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the project."`
 
 		// EnabledModuleNames The names of the enabled modules for the project.
-		EnabledModuleNames *[]string `json:"enabled_module_names,omitempty"`
+		EnabledModuleNames *[]string `json:"enabled_module_names,omitempty" jsonschema:"description=The names of the enabled modules for the project."`
 
 		// Homepage The homepage URL of the project.
-		Homepage *string `json:"homepage,omitempty"`
+		Homepage *string `json:"homepage,omitempty" jsonschema:"description=The homepage URL of the project."`
 
 		// Identifier The identifier of the project.
-		Identifier *string `json:"identifier,omitempty"`
+		Identifier *string `json:"identifier,omitempty" jsonschema:"description=The identifier of the project."`
 
 		// InheritMembers Whether the project inherits members from its parent project. `true` if it does, `false` if it does not.
-		InheritMembers *bool `json:"inherit_members,omitempty"`
+		InheritMembers *bool `json:"inherit_members,omitempty" jsonschema:"description=Whether the project inherits members from its parent project. \"true\" if it does\\, \"false\" if it does not."`
 
 		// IsPublic The visibility of the project. `true` if the project is public, `false` if it is private.
-		IsPublic *bool `json:"is_public,omitempty"`
+		IsPublic *bool `json:"is_public,omitempty" jsonschema:"description=The visibility of the project. \"true\" if the project is public\\, \"false\" if it is private."`
 
 		// IssueCustomFieldIds The IDs of the issue custom fields associated with the project.
-		IssueCustomFieldIds *[]int `json:"issue_custom_field_ids,omitempty"`
+		IssueCustomFieldIds *[]int `json:"issue_custom_field_ids,omitempty" jsonschema:"description=The IDs of the issue custom fields associated with the project."`
 
 		// Name The name of the project.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 
 		// ParentId The ID of the parent project.
-		ParentId *int `json:"parent_id,omitempty"`
+		ParentId *int `json:"parent_id,omitempty" jsonschema:"description=The ID of the parent project."`
 
 		// TrackerIds The IDs of the trackers associated with the project.
-		TrackerIds *[]int `json:"tracker_ids,omitempty"`
-	} `json:"project,omitempty"`
+		TrackerIds *[]int `json:"tracker_ids,omitempty" jsonschema:"description=The IDs of the trackers associated with the project."`
+	} `json:"project,omitempty" jsonschema:"description=A single project."`
 }
 
 // ProjectsUpdatePutParams defines parameters for ProjectsUpdatePut.
 type ProjectsUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsArchivePostParams defines parameters for ProjectsArchivePost.
 type ProjectsArchivePostParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsArchivePutParams defines parameters for ProjectsArchivePut.
 type ProjectsArchivePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // RepositoriesAddRelatedIssueJSONBody defines parameters for RepositoriesAddRelatedIssue.
 type RepositoriesAddRelatedIssueJSONBody struct {
 	// IssueId The ID of the issue.
-	IssueId *int `json:"issue_id,omitempty"`
+	IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 }
 
 // RepositoriesAddRelatedIssueParams defines parameters for RepositoriesAddRelatedIssue.
 type RepositoriesAddRelatedIssueParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // RepositoriesRemoveRelatedIssueParams defines parameters for RepositoriesRemoveRelatedIssue.
 type RepositoriesRemoveRelatedIssueParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsUnarchivePostParams defines parameters for ProjectsUnarchivePost.
 type ProjectsUnarchivePostParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // ProjectsUnarchivePutParams defines parameters for ProjectsUnarchivePut.
 type ProjectsUnarchivePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // FilesIndexParams defines parameters for FilesIndex.
 type FilesIndexParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // FilesCreateJSONBody defines parameters for FilesCreate.
@@ -2179,37 +2179,37 @@ type FilesCreateJSONBody struct {
 	// File Represents a new file to be created.
 	File *struct {
 		// Description The description of the file.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the file."`
 
 		// Filename The name of the file.
-		Filename *string `json:"filename,omitempty"`
+		Filename *string `json:"filename,omitempty" jsonschema:"description=The name of the file."`
 
 		// Token The upload token for the file.
-		Token *string `json:"token,omitempty"`
+		Token *string `json:"token,omitempty" jsonschema:"description=The upload token for the file."`
 
 		// VersionId The ID of the version associated with the file.
-		VersionId *int `json:"version_id,omitempty"`
-	} `json:"file,omitempty"`
+		VersionId *int `json:"version_id,omitempty" jsonschema:"description=The ID of the version associated with the file."`
+	} `json:"file,omitempty" jsonschema:"description=Represents a new file to be created."`
 }
 
 // FilesCreateParams defines parameters for FilesCreate.
 type FilesCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueCategoriesIndexParams defines parameters for IssueCategoriesIndex.
 type IssueCategoriesIndexParams struct {
 	// Nometa If set to 1, the response will not include metadata information.
-	Nometa *int `form:"nometa,omitempty" json:"nometa,omitempty"`
+	Nometa *int `form:"nometa,omitempty" json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueCategoriesCreateJSONBody defines parameters for IssueCategoriesCreate.
@@ -2217,191 +2217,191 @@ type IssueCategoriesCreateJSONBody struct {
 	// IssueCategory A single issue_category.
 	IssueCategory *struct {
 		// AssignedToId The ID of the assinged to.
-		AssignedToId *int `json:"assigned_to_id,omitempty"`
+		AssignedToId *int `json:"assigned_to_id,omitempty" jsonschema:"description=The ID of the assinged to."`
 
 		// Name The name of the issue category.
-		Name *string `json:"name,omitempty"`
-	} `json:"issue_category,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
+	} `json:"issue_category,omitempty" jsonschema:"description=A single issue_category."`
 }
 
 // IssueCategoriesCreateParams defines parameters for IssueCategoriesCreate.
 type IssueCategoriesCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesIndexProjectCsvParams_Query defines parameters for IssuesIndexProjectCsv.
 type IssuesIndexProjectCsvParams_Query struct {
 	// AnySearchable The expression of any searchable of the issue.
 	// The expression format is "[operator]\<value>".
-	AnySearchable *string `json:"any_searchable,omitempty"`
+	AnySearchable *string `json:"any_searchable,omitempty" jsonschema:"description=The expression of any searchable of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AssignedToId The expression of assigned to id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToId *string `json:"assigned_to_id,omitempty"`
+	AssignedToId *string `json:"assigned_to_id,omitempty" jsonschema:"description=The expression of assigned to id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AssignedToRole The expression of assigned to role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToRole *string `json:"assigned_to_role,omitempty"`
+	AssignedToRole *string `json:"assigned_to_role,omitempty" jsonschema:"description=The expression of assigned to role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Attachment The expression of attachment of the issue.
 	// The expression format is "[operator]\<value>".
-	Attachment *string `json:"attachment,omitempty"`
+	Attachment *string `json:"attachment,omitempty" jsonschema:"description=The expression of attachment of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AttachmentDescription The expression of attachment description of the issue.
 	// The expression format is "[operator]\<value>".
-	AttachmentDescription *string `json:"attachment_description,omitempty"`
+	AttachmentDescription *string `json:"attachment_description,omitempty" jsonschema:"description=The expression of attachment description of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AuthorGroup The expression of author group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorGroup *string `json:"author.group,omitempty"`
+	AuthorGroup *string `json:"author.group,omitempty" jsonschema:"description=The expression of author group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorRole The expression of author role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorRole *string `json:"author.role,omitempty"`
+	AuthorRole *string `json:"author.role,omitempty" jsonschema:"description=The expression of author role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// CategoryId The expression of category id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	CategoryId *string `json:"category_id,omitempty"`
+	CategoryId *string `json:"category_id,omitempty" jsonschema:"description=The expression of category id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ChildId The expression of child id of the issue.
 	// The expression format is "[operator]\<value>".
-	ChildId *string `json:"child_id,omitempty"`
+	ChildId *string `json:"child_id,omitempty" jsonschema:"description=The expression of child id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// ClosedOn The expression of closed_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	ClosedOn *string `json:"closed_on,omitempty"`
+	ClosedOn *string `json:"closed_on,omitempty" jsonschema:"description=The expression of closed_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// CreatedOn The expression of created_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Description The expression of description of the issue.
 	// The expression format is "\<operator>\<value>".
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The expression of description of the issue. The expression format is \"<operator><value>\"."`
 
 	// DoneRatio The expression of done ratio of the issue.
 	// The expression format is "[operator]\<value>".
-	DoneRatio *string `json:"done_ratio,omitempty"`
+	DoneRatio *string `json:"done_ratio,omitempty" jsonschema:"description=The expression of done ratio of the issue. The expression format is \"[operator]<value>\"."`
 
 	// DueDate The expression of due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	DueDate *string `json:"due_date,omitempty"`
+	DueDate *string `json:"due_date,omitempty" jsonschema:"description=The expression of due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// EstimatedHours The expression of estimated hours of the issue.
 	// The expression format is "[operator]\<value>".
-	EstimatedHours *string `json:"estimated_hours,omitempty"`
+	EstimatedHours *string `json:"estimated_hours,omitempty" jsonschema:"description=The expression of estimated hours of the issue. The expression format is \"[operator]<value>\"."`
 
 	// FixedVersionDueDate The expression of fixed version due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty"`
+	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty" jsonschema:"description=The expression of fixed version due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// FixedVersionStatus The expression of fixed version status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionStatus *string `json:"fixed_version.status,omitempty"`
+	FixedVersionStatus *string `json:"fixed_version.status,omitempty" jsonschema:"description=The expression of fixed version status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// FixedVersionId The expression of fixed version id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionId *string `json:"fixed_version_id,omitempty"`
+	FixedVersionId *string `json:"fixed_version_id,omitempty" jsonschema:"description=The expression of fixed version id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IsPrivate The expression of private id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IsPrivate *string `json:"is_private,omitempty"`
+	IsPrivate *string `json:"is_private,omitempty" jsonschema:"description=The expression of private id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the issue.
 	// The expression format is "[operator]\<value>".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// LastUpdatedBy The expression of last updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	LastUpdatedBy *string `json:"last_updated_by,omitempty"`
+	LastUpdatedBy *string `json:"last_updated_by,omitempty" jsonschema:"description=The expression of last updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// MemberOfGroup The expression of member of group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	MemberOfGroup *string `json:"member_of_group,omitempty"`
+	MemberOfGroup *string `json:"member_of_group,omitempty" jsonschema:"description=The expression of member of group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Notes The expression of notes of the issue.
 	// The expression format is "\<operator>\<value>".
-	Notes *string `json:"notes,omitempty"`
+	Notes *string `json:"notes,omitempty" jsonschema:"description=The expression of notes of the issue. The expression format is \"<operator><value>\"."`
 
 	// ParentId The expression of parent id of the issue.
 	// The expression format is "[operator]\<value>".
-	ParentId *string `json:"parent_id,omitempty"`
+	ParentId *string `json:"parent_id,omitempty" jsonschema:"description=The expression of parent id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// PriorityId The expression of priority id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	PriorityId *string `json:"priority_id,omitempty"`
+	PriorityId *string `json:"priority_id,omitempty" jsonschema:"description=The expression of priority id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// RelationType The expression of relation type of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	RelationType *string `json:"relation_type,omitempty"`
+	RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The expression of relation type of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentTime The expression of spent time of the issue.
 	// The expression format is "[operator]\<value>".
-	SpentTime *string `json:"spent_time,omitempty"`
+	SpentTime *string `json:"spent_time,omitempty" jsonschema:"description=The expression of spent time of the issue. The expression format is \"[operator]<value>\"."`
 
 	// StartDate The expression of start date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	StartDate *string `json:"start_date,omitempty"`
+	StartDate *string `json:"start_date,omitempty" jsonschema:"description=The expression of start date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// StatusId The expression of status id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	StatusId *string `json:"status_id,omitempty"`
+	StatusId *string `json:"status_id,omitempty" jsonschema:"description=The expression of status id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Subject The expression of subject of the issue.
 	// The expression format is "\<operator>\<value>".
-	Subject *string `json:"subject,omitempty"`
+	Subject *string `json:"subject,omitempty" jsonschema:"description=The expression of subject of the issue. The expression format is \"<operator><value>\"."`
 
 	// SubprojectId The expression of sub project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// TrackerId The expression of tracker id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	TrackerId *string `json:"tracker_id,omitempty"`
+	TrackerId *string `json:"tracker_id,omitempty" jsonschema:"description=The expression of tracker id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedBy The expression of updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UpdatedBy *string `json:"updated_by,omitempty"`
+	UpdatedBy *string `json:"updated_by,omitempty" jsonschema:"description=The expression of updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedOn The expression of updated_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	UpdatedOn *string `json:"updated_on,omitempty"`
+	UpdatedOn *string `json:"updated_on,omitempty" jsonschema:"description=The expression of updated_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// WatcherId The expression of watcher id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	WatcherId            *string           `json:"watcher_id,omitempty"`
+	WatcherId            *string           `json:"watcher_id,omitempty" jsonschema:"description=The expression of watcher id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -2412,200 +2412,200 @@ type IssuesIndexProjectCsvParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *IssuesIndexProjectCsvParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `allowed_statuses`, `attachments`, `changesets`, `children`, `journals`, `relations`, `watchers`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"allowed_statuses\"\\, \"attachments\"\\, \"changesets\"\\, \"children\"\\, \"journals\"\\, \"relations\"\\, \"watchers\".,enum=allowed_statuses,enum=attachments,enum=changesets,enum=children,enum=journals,enum=relations,enum=watchers"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesIndexProjectParams_Query defines parameters for IssuesIndexProject.
 type IssuesIndexProjectParams_Query struct {
 	// AnySearchable The expression of any searchable of the issue.
 	// The expression format is "[operator]\<value>".
-	AnySearchable *string `json:"any_searchable,omitempty"`
+	AnySearchable *string `json:"any_searchable,omitempty" jsonschema:"description=The expression of any searchable of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AssignedToId The expression of assigned to id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToId *string `json:"assigned_to_id,omitempty"`
+	AssignedToId *string `json:"assigned_to_id,omitempty" jsonschema:"description=The expression of assigned to id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AssignedToRole The expression of assigned to role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToRole *string `json:"assigned_to_role,omitempty"`
+	AssignedToRole *string `json:"assigned_to_role,omitempty" jsonschema:"description=The expression of assigned to role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Attachment The expression of attachment of the issue.
 	// The expression format is "[operator]\<value>".
-	Attachment *string `json:"attachment,omitempty"`
+	Attachment *string `json:"attachment,omitempty" jsonschema:"description=The expression of attachment of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AttachmentDescription The expression of attachment description of the issue.
 	// The expression format is "[operator]\<value>".
-	AttachmentDescription *string `json:"attachment_description,omitempty"`
+	AttachmentDescription *string `json:"attachment_description,omitempty" jsonschema:"description=The expression of attachment description of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AuthorGroup The expression of author group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorGroup *string `json:"author.group,omitempty"`
+	AuthorGroup *string `json:"author.group,omitempty" jsonschema:"description=The expression of author group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorRole The expression of author role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorRole *string `json:"author.role,omitempty"`
+	AuthorRole *string `json:"author.role,omitempty" jsonschema:"description=The expression of author role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// CategoryId The expression of category id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	CategoryId *string `json:"category_id,omitempty"`
+	CategoryId *string `json:"category_id,omitempty" jsonschema:"description=The expression of category id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ChildId The expression of child id of the issue.
 	// The expression format is "[operator]\<value>".
-	ChildId *string `json:"child_id,omitempty"`
+	ChildId *string `json:"child_id,omitempty" jsonschema:"description=The expression of child id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// ClosedOn The expression of closed_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	ClosedOn *string `json:"closed_on,omitempty"`
+	ClosedOn *string `json:"closed_on,omitempty" jsonschema:"description=The expression of closed_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// CreatedOn The expression of created_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Description The expression of description of the issue.
 	// The expression format is "\<operator>\<value>".
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The expression of description of the issue. The expression format is \"<operator><value>\"."`
 
 	// DoneRatio The expression of done ratio of the issue.
 	// The expression format is "[operator]\<value>".
-	DoneRatio *string `json:"done_ratio,omitempty"`
+	DoneRatio *string `json:"done_ratio,omitempty" jsonschema:"description=The expression of done ratio of the issue. The expression format is \"[operator]<value>\"."`
 
 	// DueDate The expression of due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	DueDate *string `json:"due_date,omitempty"`
+	DueDate *string `json:"due_date,omitempty" jsonschema:"description=The expression of due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// EstimatedHours The expression of estimated hours of the issue.
 	// The expression format is "[operator]\<value>".
-	EstimatedHours *string `json:"estimated_hours,omitempty"`
+	EstimatedHours *string `json:"estimated_hours,omitempty" jsonschema:"description=The expression of estimated hours of the issue. The expression format is \"[operator]<value>\"."`
 
 	// FixedVersionDueDate The expression of fixed version due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty"`
+	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty" jsonschema:"description=The expression of fixed version due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// FixedVersionStatus The expression of fixed version status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionStatus *string `json:"fixed_version.status,omitempty"`
+	FixedVersionStatus *string `json:"fixed_version.status,omitempty" jsonschema:"description=The expression of fixed version status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// FixedVersionId The expression of fixed version id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionId *string `json:"fixed_version_id,omitempty"`
+	FixedVersionId *string `json:"fixed_version_id,omitempty" jsonschema:"description=The expression of fixed version id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IsPrivate The expression of private id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IsPrivate *string `json:"is_private,omitempty"`
+	IsPrivate *string `json:"is_private,omitempty" jsonschema:"description=The expression of private id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the issue.
 	// The expression format is "[operator]\<value>".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// LastUpdatedBy The expression of last updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	LastUpdatedBy *string `json:"last_updated_by,omitempty"`
+	LastUpdatedBy *string `json:"last_updated_by,omitempty" jsonschema:"description=The expression of last updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// MemberOfGroup The expression of member of group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	MemberOfGroup *string `json:"member_of_group,omitempty"`
+	MemberOfGroup *string `json:"member_of_group,omitempty" jsonschema:"description=The expression of member of group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Notes The expression of notes of the issue.
 	// The expression format is "\<operator>\<value>".
-	Notes *string `json:"notes,omitempty"`
+	Notes *string `json:"notes,omitempty" jsonschema:"description=The expression of notes of the issue. The expression format is \"<operator><value>\"."`
 
 	// ParentId The expression of parent id of the issue.
 	// The expression format is "[operator]\<value>".
-	ParentId *string `json:"parent_id,omitempty"`
+	ParentId *string `json:"parent_id,omitempty" jsonschema:"description=The expression of parent id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// PriorityId The expression of priority id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	PriorityId *string `json:"priority_id,omitempty"`
+	PriorityId *string `json:"priority_id,omitempty" jsonschema:"description=The expression of priority id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// RelationType The expression of relation type of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	RelationType *string `json:"relation_type,omitempty"`
+	RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The expression of relation type of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentTime The expression of spent time of the issue.
 	// The expression format is "[operator]\<value>".
-	SpentTime *string `json:"spent_time,omitempty"`
+	SpentTime *string `json:"spent_time,omitempty" jsonschema:"description=The expression of spent time of the issue. The expression format is \"[operator]<value>\"."`
 
 	// StartDate The expression of start date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	StartDate *string `json:"start_date,omitempty"`
+	StartDate *string `json:"start_date,omitempty" jsonschema:"description=The expression of start date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// StatusId The expression of status id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	StatusId *string `json:"status_id,omitempty"`
+	StatusId *string `json:"status_id,omitempty" jsonschema:"description=The expression of status id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Subject The expression of subject of the issue.
 	// The expression format is "\<operator>\<value>".
-	Subject *string `json:"subject,omitempty"`
+	Subject *string `json:"subject,omitempty" jsonschema:"description=The expression of subject of the issue. The expression format is \"<operator><value>\"."`
 
 	// SubprojectId The expression of sub project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// TrackerId The expression of tracker id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	TrackerId *string `json:"tracker_id,omitempty"`
+	TrackerId *string `json:"tracker_id,omitempty" jsonschema:"description=The expression of tracker id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedBy The expression of updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UpdatedBy *string `json:"updated_by,omitempty"`
+	UpdatedBy *string `json:"updated_by,omitempty" jsonschema:"description=The expression of updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedOn The expression of updated_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	UpdatedOn *string `json:"updated_on,omitempty"`
+	UpdatedOn *string `json:"updated_on,omitempty" jsonschema:"description=The expression of updated_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// WatcherId The expression of watcher id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	WatcherId            *string           `json:"watcher_id,omitempty"`
+	WatcherId            *string           `json:"watcher_id,omitempty" jsonschema:"description=The expression of watcher id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -2616,27 +2616,27 @@ type IssuesIndexProjectParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *IssuesIndexProjectParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `allowed_statuses`, `attachments`, `changesets`, `children`, `journals`, `relations`, `watchers`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"allowed_statuses\"\\, \"attachments\"\\, \"changesets\"\\, \"children\"\\, \"journals\"\\, \"relations\"\\, \"watchers\".,enum=allowed_statuses,enum=attachments,enum=changesets,enum=children,enum=journals,enum=relations,enum=watchers"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesCreateProjectJSONBody defines parameters for IssuesCreateProject.
@@ -2644,252 +2644,252 @@ type IssuesCreateProjectJSONBody struct {
 	// Issue A single issue.
 	Issue *struct {
 		// AssignedToId The assigned to id id of the issue.
-		AssignedToId *int `json:"assigned_to_id,omitempty"`
+		AssignedToId *int `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
 
 		// CategoryId The category id of the issue.
-		CategoryId *int `json:"category_id,omitempty"`
+		CategoryId *int `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 		DeletedAttachmentIds *[]int `json:"deleted_attachment_ids,omitempty"`
 
 		// Description The description of the issue.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 		// DoneRatio The done ratio of the issue.
-		DoneRatio *int `json:"done_ratio,omitempty"`
+		DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 		// DueDate The due date of the issue.
-		DueDate *openapi_types.Date `json:"due_date,omitempty"`
+		DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 		// EstimatedHours The estimated hours of the issue.
-		EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+		EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 
 		// FixedVersionId The fixed version id of the issue.
-		FixedVersionId *int `json:"fixed_version_id,omitempty"`
+		FixedVersionId *int `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
 
 		// IsPrivate The private of the issue.
-		IsPrivate *bool `json:"is_private,omitempty"`
+		IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 
 		// Notes The notes of the issue.
-		Notes *string `json:"notes,omitempty"`
+		Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
 
 		// ParentIssueId The parent ID of the issue.
-		ParentIssueId *int `json:"parent_issue_id,omitempty"`
+		ParentIssueId *int `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
 
 		// PriorityId The priority id of the issue.
-		PriorityId *int `json:"priority_id,omitempty"`
+		PriorityId *int `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
 
 		// PrivateNotes The private notes of the issue.
-		PrivateNotes *bool `json:"private_notes,omitempty"`
+		PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
 
 		// ProjectId The project ID or identifier of the issue.
-		ProjectId *string `json:"project_id,omitempty"`
+		ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
 
 		// StartDate The start date of the issue.
-		StartDate *openapi_types.Date `json:"start_date,omitempty"`
+		StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 
 		// StatusId The status id of the issue.
-		StatusId *int `json:"status_id,omitempty"`
+		StatusId *int `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
 
 		// Subject The subject of the issue.
-		Subject *string `json:"subject,omitempty"`
+		Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 		// TrackerId The tracker id of the issue.
-		TrackerId      *int   `json:"tracker_id,omitempty"`
+		TrackerId      *int   `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
 		WatcherUserIds *[]int `json:"watcher_user_ids,omitempty"`
-	} `json:"issue,omitempty"`
+	} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 }
 
 // IssuesCreateProjectParams defines parameters for IssuesCreateProject.
 type IssuesCreateProjectParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssuesIndexProjectPdfParams_Query defines parameters for IssuesIndexProjectPdf.
 type IssuesIndexProjectPdfParams_Query struct {
 	// AnySearchable The expression of any searchable of the issue.
 	// The expression format is "[operator]\<value>".
-	AnySearchable *string `json:"any_searchable,omitempty"`
+	AnySearchable *string `json:"any_searchable,omitempty" jsonschema:"description=The expression of any searchable of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AssignedToId The expression of assigned to id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToId *string `json:"assigned_to_id,omitempty"`
+	AssignedToId *string `json:"assigned_to_id,omitempty" jsonschema:"description=The expression of assigned to id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AssignedToRole The expression of assigned to role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AssignedToRole *string `json:"assigned_to_role,omitempty"`
+	AssignedToRole *string `json:"assigned_to_role,omitempty" jsonschema:"description=The expression of assigned to role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Attachment The expression of attachment of the issue.
 	// The expression format is "[operator]\<value>".
-	Attachment *string `json:"attachment,omitempty"`
+	Attachment *string `json:"attachment,omitempty" jsonschema:"description=The expression of attachment of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AttachmentDescription The expression of attachment description of the issue.
 	// The expression format is "[operator]\<value>".
-	AttachmentDescription *string `json:"attachment_description,omitempty"`
+	AttachmentDescription *string `json:"attachment_description,omitempty" jsonschema:"description=The expression of attachment description of the issue. The expression format is \"[operator]<value>\"."`
 
 	// AuthorGroup The expression of author group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorGroup *string `json:"author.group,omitempty"`
+	AuthorGroup *string `json:"author.group,omitempty" jsonschema:"description=The expression of author group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorRole The expression of author role of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorRole *string `json:"author.role,omitempty"`
+	AuthorRole *string `json:"author.role,omitempty" jsonschema:"description=The expression of author role of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// CategoryId The expression of category id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	CategoryId *string `json:"category_id,omitempty"`
+	CategoryId *string `json:"category_id,omitempty" jsonschema:"description=The expression of category id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ChildId The expression of child id of the issue.
 	// The expression format is "[operator]\<value>".
-	ChildId *string `json:"child_id,omitempty"`
+	ChildId *string `json:"child_id,omitempty" jsonschema:"description=The expression of child id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// ClosedOn The expression of closed_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	ClosedOn *string `json:"closed_on,omitempty"`
+	ClosedOn *string `json:"closed_on,omitempty" jsonschema:"description=The expression of closed_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// CreatedOn The expression of created_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Description The expression of description of the issue.
 	// The expression format is "\<operator>\<value>".
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The expression of description of the issue. The expression format is \"<operator><value>\"."`
 
 	// DoneRatio The expression of done ratio of the issue.
 	// The expression format is "[operator]\<value>".
-	DoneRatio *string `json:"done_ratio,omitempty"`
+	DoneRatio *string `json:"done_ratio,omitempty" jsonschema:"description=The expression of done ratio of the issue. The expression format is \"[operator]<value>\"."`
 
 	// DueDate The expression of due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	DueDate *string `json:"due_date,omitempty"`
+	DueDate *string `json:"due_date,omitempty" jsonschema:"description=The expression of due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// EstimatedHours The expression of estimated hours of the issue.
 	// The expression format is "[operator]\<value>".
-	EstimatedHours *string `json:"estimated_hours,omitempty"`
+	EstimatedHours *string `json:"estimated_hours,omitempty" jsonschema:"description=The expression of estimated hours of the issue. The expression format is \"[operator]<value>\"."`
 
 	// FixedVersionDueDate The expression of fixed version due date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty"`
+	FixedVersionDueDate *string `json:"fixed_version.due_date,omitempty" jsonschema:"description=The expression of fixed version due date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// FixedVersionStatus The expression of fixed version status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionStatus *string `json:"fixed_version.status,omitempty"`
+	FixedVersionStatus *string `json:"fixed_version.status,omitempty" jsonschema:"description=The expression of fixed version status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// FixedVersionId The expression of fixed version id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	FixedVersionId *string `json:"fixed_version_id,omitempty"`
+	FixedVersionId *string `json:"fixed_version_id,omitempty" jsonschema:"description=The expression of fixed version id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IsPrivate The expression of private id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IsPrivate *string `json:"is_private,omitempty"`
+	IsPrivate *string `json:"is_private,omitempty" jsonschema:"description=The expression of private id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the issue.
 	// The expression format is "[operator]\<value>".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// LastUpdatedBy The expression of last updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	LastUpdatedBy *string `json:"last_updated_by,omitempty"`
+	LastUpdatedBy *string `json:"last_updated_by,omitempty" jsonschema:"description=The expression of last updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// MemberOfGroup The expression of member of group of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	MemberOfGroup *string `json:"member_of_group,omitempty"`
+	MemberOfGroup *string `json:"member_of_group,omitempty" jsonschema:"description=The expression of member of group of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Notes The expression of notes of the issue.
 	// The expression format is "\<operator>\<value>".
-	Notes *string `json:"notes,omitempty"`
+	Notes *string `json:"notes,omitempty" jsonschema:"description=The expression of notes of the issue. The expression format is \"<operator><value>\"."`
 
 	// ParentId The expression of parent id of the issue.
 	// The expression format is "[operator]\<value>".
-	ParentId *string `json:"parent_id,omitempty"`
+	ParentId *string `json:"parent_id,omitempty" jsonschema:"description=The expression of parent id of the issue. The expression format is \"[operator]<value>\"."`
 
 	// PriorityId The expression of priority id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	PriorityId *string `json:"priority_id,omitempty"`
+	PriorityId *string `json:"priority_id,omitempty" jsonschema:"description=The expression of priority id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// RelationType The expression of relation type of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	RelationType *string `json:"relation_type,omitempty"`
+	RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The expression of relation type of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentTime The expression of spent time of the issue.
 	// The expression format is "[operator]\<value>".
-	SpentTime *string `json:"spent_time,omitempty"`
+	SpentTime *string `json:"spent_time,omitempty" jsonschema:"description=The expression of spent time of the issue. The expression format is \"[operator]<value>\"."`
 
 	// StartDate The expression of start date of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	StartDate *string `json:"start_date,omitempty"`
+	StartDate *string `json:"start_date,omitempty" jsonschema:"description=The expression of start date of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// StatusId The expression of status id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	StatusId *string `json:"status_id,omitempty"`
+	StatusId *string `json:"status_id,omitempty" jsonschema:"description=The expression of status id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Subject The expression of subject of the issue.
 	// The expression format is "\<operator>\<value>".
-	Subject *string `json:"subject,omitempty"`
+	Subject *string `json:"subject,omitempty" jsonschema:"description=The expression of subject of the issue. The expression format is \"<operator><value>\"."`
 
 	// SubprojectId The expression of sub project ID or identifier of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// TrackerId The expression of tracker id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	TrackerId *string `json:"tracker_id,omitempty"`
+	TrackerId *string `json:"tracker_id,omitempty" jsonschema:"description=The expression of tracker id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedBy The expression of updated by of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UpdatedBy *string `json:"updated_by,omitempty"`
+	UpdatedBy *string `json:"updated_by,omitempty" jsonschema:"description=The expression of updated by of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UpdatedOn The expression of updated_on of the issue.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	UpdatedOn *string `json:"updated_on,omitempty"`
+	UpdatedOn *string `json:"updated_on,omitempty" jsonschema:"description=The expression of updated_on of the issue. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// WatcherId The expression of watcher id of the issue.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	WatcherId            *string           `json:"watcher_id,omitempty"`
+	WatcherId            *string           `json:"watcher_id,omitempty" jsonschema:"description=The expression of watcher id of the issue. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -2900,41 +2900,41 @@ type IssuesIndexProjectPdfParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *IssuesIndexProjectPdfParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `allowed_statuses`, `attachments`, `changesets`, `children`, `journals`, `relations`, `watchers`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"allowed_statuses\"\\, \"attachments\"\\, \"changesets\"\\, \"children\"\\, \"journals\"\\, \"relations\"\\, \"watchers\".,enum=allowed_statuses,enum=attachments,enum=changesets,enum=children,enum=journals,enum=relations,enum=watchers"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GanttsShowProjectPdfParams defines parameters for GanttsShowProjectPdf.
 type GanttsShowProjectPdfParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // GanttsShowProjectPngParams defines parameters for GanttsShowProjectPng.
 type GanttsShowProjectPngParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // MembersIndexParams defines parameters for MembersIndex.
@@ -2944,22 +2944,22 @@ type MembersIndexParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // MembersCreateJSONBody defines parameters for MembersCreate.
@@ -2969,16 +2969,16 @@ type MembersCreateJSONBody struct {
 		RoleIds *[]int `json:"role_ids,omitempty"`
 
 		// UserId The ID of the user.
-		UserId  *int   `json:"user_id,omitempty"`
+		UserId  *int   `json:"user_id,omitempty" jsonschema:"description=The ID of the user."`
 		UserIds *[]int `json:"user_ids,omitempty"`
-	} `json:"membership,omitempty"`
+	} `json:"membership,omitempty" jsonschema:"description=A single membership."`
 }
 
 // MembersCreateParams defines parameters for MembersCreate.
 type MembersCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // NewsIndexProjectParams defines parameters for NewsIndexProject.
@@ -2988,22 +2988,22 @@ type NewsIndexProjectParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // NewsCreateProjectJSONBody defines parameters for NewsCreateProject.
@@ -3011,21 +3011,21 @@ type NewsCreateProjectJSONBody struct {
 	// News A single news.
 	News *struct {
 		// Description The description of the news.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 		// Summary The summary of the news.
-		Summary *string `json:"summary,omitempty"`
+		Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 		// Title The title of the news.
-		Title *string `json:"title,omitempty"`
-	} `json:"news,omitempty"`
+		Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
+	} `json:"news,omitempty" jsonschema:"description=A single news."`
 }
 
 // NewsCreateProjectParams defines parameters for NewsCreateProject.
 type NewsCreateProjectParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // SearchIndexProjectParams defines parameters for SearchIndexProject.
@@ -3035,48 +3035,48 @@ type SearchIndexProjectParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 
 	// Q Query string. Multiple values can be specified, separated by a space (" ").
-	Q     string `form:"q" json:"q"`
+	Q     string `form:"q" json:"q" jsonschema:"description=Query string. Multiple values can be specified\\, separated by a space (\" \")."`
 	Query *struct {
 		// AllWords matched all query strings or not.
-		AllWords *bool `json:"all_words,omitempty"`
+		AllWords *bool `json:"all_words,omitempty" jsonschema:"description=matched all query strings or not."`
 
 		// Attachments Filterd by description and attachment.
 		// - `0`: Seach only in description
 		// - `1`: Search by description and attachment
 		// - `only`: Search only in attachment
-		Attachments *string `json:"attachments,omitempty"`
+		Attachments *string `json:"attachments,omitempty" jsonschema:"description=Filterd by description and attachment. - \"0\": Seach only in description - \"1\": Search by description and attachment - \"only\": Search only in attachment"`
 
 		// Changesets Include changesets or not.
-		Changesets *bool `json:"changesets,omitempty"`
+		Changesets *bool `json:"changesets,omitempty" jsonschema:"description=Include changesets or not."`
 
 		// Documents Include documents or not.
-		Documents *bool `json:"documents,omitempty"`
+		Documents *bool `json:"documents,omitempty" jsonschema:"description=Include documents or not."`
 
 		// Issues Include issues or not.
-		Issues *bool `json:"issues,omitempty"`
+		Issues *bool `json:"issues,omitempty" jsonschema:"description=Include issues or not."`
 
 		// Messages Include messages or not.
-		Messages *bool `json:"messages,omitempty"`
+		Messages *bool `json:"messages,omitempty" jsonschema:"description=Include messages or not."`
 
 		// News Include news or not.
-		News *bool `json:"news,omitempty"`
+		News *bool `json:"news,omitempty" jsonschema:"description=Include news or not."`
 
 		// OpenIssues Filterd by open issues.
-		OpenIssues *bool `json:"open_issues,omitempty"`
+		OpenIssues *bool `json:"open_issues,omitempty" jsonschema:"description=Filterd by open issues."`
 
 		// Projects Include projects or not.
-		Projects *bool `json:"projects,omitempty"`
+		Projects *bool `json:"projects,omitempty" jsonschema:"description=Include projects or not."`
 
 		// Scope Search scope condition.
 		// Possible values are:
@@ -3084,105 +3084,105 @@ type SearchIndexProjectParams struct {
 		// - `my_project`: Search assigned projects
 		// - `bookmarks`: Search bookmarked projects
 		// - `subprojects`: Include subproject when project specified
-		Scope *string `json:"scope,omitempty"`
+		Scope *string `json:"scope,omitempty" jsonschema:"description=Search scope condition. Possible values are: - \"all\": Search all projects - \"my_project\": Search assigned projects - \"bookmarks\": Search bookmarked projects - \"subprojects\": Include subproject when project specified,enum=all,enum=my_project,enum=bookmarks,enum=subprojects"`
 
 		// TitlesOnly matched only title or not.
-		TitlesOnly *bool `json:"titles_only,omitempty"`
+		TitlesOnly *bool `json:"titles_only,omitempty" jsonschema:"description=matched only title or not."`
 
 		// WikiPages Include documents or not.
-		WikiPages *bool `json:"wiki_pages,omitempty"`
+		WikiPages *bool `json:"wiki_pages,omitempty" jsonschema:"description=Include documents or not."`
 	} `form:"query,omitempty" json:"query,omitempty"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogIndexProjectCsvParams_Query defines parameters for TimelogIndexProjectCsv.
 type TimelogIndexProjectCsvParams_Query struct {
 	// ActivityId The expression of activity id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ActivityId *string `json:"activity_id,omitempty"`
+	ActivityId *string `json:"activity_id,omitempty" jsonschema:"description=The expression of activity id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Hours The expression of hours of the time entry.
 	// The expression format is "\<operator>\<value>".
-	Hours *string `json:"hours,omitempty"`
+	Hours *string `json:"hours,omitempty" jsonschema:"description=The expression of hours of the time entry. The expression format is \"<operator><value>\"."`
 
 	// IssueCategoryId The expression of issue status id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueCategoryId *string `json:"issue.category_id,omitempty"`
+	IssueCategoryId *string `json:"issue.category_id,omitempty" jsonschema:"description=The expression of issue status id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueComments The expression of comments of the time entry.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	IssueComments *string `json:"issue.comments,omitempty"`
+	IssueComments *string `json:"issue.comments,omitempty" jsonschema:"description=The expression of comments of the time entry. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// IssueFixedVersionId The expression of issue fixed version id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueFixedVersionId *string `json:"issue.fixed_version_id,omitempty"`
+	IssueFixedVersionId *string `json:"issue.fixed_version_id,omitempty" jsonschema:"description=The expression of issue fixed version id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueParentId The expression of issue parent id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueParentId *string `json:"issue.parent_id,omitempty"`
+	IssueParentId *string `json:"issue.parent_id,omitempty" jsonschema:"description=The expression of issue parent id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueStatusId The expression of issue status id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueStatusId *string `json:"issue.status_id,omitempty"`
+	IssueStatusId *string `json:"issue.status_id,omitempty" jsonschema:"description=The expression of issue status id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueSubject The expression of issue subject of the time entry.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	IssueSubject *string `json:"issue.subject,omitempty"`
+	IssueSubject *string `json:"issue.subject,omitempty" jsonschema:"description=The expression of issue subject of the time entry. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// IssueTrackerId The expression of issue tracker id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueTrackerId *string `json:"issue.tracker_id,omitempty"`
+	IssueTrackerId *string `json:"issue.tracker_id,omitempty" jsonschema:"description=The expression of issue tracker id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentOn The expression of spent_on of the time entry.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	SpentOn *string `json:"spent_on,omitempty"`
+	SpentOn *string `json:"spent_on,omitempty" jsonschema:"description=The expression of spent_on of the time entry. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// SubprojectId The expression of sub project ID or identifier of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserGroup The expression of user group of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserGroup *string `json:"user.group,omitempty"`
+	UserGroup *string `json:"user.group,omitempty" jsonschema:"description=The expression of user group of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserRole The expression of user role of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserRole *string `json:"user.role,omitempty"`
+	UserRole *string `json:"user.role,omitempty" jsonschema:"description=The expression of user role of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserId The expression of user id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserId               *string           `json:"user_id,omitempty"`
+	UserId               *string           `json:"user_id,omitempty" jsonschema:"description=The expression of user id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -3192,91 +3192,91 @@ type TimelogIndexProjectCsvParams struct {
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogIndexProjectParams_Query defines parameters for TimelogIndexProject.
 type TimelogIndexProjectParams_Query struct {
 	// ActivityId The expression of activity id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ActivityId *string `json:"activity_id,omitempty"`
+	ActivityId *string `json:"activity_id,omitempty" jsonschema:"description=The expression of activity id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Hours The expression of hours of the time entry.
 	// The expression format is "\<operator>\<value>".
-	Hours *string `json:"hours,omitempty"`
+	Hours *string `json:"hours,omitempty" jsonschema:"description=The expression of hours of the time entry. The expression format is \"<operator><value>\"."`
 
 	// IssueCategoryId The expression of issue status id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueCategoryId *string `json:"issue.category_id,omitempty"`
+	IssueCategoryId *string `json:"issue.category_id,omitempty" jsonschema:"description=The expression of issue status id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueComments The expression of comments of the time entry.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	IssueComments *string `json:"issue.comments,omitempty"`
+	IssueComments *string `json:"issue.comments,omitempty" jsonschema:"description=The expression of comments of the time entry. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// IssueFixedVersionId The expression of issue fixed version id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueFixedVersionId *string `json:"issue.fixed_version_id,omitempty"`
+	IssueFixedVersionId *string `json:"issue.fixed_version_id,omitempty" jsonschema:"description=The expression of issue fixed version id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueParentId The expression of issue parent id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueParentId *string `json:"issue.parent_id,omitempty"`
+	IssueParentId *string `json:"issue.parent_id,omitempty" jsonschema:"description=The expression of issue parent id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueStatusId The expression of issue status id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueStatusId *string `json:"issue.status_id,omitempty"`
+	IssueStatusId *string `json:"issue.status_id,omitempty" jsonschema:"description=The expression of issue status id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueSubject The expression of issue subject of the time entry.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	IssueSubject *string `json:"issue.subject,omitempty"`
+	IssueSubject *string `json:"issue.subject,omitempty" jsonschema:"description=The expression of issue subject of the time entry. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// IssueTrackerId The expression of issue tracker id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueTrackerId *string `json:"issue.tracker_id,omitempty"`
+	IssueTrackerId *string `json:"issue.tracker_id,omitempty" jsonschema:"description=The expression of issue tracker id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentOn The expression of spent_on of the time entry.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	SpentOn *string `json:"spent_on,omitempty"`
+	SpentOn *string `json:"spent_on,omitempty" jsonschema:"description=The expression of spent_on of the time entry. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// SubprojectId The expression of sub project ID or identifier of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserGroup The expression of user group of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserGroup *string `json:"user.group,omitempty"`
+	UserGroup *string `json:"user.group,omitempty" jsonschema:"description=The expression of user group of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserRole The expression of user role of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserRole *string `json:"user.role,omitempty"`
+	UserRole *string `json:"user.role,omitempty" jsonschema:"description=The expression of user role of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserId The expression of user id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserId               *string           `json:"user_id,omitempty"`
+	UserId               *string           `json:"user_id,omitempty" jsonschema:"description=The expression of user id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -3287,23 +3287,23 @@ type TimelogIndexProjectParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *TimelogIndexProjectParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogCreateProjectJSONBody defines parameters for TimelogCreateProject.
@@ -3311,60 +3311,60 @@ type TimelogCreateProjectJSONBody struct {
 	// TimeEntry A single time entry.
 	TimeEntry *struct {
 		// ActivityId The activity ID of the time entry.
-		ActivityId *int `json:"activity_id,omitempty"`
+		ActivityId *int `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
 
 		// Comments The comments of the time entry.
-		Comments *string `json:"comments,omitempty"`
+		Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Hours The hours of the time entry.
-		Hours *float32 `json:"hours,omitempty"`
+		Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 		// IssueId The issue ID of the time entry.
-		IssueId *int `json:"issue_id,omitempty"`
+		IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
 
 		// ProjectId The project ID of the time entry.
-		ProjectId *int `json:"project_id,omitempty"`
+		ProjectId *int `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
 
 		// SpentOn The spent on of the time entry.
-		SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+		SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
 
 		// UserId The user ID of the time entry.
-		UserId *int `json:"user_id,omitempty"`
-	} `json:"time_entry,omitempty"`
+		UserId *int `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+	} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 }
 
 // TimelogCreateProjectParams defines parameters for TimelogCreateProject.
 type TimelogCreateProjectParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // VersionsIndexParams defines parameters for VersionsIndex.
 type VersionsIndexParams struct {
 	// Nometa If set to 1, the response will not include metadata information.
-	Nometa *int `form:"nometa,omitempty" json:"nometa,omitempty"`
+	Nometa *int `form:"nometa,omitempty" json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // VersionsCreateJSONBody defines parameters for VersionsCreate.
@@ -3372,33 +3372,33 @@ type VersionsCreateJSONBody struct {
 	// Version A single version.
 	Version *struct {
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// DefaultProjectVersion The default project version of the version.
-		DefaultProjectVersion *bool `json:"default_project_version,omitempty"`
+		DefaultProjectVersion *bool `json:"default_project_version,omitempty" jsonschema:"description=The default project version of the version."`
 
 		// Description The description of the version.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the version."`
 
 		// DueDate The due date of the version.
-		DueDate *openapi_types.Date `json:"due_date,omitempty"`
+		DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the version.,format=date"`
 
 		// EffectiveDate The effective date of the version.
-		EffectiveDate *openapi_types.Date `json:"effective_date,omitempty"`
+		EffectiveDate *openapi_types.Date `json:"effective_date,omitempty" jsonschema:"description=The effective date of the version.,format=date"`
 
 		// Name The name of the version.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 
 		// Sharing The sharing of the version. Possible values are:
 		// - `none`
@@ -3406,60 +3406,60 @@ type VersionsCreateJSONBody struct {
 		// - `hierarchy`
 		// - `tree`
 		// - `system`
-		Sharing *string `json:"sharing,omitempty"`
+		Sharing *string `json:"sharing,omitempty" jsonschema:"description=The sharing of the version. Possible values are: - \"none\" - \"descendants\" - \"hierarchy\" - \"tree\" - \"system\",enum=none,enum=descendants,enum=hierarchy,enum=tree,enum=system"`
 
 		// Status The status of the version. Possible values are:
 		// - `open`
 		// - `locked`
 		// - `closed`
-		Status *string `json:"status,omitempty"`
+		Status *string `json:"status,omitempty" jsonschema:"description=The status of the version. Possible values are: - \"open\" - \"locked\" - \"closed\",enum=open,enum=locked,enum=closed"`
 
 		// WikiPageTitle The wiki page title of the version.
-		WikiPageTitle *string `json:"wiki_page_title,omitempty"`
-	} `json:"version,omitempty"`
+		WikiPageTitle *string `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+	} `json:"version,omitempty" jsonschema:"description=A single version."`
 }
 
 // VersionsCreateParams defines parameters for VersionsCreate.
 type VersionsCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiShowRootParams defines parameters for WikiShowRoot.
 type WikiShowRootParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `attachments`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"attachments\".,enum=attachments"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiIndexParams defines parameters for WikiIndex.
 type WikiIndexParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiDestroyParams defines parameters for WikiDestroy.
 type WikiDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiShowParams defines parameters for WikiShow.
 type WikiShowParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `attachments`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"attachments\".,enum=attachments"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiUpdatePatchJSONBody defines parameters for WikiUpdatePatch.
@@ -3467,24 +3467,24 @@ type WikiUpdatePatchJSONBody struct {
 	// WikiPage A single wiki.
 	WikiPage *struct {
 		// Comments The comment of the wiki.
-		Comments *string `json:"comments,omitempty"`
+		Comments *string `json:"comments,omitempty" jsonschema:"description=The comment of the wiki."`
 
 		// ParentTitle The parent title of the wiki.
-		ParentTitle *string `json:"parent_title,omitempty"`
+		ParentTitle *string `json:"parent_title,omitempty" jsonschema:"description=The parent title of the wiki."`
 
 		// Text The text of the wiki.
-		Text *string `json:"text,omitempty"`
+		Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 		// Version The version of the wiki.
-		Version *int `json:"version,omitempty"`
-	} `json:"wiki_page,omitempty"`
+		Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+	} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 }
 
 // WikiUpdatePatchParams defines parameters for WikiUpdatePatch.
 type WikiUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiUpdatePutJSONBody defines parameters for WikiUpdatePut.
@@ -3492,79 +3492,79 @@ type WikiUpdatePutJSONBody struct {
 	// WikiPage A single wiki.
 	WikiPage *struct {
 		// Comments The comment of the wiki.
-		Comments *string `json:"comments,omitempty"`
+		Comments *string `json:"comments,omitempty" jsonschema:"description=The comment of the wiki."`
 
 		// ParentTitle The parent title of the wiki.
-		ParentTitle *string `json:"parent_title,omitempty"`
+		ParentTitle *string `json:"parent_title,omitempty" jsonschema:"description=The parent title of the wiki."`
 
 		// Text The text of the wiki.
-		Text *string `json:"text,omitempty"`
+		Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 		// Version The version of the wiki.
-		Version *int `json:"version,omitempty"`
-	} `json:"wiki_page,omitempty"`
+		Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+	} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 }
 
 // WikiUpdatePutParams defines parameters for WikiUpdatePut.
 type WikiUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiShowPdfParams defines parameters for WikiShowPdf.
 type WikiShowPdfParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `attachments`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"attachments\".,enum=attachments"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiShowTxtParams defines parameters for WikiShowTxt.
 type WikiShowTxtParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `attachments`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"attachments\".,enum=attachments"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiShowVersionParams defines parameters for WikiShowVersion.
 type WikiShowVersionParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `attachments`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"attachments\".,enum=attachments"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiShowVersionPdfParams defines parameters for WikiShowVersionPdf.
 type WikiShowVersionPdfParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `attachments`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"attachments\".,enum=attachments"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WikiShowVersionTxtParams defines parameters for WikiShowVersionTxt.
 type WikiShowVersionTxtParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `attachments`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"attachments\".,enum=attachments"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // QueriesIndexParams defines parameters for QueriesIndex.
@@ -3574,50 +3574,50 @@ type QueriesIndexParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueRelationsDestroyParams defines parameters for IssueRelationsDestroy.
 type IssueRelationsDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // IssueRelationsShowParams defines parameters for IssueRelationsShow.
 type IssueRelationsShowParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // RolesIndexParams defines parameters for RolesIndex.
 type RolesIndexParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // RolesShowParams defines parameters for RolesShow.
 type RolesShowParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // SearchIndexParams defines parameters for SearchIndex.
@@ -3627,48 +3627,48 @@ type SearchIndexParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 
 	// Q Query string. Multiple values can be specified, separated by a space (" ").
-	Q     string `form:"q" json:"q"`
+	Q     string `form:"q" json:"q" jsonschema:"description=Query string. Multiple values can be specified\\, separated by a space (\" \")."`
 	Query *struct {
 		// AllWords matched all query strings or not.
-		AllWords *bool `json:"all_words,omitempty"`
+		AllWords *bool `json:"all_words,omitempty" jsonschema:"description=matched all query strings or not."`
 
 		// Attachments Filterd by description and attachment.
 		// - `0`: Seach only in description
 		// - `1`: Search by description and attachment
 		// - `only`: Search only in attachment
-		Attachments *string `json:"attachments,omitempty"`
+		Attachments *string `json:"attachments,omitempty" jsonschema:"description=Filterd by description and attachment. - \"0\": Seach only in description - \"1\": Search by description and attachment - \"only\": Search only in attachment"`
 
 		// Changesets Include changesets or not.
-		Changesets *bool `json:"changesets,omitempty"`
+		Changesets *bool `json:"changesets,omitempty" jsonschema:"description=Include changesets or not."`
 
 		// Documents Include documents or not.
-		Documents *bool `json:"documents,omitempty"`
+		Documents *bool `json:"documents,omitempty" jsonschema:"description=Include documents or not."`
 
 		// Issues Include issues or not.
-		Issues *bool `json:"issues,omitempty"`
+		Issues *bool `json:"issues,omitempty" jsonschema:"description=Include issues or not."`
 
 		// Messages Include messages or not.
-		Messages *bool `json:"messages,omitempty"`
+		Messages *bool `json:"messages,omitempty" jsonschema:"description=Include messages or not."`
 
 		// News Include news or not.
-		News *bool `json:"news,omitempty"`
+		News *bool `json:"news,omitempty" jsonschema:"description=Include news or not."`
 
 		// OpenIssues Filterd by open issues.
-		OpenIssues *bool `json:"open_issues,omitempty"`
+		OpenIssues *bool `json:"open_issues,omitempty" jsonschema:"description=Filterd by open issues."`
 
 		// Projects Include projects or not.
-		Projects *bool `json:"projects,omitempty"`
+		Projects *bool `json:"projects,omitempty" jsonschema:"description=Include projects or not."`
 
 		// Scope Search scope condition.
 		// Possible values are:
@@ -3676,105 +3676,105 @@ type SearchIndexParams struct {
 		// - `my_project`: Search assigned projects
 		// - `bookmarks`: Search bookmarked projects
 		// - `subprojects`: Include subproject when project specified
-		Scope *string `json:"scope,omitempty"`
+		Scope *string `json:"scope,omitempty" jsonschema:"description=Search scope condition. Possible values are: - \"all\": Search all projects - \"my_project\": Search assigned projects - \"bookmarks\": Search bookmarked projects - \"subprojects\": Include subproject when project specified,enum=all,enum=my_project,enum=bookmarks,enum=subprojects"`
 
 		// TitlesOnly matched only title or not.
-		TitlesOnly *bool `json:"titles_only,omitempty"`
+		TitlesOnly *bool `json:"titles_only,omitempty" jsonschema:"description=matched only title or not."`
 
 		// WikiPages Include documents or not.
-		WikiPages *bool `json:"wiki_pages,omitempty"`
+		WikiPages *bool `json:"wiki_pages,omitempty" jsonschema:"description=Include documents or not."`
 	} `form:"query,omitempty" json:"query,omitempty"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogIndexCsvParams_Query defines parameters for TimelogIndexCsv.
 type TimelogIndexCsvParams_Query struct {
 	// ActivityId The expression of activity id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ActivityId *string `json:"activity_id,omitempty"`
+	ActivityId *string `json:"activity_id,omitempty" jsonschema:"description=The expression of activity id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Hours The expression of hours of the time entry.
 	// The expression format is "\<operator>\<value>".
-	Hours *string `json:"hours,omitempty"`
+	Hours *string `json:"hours,omitempty" jsonschema:"description=The expression of hours of the time entry. The expression format is \"<operator><value>\"."`
 
 	// IssueCategoryId The expression of issue status id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueCategoryId *string `json:"issue.category_id,omitempty"`
+	IssueCategoryId *string `json:"issue.category_id,omitempty" jsonschema:"description=The expression of issue status id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueComments The expression of comments of the time entry.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	IssueComments *string `json:"issue.comments,omitempty"`
+	IssueComments *string `json:"issue.comments,omitempty" jsonschema:"description=The expression of comments of the time entry. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// IssueFixedVersionId The expression of issue fixed version id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueFixedVersionId *string `json:"issue.fixed_version_id,omitempty"`
+	IssueFixedVersionId *string `json:"issue.fixed_version_id,omitempty" jsonschema:"description=The expression of issue fixed version id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueParentId The expression of issue parent id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueParentId *string `json:"issue.parent_id,omitempty"`
+	IssueParentId *string `json:"issue.parent_id,omitempty" jsonschema:"description=The expression of issue parent id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueStatusId The expression of issue status id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueStatusId *string `json:"issue.status_id,omitempty"`
+	IssueStatusId *string `json:"issue.status_id,omitempty" jsonschema:"description=The expression of issue status id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueSubject The expression of issue subject of the time entry.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	IssueSubject *string `json:"issue.subject,omitempty"`
+	IssueSubject *string `json:"issue.subject,omitempty" jsonschema:"description=The expression of issue subject of the time entry. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// IssueTrackerId The expression of issue tracker id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueTrackerId *string `json:"issue.tracker_id,omitempty"`
+	IssueTrackerId *string `json:"issue.tracker_id,omitempty" jsonschema:"description=The expression of issue tracker id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentOn The expression of spent_on of the time entry.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	SpentOn *string `json:"spent_on,omitempty"`
+	SpentOn *string `json:"spent_on,omitempty" jsonschema:"description=The expression of spent_on of the time entry. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// SubprojectId The expression of sub project ID or identifier of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserGroup The expression of user group of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserGroup *string `json:"user.group,omitempty"`
+	UserGroup *string `json:"user.group,omitempty" jsonschema:"description=The expression of user group of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserRole The expression of user role of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserRole *string `json:"user.role,omitempty"`
+	UserRole *string `json:"user.role,omitempty" jsonschema:"description=The expression of user role of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserId The expression of user id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserId               *string           `json:"user_id,omitempty"`
+	UserId               *string           `json:"user_id,omitempty" jsonschema:"description=The expression of user id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -3784,91 +3784,91 @@ type TimelogIndexCsvParams struct {
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogIndexParams_Query defines parameters for TimelogIndex.
 type TimelogIndexParams_Query struct {
 	// ActivityId The expression of activity id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ActivityId *string `json:"activity_id,omitempty"`
+	ActivityId *string `json:"activity_id,omitempty" jsonschema:"description=The expression of activity id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// AuthorId The expression of author id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthorId *string `json:"author_id,omitempty"`
+	AuthorId *string `json:"author_id,omitempty" jsonschema:"description=The expression of author id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// Hours The expression of hours of the time entry.
 	// The expression format is "\<operator>\<value>".
-	Hours *string `json:"hours,omitempty"`
+	Hours *string `json:"hours,omitempty" jsonschema:"description=The expression of hours of the time entry. The expression format is \"<operator><value>\"."`
 
 	// IssueCategoryId The expression of issue status id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueCategoryId *string `json:"issue.category_id,omitempty"`
+	IssueCategoryId *string `json:"issue.category_id,omitempty" jsonschema:"description=The expression of issue status id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueComments The expression of comments of the time entry.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	IssueComments *string `json:"issue.comments,omitempty"`
+	IssueComments *string `json:"issue.comments,omitempty" jsonschema:"description=The expression of comments of the time entry. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// IssueFixedVersionId The expression of issue fixed version id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueFixedVersionId *string `json:"issue.fixed_version_id,omitempty"`
+	IssueFixedVersionId *string `json:"issue.fixed_version_id,omitempty" jsonschema:"description=The expression of issue fixed version id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueParentId The expression of issue parent id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueParentId *string `json:"issue.parent_id,omitempty"`
+	IssueParentId *string `json:"issue.parent_id,omitempty" jsonschema:"description=The expression of issue parent id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueStatusId The expression of issue status id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueStatusId *string `json:"issue.status_id,omitempty"`
+	IssueStatusId *string `json:"issue.status_id,omitempty" jsonschema:"description=The expression of issue status id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueSubject The expression of issue subject of the time entry.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	IssueSubject *string `json:"issue.subject,omitempty"`
+	IssueSubject *string `json:"issue.subject,omitempty" jsonschema:"description=The expression of issue subject of the time entry. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// IssueTrackerId The expression of issue tracker id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueTrackerId *string `json:"issue.tracker_id,omitempty"`
+	IssueTrackerId *string `json:"issue.tracker_id,omitempty" jsonschema:"description=The expression of issue tracker id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// IssueId The expression of issue id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IssueId *string `json:"issue_id,omitempty"`
+	IssueId *string `json:"issue_id,omitempty" jsonschema:"description=The expression of issue id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectStatus The expression of project status of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectStatus *string `json:"project.status,omitempty"`
+	ProjectStatus *string `json:"project.status,omitempty" jsonschema:"description=The expression of project status of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// ProjectId The expression of project ID or identifier of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	ProjectId *string `json:"project_id,omitempty"`
+	ProjectId *string `json:"project_id,omitempty" jsonschema:"description=The expression of project ID or identifier of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// SpentOn The expression of spent_on of the time entry.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	SpentOn *string `json:"spent_on,omitempty"`
+	SpentOn *string `json:"spent_on,omitempty" jsonschema:"description=The expression of spent_on of the time entry. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// SubprojectId The expression of sub project ID or identifier of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	SubprojectId *string `json:"subproject_id,omitempty"`
+	SubprojectId *string `json:"subproject_id,omitempty" jsonschema:"description=The expression of sub project ID or identifier of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserGroup The expression of user group of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserGroup *string `json:"user.group,omitempty"`
+	UserGroup *string `json:"user.group,omitempty" jsonschema:"description=The expression of user group of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserRole The expression of user role of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserRole *string `json:"user.role,omitempty"`
+	UserRole *string `json:"user.role,omitempty" jsonschema:"description=The expression of user role of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// UserId The expression of user id of the time entry.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	UserId               *string           `json:"user_id,omitempty"`
+	UserId               *string           `json:"user_id,omitempty" jsonschema:"description=The expression of user id of the time entry. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -3879,23 +3879,23 @@ type TimelogIndexParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *TimelogIndexParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogCreateJSONBody defines parameters for TimelogCreate.
@@ -3903,61 +3903,61 @@ type TimelogCreateJSONBody struct {
 	// TimeEntry A single time entry.
 	TimeEntry *struct {
 		// ActivityId The activity ID of the time entry.
-		ActivityId *int `json:"activity_id,omitempty"`
+		ActivityId *int `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
 
 		// Comments The comments of the time entry.
-		Comments *string `json:"comments,omitempty"`
+		Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Hours The hours of the time entry.
-		Hours *float32 `json:"hours,omitempty"`
+		Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 		// IssueId The issue ID of the time entry.
-		IssueId *int `json:"issue_id,omitempty"`
+		IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
 
 		// ProjectId The project ID of the time entry.
-		ProjectId *int `json:"project_id,omitempty"`
+		ProjectId *int `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
 
 		// SpentOn The spent on of the time entry.
-		SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+		SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
 
 		// UserId The user ID of the time entry.
-		UserId *int `json:"user_id,omitempty"`
-	} `json:"time_entry,omitempty"`
+		UserId *int `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+	} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 }
 
 // TimelogCreateParams defines parameters for TimelogCreate.
 type TimelogCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogDestroyParams defines parameters for TimelogDestroy.
 type TimelogDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogShowParams defines parameters for TimelogShow.
 type TimelogShowParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogUpdatePatchJSONBody defines parameters for TimelogUpdatePatch.
@@ -3965,47 +3965,47 @@ type TimelogUpdatePatchJSONBody struct {
 	// TimeEntry A single time entry.
 	TimeEntry *struct {
 		// ActivityId The activity ID of the time entry.
-		ActivityId *int `json:"activity_id,omitempty"`
+		ActivityId *int `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
 
 		// Comments The comments of the time entry.
-		Comments *string `json:"comments,omitempty"`
+		Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Hours The hours of the time entry.
-		Hours *float32 `json:"hours,omitempty"`
+		Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 		// IssueId The issue ID of the time entry.
-		IssueId *int `json:"issue_id,omitempty"`
+		IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
 
 		// ProjectId The project ID of the time entry.
-		ProjectId *int `json:"project_id,omitempty"`
+		ProjectId *int `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
 
 		// SpentOn The spent on of the time entry.
-		SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+		SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
 
 		// UserId The user ID of the time entry.
-		UserId *int `json:"user_id,omitempty"`
-	} `json:"time_entry,omitempty"`
+		UserId *int `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+	} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 }
 
 // TimelogUpdatePatchParams defines parameters for TimelogUpdatePatch.
 type TimelogUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TimelogUpdatePutJSONBody defines parameters for TimelogUpdatePut.
@@ -4013,67 +4013,67 @@ type TimelogUpdatePutJSONBody struct {
 	// TimeEntry A single time entry.
 	TimeEntry *struct {
 		// ActivityId The activity ID of the time entry.
-		ActivityId *int `json:"activity_id,omitempty"`
+		ActivityId *int `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
 
 		// Comments The comments of the time entry.
-		Comments *string `json:"comments,omitempty"`
+		Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Hours The hours of the time entry.
-		Hours *float32 `json:"hours,omitempty"`
+		Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 		// IssueId The issue ID of the time entry.
-		IssueId *int `json:"issue_id,omitempty"`
+		IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
 
 		// ProjectId The project ID of the time entry.
-		ProjectId *int `json:"project_id,omitempty"`
+		ProjectId *int `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
 
 		// SpentOn The spent on of the time entry.
-		SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+		SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
 
 		// UserId The user ID of the time entry.
-		UserId *int `json:"user_id,omitempty"`
-	} `json:"time_entry,omitempty"`
+		UserId *int `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+	} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 }
 
 // TimelogUpdatePutParams defines parameters for TimelogUpdatePut.
 type TimelogUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // TrackersIndexParams defines parameters for TrackersIndex.
 type TrackersIndexParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // AttachmentsUploadParams defines parameters for AttachmentsUpload.
 type AttachmentsUploadParams struct {
 	// Filename The filename of the attachment.
-	Filename *string `form:"filename,omitempty" json:"filename,omitempty"`
+	Filename *string `form:"filename,omitempty" json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `form:"content_type,omitempty" json:"content_type,omitempty"`
+	ContentType *string `form:"content_type,omitempty" json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // UsersIndexCsvParams_Query defines parameters for UsersIndexCsv.
@@ -4087,52 +4087,52 @@ type UsersIndexCsvParams_Query struct {
 	// examples:
 	// - administrator: `1`
 	// - non administrator: `0`
-	Admin *string `json:"admin,omitempty"`
+	Admin *string `json:"admin,omitempty" jsonschema:"description=The expression of administrative of the user. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": no - \"1\": yes  examples: - administrator: \"1\" - non administrator: \"0\""`
 
 	// AuthSourceId The expression of auth source id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthSourceId *string `json:"auth_source_id,omitempty"`
+	AuthSourceId *string `json:"auth_source_id,omitempty" jsonschema:"description=The expression of auth source id of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// CreatedOn The expression of created_on of the user.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the user. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Firstname The expression of firstname of the user.
 	// The expression format is "\<operator>\<value>".
-	Firstname *string `json:"firstname,omitempty"`
+	Firstname *string `json:"firstname,omitempty" jsonschema:"description=The expression of firstname of the user. The expression format is \"<operator><value>\"."`
 
 	// IsMemberOfGroup The expression of group id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IsMemberOfGroup *string `json:"is_member_of_group,omitempty"`
+	IsMemberOfGroup *string `json:"is_member_of_group,omitempty" jsonschema:"description=The expression of group id of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// LastLoginOn The expression of last_login_on of the user.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	LastLoginOn *string `json:"last_login_on,omitempty"`
+	LastLoginOn *string `json:"last_login_on,omitempty" jsonschema:"description=The expression of last_login_on of the user. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Lastname The expression of lastname of the user.
 	// The expression format is "\<operator>\<value>".
-	Lastname *string `json:"lastname,omitempty"`
+	Lastname *string `json:"lastname,omitempty" jsonschema:"description=The expression of lastname of the user. The expression format is \"<operator><value>\"."`
 
 	// Login The expression of login of the user.
 	// The expression format is "\<operator>\<value>".
-	Login *string `json:"login,omitempty"`
+	Login *string `json:"login,omitempty" jsonschema:"description=The expression of login of the user. The expression format is \"<operator><value>\"."`
 
 	// Mail The expression of mail of the user.
 	// The expression format is "\<operator>\<value>".
-	Mail *string `json:"mail,omitempty"`
+	Mail *string `json:"mail,omitempty" jsonschema:"description=The expression of mail of the user. The expression format is \"<operator><value>\"."`
 
 	// Name The expression of name of the user.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	Name *string `json:"name,omitempty"`
+	Name *string `json:"name,omitempty" jsonschema:"description=The expression of name of the user. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// Status The expression of status of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
@@ -4144,11 +4144,11 @@ type UsersIndexCsvParams_Query struct {
 	// examples:
 	// - active or locked: `1|3`
 	// - not locked: `!3`
-	Status *string `json:"status,omitempty"`
+	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"2\": registered - \"3\": locked  examples: - active or locked: \"1|3\" - not locked: \"!3\""`
 
 	// TwofaScheme The expression of 2FA scheme id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	TwofaScheme          *string           `json:"twofa_scheme,omitempty"`
+	TwofaScheme          *string           `json:"twofa_scheme,omitempty" jsonschema:"description=The expression of 2FA scheme id of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -4159,27 +4159,27 @@ type UsersIndexCsvParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *UsersIndexCsvParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `auth_source`, `memberships`, `groups`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"auth_source\"\\, \"memberships\"\\, \"groups\".,enum=auth_source,enum=memberships,enum=groups"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // UsersIndexParams_Query defines parameters for UsersIndex.
@@ -4193,52 +4193,52 @@ type UsersIndexParams_Query struct {
 	// examples:
 	// - administrator: `1`
 	// - non administrator: `0`
-	Admin *string `json:"admin,omitempty"`
+	Admin *string `json:"admin,omitempty" jsonschema:"description=The expression of administrative of the user. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": no - \"1\": yes  examples: - administrator: \"1\" - non administrator: \"0\""`
 
 	// AuthSourceId The expression of auth source id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	AuthSourceId *string `json:"auth_source_id,omitempty"`
+	AuthSourceId *string `json:"auth_source_id,omitempty" jsonschema:"description=The expression of auth source id of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// CreatedOn The expression of created_on of the user.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	CreatedOn *string `json:"created_on,omitempty"`
+	CreatedOn *string `json:"created_on,omitempty" jsonschema:"description=The expression of created_on of the user. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Firstname The expression of firstname of the user.
 	// The expression format is "\<operator>\<value>".
-	Firstname *string `json:"firstname,omitempty"`
+	Firstname *string `json:"firstname,omitempty" jsonschema:"description=The expression of firstname of the user. The expression format is \"<operator><value>\"."`
 
 	// IsMemberOfGroup The expression of group id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	IsMemberOfGroup *string `json:"is_member_of_group,omitempty"`
+	IsMemberOfGroup *string `json:"is_member_of_group,omitempty" jsonschema:"description=The expression of group id of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 
 	// LastLoginOn The expression of last_login_on of the user.
 	// The expression format is "[operator]\<value>".
 	// examples:
 	// - last week : `lw`
 	// - before "2025/7/12": `<=2025-07-12`
-	LastLoginOn *string `json:"last_login_on,omitempty"`
+	LastLoginOn *string `json:"last_login_on,omitempty" jsonschema:"description=The expression of last_login_on of the user. The expression format is \"[operator]<value>\". examples: - last week : \"lw\" - before \"2025/7/12\": \"<=2025-07-12\""`
 
 	// Lastname The expression of lastname of the user.
 	// The expression format is "\<operator>\<value>".
-	Lastname *string `json:"lastname,omitempty"`
+	Lastname *string `json:"lastname,omitempty" jsonschema:"description=The expression of lastname of the user. The expression format is \"<operator><value>\"."`
 
 	// Login The expression of login of the user.
 	// The expression format is "\<operator>\<value>".
-	Login *string `json:"login,omitempty"`
+	Login *string `json:"login,omitempty" jsonschema:"description=The expression of login of the user. The expression format is \"<operator><value>\"."`
 
 	// Mail The expression of mail of the user.
 	// The expression format is "\<operator>\<value>".
-	Mail *string `json:"mail,omitempty"`
+	Mail *string `json:"mail,omitempty" jsonschema:"description=The expression of mail of the user. The expression format is \"<operator><value>\"."`
 
 	// Name The expression of name of the user.
 	// The expression format is "\<operator>\<value>".
 	// examples:
 	// - contains "test": `~test`
 	// - not contains "test": `!~test`
-	Name *string `json:"name,omitempty"`
+	Name *string `json:"name,omitempty" jsonschema:"description=The expression of name of the user. The expression format is \"<operator><value>\". examples: - contains \"test\": \"~test\" - not contains \"test\": \"!~test\""`
 
 	// Status The expression of status of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
@@ -4250,11 +4250,11 @@ type UsersIndexParams_Query struct {
 	// examples:
 	// - active or locked: `1|3`
 	// - not locked: `!3`
-	Status *string `json:"status,omitempty"`
+	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"2\": registered - \"3\": locked  examples: - active or locked: \"1|3\" - not locked: \"!3\""`
 
 	// TwofaScheme The expression of 2FA scheme id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
-	TwofaScheme          *string           `json:"twofa_scheme,omitempty"`
+	TwofaScheme          *string           `json:"twofa_scheme,omitempty" jsonschema:"description=The expression of 2FA scheme id of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\"."`
 	AdditionalProperties map[string]string `json:"-"`
 }
 
@@ -4265,27 +4265,27 @@ type UsersIndexParams struct {
 	Pagination *struct {
 		// Limit The number of items to be present in the response.
 		// If not specified, it defaults to 25.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The number of items to be present in the response. If not specified\\, it defaults to 25.,default=25,maximum=100"`
 
 		// Nometa If set to 1, the response will not include pagination information.
-		Nometa *int `json:"nometa,omitempty"`
+		Nometa *int `json:"nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include pagination information.,enum=1"`
 
 		// Offset The offset of the first object to retrieve
 		// If not specified, it defaults to 0.
-		Offset *int `json:"offset,omitempty"`
-	} `form:"pagination,omitempty" json:"pagination,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first object to retrieve If not specified\\, it defaults to 0.,default=0"`
+	} `form:"pagination,omitempty" json:"pagination,omitempty" jsonschema:"description=Pagination parameters to control the number of items returned in the response. If not specified\\, it defaults to 25 items per page."`
 	Query *UsersIndexParams_Query `form:"query,omitempty" json:"query,omitempty"`
 
 	// Include fetch associated data (optional).
 	// Possible values: `auth_source`, `memberships`, `groups`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"auth_source\"\\, \"memberships\"\\, \"groups\".,enum=auth_source,enum=memberships,enum=groups"`
 
 	// XRedmineNometa If set to 1, the response will not include metadata information.
-	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty"`
+	XRedmineNometa *int `json:"X-Redmine-Nometa,omitempty" jsonschema:"description=If set to 1\\, the response will not include metadata information.,enum=1"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // UsersCreateJSONBody defines parameters for UsersCreate.
@@ -4295,19 +4295,19 @@ type UsersCreateJSONBody struct {
 		// AutoWatchOn The auto watch setting for the user. Possible values are:
 		// - `issue_created`
 		// - `issue_contributed_to`
-		AutoWatchOn *[]string `json:"auto_watch_on,omitempty"`
+		AutoWatchOn *[]string `json:"auto_watch_on,omitempty" jsonschema:"description=The auto watch setting for the user. Possible values are: - \"issue_created\" - \"issue_contributed_to\""`
 
 		// CommentsSorting The sorting order of comments. Possible values are `asc` and `desc`.
-		CommentsSorting *string `json:"comments_sorting,omitempty"`
+		CommentsSorting *string `json:"comments_sorting,omitempty" jsonschema:"description=The sorting order of comments. Possible values are \"asc\" and \"desc\".,enum=asc,enum=desc"`
 
 		// DefaultIssueQuery The ID of the default issue query for the user.
-		DefaultIssueQuery *int `json:"default_issue_query,omitempty"`
+		DefaultIssueQuery *int `json:"default_issue_query,omitempty" jsonschema:"description=The ID of the default issue query for the user."`
 
 		// DefaultProjectQuery The ID of the default project query for the user.
-		DefaultProjectQuery *int `json:"default_project_query,omitempty"`
+		DefaultProjectQuery *int `json:"default_project_query,omitempty" jsonschema:"description=The ID of the default project query for the user."`
 
 		// HideMail Whether the user's email should be hidden.
-		HideMail *bool `json:"hide_mail,omitempty"`
+		HideMail *bool `json:"hide_mail,omitempty" jsonschema:"description=Whether the user's email should be hidden."`
 
 		// HistoryDefaultTab The default tab for the user's history. Possible values are:
 		// - `notes`
@@ -4316,79 +4316,79 @@ type UsersCreateJSONBody struct {
 		// - `time_entries`
 		// - `changesets`
 		// - `last_tab_visited`
-		HistoryDefaultTab *string `json:"history_default_tab,omitempty"`
+		HistoryDefaultTab *string `json:"history_default_tab,omitempty" jsonschema:"description=The default tab for the user's history. Possible values are: - \"notes\" - \"history\" - \"properties\" - \"time_entries\" - \"changesets\" - \"last_tab_visited\",enum=notes,enum=history,enum=properties,enum=time_entries,enum=changesets,enum=last_tab_visited"`
 
 		// NoSelfNotified Whether the user should not be notified of their own actions.
-		NoSelfNotified *bool `json:"no_self_notified,omitempty"`
+		NoSelfNotified *bool `json:"no_self_notified,omitempty" jsonschema:"description=Whether the user should not be notified of their own actions."`
 
 		// NotifyAboutHighPriorityIssues Whether the user should be notified about high priority issues.
-		NotifyAboutHighPriorityIssues *bool `json:"notify_about_high_priority_issues,omitempty"`
+		NotifyAboutHighPriorityIssues *bool `json:"notify_about_high_priority_issues,omitempty" jsonschema:"description=Whether the user should be notified about high priority issues."`
 
 		// RecentlyUsedProjects The number of recently used projects to display.
-		RecentlyUsedProjects *int `json:"recently_used_projects,omitempty"`
+		RecentlyUsedProjects *int `json:"recently_used_projects,omitempty" jsonschema:"description=The number of recently used projects to display."`
 
 		// TextareaFont The font used in text areas. Possible values are:
 		// - `monospace`
 		// - `proportional`
-		TextareaFont *string `json:"textarea_font,omitempty"`
+		TextareaFont *string `json:"textarea_font,omitempty" jsonschema:"description=The font used in text areas. Possible values are: - \"monospace\" - \"proportional\",enum=monospace,enum=proportional"`
 
 		// TimeZone The time zone of the user.
-		TimeZone *string `json:"time_zone,omitempty"`
+		TimeZone *string `json:"time_zone,omitempty" jsonschema:"description=The time zone of the user."`
 
 		// ToolbarLanguageOptions The language options for the toolbar.
-		ToolbarLanguageOptions *string `json:"toolbar_language_options,omitempty"`
+		ToolbarLanguageOptions *string `json:"toolbar_language_options,omitempty" jsonschema:"description=The language options for the toolbar."`
 
 		// WarnOnLeavingUnsaved Whether to warn the user when leaving a page with unsaved changes. Possible values are:
 		// - `0`: Disable
 		// - `1`: Enable
-		WarnOnLeavingUnsaved *string `json:"warn_on_leaving_unsaved,omitempty"`
-	} `json:"pref,omitempty"`
+		WarnOnLeavingUnsaved *string `json:"warn_on_leaving_unsaved,omitempty" jsonschema:"description=Whether to warn the user when leaving a page with unsaved changes. Possible values are: - \"0\": Disable - \"1\": Enable"`
+	} `json:"pref,omitempty" jsonschema:"description=The preferences of the user."`
 
 	// SendInformation If set to true, an email will be sent to the user with their login information.
-	SendInformation *bool `json:"send_information,omitempty"`
+	SendInformation *bool `json:"send_information,omitempty" jsonschema:"description=If set to true\\, an email will be sent to the user with their login information."`
 
 	// User A single user.
 	User *struct {
 		// Admin The administrative of the user.
-		Admin *bool `json:"admin,omitempty"`
+		Admin *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 
 		// AuthSourceId The auth source id of the user.
-		AuthSourceId *int `json:"auth_source_id,omitempty"`
+		AuthSourceId *int `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Firstname The firstname of the user.
-		Firstname *string `json:"firstname,omitempty"`
+		Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 
 		// GeneratePassword The generate password of the user.
-		GeneratePassword *bool `json:"generate_password,omitempty"`
+		GeneratePassword *bool `json:"generate_password,omitempty" jsonschema:"description=The generate password of the user."`
 
 		// GroupIds The group id of the user.
-		GroupIds *[]int `json:"group_ids,omitempty"`
+		GroupIds *[]int `json:"group_ids,omitempty" jsonschema:"description=The group id of the user."`
 
 		// Language The language of the user.
-		Language *string `json:"language,omitempty"`
+		Language *string `json:"language,omitempty" jsonschema:"description=The language of the user."`
 
 		// Lastname The lastname of the user.
-		Lastname *string `json:"lastname,omitempty"`
+		Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 		// Login The login of the user.
-		Login *string `json:"login,omitempty"`
+		Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 		// Mail The mail address of the user.
-		Mail *string `json:"mail,omitempty"`
+		Mail *string `json:"mail,omitempty" jsonschema:"description=The mail address of the user."`
 
 		// MailNotification The mail notification of the user. Possible values are:
 		// - `all`: all events
@@ -4397,49 +4397,49 @@ type UsersCreateJSONBody struct {
 		// - `only_assigned`: only events assigned to the user
 		// - `only_owner`: only events owned by the user
 		// - `none`: no events
-		MailNotification *string `json:"mail_notification,omitempty"`
+		MailNotification *string `json:"mail_notification,omitempty" jsonschema:"description=The mail notification of the user. Possible values are: - \"all\": all events - \"selected\": only selected events - \"only_my_events\": only events related to the user - \"only_assigned\": only events assigned to the user - \"only_owner\": only events owned by the user - \"none\": no events,enum=all,enum=selected,enum=only_my_events,enum=only_assigned,enum=only_owner,enum=none"`
 
 		// MustChangePasswd The must change passwd of the user.
-		MustChangePasswd *bool `json:"must_change_passwd,omitempty"`
+		MustChangePasswd *bool `json:"must_change_passwd,omitempty" jsonschema:"description=The must change passwd of the user."`
 
 		// NotifiedProjectIds The notified project ID or identifier of the user.
-		NotifiedProjectIds *[]string `json:"notified_project_ids,omitempty"`
+		NotifiedProjectIds *[]string `json:"notified_project_ids,omitempty" jsonschema:"description=The notified project ID or identifier of the user."`
 
 		// Password The password of the user.
-		Password *string `json:"password,omitempty"`
+		Password *string `json:"password,omitempty" jsonschema:"description=The password of the user."`
 
 		// Status The status of the user. Possible values are:
 		// - `0`: anonymous
 		// - `1`: active
 		// - `2`: registered
 		// - `3`: locked
-		Status *int `json:"status,omitempty"`
-	} `json:"user,omitempty"`
+		Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked,enum=0,enum=1,enum=2,enum=3"`
+	} `json:"user,omitempty" jsonschema:"description=A single user."`
 }
 
 // UsersCreateParams defines parameters for UsersCreate.
 type UsersCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // UsersDestroyParams defines parameters for UsersDestroy.
 type UsersDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // UsersShowParams defines parameters for UsersShow.
 type UsersShowParams struct {
 	// Include fetch associated data (optional).
 	// Possible values: `auth_source`, `memberships`, `groups`.
-	Include *[]string `form:"include,omitempty" json:"include,omitempty"`
+	Include *[]string `form:"include,omitempty" json:"include,omitempty" jsonschema:"description=fetch associated data (optional). Possible values: \"auth_source\"\\, \"memberships\"\\, \"groups\".,enum=auth_source,enum=memberships,enum=groups"`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // UsersUpdatePatchJSONBody defines parameters for UsersUpdatePatch.
@@ -4449,19 +4449,19 @@ type UsersUpdatePatchJSONBody struct {
 		// AutoWatchOn The auto watch setting for the user. Possible values are:
 		// - `issue_created`
 		// - `issue_contributed_to`
-		AutoWatchOn *[]string `json:"auto_watch_on,omitempty"`
+		AutoWatchOn *[]string `json:"auto_watch_on,omitempty" jsonschema:"description=The auto watch setting for the user. Possible values are: - \"issue_created\" - \"issue_contributed_to\""`
 
 		// CommentsSorting The sorting order of comments. Possible values are `asc` and `desc`.
-		CommentsSorting *string `json:"comments_sorting,omitempty"`
+		CommentsSorting *string `json:"comments_sorting,omitempty" jsonschema:"description=The sorting order of comments. Possible values are \"asc\" and \"desc\".,enum=asc,enum=desc"`
 
 		// DefaultIssueQuery The ID of the default issue query for the user.
-		DefaultIssueQuery *int `json:"default_issue_query,omitempty"`
+		DefaultIssueQuery *int `json:"default_issue_query,omitempty" jsonschema:"description=The ID of the default issue query for the user."`
 
 		// DefaultProjectQuery The ID of the default project query for the user.
-		DefaultProjectQuery *int `json:"default_project_query,omitempty"`
+		DefaultProjectQuery *int `json:"default_project_query,omitempty" jsonschema:"description=The ID of the default project query for the user."`
 
 		// HideMail Whether the user's email should be hidden.
-		HideMail *bool `json:"hide_mail,omitempty"`
+		HideMail *bool `json:"hide_mail,omitempty" jsonschema:"description=Whether the user's email should be hidden."`
 
 		// HistoryDefaultTab The default tab for the user's history. Possible values are:
 		// - `notes`
@@ -4470,79 +4470,79 @@ type UsersUpdatePatchJSONBody struct {
 		// - `time_entries`
 		// - `changesets`
 		// - `last_tab_visited`
-		HistoryDefaultTab *string `json:"history_default_tab,omitempty"`
+		HistoryDefaultTab *string `json:"history_default_tab,omitempty" jsonschema:"description=The default tab for the user's history. Possible values are: - \"notes\" - \"history\" - \"properties\" - \"time_entries\" - \"changesets\" - \"last_tab_visited\",enum=notes,enum=history,enum=properties,enum=time_entries,enum=changesets,enum=last_tab_visited"`
 
 		// NoSelfNotified Whether the user should not be notified of their own actions.
-		NoSelfNotified *bool `json:"no_self_notified,omitempty"`
+		NoSelfNotified *bool `json:"no_self_notified,omitempty" jsonschema:"description=Whether the user should not be notified of their own actions."`
 
 		// NotifyAboutHighPriorityIssues Whether the user should be notified about high priority issues.
-		NotifyAboutHighPriorityIssues *bool `json:"notify_about_high_priority_issues,omitempty"`
+		NotifyAboutHighPriorityIssues *bool `json:"notify_about_high_priority_issues,omitempty" jsonschema:"description=Whether the user should be notified about high priority issues."`
 
 		// RecentlyUsedProjects The number of recently used projects to display.
-		RecentlyUsedProjects *int `json:"recently_used_projects,omitempty"`
+		RecentlyUsedProjects *int `json:"recently_used_projects,omitempty" jsonschema:"description=The number of recently used projects to display."`
 
 		// TextareaFont The font used in text areas. Possible values are:
 		// - `monospace`
 		// - `proportional`
-		TextareaFont *string `json:"textarea_font,omitempty"`
+		TextareaFont *string `json:"textarea_font,omitempty" jsonschema:"description=The font used in text areas. Possible values are: - \"monospace\" - \"proportional\",enum=monospace,enum=proportional"`
 
 		// TimeZone The time zone of the user.
-		TimeZone *string `json:"time_zone,omitempty"`
+		TimeZone *string `json:"time_zone,omitempty" jsonschema:"description=The time zone of the user."`
 
 		// ToolbarLanguageOptions The language options for the toolbar.
-		ToolbarLanguageOptions *string `json:"toolbar_language_options,omitempty"`
+		ToolbarLanguageOptions *string `json:"toolbar_language_options,omitempty" jsonschema:"description=The language options for the toolbar."`
 
 		// WarnOnLeavingUnsaved Whether to warn the user when leaving a page with unsaved changes. Possible values are:
 		// - `0`: Disable
 		// - `1`: Enable
-		WarnOnLeavingUnsaved *string `json:"warn_on_leaving_unsaved,omitempty"`
-	} `json:"pref,omitempty"`
+		WarnOnLeavingUnsaved *string `json:"warn_on_leaving_unsaved,omitempty" jsonschema:"description=Whether to warn the user when leaving a page with unsaved changes. Possible values are: - \"0\": Disable - \"1\": Enable"`
+	} `json:"pref,omitempty" jsonschema:"description=The preferences of the user."`
 
 	// SendInformation If set to true, an email will be sent to the user with their login information.
-	SendInformation *bool `json:"send_information,omitempty"`
+	SendInformation *bool `json:"send_information,omitempty" jsonschema:"description=If set to true\\, an email will be sent to the user with their login information."`
 
 	// User A single user.
 	User *struct {
 		// Admin The administrative of the user.
-		Admin *bool `json:"admin,omitempty"`
+		Admin *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 
 		// AuthSourceId The auth source id of the user.
-		AuthSourceId *int `json:"auth_source_id,omitempty"`
+		AuthSourceId *int `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Firstname The firstname of the user.
-		Firstname *string `json:"firstname,omitempty"`
+		Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 
 		// GeneratePassword The generate password of the user.
-		GeneratePassword *bool `json:"generate_password,omitempty"`
+		GeneratePassword *bool `json:"generate_password,omitempty" jsonschema:"description=The generate password of the user."`
 
 		// GroupIds The group id of the user.
-		GroupIds *[]int `json:"group_ids,omitempty"`
+		GroupIds *[]int `json:"group_ids,omitempty" jsonschema:"description=The group id of the user."`
 
 		// Language The language of the user.
-		Language *string `json:"language,omitempty"`
+		Language *string `json:"language,omitempty" jsonschema:"description=The language of the user."`
 
 		// Lastname The lastname of the user.
-		Lastname *string `json:"lastname,omitempty"`
+		Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 		// Login The login of the user.
-		Login *string `json:"login,omitempty"`
+		Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 		// Mail The mail address of the user.
-		Mail *string `json:"mail,omitempty"`
+		Mail *string `json:"mail,omitempty" jsonschema:"description=The mail address of the user."`
 
 		// MailNotification The mail notification of the user. Possible values are:
 		// - `all`: all events
@@ -4551,31 +4551,31 @@ type UsersUpdatePatchJSONBody struct {
 		// - `only_assigned`: only events assigned to the user
 		// - `only_owner`: only events owned by the user
 		// - `none`: no events
-		MailNotification *string `json:"mail_notification,omitempty"`
+		MailNotification *string `json:"mail_notification,omitempty" jsonschema:"description=The mail notification of the user. Possible values are: - \"all\": all events - \"selected\": only selected events - \"only_my_events\": only events related to the user - \"only_assigned\": only events assigned to the user - \"only_owner\": only events owned by the user - \"none\": no events,enum=all,enum=selected,enum=only_my_events,enum=only_assigned,enum=only_owner,enum=none"`
 
 		// MustChangePasswd The must change passwd of the user.
-		MustChangePasswd *bool `json:"must_change_passwd,omitempty"`
+		MustChangePasswd *bool `json:"must_change_passwd,omitempty" jsonschema:"description=The must change passwd of the user."`
 
 		// NotifiedProjectIds The notified project ID or identifier of the user.
-		NotifiedProjectIds *[]string `json:"notified_project_ids,omitempty"`
+		NotifiedProjectIds *[]string `json:"notified_project_ids,omitempty" jsonschema:"description=The notified project ID or identifier of the user."`
 
 		// Password The password of the user.
-		Password *string `json:"password,omitempty"`
+		Password *string `json:"password,omitempty" jsonschema:"description=The password of the user."`
 
 		// Status The status of the user. Possible values are:
 		// - `0`: anonymous
 		// - `1`: active
 		// - `2`: registered
 		// - `3`: locked
-		Status *int `json:"status,omitempty"`
-	} `json:"user,omitempty"`
+		Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked,enum=0,enum=1,enum=2,enum=3"`
+	} `json:"user,omitempty" jsonschema:"description=A single user."`
 }
 
 // UsersUpdatePatchParams defines parameters for UsersUpdatePatch.
 type UsersUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // UsersUpdatePutJSONBody defines parameters for UsersUpdatePut.
@@ -4585,19 +4585,19 @@ type UsersUpdatePutJSONBody struct {
 		// AutoWatchOn The auto watch setting for the user. Possible values are:
 		// - `issue_created`
 		// - `issue_contributed_to`
-		AutoWatchOn *[]string `json:"auto_watch_on,omitempty"`
+		AutoWatchOn *[]string `json:"auto_watch_on,omitempty" jsonschema:"description=The auto watch setting for the user. Possible values are: - \"issue_created\" - \"issue_contributed_to\""`
 
 		// CommentsSorting The sorting order of comments. Possible values are `asc` and `desc`.
-		CommentsSorting *string `json:"comments_sorting,omitempty"`
+		CommentsSorting *string `json:"comments_sorting,omitempty" jsonschema:"description=The sorting order of comments. Possible values are \"asc\" and \"desc\".,enum=asc,enum=desc"`
 
 		// DefaultIssueQuery The ID of the default issue query for the user.
-		DefaultIssueQuery *int `json:"default_issue_query,omitempty"`
+		DefaultIssueQuery *int `json:"default_issue_query,omitempty" jsonschema:"description=The ID of the default issue query for the user."`
 
 		// DefaultProjectQuery The ID of the default project query for the user.
-		DefaultProjectQuery *int `json:"default_project_query,omitempty"`
+		DefaultProjectQuery *int `json:"default_project_query,omitempty" jsonschema:"description=The ID of the default project query for the user."`
 
 		// HideMail Whether the user's email should be hidden.
-		HideMail *bool `json:"hide_mail,omitempty"`
+		HideMail *bool `json:"hide_mail,omitempty" jsonschema:"description=Whether the user's email should be hidden."`
 
 		// HistoryDefaultTab The default tab for the user's history. Possible values are:
 		// - `notes`
@@ -4606,79 +4606,79 @@ type UsersUpdatePutJSONBody struct {
 		// - `time_entries`
 		// - `changesets`
 		// - `last_tab_visited`
-		HistoryDefaultTab *string `json:"history_default_tab,omitempty"`
+		HistoryDefaultTab *string `json:"history_default_tab,omitempty" jsonschema:"description=The default tab for the user's history. Possible values are: - \"notes\" - \"history\" - \"properties\" - \"time_entries\" - \"changesets\" - \"last_tab_visited\",enum=notes,enum=history,enum=properties,enum=time_entries,enum=changesets,enum=last_tab_visited"`
 
 		// NoSelfNotified Whether the user should not be notified of their own actions.
-		NoSelfNotified *bool `json:"no_self_notified,omitempty"`
+		NoSelfNotified *bool `json:"no_self_notified,omitempty" jsonschema:"description=Whether the user should not be notified of their own actions."`
 
 		// NotifyAboutHighPriorityIssues Whether the user should be notified about high priority issues.
-		NotifyAboutHighPriorityIssues *bool `json:"notify_about_high_priority_issues,omitempty"`
+		NotifyAboutHighPriorityIssues *bool `json:"notify_about_high_priority_issues,omitempty" jsonschema:"description=Whether the user should be notified about high priority issues."`
 
 		// RecentlyUsedProjects The number of recently used projects to display.
-		RecentlyUsedProjects *int `json:"recently_used_projects,omitempty"`
+		RecentlyUsedProjects *int `json:"recently_used_projects,omitempty" jsonschema:"description=The number of recently used projects to display."`
 
 		// TextareaFont The font used in text areas. Possible values are:
 		// - `monospace`
 		// - `proportional`
-		TextareaFont *string `json:"textarea_font,omitempty"`
+		TextareaFont *string `json:"textarea_font,omitempty" jsonschema:"description=The font used in text areas. Possible values are: - \"monospace\" - \"proportional\",enum=monospace,enum=proportional"`
 
 		// TimeZone The time zone of the user.
-		TimeZone *string `json:"time_zone,omitempty"`
+		TimeZone *string `json:"time_zone,omitempty" jsonschema:"description=The time zone of the user."`
 
 		// ToolbarLanguageOptions The language options for the toolbar.
-		ToolbarLanguageOptions *string `json:"toolbar_language_options,omitempty"`
+		ToolbarLanguageOptions *string `json:"toolbar_language_options,omitempty" jsonschema:"description=The language options for the toolbar."`
 
 		// WarnOnLeavingUnsaved Whether to warn the user when leaving a page with unsaved changes. Possible values are:
 		// - `0`: Disable
 		// - `1`: Enable
-		WarnOnLeavingUnsaved *string `json:"warn_on_leaving_unsaved,omitempty"`
-	} `json:"pref,omitempty"`
+		WarnOnLeavingUnsaved *string `json:"warn_on_leaving_unsaved,omitempty" jsonschema:"description=Whether to warn the user when leaving a page with unsaved changes. Possible values are: - \"0\": Disable - \"1\": Enable"`
+	} `json:"pref,omitempty" jsonschema:"description=The preferences of the user."`
 
 	// SendInformation If set to true, an email will be sent to the user with their login information.
-	SendInformation *bool `json:"send_information,omitempty"`
+	SendInformation *bool `json:"send_information,omitempty" jsonschema:"description=If set to true\\, an email will be sent to the user with their login information."`
 
 	// User A single user.
 	User *struct {
 		// Admin The administrative of the user.
-		Admin *bool `json:"admin,omitempty"`
+		Admin *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 
 		// AuthSourceId The auth source id of the user.
-		AuthSourceId *int `json:"auth_source_id,omitempty"`
+		AuthSourceId *int `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
 
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// Firstname The firstname of the user.
-		Firstname *string `json:"firstname,omitempty"`
+		Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 
 		// GeneratePassword The generate password of the user.
-		GeneratePassword *bool `json:"generate_password,omitempty"`
+		GeneratePassword *bool `json:"generate_password,omitempty" jsonschema:"description=The generate password of the user."`
 
 		// GroupIds The group id of the user.
-		GroupIds *[]int `json:"group_ids,omitempty"`
+		GroupIds *[]int `json:"group_ids,omitempty" jsonschema:"description=The group id of the user."`
 
 		// Language The language of the user.
-		Language *string `json:"language,omitempty"`
+		Language *string `json:"language,omitempty" jsonschema:"description=The language of the user."`
 
 		// Lastname The lastname of the user.
-		Lastname *string `json:"lastname,omitempty"`
+		Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 		// Login The login of the user.
-		Login *string `json:"login,omitempty"`
+		Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 		// Mail The mail address of the user.
-		Mail *string `json:"mail,omitempty"`
+		Mail *string `json:"mail,omitempty" jsonschema:"description=The mail address of the user."`
 
 		// MailNotification The mail notification of the user. Possible values are:
 		// - `all`: all events
@@ -4687,45 +4687,45 @@ type UsersUpdatePutJSONBody struct {
 		// - `only_assigned`: only events assigned to the user
 		// - `only_owner`: only events owned by the user
 		// - `none`: no events
-		MailNotification *string `json:"mail_notification,omitempty"`
+		MailNotification *string `json:"mail_notification,omitempty" jsonschema:"description=The mail notification of the user. Possible values are: - \"all\": all events - \"selected\": only selected events - \"only_my_events\": only events related to the user - \"only_assigned\": only events assigned to the user - \"only_owner\": only events owned by the user - \"none\": no events,enum=all,enum=selected,enum=only_my_events,enum=only_assigned,enum=only_owner,enum=none"`
 
 		// MustChangePasswd The must change passwd of the user.
-		MustChangePasswd *bool `json:"must_change_passwd,omitempty"`
+		MustChangePasswd *bool `json:"must_change_passwd,omitempty" jsonschema:"description=The must change passwd of the user."`
 
 		// NotifiedProjectIds The notified project ID or identifier of the user.
-		NotifiedProjectIds *[]string `json:"notified_project_ids,omitempty"`
+		NotifiedProjectIds *[]string `json:"notified_project_ids,omitempty" jsonschema:"description=The notified project ID or identifier of the user."`
 
 		// Password The password of the user.
-		Password *string `json:"password,omitempty"`
+		Password *string `json:"password,omitempty" jsonschema:"description=The password of the user."`
 
 		// Status The status of the user. Possible values are:
 		// - `0`: anonymous
 		// - `1`: active
 		// - `2`: registered
 		// - `3`: locked
-		Status *int `json:"status,omitempty"`
-	} `json:"user,omitempty"`
+		Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked,enum=0,enum=1,enum=2,enum=3"`
+	} `json:"user,omitempty" jsonschema:"description=A single user."`
 }
 
 // UsersUpdatePutParams defines parameters for UsersUpdatePut.
 type UsersUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // VersionsDestroyParams defines parameters for VersionsDestroy.
 type VersionsDestroyParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // VersionsShowParams defines parameters for VersionsShow.
 type VersionsShowParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // VersionsUpdatePatchJSONBody defines parameters for VersionsUpdatePatch.
@@ -4733,33 +4733,33 @@ type VersionsUpdatePatchJSONBody struct {
 	// Version A single version.
 	Version *struct {
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// DefaultProjectVersion The default project version of the version.
-		DefaultProjectVersion *bool `json:"default_project_version,omitempty"`
+		DefaultProjectVersion *bool `json:"default_project_version,omitempty" jsonschema:"description=The default project version of the version."`
 
 		// Description The description of the version.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the version."`
 
 		// DueDate The due date of the version.
-		DueDate *openapi_types.Date `json:"due_date,omitempty"`
+		DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the version.,format=date"`
 
 		// EffectiveDate The effective date of the version.
-		EffectiveDate *openapi_types.Date `json:"effective_date,omitempty"`
+		EffectiveDate *openapi_types.Date `json:"effective_date,omitempty" jsonschema:"description=The effective date of the version.,format=date"`
 
 		// Name The name of the version.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 
 		// Sharing The sharing of the version. Possible values are:
 		// - `none`
@@ -4767,24 +4767,24 @@ type VersionsUpdatePatchJSONBody struct {
 		// - `hierarchy`
 		// - `tree`
 		// - `system`
-		Sharing *string `json:"sharing,omitempty"`
+		Sharing *string `json:"sharing,omitempty" jsonschema:"description=The sharing of the version. Possible values are: - \"none\" - \"descendants\" - \"hierarchy\" - \"tree\" - \"system\",enum=none,enum=descendants,enum=hierarchy,enum=tree,enum=system"`
 
 		// Status The status of the version. Possible values are:
 		// - `open`
 		// - `locked`
 		// - `closed`
-		Status *string `json:"status,omitempty"`
+		Status *string `json:"status,omitempty" jsonschema:"description=The status of the version. Possible values are: - \"open\" - \"locked\" - \"closed\",enum=open,enum=locked,enum=closed"`
 
 		// WikiPageTitle The wiki page title of the version.
-		WikiPageTitle *string `json:"wiki_page_title,omitempty"`
-	} `json:"version,omitempty"`
+		WikiPageTitle *string `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+	} `json:"version,omitempty" jsonschema:"description=A single version."`
 }
 
 // VersionsUpdatePatchParams defines parameters for VersionsUpdatePatch.
 type VersionsUpdatePatchParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // VersionsUpdatePutJSONBody defines parameters for VersionsUpdatePut.
@@ -4792,33 +4792,33 @@ type VersionsUpdatePutJSONBody struct {
 	// Version A single version.
 	Version *struct {
 		// CustomFieldValues The values of the custom fields.
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty"`
+		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
 			// Id The ID of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 			// Multiple Whether the custom field can have multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 			// Name The name of the custom field.
-			Name  *string     `json:"name,omitempty"`
+			Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 			Value interface{} `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 
 		// DefaultProjectVersion The default project version of the version.
-		DefaultProjectVersion *bool `json:"default_project_version,omitempty"`
+		DefaultProjectVersion *bool `json:"default_project_version,omitempty" jsonschema:"description=The default project version of the version."`
 
 		// Description The description of the version.
-		Description *string `json:"description,omitempty"`
+		Description *string `json:"description,omitempty" jsonschema:"description=The description of the version."`
 
 		// DueDate The due date of the version.
-		DueDate *openapi_types.Date `json:"due_date,omitempty"`
+		DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the version.,format=date"`
 
 		// EffectiveDate The effective date of the version.
-		EffectiveDate *openapi_types.Date `json:"effective_date,omitempty"`
+		EffectiveDate *openapi_types.Date `json:"effective_date,omitempty" jsonschema:"description=The effective date of the version.,format=date"`
 
 		// Name The name of the version.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 
 		// Sharing The sharing of the version. Possible values are:
 		// - `none`
@@ -4826,70 +4826,70 @@ type VersionsUpdatePutJSONBody struct {
 		// - `hierarchy`
 		// - `tree`
 		// - `system`
-		Sharing *string `json:"sharing,omitempty"`
+		Sharing *string `json:"sharing,omitempty" jsonschema:"description=The sharing of the version. Possible values are: - \"none\" - \"descendants\" - \"hierarchy\" - \"tree\" - \"system\",enum=none,enum=descendants,enum=hierarchy,enum=tree,enum=system"`
 
 		// Status The status of the version. Possible values are:
 		// - `open`
 		// - `locked`
 		// - `closed`
-		Status *string `json:"status,omitempty"`
+		Status *string `json:"status,omitempty" jsonschema:"description=The status of the version. Possible values are: - \"open\" - \"locked\" - \"closed\",enum=open,enum=locked,enum=closed"`
 
 		// WikiPageTitle The wiki page title of the version.
-		WikiPageTitle *string `json:"wiki_page_title,omitempty"`
-	} `json:"version,omitempty"`
+		WikiPageTitle *string `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+	} `json:"version,omitempty" jsonschema:"description=A single version."`
 }
 
 // VersionsUpdatePutParams defines parameters for VersionsUpdatePut.
 type VersionsUpdatePutParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // VersionsShowTxtParams defines parameters for VersionsShowTxt.
 type VersionsShowTxtParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WatchersDestroyParams defines parameters for WatchersDestroy.
 type WatchersDestroyParams struct {
 	// ObjectType The type of the object to be watched.
-	ObjectType string `form:"object_type" json:"object_type"`
+	ObjectType string `form:"object_type" json:"object_type" jsonschema:"description=The type of the object to be watched."`
 
 	// ObjectId The ID of the object.
-	ObjectId int `form:"object_id" json:"object_id"`
+	ObjectId int `form:"object_id" json:"object_id" jsonschema:"description=The ID of the object."`
 
 	// UserId The ID of the user.
-	UserId int `form:"user_id" json:"user_id"`
+	UserId int `form:"user_id" json:"user_id" jsonschema:"description=The ID of the user."`
 
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // WatchersCreateJSONBody defines parameters for WatchersCreate.
 type WatchersCreateJSONBody struct {
 	// ObjectId The ID of the object.
-	ObjectId *int `json:"object_id,omitempty"`
+	ObjectId *int `json:"object_id,omitempty" jsonschema:"description=The ID of the object."`
 
 	// ObjectType The type of the object.
-	ObjectType *string `json:"object_type,omitempty"`
+	ObjectType *string `json:"object_type,omitempty" jsonschema:"description=The type of the object."`
 
 	// Watcher Represents a single watcher.
 	Watcher *struct {
 		// UserId The ID of the user.
-		UserId  *int   `json:"user_id,omitempty"`
+		UserId  *int   `json:"user_id,omitempty" jsonschema:"description=The ID of the user."`
 		UserIds *[]int `json:"user_ids,omitempty"`
-	} `json:"watcher,omitempty"`
+	} `json:"watcher,omitempty" jsonschema:"description=Represents a single watcher."`
 }
 
 // WatchersCreateParams defines parameters for WatchersCreate.
 type WatchersCreateParams struct {
 	// XRedmineSwitchUser This only works when using the API with an administrator account,
 	// this header will be ignored when using the API with a regular user account.
-	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty"`
+	XRedmineSwitchUser *string `json:"X-Redmine-Switch-User,omitempty" jsonschema:"description=This only works when using the API with an administrator account\\, this header will be ignored when using the API with a regular user account."`
 }
 
 // AttachmentsUpdatePatchJSONRequestBody defines body for AttachmentsUpdatePatch for application/json ContentType.
@@ -22381,35 +22381,35 @@ type AttachmentsShowResponse struct {
 type AttachmentsShow_200_Attachment struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -22504,16 +22504,16 @@ type CustomFieldsIndexResponse struct {
 	JSON200      *struct {
 		CustomFields *[]struct {
 			// CustomizedType The type of object this custom field is associated with.
-			CustomizedType *string `json:"customized_type,omitempty"`
+			CustomizedType *string `json:"customized_type,omitempty" jsonschema:"description=The type of object this custom field is associated with."`
 
 			// DefaultValue The default value for the custom field.
-			DefaultValue *string `json:"default_value,omitempty"`
+			DefaultValue *string `json:"default_value,omitempty" jsonschema:"description=The default value for the custom field."`
 
 			// Description A description of the custom field.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=A description of the custom field."`
 
 			// Editable The editable of the custom field.
-			Editable *bool `json:"editable,omitempty"`
+			Editable *bool `json:"editable,omitempty" jsonschema:"description=The editable of the custom field."`
 
 			// FieldFormat The format of the custom field.
 			// Possible values are:
@@ -22529,60 +22529,60 @@ type CustomFieldsIndexResponse struct {
 			// - `user`
 			// - `version`
 			// - `attachement`
-			FieldFormat *string `json:"field_format,omitempty"`
+			FieldFormat *string `json:"field_format,omitempty" jsonschema:"description=The format of the custom field. Possible values are: - \"string\" - \"text\" - \"link\" - \"int\" - \"float\" - \"date\" - \"list\" - \"bool\" - \"enumeration\" - \"user\" - \"version\" - \"attachement\""`
 
 			// Id The unique identifier of the custom field.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the custom field."`
 
 			// IsFilter Whether the custom field can be used as a filter.
-			IsFilter *bool `json:"is_filter,omitempty"`
+			IsFilter *bool `json:"is_filter,omitempty" jsonschema:"description=Whether the custom field can be used as a filter."`
 
 			// IsRequired Whether the custom field is required.
-			IsRequired *bool `json:"is_required,omitempty"`
+			IsRequired *bool `json:"is_required,omitempty" jsonschema:"description=Whether the custom field is required."`
 
 			// MaxLength The maximum length allowed for the custom field value.
-			MaxLength *int `json:"max_length,omitempty"`
+			MaxLength *int `json:"max_length,omitempty" jsonschema:"description=The maximum length allowed for the custom field value."`
 
 			// MinLength The minimum length allowed for the custom field value.
-			MinLength *int `json:"min_length,omitempty"`
+			MinLength *int `json:"min_length,omitempty" jsonschema:"description=The minimum length allowed for the custom field value."`
 
 			// Multiple Whether the custom field allows multiple values.
-			Multiple *bool `json:"multiple,omitempty"`
+			Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field allows multiple values."`
 
 			// Name The name of the custom field.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 
 			// PossibleValues The possible values of the custom field.
 			PossibleValues *[]struct {
 				// Label The label of the possible value.
-				Label *string `json:"label,omitempty"`
+				Label *string `json:"label,omitempty" jsonschema:"description=The label of the possible value."`
 
 				// Value The value of the possible value.
-				Value *string `json:"value,omitempty"`
-			} `json:"possible_values,omitempty"`
+				Value *string `json:"value,omitempty" jsonschema:"description=The value of the possible value."`
+			} `json:"possible_values,omitempty" jsonschema:"description=The possible values of the custom field."`
 
 			// Regexp The regular expression pattern for the custom field value.
-			Regexp *string `json:"regexp,omitempty"`
+			Regexp *string `json:"regexp,omitempty" jsonschema:"description=The regular expression pattern for the custom field value."`
 			Roles  *[]struct {
 				// Id The id of the role.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The id of the role."`
 
 				// Name The name of the role.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 			} `json:"roles,omitempty"`
 
 			// Searchable Whether the custom field is searchable.
-			Searchable *bool `json:"searchable,omitempty"`
+			Searchable *bool `json:"searchable,omitempty" jsonschema:"description=Whether the custom field is searchable."`
 			Trackers   *[]struct {
 				// Id The id of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The id of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"trackers,omitempty"`
 
 			// Visible Whether the custom field is visible.
-			Visible *bool `json:"visible,omitempty"`
+			Visible *bool `json:"visible,omitempty" jsonschema:"description=Whether the custom field is visible."`
 		} `json:"custom_fields,omitempty"`
 	}
 }
@@ -22609,27 +22609,27 @@ type EnumerationsIndexDocumentCategoryResponse struct {
 	JSON200      *struct {
 		DocumentCategories *[]struct {
 			// Active The active of the enumeration.
-			Active       *bool `json:"active,omitempty"`
+			Active       *bool `json:"active,omitempty" jsonschema:"description=The active of the enumeration."`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Id The unique identifier of the enumeration.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the enumeration."`
 
 			// IsDefault The default of the enumeration.
-			IsDefault *bool `json:"is_default,omitempty"`
+			IsDefault *bool `json:"is_default,omitempty" jsonschema:"description=The default of the enumeration."`
 
 			// Name The name of the enumeration.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the enumeration."`
 		} `json:"document_categories,omitempty"`
 	}
 }
@@ -22656,27 +22656,27 @@ type EnumerationsIndexIssuePriorityResponse struct {
 	JSON200      *struct {
 		IssuePriorities *[]struct {
 			// Active The active of the enumeration.
-			Active       *bool `json:"active,omitempty"`
+			Active       *bool `json:"active,omitempty" jsonschema:"description=The active of the enumeration."`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Id The unique identifier of the enumeration.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the enumeration."`
 
 			// IsDefault The default of the enumeration.
-			IsDefault *bool `json:"is_default,omitempty"`
+			IsDefault *bool `json:"is_default,omitempty" jsonschema:"description=The default of the enumeration."`
 
 			// Name The name of the enumeration.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the enumeration."`
 		} `json:"issue_priorities,omitempty"`
 	}
 }
@@ -22703,27 +22703,27 @@ type EnumerationsIndexTimeEntryActivityResponse struct {
 	JSON200      *struct {
 		TimeEntryActivities *[]struct {
 			// Active The active of the enumeration.
-			Active       *bool `json:"active,omitempty"`
+			Active       *bool `json:"active,omitempty" jsonschema:"description=The active of the enumeration."`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Id The unique identifier of the enumeration.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the enumeration."`
 
 			// IsDefault The default of the enumeration.
-			IsDefault *bool `json:"is_default,omitempty"`
+			IsDefault *bool `json:"is_default,omitempty" jsonschema:"description=The default of the enumeration."`
 
 			// Name The name of the enumeration.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the enumeration."`
 		} `json:"time_entry_activities,omitempty"`
 	}
 }
@@ -22750,24 +22750,24 @@ type GroupsIndexResponse struct {
 	JSON200      *struct {
 		Groups *[]struct {
 			// Builtin The builtin type of the group.
-			Builtin      *string `json:"builtin,omitempty"`
+			Builtin      *string `json:"builtin,omitempty" jsonschema:"description=The builtin type of the group."`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Id The ID of the group.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 			// Name The name of the group.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 		} `json:"groups,omitempty"`
 	}
 }
@@ -22795,53 +22795,53 @@ type GroupsCreateResponse struct {
 		// Group A single group.
 		Group *struct {
 			// Builtin The builtin type of the group.
-			Builtin      *string `json:"builtin,omitempty"`
+			Builtin      *string `json:"builtin,omitempty" jsonschema:"description=The builtin type of the group."`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Id The ID of the group.
-			Id          *int `json:"id,omitempty"`
+			Id          *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 			Memberships *[]struct {
 				// Id The ID of the mebership.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the mebership."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Roles *[]struct {
 					// Id The ID of the role.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 					// Inherited Whether the role is inherited from a parent project.
-					Inherited *bool `json:"inherited,omitempty"`
+					Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 					// Name The name of the role.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 				} `json:"roles,omitempty"`
 			} `json:"memberships,omitempty"`
 
 			// Name The name of the group.
-			Name  *string `json:"name,omitempty"`
+			Name  *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			Users *[]struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"users,omitempty"`
-		} `json:"group,omitempty"`
+		} `json:"group,omitempty" jsonschema:"description=A single group."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -22892,53 +22892,53 @@ type GroupsShowResponse struct {
 		// Group A single group.
 		Group *struct {
 			// Builtin The builtin type of the group.
-			Builtin      *string `json:"builtin,omitempty"`
+			Builtin      *string `json:"builtin,omitempty" jsonschema:"description=The builtin type of the group."`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Id The ID of the group.
-			Id          *int `json:"id,omitempty"`
+			Id          *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 			Memberships *[]struct {
 				// Id The ID of the mebership.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the mebership."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Roles *[]struct {
 					// Id The ID of the role.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 					// Inherited Whether the role is inherited from a parent project.
-					Inherited *bool `json:"inherited,omitempty"`
+					Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 					// Name The name of the role.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 				} `json:"roles,omitempty"`
 			} `json:"memberships,omitempty"`
 
 			// Name The name of the group.
-			Name  *string `json:"name,omitempty"`
+			Name  *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			Users *[]struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"users,omitempty"`
-		} `json:"group,omitempty"`
+		} `json:"group,omitempty" jsonschema:"description=A single group."`
 	}
 }
 
@@ -23080,25 +23080,25 @@ type IssueCategoriesShowResponse struct {
 		IssueCategory *struct {
 			AssignedTo *struct {
 				// Id The ID of the assigned to.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned to."`
 
 				// Name The name of the assigned to.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned to."`
 			} `json:"assigned_to,omitempty"`
 
 			// Id The ID of the issue category.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 			// Name The name of the issue category.
-			Name    *string `json:"name,omitempty"`
+			Name    *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
-		} `json:"issue_category,omitempty"`
+		} `json:"issue_category,omitempty" jsonschema:"description=A single issue category."`
 	}
 }
 
@@ -23172,16 +23172,16 @@ type IssueStatusesIndexResponse struct {
 	JSON200      *struct {
 		IssueStatuses *[]struct {
 			// Description A description of the issue status.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=A description of the issue status."`
 
 			// Id The unique identifier of the issue status.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the issue status."`
 
 			// IsClosed Whether the issue status is closed.
-			IsClosed *bool `json:"is_closed,omitempty"`
+			IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=Whether the issue status is closed."`
 
 			// Name The name of the issue status.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue status."`
 		} `json:"issue_statuses,omitempty"`
 	}
 }
@@ -23233,147 +23233,147 @@ type IssuesIndexResponse struct {
 		Issues *[]struct {
 			AssignedTo *struct {
 				// Id The ID of the assigned member.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 				// Name The name of the assigned member.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 			} `json:"assigned_to,omitempty"`
 			Attachments *[]IssuesIndex_200_Issues_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 			Category *struct {
 				// Id The ID of the category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 				// Name The name of the category.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 			} `json:"category,omitempty"`
 
 			// ClosedOn The date and time when the issue was closed.
-			ClosedOn *time.Time `json:"closed_on,omitempty"`
+			ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 			// CreatedOn The date and time when the issue was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Description The description of the issue.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 			// DoneRatio The done ratio of the issue.
-			DoneRatio *int `json:"done_ratio,omitempty"`
+			DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 			// DueDate The due date of the issue.
-			DueDate *openapi_types.Date `json:"due_date,omitempty"`
+			DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 			// EstimatedHours The estimated hours of the issue.
-			EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+			EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 			FixedVersion   *struct {
 				// Id The ID of the fixed version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 				// Name The name of the fixed version.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 			} `json:"fixed_version,omitempty"`
 
 			// Id The ID of the issue.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 			// IsPrivate The private of the issue.
-			IsPrivate *bool `json:"is_private,omitempty"`
+			IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 			Parent    *struct {
 				// Id The ID of the parent issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 			} `json:"parent,omitempty"`
 			Priority *struct {
 				// Id The ID of the priority.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 				// Name The name of the priority.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 			} `json:"priority,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 			Relations *[]struct {
 				// Delay The delay of the relation.
-				Delay *int `json:"delay,omitempty"`
+				Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 				// Id The ID of the relation.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 				// IssueId The ID of the issue.
-				IssueId *int `json:"issue_id,omitempty"`
+				IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IssueToId The ID of the issue.
-				IssueToId *int `json:"issue_to_id,omitempty"`
+				IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// RelationType The type of the relation.
-				RelationType *string `json:"relation_type,omitempty"`
+				RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 			} `json:"relations,omitempty"`
 
 			// SpentHours The spent hours of the issue.
-			SpentHours *float32 `json:"spent_hours,omitempty"`
+			SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 			// StartDate The start date of the issue.
-			StartDate *openapi_types.Date `json:"start_date,omitempty"`
+			StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 			Status    *struct {
 				// Id The ID of the status.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 				// IsClosed The closed of the status.
-				IsClosed *bool `json:"is_closed,omitempty"`
+				IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 				// Name The name of the status.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 			} `json:"status,omitempty"`
 
 			// Subject The subject of the issue.
-			Subject *string `json:"subject,omitempty"`
+			Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 			// TotalEstimatedHours The total estimated hours of the issue.
-			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 			// TotalSpentHours The total spent hours of the issue.
-			TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+			TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 			Tracker         *struct {
 				// Id The ID of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"tracker,omitempty"`
 
 			// UpdatedOn The date and time when the issue was updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 		} `json:"issues,omitempty"`
 
 		// Limit The maximum number of issues returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of issues returned in the list."`
 
 		// Offset The offset of the first issue in the list.
-		Offset *int `json:"offset,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first issue in the list."`
 
 		// TotalCount The total number of issues.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of issues."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -23382,35 +23382,35 @@ type IssuesIndexResponse struct {
 type IssuesIndex_200_Issues_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -23438,231 +23438,231 @@ type IssuesCreateResponse struct {
 		Issue *struct {
 			AllowedStatuses *[]struct {
 				// Id The ID of the allowed statuse.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the allowed statuse."`
 
 				// IsClosed The closed of the allowed status.
-				IsClosed *bool `json:"is_closed,omitempty"`
+				IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the allowed status."`
 
 				// Name The name of the allowed statuse.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the allowed statuse."`
 			} `json:"allowed_statuses,omitempty"`
 			AssignedTo *struct {
 				// Id The ID of the assigned member.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 				// Name The name of the assigned member.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 			} `json:"assigned_to,omitempty"`
 			Attachments *[]IssuesCreate_201_Issue_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 			Category *struct {
 				// Id The ID of the category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 				// Name The name of the category.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 			} `json:"category,omitempty"`
 			Changesets *[]struct {
 				// Comments The comments of the changeset.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the changeset."`
 
 				// CommittedOn The date and time when the changeset was committed.
-				CommittedOn *time.Time `json:"committed_on,omitempty"`
+				CommittedOn *time.Time `json:"committed_on,omitempty" jsonschema:"description=The date and time when the changeset was committed.,format=date-time"`
 
 				// Revision The revision of the changeset.
-				Revision *string `json:"revision,omitempty"`
+				Revision *string `json:"revision,omitempty" jsonschema:"description=The revision of the changeset."`
 				User     *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
 			} `json:"changesets,omitempty"`
 			Children *[]struct {
 				Children *[]interface{} `json:"children,omitempty"`
 
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// Subject The subject of the issue.
-				Subject *string `json:"subject,omitempty"`
+				Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 				Tracker *struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"tracker,omitempty"`
 			} `json:"children,omitempty"`
 
 			// ClosedOn The date and time when the issue was closed.
-			ClosedOn *time.Time `json:"closed_on,omitempty"`
+			ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 			// CreatedOn The date and time when the issue was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Description The description of the issue.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 			// DoneRatio The done ratio of the issue.
-			DoneRatio *int `json:"done_ratio,omitempty"`
+			DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 			// DueDate The due date of the issue.
-			DueDate *openapi_types.Date `json:"due_date,omitempty"`
+			DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 			// EstimatedHours The estimated hours of the issue.
-			EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+			EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 			FixedVersion   *struct {
 				// Id The ID of the fixed version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 				// Name The name of the fixed version.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 			} `json:"fixed_version,omitempty"`
 
 			// Id The ID of the issue.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 			// IsPrivate The private of the issue.
-			IsPrivate *bool `json:"is_private,omitempty"`
+			IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 			Journals  *[]struct {
 				// CreatedOn The date and time when the journal was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the journal was created.,format=date-time"`
 				Details   *[]struct {
 					// Name The name of the detail.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the detail."`
 
 					// NewValue The new value of the detail.
-					NewValue *string `json:"new_value,omitempty"`
+					NewValue *string `json:"new_value,omitempty" jsonschema:"description=The new value of the detail."`
 
 					// OldValue The old value of the detail.
-					OldValue *string `json:"old_value,omitempty"`
+					OldValue *string `json:"old_value,omitempty" jsonschema:"description=The old value of the detail."`
 
 					// Property The property of the detail.
-					Property *string `json:"property,omitempty"`
+					Property *string `json:"property,omitempty" jsonschema:"description=The property of the detail."`
 				} `json:"details,omitempty"`
 
 				// Id The ID of the journal.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the journal."`
 
 				// Notes The notes of the journal.
-				Notes *string `json:"notes,omitempty"`
+				Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the journal."`
 
 				// PrivateNotes The private of the journal.
-				PrivateNotes *bool `json:"private_notes,omitempty"`
+				PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private of the journal."`
 				UpdatedBy    *struct {
 					// Id The ID of the updated.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the updated."`
 
 					// Name The name of the updated.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the updated."`
 				} `json:"updated_by,omitempty"`
 
 				// UpdatedOn The date and time when the journal was updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the journal was updated.,format=date-time"`
 				User      *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
 			} `json:"journals,omitempty"`
 			Parent *struct {
 				// Id The ID of the parent issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 			} `json:"parent,omitempty"`
 			Priority *struct {
 				// Id The ID of the priority.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 				// Name The name of the priority.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 			} `json:"priority,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 			Relations *[]struct {
 				// Delay The delay of the relation.
-				Delay *int `json:"delay,omitempty"`
+				Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 				// Id The ID of the relation.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 				// IssueId The ID of the issue.
-				IssueId *int `json:"issue_id,omitempty"`
+				IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IssueToId The ID of the issue.
-				IssueToId *int `json:"issue_to_id,omitempty"`
+				IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// RelationType The type of the relation.
-				RelationType *string `json:"relation_type,omitempty"`
+				RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 			} `json:"relations,omitempty"`
 
 			// SpentHours The spent hours of the issue.
-			SpentHours *float32 `json:"spent_hours,omitempty"`
+			SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 			// StartDate The start date of the issue.
-			StartDate *openapi_types.Date `json:"start_date,omitempty"`
+			StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 			Status    *struct {
 				// Id The ID of the status.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 				// IsClosed The closed of the status.
-				IsClosed *bool `json:"is_closed,omitempty"`
+				IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 				// Name The name of the status.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 			} `json:"status,omitempty"`
 
 			// Subject The subject of the issue.
-			Subject *string `json:"subject,omitempty"`
+			Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 			// TotalEstimatedHours The total estimated hours of the issue.
-			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 			// TotalSpentHours The total spent hours of the issue.
-			TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+			TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 			Tracker         *struct {
 				// Id The ID of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"tracker,omitempty"`
 
 			// UpdatedOn The date and time when the issue was updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 			Watchers  *[]struct {
 				// Id The ID of the watcher.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the watcher."`
 
 				// Name The name of the watcher.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the watcher."`
 			} `json:"watchers,omitempty"`
-		} `json:"issue,omitempty"`
+		} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -23671,35 +23671,35 @@ type IssuesCreateResponse struct {
 type IssuesCreate_201_Issue_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -23817,265 +23817,265 @@ type IssuesShowResponse struct {
 		Issue *struct {
 			AllowedStatuses *[]struct {
 				// Id The ID of the allowed statuse.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the allowed statuse."`
 
 				// IsClosed The closed of the allowed status.
-				IsClosed *bool `json:"is_closed,omitempty"`
+				IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the allowed status."`
 
 				// Name The name of the allowed statuse.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the allowed statuse."`
 			} `json:"allowed_statuses,omitempty"`
 			AssignedTo *struct {
 				// Id The ID of the assigned member.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 				// Name The name of the assigned member.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 			} `json:"assigned_to,omitempty"`
 			Attachments *[]IssuesShow_200_Issue_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 			Category *struct {
 				// Id The ID of the category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 				// Name The name of the category.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 			} `json:"category,omitempty"`
 			Changesets *[]struct {
 				// Comments The comments of the changeset.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the changeset."`
 
 				// CommittedOn The date and time when the changeset was committed.
-				CommittedOn *time.Time `json:"committed_on,omitempty"`
+				CommittedOn *time.Time `json:"committed_on,omitempty" jsonschema:"description=The date and time when the changeset was committed.,format=date-time"`
 
 				// Revision The revision of the changeset.
-				Revision *string `json:"revision,omitempty"`
+				Revision *string `json:"revision,omitempty" jsonschema:"description=The revision of the changeset."`
 				User     *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
 			} `json:"changesets,omitempty"`
 			Children *[]struct {
 				Children *[]interface{} `json:"children,omitempty"`
 
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// Subject The subject of the issue.
-				Subject *string `json:"subject,omitempty"`
+				Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 				Tracker *struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"tracker,omitempty"`
 			} `json:"children,omitempty"`
 
 			// ClosedOn The date and time when the issue was closed.
-			ClosedOn *time.Time `json:"closed_on,omitempty"`
+			ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 			// CreatedOn The date and time when the issue was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Description The description of the issue.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 			// DoneRatio The done ratio of the issue.
-			DoneRatio *int `json:"done_ratio,omitempty"`
+			DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 			// DueDate The due date of the issue.
-			DueDate *openapi_types.Date `json:"due_date,omitempty"`
+			DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 			// EstimatedHours The estimated hours of the issue.
-			EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+			EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 			FixedVersion   *struct {
 				// Id The ID of the fixed version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 				// Name The name of the fixed version.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 			} `json:"fixed_version,omitempty"`
 
 			// Id The ID of the issue.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 			// IsPrivate The private of the issue.
-			IsPrivate *bool `json:"is_private,omitempty"`
+			IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 			Journals  *[]struct {
 				// CreatedOn The date and time when the journal was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the journal was created.,format=date-time"`
 				Details   *[]struct {
 					// Name The name of the detail.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the detail."`
 
 					// NewValue The new value of the detail.
-					NewValue *string `json:"new_value,omitempty"`
+					NewValue *string `json:"new_value,omitempty" jsonschema:"description=The new value of the detail."`
 
 					// OldValue The old value of the detail.
-					OldValue *string `json:"old_value,omitempty"`
+					OldValue *string `json:"old_value,omitempty" jsonschema:"description=The old value of the detail."`
 
 					// Property The property of the detail.
-					Property *string `json:"property,omitempty"`
+					Property *string `json:"property,omitempty" jsonschema:"description=The property of the detail."`
 				} `json:"details,omitempty"`
 
 				// Id The ID of the journal.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the journal."`
 
 				// Notes The notes of the journal.
-				Notes *string `json:"notes,omitempty"`
+				Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the journal."`
 
 				// PrivateNotes The private of the journal.
-				PrivateNotes *bool `json:"private_notes,omitempty"`
+				PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private of the journal."`
 				UpdatedBy    *struct {
 					// Id The ID of the updated.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the updated."`
 
 					// Name The name of the updated.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the updated."`
 				} `json:"updated_by,omitempty"`
 
 				// UpdatedOn The date and time when the journal was updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the journal was updated.,format=date-time"`
 				User      *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
 			} `json:"journals,omitempty"`
 			Parent *struct {
 				// Id The ID of the parent issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 			} `json:"parent,omitempty"`
 			Priority *struct {
 				// Id The ID of the priority.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 				// Name The name of the priority.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 			} `json:"priority,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 			Relations *[]struct {
 				// Delay The delay of the relation.
-				Delay *int `json:"delay,omitempty"`
+				Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 				// Id The ID of the relation.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 				// IssueId The ID of the issue.
-				IssueId *int `json:"issue_id,omitempty"`
+				IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IssueToId The ID of the issue.
-				IssueToId *int `json:"issue_to_id,omitempty"`
+				IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// RelationType The type of the relation.
-				RelationType *string `json:"relation_type,omitempty"`
+				RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 			} `json:"relations,omitempty"`
 
 			// SpentHours The spent hours of the issue.
-			SpentHours *float32 `json:"spent_hours,omitempty"`
+			SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 			// StartDate The start date of the issue.
-			StartDate *openapi_types.Date `json:"start_date,omitempty"`
+			StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 			Status    *struct {
 				// Id The ID of the status.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 				// IsClosed The closed of the status.
-				IsClosed *bool `json:"is_closed,omitempty"`
+				IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 				// Name The name of the status.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 			} `json:"status,omitempty"`
 
 			// Subject The subject of the issue.
-			Subject *string `json:"subject,omitempty"`
+			Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 			// TotalEstimatedHours The total estimated hours of the issue.
-			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 			// TotalSpentHours The total spent hours of the issue.
-			TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+			TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 			Tracker         *struct {
 				// Id The ID of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"tracker,omitempty"`
 
 			// UpdatedOn The date and time when the issue was updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 			Watchers  *[]struct {
 				// Id The ID of the watcher.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the watcher."`
 
 				// Name The name of the watcher.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the watcher."`
 			} `json:"watchers,omitempty"`
-		} `json:"issue,omitempty"`
+		} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 	}
 }
 type IssuesShow_200_Issue_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -24170,19 +24170,19 @@ type IssueRelationsIndexResponse struct {
 	JSON200      *struct {
 		Relations *[]struct {
 			// Delay The delay of the relation.
-			Delay *int `json:"delay,omitempty"`
+			Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 			// Id The ID of the relation.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 			// IssueId The ID of the issue.
-			IssueId *int `json:"issue_id,omitempty"`
+			IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 			// IssueToId The ID of the issue to.
-			IssueToId *int `json:"issue_to_id,omitempty"`
+			IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue to."`
 
 			// RelationType The relation type of the relation.
-			RelationType *string `json:"relation_type,omitempty"`
+			RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation."`
 		} `json:"relations,omitempty"`
 	}
 }
@@ -24210,20 +24210,20 @@ type IssueRelationsCreateResponse struct {
 		// Relation Represents a single issue relation.
 		Relation *struct {
 			// Delay The delay of the relation.
-			Delay *int `json:"delay,omitempty"`
+			Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 			// Id The ID of the relation.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 			// IssueId The ID of the issue.
-			IssueId *int `json:"issue_id,omitempty"`
+			IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 			// IssueToId The ID of the issue to.
-			IssueToId *int `json:"issue_to_id,omitempty"`
+			IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue to."`
 
 			// RelationType The relation type of the relation.
-			RelationType *string `json:"relation_type,omitempty"`
-		} `json:"relation,omitempty"`
+			RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation."`
+		} `json:"relation,omitempty" jsonschema:"description=Represents a single issue relation."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -24254,59 +24254,59 @@ type TimelogCreateIssueResponse struct {
 		TimeEntry *struct {
 			Activity *struct {
 				// Id The ID of the activity.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 				// Name The name of the activity.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 			} `json:"activity,omitempty"`
 
 			// Comments The comments of the time entry.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 			// CreatedOn The date and time when the time entry was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Hours The hours of the time entry.
-			Hours *float32 `json:"hours,omitempty"`
+			Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 			// Id The ID of the time entry.
-			Id    *int `json:"id,omitempty"`
+			Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 			Issue *struct {
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 			} `json:"issue,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// SpentOn The date when the time entry was spent.
-			SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+			SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 			// UpdatedOn The date and time when the time entry was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 			User      *struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"user,omitempty"`
-		} `json:"time_entry,omitempty"`
+		} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -24451,39 +24451,39 @@ type MembersShowResponse struct {
 		Membership *struct {
 			Group *struct {
 				// Id The ID of the group.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 				// Name The name of the group.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			} `json:"group,omitempty"`
 
 			// Id The ID of the membership.
-			Id      *int `json:"id,omitempty"`
+			Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the membership."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 			Roles *[]struct {
 				// Id The ID of the role.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 				// Inherited Whether the role is inherited from a parent project.
-				Inherited *bool `json:"inherited,omitempty"`
+				Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 				// Name The name of the role.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 			} `json:"roles,omitempty"`
 			User *struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"user,omitempty"`
-		} `json:"membership,omitempty"`
+		} `json:"membership,omitempty" jsonschema:"description=A single membership."`
 	}
 }
 
@@ -24558,43 +24558,43 @@ type MyAccountResponse struct {
 		// User Represents a single user.
 		User *struct {
 			// Admin Whether the user has administrative privileges.
-			Admin *bool `json:"admin,omitempty"`
+			Admin *bool `json:"admin,omitempty" jsonschema:"description=Whether the user has administrative privileges."`
 
 			// ApiKey The API key for the user.
-			ApiKey *string `json:"api_key,omitempty"`
+			ApiKey *string `json:"api_key,omitempty" jsonschema:"description=The API key for the user."`
 
 			// CreatedOn The date and time when the user account was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the user account was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Firstname The first name of the user.
-			Firstname *string `json:"firstname,omitempty"`
+			Firstname *string `json:"firstname,omitempty" jsonschema:"description=The first name of the user."`
 
 			// Id The unique identifier of the user.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the user."`
 
 			// LastLoginOn The date and time when the user last logged in.
-			LastLoginOn *time.Time `json:"last_login_on,omitempty"`
+			LastLoginOn *time.Time `json:"last_login_on,omitempty" jsonschema:"description=The date and time when the user last logged in.,format=date-time"`
 
 			// Lastname The last name of the user.
-			Lastname *string `json:"lastname,omitempty"`
+			Lastname *string `json:"lastname,omitempty" jsonschema:"description=The last name of the user."`
 
 			// Login The login name of the user.
-			Login *string `json:"login,omitempty"`
+			Login *string `json:"login,omitempty" jsonschema:"description=The login name of the user."`
 
 			// Mail The email address of the user.
-			Mail *string `json:"mail,omitempty"`
-		} `json:"user,omitempty"`
+			Mail *string `json:"mail,omitempty" jsonschema:"description=The email address of the user."`
+		} `json:"user,omitempty" jsonschema:"description=Represents a single user."`
 	}
 }
 
@@ -24643,44 +24643,44 @@ type NewsIndexResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of news returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of news returned in the list."`
 		News  *[]struct {
 			Author *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 
 			// CreatedOn The date and time when the news was created.
-			CreatedOn *time.Time `json:"created_on,omitempty"`
+			CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the news was created.,format=date-time"`
 
 			// Description The description of the news.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 			// Id The ID of the news.
-			Id      *int `json:"id,omitempty"`
+			Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the news."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// Summary The summary of the news.
-			Summary *string `json:"summary,omitempty"`
+			Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 			// Title The title of the news.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
 		} `json:"news,omitempty"`
 
 		// Offset The offset of the first news in the list.
-		Offset *int `json:"offset,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first news in the list."`
 
 		// TotalCount The total number of news.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of news."`
 	}
 }
 
@@ -24754,81 +24754,81 @@ type NewsShowResponse struct {
 			Attachments *[]NewsShow_200_News_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 			Comments *[]struct {
 				Author *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 				Content *string `json:"content,omitempty"`
 
 				// Id The ID of the comment.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the comment."`
 			} `json:"comments,omitempty"`
 
 			// CreatedOn The date and time when the news was created.
-			CreatedOn *time.Time `json:"created_on,omitempty"`
+			CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the news was created.,format=date-time"`
 
 			// Description The description of the news.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 			// Id The ID of the news.
-			Id      *int `json:"id,omitempty"`
+			Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the news."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// Summary The summary of the news.
-			Summary *string `json:"summary,omitempty"`
+			Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 			// Title The title of the news.
-			Title *string `json:"title,omitempty"`
-		} `json:"news,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
+		} `json:"news,omitempty" jsonschema:"description=A single news."`
 	}
 }
 type NewsShow_200_News_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -24922,103 +24922,103 @@ type ProjectsIndexResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of projects returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of projects returned in the list."`
 
 		// Offset The offset of the first project in the list.
-		Offset   *int `json:"offset,omitempty"`
+		Offset   *int `json:"offset,omitempty" jsonschema:"description=The offset of the first project in the list."`
 		Projects *[]struct {
 			// CreatedOn The date and time when the project was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the project was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Description The description of the project.
-			Description    *string `json:"description,omitempty"`
+			Description    *string `json:"description,omitempty" jsonschema:"description=The description of the project."`
 			EnabledModules *[]struct {
 				// Id The ID of the enabled module.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the enabled module."`
 
 				// Name The name of the enabled module.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the enabled module."`
 			} `json:"enabled_modules,omitempty"`
 
 			// Homepage The homepage URL of the project.
-			Homepage *string `json:"homepage,omitempty"`
+			Homepage *string `json:"homepage,omitempty" jsonschema:"description=The homepage URL of the project."`
 
 			// Id The ID of the project.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 			// Identifier The identifier of the project.
-			Identifier *string `json:"identifier,omitempty"`
+			Identifier *string `json:"identifier,omitempty" jsonschema:"description=The identifier of the project."`
 
 			// InheritMembers Whether the project inherits members from its parent project. `true` if it does, `false` if it does not.
-			InheritMembers *bool `json:"inherit_members,omitempty"`
+			InheritMembers *bool `json:"inherit_members,omitempty" jsonschema:"description=Whether the project inherits members from its parent project. \"true\" if it does\\, \"false\" if it does not."`
 
 			// IsPublic The visibility of the project. `true` if the project is public, `false` if it is private.
-			IsPublic        *bool `json:"is_public,omitempty"`
+			IsPublic        *bool `json:"is_public,omitempty" jsonschema:"description=The visibility of the project. \"true\" if the project is public\\, \"false\" if it is private."`
 			IssueCategories *[]struct {
 				// Id The ID of the issue category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 				// Name The name of the issue category.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 			} `json:"issue_categories,omitempty"`
 			IssueCustomFields *[]struct {
 				// Id The ID of the issue custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue custom field."`
 
 				// Name The name of the issue custom field.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue custom field."`
 			} `json:"issue_custom_fields,omitempty"`
 
 			// Name The name of the project.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 
 			// Parent The parent project of the project. If the project has no parent, this will be `null`.
 			Parent *struct {
 				// Id The ID of the parent project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent project."`
 
 				// Name The name of the parent project.
-				Name *string `json:"name,omitempty"`
-			} `json:"parent,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the parent project."`
+			} `json:"parent,omitempty" jsonschema:"description=The parent project of the project. If the project has no parent\\, this will be \"null\"."`
 
 			// Status The status of the project. Possible values are:
 			// - `1`: active
 			// - `5`: closed
 			// - `9`: archived
 			// - `10`: scheduled for deletion
-			Status              *int `json:"status,omitempty"`
+			Status              *int `json:"status,omitempty" jsonschema:"description=The status of the project. Possible values are: - \"1\": active - \"5\": closed - \"9\": archived - \"10\": scheduled for deletion"`
 			TimeEntryActivities *[]struct {
 				// Id The ID of the time entry activity.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry activity."`
 
 				// Name The name of the time entry activity.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the time entry activity."`
 			} `json:"time_entry_activities,omitempty"`
 			Trackers *[]struct {
 				// Id The ID of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"trackers,omitempty"`
 
 			// UpdatedOn The date and time when the project was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the project was last updated.,format=date-time"`
 		} `json:"projects,omitempty"`
 
 		// TotalCount The total number of projects.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of projects."`
 	}
 }
 
@@ -25045,112 +25045,112 @@ type ProjectsCreateResponse struct {
 		// Project A single project.
 		Project *struct {
 			// CreatedOn The date and time when the project was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the project was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// DefaultAssignee The default assignee of the project. If the project has no default assignee, this will be `null`.
 			DefaultAssignee *struct {
 				// Id The ID of the default assignee.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the default assignee."`
 
 				// Name The name of the default assignee.
-				Name *string `json:"name,omitempty"`
-			} `json:"default_assignee,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the default assignee."`
+			} `json:"default_assignee,omitempty" jsonschema:"description=The default assignee of the project. If the project has no default assignee\\, this will be \"null\"."`
 
 			// DefaultVersion The default version of the project. If the project has no default version, this will be `null`.
 			DefaultVersion *struct {
 				// Id The ID of the default version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the default version."`
 
 				// Name The name of the default version.
-				Name *string `json:"name,omitempty"`
-			} `json:"default_version,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the default version."`
+			} `json:"default_version,omitempty" jsonschema:"description=The default version of the project. If the project has no default version\\, this will be \"null\"."`
 
 			// Description The description of the project.
-			Description    *string `json:"description,omitempty"`
+			Description    *string `json:"description,omitempty" jsonschema:"description=The description of the project."`
 			EnabledModules *[]struct {
 				// Id The ID of the enabled module.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the enabled module."`
 
 				// Name The name of the enabled module.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the enabled module."`
 			} `json:"enabled_modules,omitempty"`
 
 			// Homepage The homepage URL of the project.
-			Homepage *string `json:"homepage,omitempty"`
+			Homepage *string `json:"homepage,omitempty" jsonschema:"description=The homepage URL of the project."`
 
 			// Id The ID of the project.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 			// Identifier The identifier of the project.
-			Identifier *string `json:"identifier,omitempty"`
+			Identifier *string `json:"identifier,omitempty" jsonschema:"description=The identifier of the project."`
 
 			// InheritMembers Whether the project inherits members from its parent project. `true` if it does, `false` if it does not.
-			InheritMembers *bool `json:"inherit_members,omitempty"`
+			InheritMembers *bool `json:"inherit_members,omitempty" jsonschema:"description=Whether the project inherits members from its parent project. \"true\" if it does\\, \"false\" if it does not."`
 
 			// IsPublic The visibility of the project. `true` if the project is public, `false` if it is private.
-			IsPublic        *bool `json:"is_public,omitempty"`
+			IsPublic        *bool `json:"is_public,omitempty" jsonschema:"description=The visibility of the project. \"true\" if the project is public\\, \"false\" if it is private."`
 			IssueCategories *[]struct {
 				// Id The ID of the issue category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 				// Name The name of the issue category.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 			} `json:"issue_categories,omitempty"`
 			IssueCustomFields *[]struct {
 				// Id The ID of the issue custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue custom field."`
 
 				// Name The name of the issue custom field.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue custom field."`
 			} `json:"issue_custom_fields,omitempty"`
 
 			// Name The name of the project.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 
 			// Parent The parent project of the project. If the project has no parent, this will be `null`.
 			Parent *struct {
 				// Id The ID of the parent project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent project."`
 
 				// Name The name of the parent project.
-				Name *string `json:"name,omitempty"`
-			} `json:"parent,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the parent project."`
+			} `json:"parent,omitempty" jsonschema:"description=The parent project of the project. If the project has no parent\\, this will be \"null\"."`
 
 			// Status The status of the project. Possible values are:
 			// - `1`: active
 			// - `5`: closed
 			// - `9`: archived
 			// - `10`: scheduled for deletion
-			Status              *int `json:"status,omitempty"`
+			Status              *int `json:"status,omitempty" jsonschema:"description=The status of the project. Possible values are: - \"1\": active - \"5\": closed - \"9\": archived - \"10\": scheduled for deletion"`
 			TimeEntryActivities *[]struct {
 				// Id The ID of the time entry activity.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry activity."`
 
 				// Name The name of the time entry activity.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the time entry activity."`
 			} `json:"time_entry_activities,omitempty"`
 			Trackers *[]struct {
 				// Id The ID of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"trackers,omitempty"`
 
 			// UpdatedOn The date and time when the project was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
-		} `json:"project,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the project was last updated.,format=date-time"`
+		} `json:"project,omitempty" jsonschema:"description=A single project."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -25201,112 +25201,112 @@ type ProjectsShowResponse struct {
 		// Project A single project.
 		Project *struct {
 			// CreatedOn The date and time when the project was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the project was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// DefaultAssignee The default assignee of the project. If the project has no default assignee, this will be `null`.
 			DefaultAssignee *struct {
 				// Id The ID of the default assignee.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the default assignee."`
 
 				// Name The name of the default assignee.
-				Name *string `json:"name,omitempty"`
-			} `json:"default_assignee,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the default assignee."`
+			} `json:"default_assignee,omitempty" jsonschema:"description=The default assignee of the project. If the project has no default assignee\\, this will be \"null\"."`
 
 			// DefaultVersion The default version of the project. If the project has no default version, this will be `null`.
 			DefaultVersion *struct {
 				// Id The ID of the default version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the default version."`
 
 				// Name The name of the default version.
-				Name *string `json:"name,omitempty"`
-			} `json:"default_version,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the default version."`
+			} `json:"default_version,omitempty" jsonschema:"description=The default version of the project. If the project has no default version\\, this will be \"null\"."`
 
 			// Description The description of the project.
-			Description    *string `json:"description,omitempty"`
+			Description    *string `json:"description,omitempty" jsonschema:"description=The description of the project."`
 			EnabledModules *[]struct {
 				// Id The ID of the enabled module.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the enabled module."`
 
 				// Name The name of the enabled module.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the enabled module."`
 			} `json:"enabled_modules,omitempty"`
 
 			// Homepage The homepage URL of the project.
-			Homepage *string `json:"homepage,omitempty"`
+			Homepage *string `json:"homepage,omitempty" jsonschema:"description=The homepage URL of the project."`
 
 			// Id The ID of the project.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 			// Identifier The identifier of the project.
-			Identifier *string `json:"identifier,omitempty"`
+			Identifier *string `json:"identifier,omitempty" jsonschema:"description=The identifier of the project."`
 
 			// InheritMembers Whether the project inherits members from its parent project. `true` if it does, `false` if it does not.
-			InheritMembers *bool `json:"inherit_members,omitempty"`
+			InheritMembers *bool `json:"inherit_members,omitempty" jsonschema:"description=Whether the project inherits members from its parent project. \"true\" if it does\\, \"false\" if it does not."`
 
 			// IsPublic The visibility of the project. `true` if the project is public, `false` if it is private.
-			IsPublic        *bool `json:"is_public,omitempty"`
+			IsPublic        *bool `json:"is_public,omitempty" jsonschema:"description=The visibility of the project. \"true\" if the project is public\\, \"false\" if it is private."`
 			IssueCategories *[]struct {
 				// Id The ID of the issue category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 				// Name The name of the issue category.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 			} `json:"issue_categories,omitempty"`
 			IssueCustomFields *[]struct {
 				// Id The ID of the issue custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue custom field."`
 
 				// Name The name of the issue custom field.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue custom field."`
 			} `json:"issue_custom_fields,omitempty"`
 
 			// Name The name of the project.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 
 			// Parent The parent project of the project. If the project has no parent, this will be `null`.
 			Parent *struct {
 				// Id The ID of the parent project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent project."`
 
 				// Name The name of the parent project.
-				Name *string `json:"name,omitempty"`
-			} `json:"parent,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the parent project."`
+			} `json:"parent,omitempty" jsonschema:"description=The parent project of the project. If the project has no parent\\, this will be \"null\"."`
 
 			// Status The status of the project. Possible values are:
 			// - `1`: active
 			// - `5`: closed
 			// - `9`: archived
 			// - `10`: scheduled for deletion
-			Status              *int `json:"status,omitempty"`
+			Status              *int `json:"status,omitempty" jsonschema:"description=The status of the project. Possible values are: - \"1\": active - \"5\": closed - \"9\": archived - \"10\": scheduled for deletion"`
 			TimeEntryActivities *[]struct {
 				// Id The ID of the time entry activity.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry activity."`
 
 				// Name The name of the time entry activity.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the time entry activity."`
 			} `json:"time_entry_activities,omitempty"`
 			Trackers *[]struct {
 				// Id The ID of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"trackers,omitempty"`
 
 			// UpdatedOn The date and time when the project was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
-		} `json:"project,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the project was last updated.,format=date-time"`
+		} `json:"project,omitempty" jsonschema:"description=A single project."`
 	}
 }
 
@@ -25519,47 +25519,47 @@ type FilesIndexResponse struct {
 type FilesIndex_200_Files_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Digest The digest of the file.
-	Digest *string `json:"digest,omitempty"`
+	Digest *string `json:"digest,omitempty" jsonschema:"description=The digest of the file."`
 
 	// Downloads The downloads of the file.
-	Downloads *int `json:"downloads,omitempty"`
+	Downloads *int `json:"downloads,omitempty" jsonschema:"description=The downloads of the file."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl *string `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl *string `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	Version      *struct {
 		// Id The ID of the version.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the version."`
 
 		// Name The name of the version.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 	} `json:"version,omitempty"`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
@@ -25608,28 +25608,28 @@ type IssueCategoriesIndexResponse struct {
 		IssueCategories *[]struct {
 			AssignedTo *struct {
 				// Id The ID of the assigned to.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned to."`
 
 				// Name The name of the assigned to.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned to."`
 			} `json:"assigned_to,omitempty"`
 
 			// Id The ID of the issue category.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 			// Name The name of the issue category.
-			Name    *string `json:"name,omitempty"`
+			Name    *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 		} `json:"issue_categories,omitempty"`
 
 		// TotalCount The total number of issue categories.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of issue categories."`
 	}
 }
 
@@ -25657,25 +25657,25 @@ type IssueCategoriesCreateResponse struct {
 		IssueCategory *struct {
 			AssignedTo *struct {
 				// Id The ID of the assigned to.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned to."`
 
 				// Name The name of the assigned to.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned to."`
 			} `json:"assigned_to,omitempty"`
 
 			// Id The ID of the issue category.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 			// Name The name of the issue category.
-			Name    *string `json:"name,omitempty"`
+			Name    *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
-		} `json:"issue_category,omitempty"`
+		} `json:"issue_category,omitempty" jsonschema:"description=A single issue category."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -25729,147 +25729,147 @@ type IssuesIndexProjectResponse struct {
 		Issues *[]struct {
 			AssignedTo *struct {
 				// Id The ID of the assigned member.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 				// Name The name of the assigned member.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 			} `json:"assigned_to,omitempty"`
 			Attachments *[]IssuesIndexProject_200_Issues_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 			Category *struct {
 				// Id The ID of the category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 				// Name The name of the category.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 			} `json:"category,omitempty"`
 
 			// ClosedOn The date and time when the issue was closed.
-			ClosedOn *time.Time `json:"closed_on,omitempty"`
+			ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 			// CreatedOn The date and time when the issue was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Description The description of the issue.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 			// DoneRatio The done ratio of the issue.
-			DoneRatio *int `json:"done_ratio,omitempty"`
+			DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 			// DueDate The due date of the issue.
-			DueDate *openapi_types.Date `json:"due_date,omitempty"`
+			DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 			// EstimatedHours The estimated hours of the issue.
-			EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+			EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 			FixedVersion   *struct {
 				// Id The ID of the fixed version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 				// Name The name of the fixed version.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 			} `json:"fixed_version,omitempty"`
 
 			// Id The ID of the issue.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 			// IsPrivate The private of the issue.
-			IsPrivate *bool `json:"is_private,omitempty"`
+			IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 			Parent    *struct {
 				// Id The ID of the parent issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 			} `json:"parent,omitempty"`
 			Priority *struct {
 				// Id The ID of the priority.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 				// Name The name of the priority.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 			} `json:"priority,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 			Relations *[]struct {
 				// Delay The delay of the relation.
-				Delay *int `json:"delay,omitempty"`
+				Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 				// Id The ID of the relation.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 				// IssueId The ID of the issue.
-				IssueId *int `json:"issue_id,omitempty"`
+				IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IssueToId The ID of the issue.
-				IssueToId *int `json:"issue_to_id,omitempty"`
+				IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// RelationType The type of the relation.
-				RelationType *string `json:"relation_type,omitempty"`
+				RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 			} `json:"relations,omitempty"`
 
 			// SpentHours The spent hours of the issue.
-			SpentHours *float32 `json:"spent_hours,omitempty"`
+			SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 			// StartDate The start date of the issue.
-			StartDate *openapi_types.Date `json:"start_date,omitempty"`
+			StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 			Status    *struct {
 				// Id The ID of the status.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 				// IsClosed The closed of the status.
-				IsClosed *bool `json:"is_closed,omitempty"`
+				IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 				// Name The name of the status.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 			} `json:"status,omitempty"`
 
 			// Subject The subject of the issue.
-			Subject *string `json:"subject,omitempty"`
+			Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 			// TotalEstimatedHours The total estimated hours of the issue.
-			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 			// TotalSpentHours The total spent hours of the issue.
-			TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+			TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 			Tracker         *struct {
 				// Id The ID of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"tracker,omitempty"`
 
 			// UpdatedOn The date and time when the issue was updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 		} `json:"issues,omitempty"`
 
 		// Limit The maximum number of issues returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of issues returned in the list."`
 
 		// Offset The offset of the first issue in the list.
-		Offset *int `json:"offset,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first issue in the list."`
 
 		// TotalCount The total number of issues.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of issues."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -25878,35 +25878,35 @@ type IssuesIndexProjectResponse struct {
 type IssuesIndexProject_200_Issues_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -25934,231 +25934,231 @@ type IssuesCreateProjectResponse struct {
 		Issue *struct {
 			AllowedStatuses *[]struct {
 				// Id The ID of the allowed statuse.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the allowed statuse."`
 
 				// IsClosed The closed of the allowed status.
-				IsClosed *bool `json:"is_closed,omitempty"`
+				IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the allowed status."`
 
 				// Name The name of the allowed statuse.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the allowed statuse."`
 			} `json:"allowed_statuses,omitempty"`
 			AssignedTo *struct {
 				// Id The ID of the assigned member.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 				// Name The name of the assigned member.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 			} `json:"assigned_to,omitempty"`
 			Attachments *[]IssuesCreateProject_201_Issue_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 			Category *struct {
 				// Id The ID of the category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 				// Name The name of the category.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 			} `json:"category,omitempty"`
 			Changesets *[]struct {
 				// Comments The comments of the changeset.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the changeset."`
 
 				// CommittedOn The date and time when the changeset was committed.
-				CommittedOn *time.Time `json:"committed_on,omitempty"`
+				CommittedOn *time.Time `json:"committed_on,omitempty" jsonschema:"description=The date and time when the changeset was committed.,format=date-time"`
 
 				// Revision The revision of the changeset.
-				Revision *string `json:"revision,omitempty"`
+				Revision *string `json:"revision,omitempty" jsonschema:"description=The revision of the changeset."`
 				User     *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
 			} `json:"changesets,omitempty"`
 			Children *[]struct {
 				Children *[]interface{} `json:"children,omitempty"`
 
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// Subject The subject of the issue.
-				Subject *string `json:"subject,omitempty"`
+				Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 				Tracker *struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"tracker,omitempty"`
 			} `json:"children,omitempty"`
 
 			// ClosedOn The date and time when the issue was closed.
-			ClosedOn *time.Time `json:"closed_on,omitempty"`
+			ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 			// CreatedOn The date and time when the issue was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Description The description of the issue.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 			// DoneRatio The done ratio of the issue.
-			DoneRatio *int `json:"done_ratio,omitempty"`
+			DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 			// DueDate The due date of the issue.
-			DueDate *openapi_types.Date `json:"due_date,omitempty"`
+			DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 			// EstimatedHours The estimated hours of the issue.
-			EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+			EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 			FixedVersion   *struct {
 				// Id The ID of the fixed version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 				// Name The name of the fixed version.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 			} `json:"fixed_version,omitempty"`
 
 			// Id The ID of the issue.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 			// IsPrivate The private of the issue.
-			IsPrivate *bool `json:"is_private,omitempty"`
+			IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 			Journals  *[]struct {
 				// CreatedOn The date and time when the journal was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the journal was created.,format=date-time"`
 				Details   *[]struct {
 					// Name The name of the detail.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the detail."`
 
 					// NewValue The new value of the detail.
-					NewValue *string `json:"new_value,omitempty"`
+					NewValue *string `json:"new_value,omitempty" jsonschema:"description=The new value of the detail."`
 
 					// OldValue The old value of the detail.
-					OldValue *string `json:"old_value,omitempty"`
+					OldValue *string `json:"old_value,omitempty" jsonschema:"description=The old value of the detail."`
 
 					// Property The property of the detail.
-					Property *string `json:"property,omitempty"`
+					Property *string `json:"property,omitempty" jsonschema:"description=The property of the detail."`
 				} `json:"details,omitempty"`
 
 				// Id The ID of the journal.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the journal."`
 
 				// Notes The notes of the journal.
-				Notes *string `json:"notes,omitempty"`
+				Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the journal."`
 
 				// PrivateNotes The private of the journal.
-				PrivateNotes *bool `json:"private_notes,omitempty"`
+				PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private of the journal."`
 				UpdatedBy    *struct {
 					// Id The ID of the updated.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the updated."`
 
 					// Name The name of the updated.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the updated."`
 				} `json:"updated_by,omitempty"`
 
 				// UpdatedOn The date and time when the journal was updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the journal was updated.,format=date-time"`
 				User      *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
 			} `json:"journals,omitempty"`
 			Parent *struct {
 				// Id The ID of the parent issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 			} `json:"parent,omitempty"`
 			Priority *struct {
 				// Id The ID of the priority.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 				// Name The name of the priority.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 			} `json:"priority,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 			Relations *[]struct {
 				// Delay The delay of the relation.
-				Delay *int `json:"delay,omitempty"`
+				Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 				// Id The ID of the relation.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 				// IssueId The ID of the issue.
-				IssueId *int `json:"issue_id,omitempty"`
+				IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IssueToId The ID of the issue.
-				IssueToId *int `json:"issue_to_id,omitempty"`
+				IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// RelationType The type of the relation.
-				RelationType *string `json:"relation_type,omitempty"`
+				RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 			} `json:"relations,omitempty"`
 
 			// SpentHours The spent hours of the issue.
-			SpentHours *float32 `json:"spent_hours,omitempty"`
+			SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 			// StartDate The start date of the issue.
-			StartDate *openapi_types.Date `json:"start_date,omitempty"`
+			StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 			Status    *struct {
 				// Id The ID of the status.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 				// IsClosed The closed of the status.
-				IsClosed *bool `json:"is_closed,omitempty"`
+				IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 				// Name The name of the status.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 			} `json:"status,omitempty"`
 
 			// Subject The subject of the issue.
-			Subject *string `json:"subject,omitempty"`
+			Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 			// TotalEstimatedHours The total estimated hours of the issue.
-			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+			TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 			// TotalSpentHours The total spent hours of the issue.
-			TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+			TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 			Tracker         *struct {
 				// Id The ID of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"tracker,omitempty"`
 
 			// UpdatedOn The date and time when the issue was updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 			Watchers  *[]struct {
 				// Id The ID of the watcher.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the watcher."`
 
 				// Name The name of the watcher.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the watcher."`
 			} `json:"watchers,omitempty"`
-		} `json:"issue,omitempty"`
+		} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -26167,35 +26167,35 @@ type IssuesCreateProjectResponse struct {
 type IssuesCreateProject_201_Issue_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -26286,49 +26286,49 @@ type MembersIndexResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of memberships returned in the list.
-		Limit       *int `json:"limit,omitempty"`
+		Limit       *int `json:"limit,omitempty" jsonschema:"description=The maximum number of memberships returned in the list."`
 		Memberships *[]struct {
 			Group *struct {
 				// Id The ID of the group.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 				// Name The name of the group.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			} `json:"group,omitempty"`
 
 			// Id The ID of the membership.
-			Id      *int `json:"id,omitempty"`
+			Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the membership."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 			Roles *[]struct {
 				// Id The ID of the role.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 				// Inherited Whether the role is inherited from a parent project.
-				Inherited *bool `json:"inherited,omitempty"`
+				Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 				// Name The name of the role.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 			} `json:"roles,omitempty"`
 			User *struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"user,omitempty"`
 		} `json:"memberships,omitempty"`
 
 		// Offset The offset of the first membership in the list.
-		Offset *int `json:"offset,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first membership in the list."`
 
 		// TotalCount The total number of memberships.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of memberships."`
 	}
 }
 
@@ -26356,39 +26356,39 @@ type MembersCreateResponse struct {
 		Membership *struct {
 			Group *struct {
 				// Id The ID of the group.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 				// Name The name of the group.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			} `json:"group,omitempty"`
 
 			// Id The ID of the membership.
-			Id      *int `json:"id,omitempty"`
+			Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the membership."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 			Roles *[]struct {
 				// Id The ID of the role.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 				// Inherited Whether the role is inherited from a parent project.
-				Inherited *bool `json:"inherited,omitempty"`
+				Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 				// Name The name of the role.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 			} `json:"roles,omitempty"`
 			User *struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"user,omitempty"`
-		} `json:"membership,omitempty"`
+		} `json:"membership,omitempty" jsonschema:"description=A single membership."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -26416,44 +26416,44 @@ type NewsIndexProjectResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of news returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of news returned in the list."`
 		News  *[]struct {
 			Author *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 
 			// CreatedOn The date and time when the news was created.
-			CreatedOn *time.Time `json:"created_on,omitempty"`
+			CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the news was created.,format=date-time"`
 
 			// Description The description of the news.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 			// Id The ID of the news.
-			Id      *int `json:"id,omitempty"`
+			Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the news."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// Summary The summary of the news.
-			Summary *string `json:"summary,omitempty"`
+			Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 			// Title The title of the news.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
 		} `json:"news,omitempty"`
 
 		// Offset The offset of the first news in the list.
-		Offset *int `json:"offset,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first news in the list."`
 
 		// TotalCount The total number of news.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of news."`
 	}
 }
 
@@ -26502,32 +26502,32 @@ type SearchIndexProjectResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of search results returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of search results returned in the list."`
 
 		// Offset The offset of the first search result in the list.
-		Offset  *int `json:"offset,omitempty"`
+		Offset  *int `json:"offset,omitempty" jsonschema:"description=The offset of the first search result in the list."`
 		Results *[]struct {
 			// Datetime The date and time when the search result was created.
-			Datetime *time.Time `json:"datetime,omitempty"`
+			Datetime *time.Time `json:"datetime,omitempty" jsonschema:"description=The date and time when the search result was created.,format=date-time"`
 
 			// Description The description of the search result.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the search result."`
 
 			// Id The ID of the search result.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the search result."`
 
 			// Title The title of the search result.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the search result."`
 
 			// Type The type of the search result.
-			Type *string `json:"type,omitempty"`
+			Type *string `json:"type,omitempty" jsonschema:"description=The type of the search result."`
 
 			// Url The url of the search result.
-			Url *string `json:"url,omitempty"`
+			Url *string `json:"url,omitempty" jsonschema:"description=The url of the search result."`
 		} `json:"results,omitempty"`
 
 		// TotalCount The total number of search results.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of search results."`
 	}
 }
 
@@ -26573,69 +26573,69 @@ type TimelogIndexProjectResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of time entries returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of time entries returned in the list."`
 
 		// Offset The offset of the first time entry in the list.
-		Offset      *int `json:"offset,omitempty"`
+		Offset      *int `json:"offset,omitempty" jsonschema:"description=The offset of the first time entry in the list."`
 		TimeEntries *[]struct {
 			Activity *struct {
 				// Id The ID of the activity.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 				// Name The name of the activity.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 			} `json:"activity,omitempty"`
 
 			// Comments The comments of the time entry.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 			// CreatedOn The date and time when the time entry was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Hours The hours of the time entry.
-			Hours *float32 `json:"hours,omitempty"`
+			Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 			// Id The ID of the time entry.
-			Id    *int `json:"id,omitempty"`
+			Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 			Issue *struct {
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 			} `json:"issue,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// SpentOn The date when the time entry was spent.
-			SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+			SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 			// UpdatedOn The date and time when the time entry was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 			User      *struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"user,omitempty"`
 		} `json:"time_entries,omitempty"`
 
 		// TotalCount The total number of time entries.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of time entries."`
 	}
 }
 
@@ -26663,59 +26663,59 @@ type TimelogCreateProjectResponse struct {
 		TimeEntry *struct {
 			Activity *struct {
 				// Id The ID of the activity.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 				// Name The name of the activity.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 			} `json:"activity,omitempty"`
 
 			// Comments The comments of the time entry.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 			// CreatedOn The date and time when the time entry was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Hours The hours of the time entry.
-			Hours *float32 `json:"hours,omitempty"`
+			Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 			// Id The ID of the time entry.
-			Id    *int `json:"id,omitempty"`
+			Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 			Issue *struct {
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 			} `json:"issue,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// SpentOn The date when the time entry was spent.
-			SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+			SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 			// UpdatedOn The date and time when the time entry was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 			User      *struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"user,omitempty"`
-		} `json:"time_entry,omitempty"`
+		} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -26743,52 +26743,52 @@ type VersionsIndexResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// TotalCount The total number of versions.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of versions."`
 		Versions   *[]struct {
 			// CreatedOn The date and time when the version was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the version was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Description The description of the version.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the version."`
 
 			// DueDate The date when the version was expired.
-			DueDate *openapi_types.Date `json:"due_date,omitempty"`
+			DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The date when the version was expired.,format=date"`
 
 			// Id The ID of the version.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the version."`
 
 			// Name The name of the version.
-			Name    *string `json:"name,omitempty"`
+			Name    *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// Sharing The sharing of the version.
-			Sharing *string `json:"sharing,omitempty"`
+			Sharing *string `json:"sharing,omitempty" jsonschema:"description=The sharing of the version."`
 
 			// Status The status of the version.
-			Status *string `json:"status,omitempty"`
+			Status *string `json:"status,omitempty" jsonschema:"description=The status of the version."`
 
 			// UpdatedOn The date and time when the version was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the version was last updated.,format=date-time"`
 
 			// WikiPageTitle The wiki page title of the version.
-			WikiPageTitle *string `json:"wiki_page_title,omitempty"`
+			WikiPageTitle *string `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
 		} `json:"versions,omitempty"`
 	}
 }
@@ -26816,56 +26816,56 @@ type VersionsCreateResponse struct {
 		// Version A single version.
 		Version *struct {
 			// CreatedOn The date and time when the version was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the version was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Description The description of the version.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the version."`
 
 			// DueDate The date when the version was expired.
-			DueDate *openapi_types.Date `json:"due_date,omitempty"`
+			DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The date when the version was expired.,format=date"`
 
 			// EstimatedHours The estimated hours of the version.
-			EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+			EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the version."`
 
 			// Id The ID of the version.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the version."`
 
 			// Name The name of the version.
-			Name    *string `json:"name,omitempty"`
+			Name    *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// Sharing The sharing of the version.
-			Sharing *string `json:"sharing,omitempty"`
+			Sharing *string `json:"sharing,omitempty" jsonschema:"description=The sharing of the version."`
 
 			// SpentHours The spent hours of the version.
-			SpentHours *float32 `json:"spent_hours,omitempty"`
+			SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the version."`
 
 			// Status The status of the version.
-			Status *string `json:"status,omitempty"`
+			Status *string `json:"status,omitempty" jsonschema:"description=The status of the version."`
 
 			// UpdatedOn The date and time when the version was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the version was last updated.,format=date-time"`
 
 			// WikiPageTitle The wiki page title of the version.
-			WikiPageTitle *string `json:"wiki_page_title,omitempty"`
-		} `json:"version,omitempty"`
+			WikiPageTitle *string `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+		} `json:"version,omitempty" jsonschema:"description=A single version."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -26897,68 +26897,68 @@ type WikiShowRootResponse struct {
 			Attachments *[]WikiShowRoot_200_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 
 			// Comments The comments of the wiki.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 			// CreatedOn The date and time when the wiki was created.
-			CreatedOn *time.Time `json:"created_on,omitempty"`
+			CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 			Parent    *struct {
 				// Title The parent title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 			} `json:"parent,omitempty"`
 
 			// Text The text of the wiki.
-			Text *string `json:"text,omitempty"`
+			Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 			// Title The title of the wiki.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 			// UpdatedOn The date and time when the wiki was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 			// Version The version of the wiki.
-			Version *int `json:"version,omitempty"`
-		} `json:"wiki_page,omitempty"`
+			Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+		} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 	}
 }
 type WikiShowRoot_200_WikiPage_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -26984,20 +26984,20 @@ type WikiIndexResponse struct {
 	JSON200      *struct {
 		WikiPages *[]struct {
 			// CreatedOn The date and time when the wiki was created.
-			CreatedOn *time.Time `json:"created_on,omitempty"`
+			CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 			Parent    *struct {
 				// Title The parent title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 			} `json:"parent,omitempty"`
 
 			// Title The title of the wiki.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 			// UpdatedOn The date and time when the wiki was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 			// Version The version of the wiki.
-			Version *int `json:"version,omitempty"`
+			Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
 		} `json:"wiki_pages,omitempty"`
 	}
 }
@@ -27048,68 +27048,68 @@ type WikiShowResponse struct {
 			Attachments *[]WikiShow_200_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 
 			// Comments The comments of the wiki.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 			// CreatedOn The date and time when the wiki was created.
-			CreatedOn *time.Time `json:"created_on,omitempty"`
+			CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 			Parent    *struct {
 				// Title The parent title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 			} `json:"parent,omitempty"`
 
 			// Text The text of the wiki.
-			Text *string `json:"text,omitempty"`
+			Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 			// Title The title of the wiki.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 			// UpdatedOn The date and time when the wiki was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 			// Version The version of the wiki.
-			Version *int `json:"version,omitempty"`
-		} `json:"wiki_page,omitempty"`
+			Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+		} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 	}
 }
 type WikiShow_200_WikiPage_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -27138,34 +27138,34 @@ type WikiUpdatePatchResponse struct {
 			Attachments *[]WikiUpdatePatch_201_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 
 			// Comments The comments of the wiki.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 			// CreatedOn The date and time when the wiki was created.
-			CreatedOn *time.Time `json:"created_on,omitempty"`
+			CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 			Parent    *struct {
 				// Title The parent title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 			} `json:"parent,omitempty"`
 
 			// Text The text of the wiki.
-			Text *string `json:"text,omitempty"`
+			Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 			// Title The title of the wiki.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 			// UpdatedOn The date and time when the wiki was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 			// Version The version of the wiki.
-			Version *int `json:"version,omitempty"`
-		} `json:"wiki_page,omitempty"`
+			Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+		} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -27174,35 +27174,35 @@ type WikiUpdatePatchResponse struct {
 type WikiUpdatePatch_201_WikiPage_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -27231,34 +27231,34 @@ type WikiUpdatePutResponse struct {
 			Attachments *[]WikiUpdatePut_201_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 
 			// Comments The comments of the wiki.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 			// CreatedOn The date and time when the wiki was created.
-			CreatedOn *time.Time `json:"created_on,omitempty"`
+			CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 			Parent    *struct {
 				// Title The parent title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 			} `json:"parent,omitempty"`
 
 			// Text The text of the wiki.
-			Text *string `json:"text,omitempty"`
+			Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 			// Title The title of the wiki.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 			// UpdatedOn The date and time when the wiki was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 			// Version The version of the wiki.
-			Version *int `json:"version,omitempty"`
-		} `json:"wiki_page,omitempty"`
+			Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+		} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -27267,35 +27267,35 @@ type WikiUpdatePutResponse struct {
 type WikiUpdatePut_201_WikiPage_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -27366,68 +27366,68 @@ type WikiShowVersionResponse struct {
 			Attachments *[]WikiShowVersion_200_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 			Author      *struct {
 				// Id The ID of the author.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 				// Name The name of the author.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 			} `json:"author,omitempty"`
 
 			// Comments The comments of the wiki.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 			// CreatedOn The date and time when the wiki was created.
-			CreatedOn *time.Time `json:"created_on,omitempty"`
+			CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 			Parent    *struct {
 				// Title The parent title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 			} `json:"parent,omitempty"`
 
 			// Text The text of the wiki.
-			Text *string `json:"text,omitempty"`
+			Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 			// Title The title of the wiki.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 			// UpdatedOn The date and time when the wiki was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 			// Version The version of the wiki.
-			Version *int `json:"version,omitempty"`
-		} `json:"wiki_page,omitempty"`
+			Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+		} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 	}
 }
 type WikiShowVersion_200_WikiPage_Attachments_Item struct {
 	Author *struct {
 		// Id The ID of the author.
-		Id *int `json:"id,omitempty"`
+		Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 		// Name The name of the author.
-		Name *string `json:"name,omitempty"`
+		Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 	} `json:"author,omitempty"`
 
 	// ContentType The content type of the attachment.
-	ContentType *string `json:"content_type,omitempty"`
+	ContentType *string `json:"content_type,omitempty" jsonschema:"description=The content type of the attachment."`
 
 	// ContentUrl The content URL of the attachment.
-	ContentUrl *string `json:"content_url,omitempty"`
+	ContentUrl *string `json:"content_url,omitempty" jsonschema:"description=The content URL of the attachment."`
 
 	// CreatedOn The date and time when the attachment was created.
-	CreatedOn *time.Time `json:"created_on,omitempty"`
+	CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the attachment was created.,format=date-time"`
 
 	// Description The description of the attachment.
-	Description *string `json:"description,omitempty"`
+	Description *string `json:"description,omitempty" jsonschema:"description=The description of the attachment."`
 
 	// Filename The filename of the attachment.
-	Filename *string `json:"filename,omitempty"`
+	Filename *string `json:"filename,omitempty" jsonschema:"description=The filename of the attachment."`
 
 	// Filesize The filesize of the attachment.
-	Filesize *int `json:"filesize,omitempty"`
+	Filesize *int `json:"filesize,omitempty" jsonschema:"description=The filesize of the attachment."`
 
 	// Id The ID of the attachment.
-	Id *int `json:"id,omitempty"`
+	Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 	// ThumbnailUrl The thumbnail URL of the attachment.
-	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty"`
+	ThumbnailUrl         *string                `json:"thumbnail_url,omitempty" jsonschema:"description=The thumbnail URL of the attachment."`
 	AdditionalProperties map[string]interface{} `json:"-"`
 }
 
@@ -27494,26 +27494,26 @@ type QueriesIndexResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of queries returned in the result set.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of queries returned in the result set."`
 
 		// Offset The offset of the first query in the result set.
-		Offset  *int `json:"offset,omitempty"`
+		Offset  *int `json:"offset,omitempty" jsonschema:"description=The offset of the first query in the result set."`
 		Queries *[]struct {
 			// Id The unique identifier of the query.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the query."`
 
 			// IsPublic Whether the query is public.
-			IsPublic *bool `json:"is_public,omitempty"`
+			IsPublic *bool `json:"is_public,omitempty" jsonschema:"description=Whether the query is public."`
 
 			// Name The name of the query.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the query."`
 
 			// ProjectId The unique identifier of the project.
-			ProjectId *int `json:"project_id,omitempty"`
+			ProjectId *int `json:"project_id,omitempty" jsonschema:"description=The unique identifier of the project."`
 		} `json:"queries,omitempty"`
 
 		// TotalCount The total number of queries returned.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of queries returned."`
 	}
 }
 
@@ -27561,20 +27561,20 @@ type IssueRelationsShowResponse struct {
 		// Relation Represents a single issue relation.
 		Relation *struct {
 			// Delay The delay of the relation.
-			Delay *int `json:"delay,omitempty"`
+			Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 			// Id The ID of the relation.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 			// IssueId The ID of the issue.
-			IssueId *int `json:"issue_id,omitempty"`
+			IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 			// IssueToId The ID of the issue to.
-			IssueToId *int `json:"issue_to_id,omitempty"`
+			IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue to."`
 
 			// RelationType The relation type of the relation.
-			RelationType *string `json:"relation_type,omitempty"`
-		} `json:"relation,omitempty"`
+			RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation."`
+		} `json:"relation,omitempty" jsonschema:"description=Represents a single issue relation."`
 	}
 }
 
@@ -27600,10 +27600,10 @@ type RolesIndexResponse struct {
 	JSON200      *struct {
 		Roles *[]struct {
 			// Id The unique identifier of the role.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the role."`
 
 			// Name The name of the role.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 		} `json:"roles,omitempty"`
 	}
 }
@@ -27631,24 +27631,24 @@ type RolesShowResponse struct {
 		// Role Represents a single role with additional details.
 		Role *struct {
 			// Assignable Whether the role is assignable.
-			Assignable *bool `json:"assignable,omitempty"`
+			Assignable *bool `json:"assignable,omitempty" jsonschema:"description=Whether the role is assignable."`
 
 			// Id The unique identifier of the role.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the role."`
 
 			// IssuesVisibility The visibility of issues for this role.
-			IssuesVisibility *string `json:"issues_visibility,omitempty"`
+			IssuesVisibility *string `json:"issues_visibility,omitempty" jsonschema:"description=The visibility of issues for this role."`
 
 			// Name The name of the role.
-			Name        *string   `json:"name,omitempty"`
+			Name        *string   `json:"name,omitempty" jsonschema:"description=The name of the role."`
 			Permissions *[]string `json:"permissions,omitempty"`
 
 			// TimeEntriesVisibility The time entries visibility of the role.
-			TimeEntriesVisibility *string `json:"time_entries_visibility,omitempty"`
+			TimeEntriesVisibility *string `json:"time_entries_visibility,omitempty" jsonschema:"description=The time entries visibility of the role."`
 
 			// UsersVisibility The users visibility of the role.
-			UsersVisibility *string `json:"users_visibility,omitempty"`
-		} `json:"role,omitempty"`
+			UsersVisibility *string `json:"users_visibility,omitempty" jsonschema:"description=The users visibility of the role."`
+		} `json:"role,omitempty" jsonschema:"description=Represents a single role with additional details."`
 	}
 }
 
@@ -27673,32 +27673,32 @@ type SearchIndexResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of search results returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of search results returned in the list."`
 
 		// Offset The offset of the first search result in the list.
-		Offset  *int `json:"offset,omitempty"`
+		Offset  *int `json:"offset,omitempty" jsonschema:"description=The offset of the first search result in the list."`
 		Results *[]struct {
 			// Datetime The date and time when the search result was created.
-			Datetime *time.Time `json:"datetime,omitempty"`
+			Datetime *time.Time `json:"datetime,omitempty" jsonschema:"description=The date and time when the search result was created.,format=date-time"`
 
 			// Description The description of the search result.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the search result."`
 
 			// Id The ID of the search result.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the search result."`
 
 			// Title The title of the search result.
-			Title *string `json:"title,omitempty"`
+			Title *string `json:"title,omitempty" jsonschema:"description=The title of the search result."`
 
 			// Type The type of the search result.
-			Type *string `json:"type,omitempty"`
+			Type *string `json:"type,omitempty" jsonschema:"description=The type of the search result."`
 
 			// Url The url of the search result.
-			Url *string `json:"url,omitempty"`
+			Url *string `json:"url,omitempty" jsonschema:"description=The url of the search result."`
 		} `json:"results,omitempty"`
 
 		// TotalCount The total number of search results.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of search results."`
 	}
 }
 
@@ -27744,69 +27744,69 @@ type TimelogIndexResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of time entries returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of time entries returned in the list."`
 
 		// Offset The offset of the first time entry in the list.
-		Offset      *int `json:"offset,omitempty"`
+		Offset      *int `json:"offset,omitempty" jsonschema:"description=The offset of the first time entry in the list."`
 		TimeEntries *[]struct {
 			Activity *struct {
 				// Id The ID of the activity.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 				// Name The name of the activity.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 			} `json:"activity,omitempty"`
 
 			// Comments The comments of the time entry.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 			// CreatedOn The date and time when the time entry was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Hours The hours of the time entry.
-			Hours *float32 `json:"hours,omitempty"`
+			Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 			// Id The ID of the time entry.
-			Id    *int `json:"id,omitempty"`
+			Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 			Issue *struct {
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 			} `json:"issue,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// SpentOn The date when the time entry was spent.
-			SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+			SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 			// UpdatedOn The date and time when the time entry was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 			User      *struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"user,omitempty"`
 		} `json:"time_entries,omitempty"`
 
 		// TotalCount The total number of time entries.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of time entries."`
 	}
 }
 
@@ -27834,59 +27834,59 @@ type TimelogCreateResponse struct {
 		TimeEntry *struct {
 			Activity *struct {
 				// Id The ID of the activity.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 				// Name The name of the activity.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 			} `json:"activity,omitempty"`
 
 			// Comments The comments of the time entry.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 			// CreatedOn The date and time when the time entry was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Hours The hours of the time entry.
-			Hours *float32 `json:"hours,omitempty"`
+			Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 			// Id The ID of the time entry.
-			Id    *int `json:"id,omitempty"`
+			Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 			Issue *struct {
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 			} `json:"issue,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// SpentOn The date when the time entry was spent.
-			SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+			SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 			// UpdatedOn The date and time when the time entry was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 			User      *struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"user,omitempty"`
-		} `json:"time_entry,omitempty"`
+		} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -27941,59 +27941,59 @@ type TimelogShowResponse struct {
 		TimeEntry *struct {
 			Activity *struct {
 				// Id The ID of the activity.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 				// Name The name of the activity.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 			} `json:"activity,omitempty"`
 
 			// Comments The comments of the time entry.
-			Comments *string `json:"comments,omitempty"`
+			Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 			// CreatedOn The date and time when the time entry was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Hours The hours of the time entry.
-			Hours *float32 `json:"hours,omitempty"`
+			Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 			// Id The ID of the time entry.
-			Id    *int `json:"id,omitempty"`
+			Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 			Issue *struct {
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 			} `json:"issue,omitempty"`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// SpentOn The date when the time entry was spent.
-			SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+			SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 			// UpdatedOn The date and time when the time entry was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 			User      *struct {
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// Name The name of the user.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 			} `json:"user,omitempty"`
-		} `json:"time_entry,omitempty"`
+		} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 	}
 }
 
@@ -28068,21 +28068,21 @@ type TrackersIndexResponse struct {
 		Trackers *[]struct {
 			DefaultStatus *struct {
 				// Id The unique identifier of the default status.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the default status."`
 
 				// Name The name of the default status.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the default status."`
 			} `json:"default_status,omitempty"`
 
 			// Description A description of the tracker.
-			Description           *string   `json:"description,omitempty"`
+			Description           *string   `json:"description,omitempty" jsonschema:"description=A description of the tracker."`
 			EnabledStandardFields *[]string `json:"enabled_standard_fields,omitempty"`
 
 			// Id The unique identifier of the tracker.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the tracker."`
 
 			// Name The name of the tracker.
-			Name *string `json:"name,omitempty"`
+			Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 		} `json:"trackers,omitempty"`
 	}
 }
@@ -28109,10 +28109,10 @@ type AttachmentsUploadResponse struct {
 	JSON201      *struct {
 		Upload *struct {
 			// Id The ID of the attachment.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 			// Token The token of the attachment.
-			Token *string `json:"token,omitempty"`
+			Token *string `json:"token,omitempty" jsonschema:"description=The token of the attachment."`
 		} `json:"upload,omitempty"`
 	}
 	JSON422 *struct {
@@ -28162,74 +28162,74 @@ type UsersIndexResponse struct {
 	HTTPResponse *http.Response
 	JSON200      *struct {
 		// Limit The maximum number of users returned in the list.
-		Limit *int `json:"limit,omitempty"`
+		Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of users returned in the list."`
 
 		// Offset The offset of the first user in the list.
-		Offset *int `json:"offset,omitempty"`
+		Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first user in the list."`
 
 		// TotalCount The total number of users.
-		TotalCount *int `json:"total_count,omitempty"`
+		TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of users."`
 		Users      *[]struct {
 			// Admin The administrative of the user.
-			Admin      *bool `json:"admin,omitempty"`
+			Admin      *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 			AuthSource *struct {
 				// Id The ID of the auth source.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the auth source."`
 
 				// Name The name of the auth source.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the auth source."`
 			} `json:"auth_source,omitempty"`
 
 			// AvatarUrl The avatar URL of the user.
-			AvatarUrl *string `json:"avatar_url,omitempty"`
+			AvatarUrl *string `json:"avatar_url,omitempty" jsonschema:"description=The avatar URL of the user."`
 
 			// CreatedOn The date and time when the user was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the user was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Firstname The firstname of the user.
-			Firstname *string `json:"firstname,omitempty"`
+			Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 
 			// Id The ID of the user.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 			// LastLoginOn The date and time when the user was last logon.
-			LastLoginOn *time.Time `json:"last_login_on,omitempty"`
+			LastLoginOn *time.Time `json:"last_login_on,omitempty" jsonschema:"description=The date and time when the user was last logon.,format=date-time"`
 
 			// Lastname The lastname of the user.
-			Lastname *string `json:"lastname,omitempty"`
+			Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 			// Login The login of the user.
-			Login *string `json:"login,omitempty"`
+			Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 			// Mail The mail of the user.
-			Mail *string `json:"mail,omitempty"`
+			Mail *string `json:"mail,omitempty" jsonschema:"description=The mail of the user."`
 
 			// PasswdChangedOn The date and time when the user was change password.
-			PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty"`
+			PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty" jsonschema:"description=The date and time when the user was change password.,format=date-time"`
 
 			// Status The status of the user. Possible values are:
 			// - `0`: anonymous
 			// - `1`: active
 			// - `2`: registered
 			// - `3`: locked
-			Status *int `json:"status,omitempty"`
+			Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked"`
 
 			// TwofaScheme The 2FA scheme of the user.
-			TwofaScheme *string `json:"twofa_scheme,omitempty"`
+			TwofaScheme *string `json:"twofa_scheme,omitempty" jsonschema:"description=The 2FA scheme of the user."`
 
 			// UpdatedOn The date and time when the user was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the user was last updated.,format=date-time"`
 		} `json:"users,omitempty"`
 	}
 }
@@ -28257,97 +28257,97 @@ type UsersCreateResponse struct {
 		// User A single user.
 		User *struct {
 			// Admin The administrative of the user.
-			Admin *bool `json:"admin,omitempty"`
+			Admin *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 
 			// ApiKey The API key of the user.
-			ApiKey     *string `json:"api_key,omitempty"`
+			ApiKey     *string `json:"api_key,omitempty" jsonschema:"description=The API key of the user."`
 			AuthSource *struct {
 				// Id The ID of the auth source.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the auth source."`
 
 				// Name The name of the auth source.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the auth source."`
 			} `json:"auth_source,omitempty"`
 
 			// AvatarUrl The avatar URL of the user.
-			AvatarUrl *string `json:"avatar_url,omitempty"`
+			AvatarUrl *string `json:"avatar_url,omitempty" jsonschema:"description=The avatar URL of the user."`
 
 			// CreatedOn The date and time when the user was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the user was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Firstname The firstname of the user.
-			Firstname *string `json:"firstname,omitempty"`
+			Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 			Groups    *[]struct {
 				// Id The ID of the group.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 				// Name The name of the group.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			} `json:"groups,omitempty"`
 
 			// Id The ID of the user.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 			// LastLoginOn The date and time when the user was last logon.
-			LastLoginOn *time.Time `json:"last_login_on,omitempty"`
+			LastLoginOn *time.Time `json:"last_login_on,omitempty" jsonschema:"description=The date and time when the user was last logon.,format=date-time"`
 
 			// Lastname The lastname of the user.
-			Lastname *string `json:"lastname,omitempty"`
+			Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 			// Login The login of the user.
-			Login *string `json:"login,omitempty"`
+			Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 			// Mail The mail of the user.
-			Mail        *string `json:"mail,omitempty"`
+			Mail        *string `json:"mail,omitempty" jsonschema:"description=The mail of the user."`
 			Memberships *[]struct {
 				// Id The ID of the mebership.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the mebership."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Roles *[]struct {
 					// Id The ID of the role.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 					// Inherited Whether the role is inherited from a parent project.
-					Inherited *bool `json:"inherited,omitempty"`
+					Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 					// Name The name of the role.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 				} `json:"roles,omitempty"`
 			} `json:"memberships,omitempty"`
 
 			// PasswdChangedOn The date and time when the user was change password.
-			PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty"`
+			PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty" jsonschema:"description=The date and time when the user was change password.,format=date-time"`
 
 			// Status The status of the user. Possible values are:
 			// - `0`: anonymous
 			// - `1`: active
 			// - `2`: registered
 			// - `3`: locked
-			Status *int `json:"status,omitempty"`
+			Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked"`
 
 			// TwofaScheme The 2FA scheme of the user.
-			TwofaScheme *string `json:"twofa_scheme,omitempty"`
+			TwofaScheme *string `json:"twofa_scheme,omitempty" jsonschema:"description=The 2FA scheme of the user."`
 
 			// UpdatedOn The date and time when the user was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
-		} `json:"user,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the user was last updated.,format=date-time"`
+		} `json:"user,omitempty" jsonschema:"description=A single user."`
 	}
 	JSON422 *struct {
 		Errors *[]string `json:"errors,omitempty"`
@@ -28401,97 +28401,97 @@ type UsersShowResponse struct {
 		// User A single user.
 		User *struct {
 			// Admin The administrative of the user.
-			Admin *bool `json:"admin,omitempty"`
+			Admin *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 
 			// ApiKey The API key of the user.
-			ApiKey     *string `json:"api_key,omitempty"`
+			ApiKey     *string `json:"api_key,omitempty" jsonschema:"description=The API key of the user."`
 			AuthSource *struct {
 				// Id The ID of the auth source.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the auth source."`
 
 				// Name The name of the auth source.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the auth source."`
 			} `json:"auth_source,omitempty"`
 
 			// AvatarUrl The avatar URL of the user.
-			AvatarUrl *string `json:"avatar_url,omitempty"`
+			AvatarUrl *string `json:"avatar_url,omitempty" jsonschema:"description=The avatar URL of the user."`
 
 			// CreatedOn The date and time when the user was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the user was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Firstname The firstname of the user.
-			Firstname *string `json:"firstname,omitempty"`
+			Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 			Groups    *[]struct {
 				// Id The ID of the group.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 				// Name The name of the group.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			} `json:"groups,omitempty"`
 
 			// Id The ID of the user.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 			// LastLoginOn The date and time when the user was last logon.
-			LastLoginOn *time.Time `json:"last_login_on,omitempty"`
+			LastLoginOn *time.Time `json:"last_login_on,omitempty" jsonschema:"description=The date and time when the user was last logon.,format=date-time"`
 
 			// Lastname The lastname of the user.
-			Lastname *string `json:"lastname,omitempty"`
+			Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 			// Login The login of the user.
-			Login *string `json:"login,omitempty"`
+			Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 			// Mail The mail of the user.
-			Mail        *string `json:"mail,omitempty"`
+			Mail        *string `json:"mail,omitempty" jsonschema:"description=The mail of the user."`
 			Memberships *[]struct {
 				// Id The ID of the mebership.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the mebership."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Roles *[]struct {
 					// Id The ID of the role.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 					// Inherited Whether the role is inherited from a parent project.
-					Inherited *bool `json:"inherited,omitempty"`
+					Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 					// Name The name of the role.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 				} `json:"roles,omitempty"`
 			} `json:"memberships,omitempty"`
 
 			// PasswdChangedOn The date and time when the user was change password.
-			PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty"`
+			PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty" jsonschema:"description=The date and time when the user was change password.,format=date-time"`
 
 			// Status The status of the user. Possible values are:
 			// - `0`: anonymous
 			// - `1`: active
 			// - `2`: registered
 			// - `3`: locked
-			Status *int `json:"status,omitempty"`
+			Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked"`
 
 			// TwofaScheme The 2FA scheme of the user.
-			TwofaScheme *string `json:"twofa_scheme,omitempty"`
+			TwofaScheme *string `json:"twofa_scheme,omitempty" jsonschema:"description=The 2FA scheme of the user."`
 
 			// UpdatedOn The date and time when the user was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
-		} `json:"user,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the user was last updated.,format=date-time"`
+		} `json:"user,omitempty" jsonschema:"description=A single user."`
 	}
 }
 
@@ -28587,56 +28587,56 @@ type VersionsShowResponse struct {
 		// Version A single version.
 		Version *struct {
 			// CreatedOn The date and time when the version was created.
-			CreatedOn    *time.Time `json:"created_on,omitempty"`
+			CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the version was created.,format=date-time"`
 			CustomFields *[]struct {
 				// Id The ID of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 				// Multiple Whether the custom field can have multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 				// Name The name of the custom field.
-				Name  *string     `json:"name,omitempty"`
+				Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 				Value interface{} `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 
 			// Description The description of the version.
-			Description *string `json:"description,omitempty"`
+			Description *string `json:"description,omitempty" jsonschema:"description=The description of the version."`
 
 			// DueDate The date when the version was expired.
-			DueDate *openapi_types.Date `json:"due_date,omitempty"`
+			DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The date when the version was expired.,format=date"`
 
 			// EstimatedHours The estimated hours of the version.
-			EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+			EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the version."`
 
 			// Id The ID of the version.
-			Id *int `json:"id,omitempty"`
+			Id *int `json:"id,omitempty" jsonschema:"description=The ID of the version."`
 
 			// Name The name of the version.
-			Name    *string `json:"name,omitempty"`
+			Name    *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 			Project *struct {
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 			} `json:"project,omitempty"`
 
 			// Sharing The sharing of the version.
-			Sharing *string `json:"sharing,omitempty"`
+			Sharing *string `json:"sharing,omitempty" jsonschema:"description=The sharing of the version."`
 
 			// SpentHours The spent hours of the version.
-			SpentHours *float32 `json:"spent_hours,omitempty"`
+			SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the version."`
 
 			// Status The status of the version.
-			Status *string `json:"status,omitempty"`
+			Status *string `json:"status,omitempty" jsonschema:"description=The status of the version."`
 
 			// UpdatedOn The date and time when the version was last updated.
-			UpdatedOn *time.Time `json:"updated_on,omitempty"`
+			UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the version was last updated.,format=date-time"`
 
 			// WikiPageTitle The wiki page title of the version.
-			WikiPageTitle *string `json:"wiki_page_title,omitempty"`
-		} `json:"version,omitempty"`
+			WikiPageTitle *string `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+		} `json:"version,omitempty" jsonschema:"description=A single version."`
 	}
 }
 
@@ -30453,16 +30453,16 @@ func ParseCustomFieldsIndexResponse(rsp *http.Response) (*CustomFieldsIndexRespo
 		var dest struct {
 			CustomFields *[]struct {
 				// CustomizedType The type of object this custom field is associated with.
-				CustomizedType *string `json:"customized_type,omitempty"`
+				CustomizedType *string `json:"customized_type,omitempty" jsonschema:"description=The type of object this custom field is associated with."`
 
 				// DefaultValue The default value for the custom field.
-				DefaultValue *string `json:"default_value,omitempty"`
+				DefaultValue *string `json:"default_value,omitempty" jsonschema:"description=The default value for the custom field."`
 
 				// Description A description of the custom field.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=A description of the custom field."`
 
 				// Editable The editable of the custom field.
-				Editable *bool `json:"editable,omitempty"`
+				Editable *bool `json:"editable,omitempty" jsonschema:"description=The editable of the custom field."`
 
 				// FieldFormat The format of the custom field.
 				// Possible values are:
@@ -30478,60 +30478,60 @@ func ParseCustomFieldsIndexResponse(rsp *http.Response) (*CustomFieldsIndexRespo
 				// - `user`
 				// - `version`
 				// - `attachement`
-				FieldFormat *string `json:"field_format,omitempty"`
+				FieldFormat *string `json:"field_format,omitempty" jsonschema:"description=The format of the custom field. Possible values are: - \"string\" - \"text\" - \"link\" - \"int\" - \"float\" - \"date\" - \"list\" - \"bool\" - \"enumeration\" - \"user\" - \"version\" - \"attachement\""`
 
 				// Id The unique identifier of the custom field.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the custom field."`
 
 				// IsFilter Whether the custom field can be used as a filter.
-				IsFilter *bool `json:"is_filter,omitempty"`
+				IsFilter *bool `json:"is_filter,omitempty" jsonschema:"description=Whether the custom field can be used as a filter."`
 
 				// IsRequired Whether the custom field is required.
-				IsRequired *bool `json:"is_required,omitempty"`
+				IsRequired *bool `json:"is_required,omitempty" jsonschema:"description=Whether the custom field is required."`
 
 				// MaxLength The maximum length allowed for the custom field value.
-				MaxLength *int `json:"max_length,omitempty"`
+				MaxLength *int `json:"max_length,omitempty" jsonschema:"description=The maximum length allowed for the custom field value."`
 
 				// MinLength The minimum length allowed for the custom field value.
-				MinLength *int `json:"min_length,omitempty"`
+				MinLength *int `json:"min_length,omitempty" jsonschema:"description=The minimum length allowed for the custom field value."`
 
 				// Multiple Whether the custom field allows multiple values.
-				Multiple *bool `json:"multiple,omitempty"`
+				Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field allows multiple values."`
 
 				// Name The name of the custom field.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 
 				// PossibleValues The possible values of the custom field.
 				PossibleValues *[]struct {
 					// Label The label of the possible value.
-					Label *string `json:"label,omitempty"`
+					Label *string `json:"label,omitempty" jsonschema:"description=The label of the possible value."`
 
 					// Value The value of the possible value.
-					Value *string `json:"value,omitempty"`
-				} `json:"possible_values,omitempty"`
+					Value *string `json:"value,omitempty" jsonschema:"description=The value of the possible value."`
+				} `json:"possible_values,omitempty" jsonschema:"description=The possible values of the custom field."`
 
 				// Regexp The regular expression pattern for the custom field value.
-				Regexp *string `json:"regexp,omitempty"`
+				Regexp *string `json:"regexp,omitempty" jsonschema:"description=The regular expression pattern for the custom field value."`
 				Roles  *[]struct {
 					// Id The id of the role.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The id of the role."`
 
 					// Name The name of the role.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 				} `json:"roles,omitempty"`
 
 				// Searchable Whether the custom field is searchable.
-				Searchable *bool `json:"searchable,omitempty"`
+				Searchable *bool `json:"searchable,omitempty" jsonschema:"description=Whether the custom field is searchable."`
 				Trackers   *[]struct {
 					// Id The id of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The id of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"trackers,omitempty"`
 
 				// Visible Whether the custom field is visible.
-				Visible *bool `json:"visible,omitempty"`
+				Visible *bool `json:"visible,omitempty" jsonschema:"description=Whether the custom field is visible."`
 			} `json:"custom_fields,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -30562,27 +30562,27 @@ func ParseEnumerationsIndexDocumentCategoryResponse(rsp *http.Response) (*Enumer
 		var dest struct {
 			DocumentCategories *[]struct {
 				// Active The active of the enumeration.
-				Active       *bool `json:"active,omitempty"`
+				Active       *bool `json:"active,omitempty" jsonschema:"description=The active of the enumeration."`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Id The unique identifier of the enumeration.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the enumeration."`
 
 				// IsDefault The default of the enumeration.
-				IsDefault *bool `json:"is_default,omitempty"`
+				IsDefault *bool `json:"is_default,omitempty" jsonschema:"description=The default of the enumeration."`
 
 				// Name The name of the enumeration.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the enumeration."`
 			} `json:"document_categories,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -30613,27 +30613,27 @@ func ParseEnumerationsIndexIssuePriorityResponse(rsp *http.Response) (*Enumerati
 		var dest struct {
 			IssuePriorities *[]struct {
 				// Active The active of the enumeration.
-				Active       *bool `json:"active,omitempty"`
+				Active       *bool `json:"active,omitempty" jsonschema:"description=The active of the enumeration."`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Id The unique identifier of the enumeration.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the enumeration."`
 
 				// IsDefault The default of the enumeration.
-				IsDefault *bool `json:"is_default,omitempty"`
+				IsDefault *bool `json:"is_default,omitempty" jsonschema:"description=The default of the enumeration."`
 
 				// Name The name of the enumeration.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the enumeration."`
 			} `json:"issue_priorities,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -30664,27 +30664,27 @@ func ParseEnumerationsIndexTimeEntryActivityResponse(rsp *http.Response) (*Enume
 		var dest struct {
 			TimeEntryActivities *[]struct {
 				// Active The active of the enumeration.
-				Active       *bool `json:"active,omitempty"`
+				Active       *bool `json:"active,omitempty" jsonschema:"description=The active of the enumeration."`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Id The unique identifier of the enumeration.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the enumeration."`
 
 				// IsDefault The default of the enumeration.
-				IsDefault *bool `json:"is_default,omitempty"`
+				IsDefault *bool `json:"is_default,omitempty" jsonschema:"description=The default of the enumeration."`
 
 				// Name The name of the enumeration.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the enumeration."`
 			} `json:"time_entry_activities,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -30715,24 +30715,24 @@ func ParseGroupsIndexResponse(rsp *http.Response) (*GroupsIndexResponse, error) 
 		var dest struct {
 			Groups *[]struct {
 				// Builtin The builtin type of the group.
-				Builtin      *string `json:"builtin,omitempty"`
+				Builtin      *string `json:"builtin,omitempty" jsonschema:"description=The builtin type of the group."`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Id The ID of the group.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 				// Name The name of the group.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			} `json:"groups,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -30764,53 +30764,53 @@ func ParseGroupsCreateResponse(rsp *http.Response) (*GroupsCreateResponse, error
 			// Group A single group.
 			Group *struct {
 				// Builtin The builtin type of the group.
-				Builtin      *string `json:"builtin,omitempty"`
+				Builtin      *string `json:"builtin,omitempty" jsonschema:"description=The builtin type of the group."`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Id The ID of the group.
-				Id          *int `json:"id,omitempty"`
+				Id          *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 				Memberships *[]struct {
 					// Id The ID of the mebership.
-					Id      *int `json:"id,omitempty"`
+					Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the mebership."`
 					Project *struct {
 						// Id The ID of the project.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 						// Name The name of the project.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 					} `json:"project,omitempty"`
 					Roles *[]struct {
 						// Id The ID of the role.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 						// Inherited Whether the role is inherited from a parent project.
-						Inherited *bool `json:"inherited,omitempty"`
+						Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 						// Name The name of the role.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 					} `json:"roles,omitempty"`
 				} `json:"memberships,omitempty"`
 
 				// Name The name of the group.
-				Name  *string `json:"name,omitempty"`
+				Name  *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 				Users *[]struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"users,omitempty"`
-			} `json:"group,omitempty"`
+			} `json:"group,omitempty" jsonschema:"description=A single group."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -30866,53 +30866,53 @@ func ParseGroupsShowResponse(rsp *http.Response) (*GroupsShowResponse, error) {
 			// Group A single group.
 			Group *struct {
 				// Builtin The builtin type of the group.
-				Builtin      *string `json:"builtin,omitempty"`
+				Builtin      *string `json:"builtin,omitempty" jsonschema:"description=The builtin type of the group."`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Id The ID of the group.
-				Id          *int `json:"id,omitempty"`
+				Id          *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 				Memberships *[]struct {
 					// Id The ID of the mebership.
-					Id      *int `json:"id,omitempty"`
+					Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the mebership."`
 					Project *struct {
 						// Id The ID of the project.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 						// Name The name of the project.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 					} `json:"project,omitempty"`
 					Roles *[]struct {
 						// Id The ID of the role.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 						// Inherited Whether the role is inherited from a parent project.
-						Inherited *bool `json:"inherited,omitempty"`
+						Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 						// Name The name of the role.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 					} `json:"roles,omitempty"`
 				} `json:"memberships,omitempty"`
 
 				// Name The name of the group.
-				Name  *string `json:"name,omitempty"`
+				Name  *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 				Users *[]struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"users,omitempty"`
-			} `json:"group,omitempty"`
+			} `json:"group,omitempty" jsonschema:"description=A single group."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -31060,25 +31060,25 @@ func ParseIssueCategoriesShowResponse(rsp *http.Response) (*IssueCategoriesShowR
 			IssueCategory *struct {
 				AssignedTo *struct {
 					// Id The ID of the assigned to.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned to."`
 
 					// Name The name of the assigned to.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned to."`
 				} `json:"assigned_to,omitempty"`
 
 				// Id The ID of the issue category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 				// Name The name of the issue category.
-				Name    *string `json:"name,omitempty"`
+				Name    *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
-			} `json:"issue_category,omitempty"`
+			} `json:"issue_category,omitempty" jsonschema:"description=A single issue category."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -31164,16 +31164,16 @@ func ParseIssueStatusesIndexResponse(rsp *http.Response) (*IssueStatusesIndexRes
 		var dest struct {
 			IssueStatuses *[]struct {
 				// Description A description of the issue status.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=A description of the issue status."`
 
 				// Id The unique identifier of the issue status.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the issue status."`
 
 				// IsClosed Whether the issue status is closed.
-				IsClosed *bool `json:"is_closed,omitempty"`
+				IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=Whether the issue status is closed."`
 
 				// Name The name of the issue status.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue status."`
 			} `json:"issue_statuses,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -31233,147 +31233,147 @@ func ParseIssuesIndexResponse(rsp *http.Response) (*IssuesIndexResponse, error) 
 			Issues *[]struct {
 				AssignedTo *struct {
 					// Id The ID of the assigned member.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 					// Name The name of the assigned member.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 				} `json:"assigned_to,omitempty"`
 				Attachments *[]IssuesIndex_200_Issues_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 				Category *struct {
 					// Id The ID of the category.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 					// Name The name of the category.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 				} `json:"category,omitempty"`
 
 				// ClosedOn The date and time when the issue was closed.
-				ClosedOn *time.Time `json:"closed_on,omitempty"`
+				ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 				// CreatedOn The date and time when the issue was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Description The description of the issue.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 				// DoneRatio The done ratio of the issue.
-				DoneRatio *int `json:"done_ratio,omitempty"`
+				DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 				// DueDate The due date of the issue.
-				DueDate *openapi_types.Date `json:"due_date,omitempty"`
+				DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 				// EstimatedHours The estimated hours of the issue.
-				EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+				EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 				FixedVersion   *struct {
 					// Id The ID of the fixed version.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 					// Name The name of the fixed version.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 				} `json:"fixed_version,omitempty"`
 
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IsPrivate The private of the issue.
-				IsPrivate *bool `json:"is_private,omitempty"`
+				IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 				Parent    *struct {
 					// Id The ID of the parent issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 				} `json:"parent,omitempty"`
 				Priority *struct {
 					// Id The ID of the priority.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 					// Name The name of the priority.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 				} `json:"priority,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Relations *[]struct {
 					// Delay The delay of the relation.
-					Delay *int `json:"delay,omitempty"`
+					Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 					// Id The ID of the relation.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 					// IssueId The ID of the issue.
-					IssueId *int `json:"issue_id,omitempty"`
+					IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// IssueToId The ID of the issue.
-					IssueToId *int `json:"issue_to_id,omitempty"`
+					IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// RelationType The type of the relation.
-					RelationType *string `json:"relation_type,omitempty"`
+					RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 				} `json:"relations,omitempty"`
 
 				// SpentHours The spent hours of the issue.
-				SpentHours *float32 `json:"spent_hours,omitempty"`
+				SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 				// StartDate The start date of the issue.
-				StartDate *openapi_types.Date `json:"start_date,omitempty"`
+				StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 				Status    *struct {
 					// Id The ID of the status.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 					// IsClosed The closed of the status.
-					IsClosed *bool `json:"is_closed,omitempty"`
+					IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 					// Name The name of the status.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 				} `json:"status,omitempty"`
 
 				// Subject The subject of the issue.
-				Subject *string `json:"subject,omitempty"`
+				Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 				// TotalEstimatedHours The total estimated hours of the issue.
-				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 				// TotalSpentHours The total spent hours of the issue.
-				TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+				TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 				Tracker         *struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"tracker,omitempty"`
 
 				// UpdatedOn The date and time when the issue was updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 			} `json:"issues,omitempty"`
 
 			// Limit The maximum number of issues returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of issues returned in the list."`
 
 			// Offset The offset of the first issue in the list.
-			Offset *int `json:"offset,omitempty"`
+			Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first issue in the list."`
 
 			// TotalCount The total number of issues.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of issues."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -31414,231 +31414,231 @@ func ParseIssuesCreateResponse(rsp *http.Response) (*IssuesCreateResponse, error
 			Issue *struct {
 				AllowedStatuses *[]struct {
 					// Id The ID of the allowed statuse.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the allowed statuse."`
 
 					// IsClosed The closed of the allowed status.
-					IsClosed *bool `json:"is_closed,omitempty"`
+					IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the allowed status."`
 
 					// Name The name of the allowed statuse.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the allowed statuse."`
 				} `json:"allowed_statuses,omitempty"`
 				AssignedTo *struct {
 					// Id The ID of the assigned member.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 					// Name The name of the assigned member.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 				} `json:"assigned_to,omitempty"`
 				Attachments *[]IssuesCreate_201_Issue_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 				Category *struct {
 					// Id The ID of the category.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 					// Name The name of the category.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 				} `json:"category,omitempty"`
 				Changesets *[]struct {
 					// Comments The comments of the changeset.
-					Comments *string `json:"comments,omitempty"`
+					Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the changeset."`
 
 					// CommittedOn The date and time when the changeset was committed.
-					CommittedOn *time.Time `json:"committed_on,omitempty"`
+					CommittedOn *time.Time `json:"committed_on,omitempty" jsonschema:"description=The date and time when the changeset was committed.,format=date-time"`
 
 					// Revision The revision of the changeset.
-					Revision *string `json:"revision,omitempty"`
+					Revision *string `json:"revision,omitempty" jsonschema:"description=The revision of the changeset."`
 					User     *struct {
 						// Id The ID of the user.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 						// Name The name of the user.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 					} `json:"user,omitempty"`
 				} `json:"changesets,omitempty"`
 				Children *[]struct {
 					Children *[]interface{} `json:"children,omitempty"`
 
 					// Id The ID of the issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// Subject The subject of the issue.
-					Subject *string `json:"subject,omitempty"`
+					Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 					Tracker *struct {
 						// Id The ID of the tracker.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 						// Name The name of the tracker.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 					} `json:"tracker,omitempty"`
 				} `json:"children,omitempty"`
 
 				// ClosedOn The date and time when the issue was closed.
-				ClosedOn *time.Time `json:"closed_on,omitempty"`
+				ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 				// CreatedOn The date and time when the issue was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Description The description of the issue.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 				// DoneRatio The done ratio of the issue.
-				DoneRatio *int `json:"done_ratio,omitempty"`
+				DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 				// DueDate The due date of the issue.
-				DueDate *openapi_types.Date `json:"due_date,omitempty"`
+				DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 				// EstimatedHours The estimated hours of the issue.
-				EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+				EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 				FixedVersion   *struct {
 					// Id The ID of the fixed version.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 					// Name The name of the fixed version.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 				} `json:"fixed_version,omitempty"`
 
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IsPrivate The private of the issue.
-				IsPrivate *bool `json:"is_private,omitempty"`
+				IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 				Journals  *[]struct {
 					// CreatedOn The date and time when the journal was created.
-					CreatedOn *time.Time `json:"created_on,omitempty"`
+					CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the journal was created.,format=date-time"`
 					Details   *[]struct {
 						// Name The name of the detail.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the detail."`
 
 						// NewValue The new value of the detail.
-						NewValue *string `json:"new_value,omitempty"`
+						NewValue *string `json:"new_value,omitempty" jsonschema:"description=The new value of the detail."`
 
 						// OldValue The old value of the detail.
-						OldValue *string `json:"old_value,omitempty"`
+						OldValue *string `json:"old_value,omitempty" jsonschema:"description=The old value of the detail."`
 
 						// Property The property of the detail.
-						Property *string `json:"property,omitempty"`
+						Property *string `json:"property,omitempty" jsonschema:"description=The property of the detail."`
 					} `json:"details,omitempty"`
 
 					// Id The ID of the journal.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the journal."`
 
 					// Notes The notes of the journal.
-					Notes *string `json:"notes,omitempty"`
+					Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the journal."`
 
 					// PrivateNotes The private of the journal.
-					PrivateNotes *bool `json:"private_notes,omitempty"`
+					PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private of the journal."`
 					UpdatedBy    *struct {
 						// Id The ID of the updated.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the updated."`
 
 						// Name The name of the updated.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the updated."`
 					} `json:"updated_by,omitempty"`
 
 					// UpdatedOn The date and time when the journal was updated.
-					UpdatedOn *time.Time `json:"updated_on,omitempty"`
+					UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the journal was updated.,format=date-time"`
 					User      *struct {
 						// Id The ID of the user.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 						// Name The name of the user.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 					} `json:"user,omitempty"`
 				} `json:"journals,omitempty"`
 				Parent *struct {
 					// Id The ID of the parent issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 				} `json:"parent,omitempty"`
 				Priority *struct {
 					// Id The ID of the priority.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 					// Name The name of the priority.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 				} `json:"priority,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Relations *[]struct {
 					// Delay The delay of the relation.
-					Delay *int `json:"delay,omitempty"`
+					Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 					// Id The ID of the relation.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 					// IssueId The ID of the issue.
-					IssueId *int `json:"issue_id,omitempty"`
+					IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// IssueToId The ID of the issue.
-					IssueToId *int `json:"issue_to_id,omitempty"`
+					IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// RelationType The type of the relation.
-					RelationType *string `json:"relation_type,omitempty"`
+					RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 				} `json:"relations,omitempty"`
 
 				// SpentHours The spent hours of the issue.
-				SpentHours *float32 `json:"spent_hours,omitempty"`
+				SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 				// StartDate The start date of the issue.
-				StartDate *openapi_types.Date `json:"start_date,omitempty"`
+				StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 				Status    *struct {
 					// Id The ID of the status.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 					// IsClosed The closed of the status.
-					IsClosed *bool `json:"is_closed,omitempty"`
+					IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 					// Name The name of the status.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 				} `json:"status,omitempty"`
 
 				// Subject The subject of the issue.
-				Subject *string `json:"subject,omitempty"`
+				Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 				// TotalEstimatedHours The total estimated hours of the issue.
-				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 				// TotalSpentHours The total spent hours of the issue.
-				TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+				TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 				Tracker         *struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"tracker,omitempty"`
 
 				// UpdatedOn The date and time when the issue was updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 				Watchers  *[]struct {
 					// Id The ID of the watcher.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the watcher."`
 
 					// Name The name of the watcher.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the watcher."`
 				} `json:"watchers,omitempty"`
-			} `json:"issue,omitempty"`
+			} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -31767,231 +31767,231 @@ func ParseIssuesShowResponse(rsp *http.Response) (*IssuesShowResponse, error) {
 			Issue *struct {
 				AllowedStatuses *[]struct {
 					// Id The ID of the allowed statuse.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the allowed statuse."`
 
 					// IsClosed The closed of the allowed status.
-					IsClosed *bool `json:"is_closed,omitempty"`
+					IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the allowed status."`
 
 					// Name The name of the allowed statuse.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the allowed statuse."`
 				} `json:"allowed_statuses,omitempty"`
 				AssignedTo *struct {
 					// Id The ID of the assigned member.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 					// Name The name of the assigned member.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 				} `json:"assigned_to,omitempty"`
 				Attachments *[]IssuesShow_200_Issue_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 				Category *struct {
 					// Id The ID of the category.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 					// Name The name of the category.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 				} `json:"category,omitempty"`
 				Changesets *[]struct {
 					// Comments The comments of the changeset.
-					Comments *string `json:"comments,omitempty"`
+					Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the changeset."`
 
 					// CommittedOn The date and time when the changeset was committed.
-					CommittedOn *time.Time `json:"committed_on,omitempty"`
+					CommittedOn *time.Time `json:"committed_on,omitempty" jsonschema:"description=The date and time when the changeset was committed.,format=date-time"`
 
 					// Revision The revision of the changeset.
-					Revision *string `json:"revision,omitempty"`
+					Revision *string `json:"revision,omitempty" jsonschema:"description=The revision of the changeset."`
 					User     *struct {
 						// Id The ID of the user.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 						// Name The name of the user.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 					} `json:"user,omitempty"`
 				} `json:"changesets,omitempty"`
 				Children *[]struct {
 					Children *[]interface{} `json:"children,omitempty"`
 
 					// Id The ID of the issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// Subject The subject of the issue.
-					Subject *string `json:"subject,omitempty"`
+					Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 					Tracker *struct {
 						// Id The ID of the tracker.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 						// Name The name of the tracker.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 					} `json:"tracker,omitempty"`
 				} `json:"children,omitempty"`
 
 				// ClosedOn The date and time when the issue was closed.
-				ClosedOn *time.Time `json:"closed_on,omitempty"`
+				ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 				// CreatedOn The date and time when the issue was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Description The description of the issue.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 				// DoneRatio The done ratio of the issue.
-				DoneRatio *int `json:"done_ratio,omitempty"`
+				DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 				// DueDate The due date of the issue.
-				DueDate *openapi_types.Date `json:"due_date,omitempty"`
+				DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 				// EstimatedHours The estimated hours of the issue.
-				EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+				EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 				FixedVersion   *struct {
 					// Id The ID of the fixed version.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 					// Name The name of the fixed version.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 				} `json:"fixed_version,omitempty"`
 
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IsPrivate The private of the issue.
-				IsPrivate *bool `json:"is_private,omitempty"`
+				IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 				Journals  *[]struct {
 					// CreatedOn The date and time when the journal was created.
-					CreatedOn *time.Time `json:"created_on,omitempty"`
+					CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the journal was created.,format=date-time"`
 					Details   *[]struct {
 						// Name The name of the detail.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the detail."`
 
 						// NewValue The new value of the detail.
-						NewValue *string `json:"new_value,omitempty"`
+						NewValue *string `json:"new_value,omitempty" jsonschema:"description=The new value of the detail."`
 
 						// OldValue The old value of the detail.
-						OldValue *string `json:"old_value,omitempty"`
+						OldValue *string `json:"old_value,omitempty" jsonschema:"description=The old value of the detail."`
 
 						// Property The property of the detail.
-						Property *string `json:"property,omitempty"`
+						Property *string `json:"property,omitempty" jsonschema:"description=The property of the detail."`
 					} `json:"details,omitempty"`
 
 					// Id The ID of the journal.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the journal."`
 
 					// Notes The notes of the journal.
-					Notes *string `json:"notes,omitempty"`
+					Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the journal."`
 
 					// PrivateNotes The private of the journal.
-					PrivateNotes *bool `json:"private_notes,omitempty"`
+					PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private of the journal."`
 					UpdatedBy    *struct {
 						// Id The ID of the updated.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the updated."`
 
 						// Name The name of the updated.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the updated."`
 					} `json:"updated_by,omitempty"`
 
 					// UpdatedOn The date and time when the journal was updated.
-					UpdatedOn *time.Time `json:"updated_on,omitempty"`
+					UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the journal was updated.,format=date-time"`
 					User      *struct {
 						// Id The ID of the user.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 						// Name The name of the user.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 					} `json:"user,omitempty"`
 				} `json:"journals,omitempty"`
 				Parent *struct {
 					// Id The ID of the parent issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 				} `json:"parent,omitempty"`
 				Priority *struct {
 					// Id The ID of the priority.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 					// Name The name of the priority.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 				} `json:"priority,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Relations *[]struct {
 					// Delay The delay of the relation.
-					Delay *int `json:"delay,omitempty"`
+					Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 					// Id The ID of the relation.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 					// IssueId The ID of the issue.
-					IssueId *int `json:"issue_id,omitempty"`
+					IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// IssueToId The ID of the issue.
-					IssueToId *int `json:"issue_to_id,omitempty"`
+					IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// RelationType The type of the relation.
-					RelationType *string `json:"relation_type,omitempty"`
+					RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 				} `json:"relations,omitempty"`
 
 				// SpentHours The spent hours of the issue.
-				SpentHours *float32 `json:"spent_hours,omitempty"`
+				SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 				// StartDate The start date of the issue.
-				StartDate *openapi_types.Date `json:"start_date,omitempty"`
+				StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 				Status    *struct {
 					// Id The ID of the status.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 					// IsClosed The closed of the status.
-					IsClosed *bool `json:"is_closed,omitempty"`
+					IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 					// Name The name of the status.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 				} `json:"status,omitempty"`
 
 				// Subject The subject of the issue.
-				Subject *string `json:"subject,omitempty"`
+				Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 				// TotalEstimatedHours The total estimated hours of the issue.
-				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 				// TotalSpentHours The total spent hours of the issue.
-				TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+				TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 				Tracker         *struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"tracker,omitempty"`
 
 				// UpdatedOn The date and time when the issue was updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 				Watchers  *[]struct {
 					// Id The ID of the watcher.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the watcher."`
 
 					// Name The name of the watcher.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the watcher."`
 				} `json:"watchers,omitempty"`
-			} `json:"issue,omitempty"`
+			} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -32093,19 +32093,19 @@ func ParseIssueRelationsIndexResponse(rsp *http.Response) (*IssueRelationsIndexR
 		var dest struct {
 			Relations *[]struct {
 				// Delay The delay of the relation.
-				Delay *int `json:"delay,omitempty"`
+				Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 				// Id The ID of the relation.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 				// IssueId The ID of the issue.
-				IssueId *int `json:"issue_id,omitempty"`
+				IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IssueToId The ID of the issue to.
-				IssueToId *int `json:"issue_to_id,omitempty"`
+				IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue to."`
 
 				// RelationType The relation type of the relation.
-				RelationType *string `json:"relation_type,omitempty"`
+				RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation."`
 			} `json:"relations,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -32137,20 +32137,20 @@ func ParseIssueRelationsCreateResponse(rsp *http.Response) (*IssueRelationsCreat
 			// Relation Represents a single issue relation.
 			Relation *struct {
 				// Delay The delay of the relation.
-				Delay *int `json:"delay,omitempty"`
+				Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 				// Id The ID of the relation.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 				// IssueId The ID of the issue.
-				IssueId *int `json:"issue_id,omitempty"`
+				IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IssueToId The ID of the issue to.
-				IssueToId *int `json:"issue_to_id,omitempty"`
+				IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue to."`
 
 				// RelationType The relation type of the relation.
-				RelationType *string `json:"relation_type,omitempty"`
-			} `json:"relation,omitempty"`
+				RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation."`
+			} `json:"relation,omitempty" jsonschema:"description=Represents a single issue relation."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -32191,59 +32191,59 @@ func ParseTimelogCreateIssueResponse(rsp *http.Response) (*TimelogCreateIssueRes
 			TimeEntry *struct {
 				Activity *struct {
 					// Id The ID of the activity.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 					// Name The name of the activity.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 				} `json:"activity,omitempty"`
 
 				// Comments The comments of the time entry.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 				// CreatedOn The date and time when the time entry was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Hours The hours of the time entry.
-				Hours *float32 `json:"hours,omitempty"`
+				Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 				// Id The ID of the time entry.
-				Id    *int `json:"id,omitempty"`
+				Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 				Issue *struct {
 					// Id The ID of the issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 				} `json:"issue,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// SpentOn The date when the time entry was spent.
-				SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+				SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 				// UpdatedOn The date and time when the time entry was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 				User      *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
-			} `json:"time_entry,omitempty"`
+			} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -32400,39 +32400,39 @@ func ParseMembersShowResponse(rsp *http.Response) (*MembersShowResponse, error) 
 			Membership *struct {
 				Group *struct {
 					// Id The ID of the group.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 					// Name The name of the group.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 				} `json:"group,omitempty"`
 
 				// Id The ID of the membership.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the membership."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Roles *[]struct {
 					// Id The ID of the role.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 					// Inherited Whether the role is inherited from a parent project.
-					Inherited *bool `json:"inherited,omitempty"`
+					Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 					// Name The name of the role.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 				} `json:"roles,omitempty"`
 				User *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
-			} `json:"membership,omitempty"`
+			} `json:"membership,omitempty" jsonschema:"description=A single membership."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -32519,43 +32519,43 @@ func ParseMyAccountResponse(rsp *http.Response) (*MyAccountResponse, error) {
 			// User Represents a single user.
 			User *struct {
 				// Admin Whether the user has administrative privileges.
-				Admin *bool `json:"admin,omitempty"`
+				Admin *bool `json:"admin,omitempty" jsonschema:"description=Whether the user has administrative privileges."`
 
 				// ApiKey The API key for the user.
-				ApiKey *string `json:"api_key,omitempty"`
+				ApiKey *string `json:"api_key,omitempty" jsonschema:"description=The API key for the user."`
 
 				// CreatedOn The date and time when the user account was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the user account was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Firstname The first name of the user.
-				Firstname *string `json:"firstname,omitempty"`
+				Firstname *string `json:"firstname,omitempty" jsonschema:"description=The first name of the user."`
 
 				// Id The unique identifier of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the user."`
 
 				// LastLoginOn The date and time when the user last logged in.
-				LastLoginOn *time.Time `json:"last_login_on,omitempty"`
+				LastLoginOn *time.Time `json:"last_login_on,omitempty" jsonschema:"description=The date and time when the user last logged in.,format=date-time"`
 
 				// Lastname The last name of the user.
-				Lastname *string `json:"lastname,omitempty"`
+				Lastname *string `json:"lastname,omitempty" jsonschema:"description=The last name of the user."`
 
 				// Login The login name of the user.
-				Login *string `json:"login,omitempty"`
+				Login *string `json:"login,omitempty" jsonschema:"description=The login name of the user."`
 
 				// Mail The email address of the user.
-				Mail *string `json:"mail,omitempty"`
-			} `json:"user,omitempty"`
+				Mail *string `json:"mail,omitempty" jsonschema:"description=The email address of the user."`
+			} `json:"user,omitempty" jsonschema:"description=Represents a single user."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -32612,44 +32612,44 @@ func ParseNewsIndexResponse(rsp *http.Response) (*NewsIndexResponse, error) {
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of news returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of news returned in the list."`
 			News  *[]struct {
 				Author *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 
 				// CreatedOn The date and time when the news was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the news was created.,format=date-time"`
 
 				// Description The description of the news.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 				// Id The ID of the news.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the news."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// Summary The summary of the news.
-				Summary *string `json:"summary,omitempty"`
+				Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 				// Title The title of the news.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
 			} `json:"news,omitempty"`
 
 			// Offset The offset of the first news in the list.
-			Offset *int `json:"offset,omitempty"`
+			Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first news in the list."`
 
 			// TotalCount The total number of news.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of news."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -32726,47 +32726,47 @@ func ParseNewsShowResponse(rsp *http.Response) (*NewsShowResponse, error) {
 				Attachments *[]NewsShow_200_News_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 				Comments *[]struct {
 					Author *struct {
 						// Id The ID of the author.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 						// Name The name of the author.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 					} `json:"author,omitempty"`
 					Content *string `json:"content,omitempty"`
 
 					// Id The ID of the comment.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the comment."`
 				} `json:"comments,omitempty"`
 
 				// CreatedOn The date and time when the news was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the news was created.,format=date-time"`
 
 				// Description The description of the news.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 				// Id The ID of the news.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the news."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// Summary The summary of the news.
-				Summary *string `json:"summary,omitempty"`
+				Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 				// Title The title of the news.
-				Title *string `json:"title,omitempty"`
-			} `json:"news,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
+			} `json:"news,omitempty" jsonschema:"description=A single news."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -32867,103 +32867,103 @@ func ParseProjectsIndexResponse(rsp *http.Response) (*ProjectsIndexResponse, err
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of projects returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of projects returned in the list."`
 
 			// Offset The offset of the first project in the list.
-			Offset   *int `json:"offset,omitempty"`
+			Offset   *int `json:"offset,omitempty" jsonschema:"description=The offset of the first project in the list."`
 			Projects *[]struct {
 				// CreatedOn The date and time when the project was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the project was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Description The description of the project.
-				Description    *string `json:"description,omitempty"`
+				Description    *string `json:"description,omitempty" jsonschema:"description=The description of the project."`
 				EnabledModules *[]struct {
 					// Id The ID of the enabled module.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the enabled module."`
 
 					// Name The name of the enabled module.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the enabled module."`
 				} `json:"enabled_modules,omitempty"`
 
 				// Homepage The homepage URL of the project.
-				Homepage *string `json:"homepage,omitempty"`
+				Homepage *string `json:"homepage,omitempty" jsonschema:"description=The homepage URL of the project."`
 
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Identifier The identifier of the project.
-				Identifier *string `json:"identifier,omitempty"`
+				Identifier *string `json:"identifier,omitempty" jsonschema:"description=The identifier of the project."`
 
 				// InheritMembers Whether the project inherits members from its parent project. `true` if it does, `false` if it does not.
-				InheritMembers *bool `json:"inherit_members,omitempty"`
+				InheritMembers *bool `json:"inherit_members,omitempty" jsonschema:"description=Whether the project inherits members from its parent project. \"true\" if it does\\, \"false\" if it does not."`
 
 				// IsPublic The visibility of the project. `true` if the project is public, `false` if it is private.
-				IsPublic        *bool `json:"is_public,omitempty"`
+				IsPublic        *bool `json:"is_public,omitempty" jsonschema:"description=The visibility of the project. \"true\" if the project is public\\, \"false\" if it is private."`
 				IssueCategories *[]struct {
 					// Id The ID of the issue category.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 					// Name The name of the issue category.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 				} `json:"issue_categories,omitempty"`
 				IssueCustomFields *[]struct {
 					// Id The ID of the issue custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue custom field."`
 
 					// Name The name of the issue custom field.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue custom field."`
 				} `json:"issue_custom_fields,omitempty"`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 
 				// Parent The parent project of the project. If the project has no parent, this will be `null`.
 				Parent *struct {
 					// Id The ID of the parent project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent project."`
 
 					// Name The name of the parent project.
-					Name *string `json:"name,omitempty"`
-				} `json:"parent,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the parent project."`
+				} `json:"parent,omitempty" jsonschema:"description=The parent project of the project. If the project has no parent\\, this will be \"null\"."`
 
 				// Status The status of the project. Possible values are:
 				// - `1`: active
 				// - `5`: closed
 				// - `9`: archived
 				// - `10`: scheduled for deletion
-				Status              *int `json:"status,omitempty"`
+				Status              *int `json:"status,omitempty" jsonschema:"description=The status of the project. Possible values are: - \"1\": active - \"5\": closed - \"9\": archived - \"10\": scheduled for deletion"`
 				TimeEntryActivities *[]struct {
 					// Id The ID of the time entry activity.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry activity."`
 
 					// Name The name of the time entry activity.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the time entry activity."`
 				} `json:"time_entry_activities,omitempty"`
 				Trackers *[]struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"trackers,omitempty"`
 
 				// UpdatedOn The date and time when the project was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the project was last updated.,format=date-time"`
 			} `json:"projects,omitempty"`
 
 			// TotalCount The total number of projects.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of projects."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -32994,112 +32994,112 @@ func ParseProjectsCreateResponse(rsp *http.Response) (*ProjectsCreateResponse, e
 			// Project A single project.
 			Project *struct {
 				// CreatedOn The date and time when the project was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the project was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// DefaultAssignee The default assignee of the project. If the project has no default assignee, this will be `null`.
 				DefaultAssignee *struct {
 					// Id The ID of the default assignee.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the default assignee."`
 
 					// Name The name of the default assignee.
-					Name *string `json:"name,omitempty"`
-				} `json:"default_assignee,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the default assignee."`
+				} `json:"default_assignee,omitempty" jsonschema:"description=The default assignee of the project. If the project has no default assignee\\, this will be \"null\"."`
 
 				// DefaultVersion The default version of the project. If the project has no default version, this will be `null`.
 				DefaultVersion *struct {
 					// Id The ID of the default version.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the default version."`
 
 					// Name The name of the default version.
-					Name *string `json:"name,omitempty"`
-				} `json:"default_version,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the default version."`
+				} `json:"default_version,omitempty" jsonschema:"description=The default version of the project. If the project has no default version\\, this will be \"null\"."`
 
 				// Description The description of the project.
-				Description    *string `json:"description,omitempty"`
+				Description    *string `json:"description,omitempty" jsonschema:"description=The description of the project."`
 				EnabledModules *[]struct {
 					// Id The ID of the enabled module.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the enabled module."`
 
 					// Name The name of the enabled module.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the enabled module."`
 				} `json:"enabled_modules,omitempty"`
 
 				// Homepage The homepage URL of the project.
-				Homepage *string `json:"homepage,omitempty"`
+				Homepage *string `json:"homepage,omitempty" jsonschema:"description=The homepage URL of the project."`
 
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Identifier The identifier of the project.
-				Identifier *string `json:"identifier,omitempty"`
+				Identifier *string `json:"identifier,omitempty" jsonschema:"description=The identifier of the project."`
 
 				// InheritMembers Whether the project inherits members from its parent project. `true` if it does, `false` if it does not.
-				InheritMembers *bool `json:"inherit_members,omitempty"`
+				InheritMembers *bool `json:"inherit_members,omitempty" jsonschema:"description=Whether the project inherits members from its parent project. \"true\" if it does\\, \"false\" if it does not."`
 
 				// IsPublic The visibility of the project. `true` if the project is public, `false` if it is private.
-				IsPublic        *bool `json:"is_public,omitempty"`
+				IsPublic        *bool `json:"is_public,omitempty" jsonschema:"description=The visibility of the project. \"true\" if the project is public\\, \"false\" if it is private."`
 				IssueCategories *[]struct {
 					// Id The ID of the issue category.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 					// Name The name of the issue category.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 				} `json:"issue_categories,omitempty"`
 				IssueCustomFields *[]struct {
 					// Id The ID of the issue custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue custom field."`
 
 					// Name The name of the issue custom field.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue custom field."`
 				} `json:"issue_custom_fields,omitempty"`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 
 				// Parent The parent project of the project. If the project has no parent, this will be `null`.
 				Parent *struct {
 					// Id The ID of the parent project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent project."`
 
 					// Name The name of the parent project.
-					Name *string `json:"name,omitempty"`
-				} `json:"parent,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the parent project."`
+				} `json:"parent,omitempty" jsonschema:"description=The parent project of the project. If the project has no parent\\, this will be \"null\"."`
 
 				// Status The status of the project. Possible values are:
 				// - `1`: active
 				// - `5`: closed
 				// - `9`: archived
 				// - `10`: scheduled for deletion
-				Status              *int `json:"status,omitempty"`
+				Status              *int `json:"status,omitempty" jsonschema:"description=The status of the project. Possible values are: - \"1\": active - \"5\": closed - \"9\": archived - \"10\": scheduled for deletion"`
 				TimeEntryActivities *[]struct {
 					// Id The ID of the time entry activity.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry activity."`
 
 					// Name The name of the time entry activity.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the time entry activity."`
 				} `json:"time_entry_activities,omitempty"`
 				Trackers *[]struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"trackers,omitempty"`
 
 				// UpdatedOn The date and time when the project was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
-			} `json:"project,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the project was last updated.,format=date-time"`
+			} `json:"project,omitempty" jsonschema:"description=A single project."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -33155,112 +33155,112 @@ func ParseProjectsShowResponse(rsp *http.Response) (*ProjectsShowResponse, error
 			// Project A single project.
 			Project *struct {
 				// CreatedOn The date and time when the project was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the project was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// DefaultAssignee The default assignee of the project. If the project has no default assignee, this will be `null`.
 				DefaultAssignee *struct {
 					// Id The ID of the default assignee.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the default assignee."`
 
 					// Name The name of the default assignee.
-					Name *string `json:"name,omitempty"`
-				} `json:"default_assignee,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the default assignee."`
+				} `json:"default_assignee,omitempty" jsonschema:"description=The default assignee of the project. If the project has no default assignee\\, this will be \"null\"."`
 
 				// DefaultVersion The default version of the project. If the project has no default version, this will be `null`.
 				DefaultVersion *struct {
 					// Id The ID of the default version.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the default version."`
 
 					// Name The name of the default version.
-					Name *string `json:"name,omitempty"`
-				} `json:"default_version,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the default version."`
+				} `json:"default_version,omitempty" jsonschema:"description=The default version of the project. If the project has no default version\\, this will be \"null\"."`
 
 				// Description The description of the project.
-				Description    *string `json:"description,omitempty"`
+				Description    *string `json:"description,omitempty" jsonschema:"description=The description of the project."`
 				EnabledModules *[]struct {
 					// Id The ID of the enabled module.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the enabled module."`
 
 					// Name The name of the enabled module.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the enabled module."`
 				} `json:"enabled_modules,omitempty"`
 
 				// Homepage The homepage URL of the project.
-				Homepage *string `json:"homepage,omitempty"`
+				Homepage *string `json:"homepage,omitempty" jsonschema:"description=The homepage URL of the project."`
 
 				// Id The ID of the project.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 				// Identifier The identifier of the project.
-				Identifier *string `json:"identifier,omitempty"`
+				Identifier *string `json:"identifier,omitempty" jsonschema:"description=The identifier of the project."`
 
 				// InheritMembers Whether the project inherits members from its parent project. `true` if it does, `false` if it does not.
-				InheritMembers *bool `json:"inherit_members,omitempty"`
+				InheritMembers *bool `json:"inherit_members,omitempty" jsonschema:"description=Whether the project inherits members from its parent project. \"true\" if it does\\, \"false\" if it does not."`
 
 				// IsPublic The visibility of the project. `true` if the project is public, `false` if it is private.
-				IsPublic        *bool `json:"is_public,omitempty"`
+				IsPublic        *bool `json:"is_public,omitempty" jsonschema:"description=The visibility of the project. \"true\" if the project is public\\, \"false\" if it is private."`
 				IssueCategories *[]struct {
 					// Id The ID of the issue category.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 					// Name The name of the issue category.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 				} `json:"issue_categories,omitempty"`
 				IssueCustomFields *[]struct {
 					// Id The ID of the issue custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue custom field."`
 
 					// Name The name of the issue custom field.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the issue custom field."`
 				} `json:"issue_custom_fields,omitempty"`
 
 				// Name The name of the project.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 
 				// Parent The parent project of the project. If the project has no parent, this will be `null`.
 				Parent *struct {
 					// Id The ID of the parent project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent project."`
 
 					// Name The name of the parent project.
-					Name *string `json:"name,omitempty"`
-				} `json:"parent,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the parent project."`
+				} `json:"parent,omitempty" jsonschema:"description=The parent project of the project. If the project has no parent\\, this will be \"null\"."`
 
 				// Status The status of the project. Possible values are:
 				// - `1`: active
 				// - `5`: closed
 				// - `9`: archived
 				// - `10`: scheduled for deletion
-				Status              *int `json:"status,omitempty"`
+				Status              *int `json:"status,omitempty" jsonschema:"description=The status of the project. Possible values are: - \"1\": active - \"5\": closed - \"9\": archived - \"10\": scheduled for deletion"`
 				TimeEntryActivities *[]struct {
 					// Id The ID of the time entry activity.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry activity."`
 
 					// Name The name of the time entry activity.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the time entry activity."`
 				} `json:"time_entry_activities,omitempty"`
 				Trackers *[]struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"trackers,omitempty"`
 
 				// UpdatedOn The date and time when the project was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
-			} `json:"project,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the project was last updated.,format=date-time"`
+			} `json:"project,omitempty" jsonschema:"description=A single project."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -33523,28 +33523,28 @@ func ParseIssueCategoriesIndexResponse(rsp *http.Response) (*IssueCategoriesInde
 			IssueCategories *[]struct {
 				AssignedTo *struct {
 					// Id The ID of the assigned to.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned to."`
 
 					// Name The name of the assigned to.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned to."`
 				} `json:"assigned_to,omitempty"`
 
 				// Id The ID of the issue category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 				// Name The name of the issue category.
-				Name    *string `json:"name,omitempty"`
+				Name    *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 			} `json:"issue_categories,omitempty"`
 
 			// TotalCount The total number of issue categories.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of issue categories."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -33576,25 +33576,25 @@ func ParseIssueCategoriesCreateResponse(rsp *http.Response) (*IssueCategoriesCre
 			IssueCategory *struct {
 				AssignedTo *struct {
 					// Id The ID of the assigned to.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned to."`
 
 					// Name The name of the assigned to.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned to."`
 				} `json:"assigned_to,omitempty"`
 
 				// Id The ID of the issue category.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue category."`
 
 				// Name The name of the issue category.
-				Name    *string `json:"name,omitempty"`
+				Name    *string `json:"name,omitempty" jsonschema:"description=The name of the issue category."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
-			} `json:"issue_category,omitempty"`
+			} `json:"issue_category,omitempty" jsonschema:"description=A single issue category."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -33662,147 +33662,147 @@ func ParseIssuesIndexProjectResponse(rsp *http.Response) (*IssuesIndexProjectRes
 			Issues *[]struct {
 				AssignedTo *struct {
 					// Id The ID of the assigned member.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 					// Name The name of the assigned member.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 				} `json:"assigned_to,omitempty"`
 				Attachments *[]IssuesIndexProject_200_Issues_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 				Category *struct {
 					// Id The ID of the category.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 					// Name The name of the category.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 				} `json:"category,omitempty"`
 
 				// ClosedOn The date and time when the issue was closed.
-				ClosedOn *time.Time `json:"closed_on,omitempty"`
+				ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 				// CreatedOn The date and time when the issue was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Description The description of the issue.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 				// DoneRatio The done ratio of the issue.
-				DoneRatio *int `json:"done_ratio,omitempty"`
+				DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 				// DueDate The due date of the issue.
-				DueDate *openapi_types.Date `json:"due_date,omitempty"`
+				DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 				// EstimatedHours The estimated hours of the issue.
-				EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+				EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 				FixedVersion   *struct {
 					// Id The ID of the fixed version.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 					// Name The name of the fixed version.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 				} `json:"fixed_version,omitempty"`
 
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IsPrivate The private of the issue.
-				IsPrivate *bool `json:"is_private,omitempty"`
+				IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 				Parent    *struct {
 					// Id The ID of the parent issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 				} `json:"parent,omitempty"`
 				Priority *struct {
 					// Id The ID of the priority.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 					// Name The name of the priority.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 				} `json:"priority,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Relations *[]struct {
 					// Delay The delay of the relation.
-					Delay *int `json:"delay,omitempty"`
+					Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 					// Id The ID of the relation.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 					// IssueId The ID of the issue.
-					IssueId *int `json:"issue_id,omitempty"`
+					IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// IssueToId The ID of the issue.
-					IssueToId *int `json:"issue_to_id,omitempty"`
+					IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// RelationType The type of the relation.
-					RelationType *string `json:"relation_type,omitempty"`
+					RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 				} `json:"relations,omitempty"`
 
 				// SpentHours The spent hours of the issue.
-				SpentHours *float32 `json:"spent_hours,omitempty"`
+				SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 				// StartDate The start date of the issue.
-				StartDate *openapi_types.Date `json:"start_date,omitempty"`
+				StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 				Status    *struct {
 					// Id The ID of the status.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 					// IsClosed The closed of the status.
-					IsClosed *bool `json:"is_closed,omitempty"`
+					IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 					// Name The name of the status.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 				} `json:"status,omitempty"`
 
 				// Subject The subject of the issue.
-				Subject *string `json:"subject,omitempty"`
+				Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 				// TotalEstimatedHours The total estimated hours of the issue.
-				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 				// TotalSpentHours The total spent hours of the issue.
-				TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+				TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 				Tracker         *struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"tracker,omitempty"`
 
 				// UpdatedOn The date and time when the issue was updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 			} `json:"issues,omitempty"`
 
 			// Limit The maximum number of issues returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of issues returned in the list."`
 
 			// Offset The offset of the first issue in the list.
-			Offset *int `json:"offset,omitempty"`
+			Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first issue in the list."`
 
 			// TotalCount The total number of issues.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of issues."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -33843,231 +33843,231 @@ func ParseIssuesCreateProjectResponse(rsp *http.Response) (*IssuesCreateProjectR
 			Issue *struct {
 				AllowedStatuses *[]struct {
 					// Id The ID of the allowed statuse.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the allowed statuse."`
 
 					// IsClosed The closed of the allowed status.
-					IsClosed *bool `json:"is_closed,omitempty"`
+					IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the allowed status."`
 
 					// Name The name of the allowed statuse.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the allowed statuse."`
 				} `json:"allowed_statuses,omitempty"`
 				AssignedTo *struct {
 					// Id The ID of the assigned member.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the assigned member."`
 
 					// Name The name of the assigned member.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the assigned member."`
 				} `json:"assigned_to,omitempty"`
 				Attachments *[]IssuesCreateProject_201_Issue_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 				Category *struct {
 					// Id The ID of the category.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the category."`
 
 					// Name The name of the category.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the category."`
 				} `json:"category,omitempty"`
 				Changesets *[]struct {
 					// Comments The comments of the changeset.
-					Comments *string `json:"comments,omitempty"`
+					Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the changeset."`
 
 					// CommittedOn The date and time when the changeset was committed.
-					CommittedOn *time.Time `json:"committed_on,omitempty"`
+					CommittedOn *time.Time `json:"committed_on,omitempty" jsonschema:"description=The date and time when the changeset was committed.,format=date-time"`
 
 					// Revision The revision of the changeset.
-					Revision *string `json:"revision,omitempty"`
+					Revision *string `json:"revision,omitempty" jsonschema:"description=The revision of the changeset."`
 					User     *struct {
 						// Id The ID of the user.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 						// Name The name of the user.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 					} `json:"user,omitempty"`
 				} `json:"changesets,omitempty"`
 				Children *[]struct {
 					Children *[]interface{} `json:"children,omitempty"`
 
 					// Id The ID of the issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// Subject The subject of the issue.
-					Subject *string `json:"subject,omitempty"`
+					Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 					Tracker *struct {
 						// Id The ID of the tracker.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 						// Name The name of the tracker.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 					} `json:"tracker,omitempty"`
 				} `json:"children,omitempty"`
 
 				// ClosedOn The date and time when the issue was closed.
-				ClosedOn *time.Time `json:"closed_on,omitempty"`
+				ClosedOn *time.Time `json:"closed_on,omitempty" jsonschema:"description=The date and time when the issue was closed.,format=date-time"`
 
 				// CreatedOn The date and time when the issue was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the issue was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Description The description of the issue.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the issue."`
 
 				// DoneRatio The done ratio of the issue.
-				DoneRatio *int `json:"done_ratio,omitempty"`
+				DoneRatio *int `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
 
 				// DueDate The due date of the issue.
-				DueDate *openapi_types.Date `json:"due_date,omitempty"`
+				DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
 
 				// EstimatedHours The estimated hours of the issue.
-				EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+				EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
 				FixedVersion   *struct {
 					// Id The ID of the fixed version.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the fixed version."`
 
 					// Name The name of the fixed version.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the fixed version."`
 				} `json:"fixed_version,omitempty"`
 
 				// Id The ID of the issue.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IsPrivate The private of the issue.
-				IsPrivate *bool `json:"is_private,omitempty"`
+				IsPrivate *bool `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
 				Journals  *[]struct {
 					// CreatedOn The date and time when the journal was created.
-					CreatedOn *time.Time `json:"created_on,omitempty"`
+					CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the journal was created.,format=date-time"`
 					Details   *[]struct {
 						// Name The name of the detail.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the detail."`
 
 						// NewValue The new value of the detail.
-						NewValue *string `json:"new_value,omitempty"`
+						NewValue *string `json:"new_value,omitempty" jsonschema:"description=The new value of the detail."`
 
 						// OldValue The old value of the detail.
-						OldValue *string `json:"old_value,omitempty"`
+						OldValue *string `json:"old_value,omitempty" jsonschema:"description=The old value of the detail."`
 
 						// Property The property of the detail.
-						Property *string `json:"property,omitempty"`
+						Property *string `json:"property,omitempty" jsonschema:"description=The property of the detail."`
 					} `json:"details,omitempty"`
 
 					// Id The ID of the journal.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the journal."`
 
 					// Notes The notes of the journal.
-					Notes *string `json:"notes,omitempty"`
+					Notes *string `json:"notes,omitempty" jsonschema:"description=The notes of the journal."`
 
 					// PrivateNotes The private of the journal.
-					PrivateNotes *bool `json:"private_notes,omitempty"`
+					PrivateNotes *bool `json:"private_notes,omitempty" jsonschema:"description=The private of the journal."`
 					UpdatedBy    *struct {
 						// Id The ID of the updated.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the updated."`
 
 						// Name The name of the updated.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the updated."`
 					} `json:"updated_by,omitempty"`
 
 					// UpdatedOn The date and time when the journal was updated.
-					UpdatedOn *time.Time `json:"updated_on,omitempty"`
+					UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the journal was updated.,format=date-time"`
 					User      *struct {
 						// Id The ID of the user.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 						// Name The name of the user.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 					} `json:"user,omitempty"`
 				} `json:"journals,omitempty"`
 				Parent *struct {
 					// Id The ID of the parent issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the parent issue."`
 				} `json:"parent,omitempty"`
 				Priority *struct {
 					// Id The ID of the priority.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the priority."`
 
 					// Name The name of the priority.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the priority."`
 				} `json:"priority,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Relations *[]struct {
 					// Delay The delay of the relation.
-					Delay *int `json:"delay,omitempty"`
+					Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 					// Id The ID of the relation.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 					// IssueId The ID of the issue.
-					IssueId *int `json:"issue_id,omitempty"`
+					IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// IssueToId The ID of the issue.
-					IssueToId *int `json:"issue_to_id,omitempty"`
+					IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 					// RelationType The type of the relation.
-					RelationType *string `json:"relation_type,omitempty"`
+					RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The type of the relation."`
 				} `json:"relations,omitempty"`
 
 				// SpentHours The spent hours of the issue.
-				SpentHours *float32 `json:"spent_hours,omitempty"`
+				SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the issue."`
 
 				// StartDate The start date of the issue.
-				StartDate *openapi_types.Date `json:"start_date,omitempty"`
+				StartDate *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
 				Status    *struct {
 					// Id The ID of the status.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the status."`
 
 					// IsClosed The closed of the status.
-					IsClosed *bool `json:"is_closed,omitempty"`
+					IsClosed *bool `json:"is_closed,omitempty" jsonschema:"description=The closed of the status."`
 
 					// Name The name of the status.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the status."`
 				} `json:"status,omitempty"`
 
 				// Subject The subject of the issue.
-				Subject *string `json:"subject,omitempty"`
+				Subject *string `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
 
 				// TotalEstimatedHours The total estimated hours of the issue.
-				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty"`
+				TotalEstimatedHours *float32 `json:"total_estimated_hours,omitempty" jsonschema:"description=The total estimated hours of the issue."`
 
 				// TotalSpentHours The total spent hours of the issue.
-				TotalSpentHours *float32 `json:"total_spent_hours,omitempty"`
+				TotalSpentHours *float32 `json:"total_spent_hours,omitempty" jsonschema:"description=The total spent hours of the issue."`
 				Tracker         *struct {
 					// Id The ID of the tracker.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the tracker."`
 
 					// Name The name of the tracker.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 				} `json:"tracker,omitempty"`
 
 				// UpdatedOn The date and time when the issue was updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the issue was updated.,format=date-time"`
 				Watchers  *[]struct {
 					// Id The ID of the watcher.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the watcher."`
 
 					// Name The name of the watcher.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the watcher."`
 				} `json:"watchers,omitempty"`
-			} `json:"issue,omitempty"`
+			} `json:"issue,omitempty" jsonschema:"description=A single issue."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -34165,49 +34165,49 @@ func ParseMembersIndexResponse(rsp *http.Response) (*MembersIndexResponse, error
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of memberships returned in the list.
-			Limit       *int `json:"limit,omitempty"`
+			Limit       *int `json:"limit,omitempty" jsonschema:"description=The maximum number of memberships returned in the list."`
 			Memberships *[]struct {
 				Group *struct {
 					// Id The ID of the group.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 					// Name The name of the group.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 				} `json:"group,omitempty"`
 
 				// Id The ID of the membership.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the membership."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Roles *[]struct {
 					// Id The ID of the role.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 					// Inherited Whether the role is inherited from a parent project.
-					Inherited *bool `json:"inherited,omitempty"`
+					Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 					// Name The name of the role.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 				} `json:"roles,omitempty"`
 				User *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
 			} `json:"memberships,omitempty"`
 
 			// Offset The offset of the first membership in the list.
-			Offset *int `json:"offset,omitempty"`
+			Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first membership in the list."`
 
 			// TotalCount The total number of memberships.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of memberships."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -34239,39 +34239,39 @@ func ParseMembersCreateResponse(rsp *http.Response) (*MembersCreateResponse, err
 			Membership *struct {
 				Group *struct {
 					// Id The ID of the group.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 					// Name The name of the group.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 				} `json:"group,omitempty"`
 
 				// Id The ID of the membership.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the membership."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 				Roles *[]struct {
 					// Id The ID of the role.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 					// Inherited Whether the role is inherited from a parent project.
-					Inherited *bool `json:"inherited,omitempty"`
+					Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 					// Name The name of the role.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 				} `json:"roles,omitempty"`
 				User *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
-			} `json:"membership,omitempty"`
+			} `json:"membership,omitempty" jsonschema:"description=A single membership."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -34309,44 +34309,44 @@ func ParseNewsIndexProjectResponse(rsp *http.Response) (*NewsIndexProjectRespons
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of news returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of news returned in the list."`
 			News  *[]struct {
 				Author *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 
 				// CreatedOn The date and time when the news was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the news was created.,format=date-time"`
 
 				// Description The description of the news.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the news."`
 
 				// Id The ID of the news.
-				Id      *int `json:"id,omitempty"`
+				Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the news."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// Summary The summary of the news.
-				Summary *string `json:"summary,omitempty"`
+				Summary *string `json:"summary,omitempty" jsonschema:"description=The summary of the news."`
 
 				// Title The title of the news.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the news."`
 			} `json:"news,omitempty"`
 
 			// Offset The offset of the first news in the list.
-			Offset *int `json:"offset,omitempty"`
+			Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first news in the list."`
 
 			// TotalCount The total number of news.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of news."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -34403,32 +34403,32 @@ func ParseSearchIndexProjectResponse(rsp *http.Response) (*SearchIndexProjectRes
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of search results returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of search results returned in the list."`
 
 			// Offset The offset of the first search result in the list.
-			Offset  *int `json:"offset,omitempty"`
+			Offset  *int `json:"offset,omitempty" jsonschema:"description=The offset of the first search result in the list."`
 			Results *[]struct {
 				// Datetime The date and time when the search result was created.
-				Datetime *time.Time `json:"datetime,omitempty"`
+				Datetime *time.Time `json:"datetime,omitempty" jsonschema:"description=The date and time when the search result was created.,format=date-time"`
 
 				// Description The description of the search result.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the search result."`
 
 				// Id The ID of the search result.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the search result."`
 
 				// Title The title of the search result.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the search result."`
 
 				// Type The type of the search result.
-				Type *string `json:"type,omitempty"`
+				Type *string `json:"type,omitempty" jsonschema:"description=The type of the search result."`
 
 				// Url The url of the search result.
-				Url *string `json:"url,omitempty"`
+				Url *string `json:"url,omitempty" jsonschema:"description=The url of the search result."`
 			} `json:"results,omitempty"`
 
 			// TotalCount The total number of search results.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of search results."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -34473,69 +34473,69 @@ func ParseTimelogIndexProjectResponse(rsp *http.Response) (*TimelogIndexProjectR
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of time entries returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of time entries returned in the list."`
 
 			// Offset The offset of the first time entry in the list.
-			Offset      *int `json:"offset,omitempty"`
+			Offset      *int `json:"offset,omitempty" jsonschema:"description=The offset of the first time entry in the list."`
 			TimeEntries *[]struct {
 				Activity *struct {
 					// Id The ID of the activity.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 					// Name The name of the activity.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 				} `json:"activity,omitempty"`
 
 				// Comments The comments of the time entry.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 				// CreatedOn The date and time when the time entry was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Hours The hours of the time entry.
-				Hours *float32 `json:"hours,omitempty"`
+				Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 				// Id The ID of the time entry.
-				Id    *int `json:"id,omitempty"`
+				Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 				Issue *struct {
 					// Id The ID of the issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 				} `json:"issue,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// SpentOn The date when the time entry was spent.
-				SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+				SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 				// UpdatedOn The date and time when the time entry was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 				User      *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
 			} `json:"time_entries,omitempty"`
 
 			// TotalCount The total number of time entries.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of time entries."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -34567,59 +34567,59 @@ func ParseTimelogCreateProjectResponse(rsp *http.Response) (*TimelogCreateProjec
 			TimeEntry *struct {
 				Activity *struct {
 					// Id The ID of the activity.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 					// Name The name of the activity.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 				} `json:"activity,omitempty"`
 
 				// Comments The comments of the time entry.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 				// CreatedOn The date and time when the time entry was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Hours The hours of the time entry.
-				Hours *float32 `json:"hours,omitempty"`
+				Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 				// Id The ID of the time entry.
-				Id    *int `json:"id,omitempty"`
+				Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 				Issue *struct {
 					// Id The ID of the issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 				} `json:"issue,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// SpentOn The date when the time entry was spent.
-				SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+				SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 				// UpdatedOn The date and time when the time entry was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 				User      *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
-			} `json:"time_entry,omitempty"`
+			} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -34657,52 +34657,52 @@ func ParseVersionsIndexResponse(rsp *http.Response) (*VersionsIndexResponse, err
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// TotalCount The total number of versions.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of versions."`
 			Versions   *[]struct {
 				// CreatedOn The date and time when the version was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the version was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Description The description of the version.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the version."`
 
 				// DueDate The date when the version was expired.
-				DueDate *openapi_types.Date `json:"due_date,omitempty"`
+				DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The date when the version was expired.,format=date"`
 
 				// Id The ID of the version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the version."`
 
 				// Name The name of the version.
-				Name    *string `json:"name,omitempty"`
+				Name    *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// Sharing The sharing of the version.
-				Sharing *string `json:"sharing,omitempty"`
+				Sharing *string `json:"sharing,omitempty" jsonschema:"description=The sharing of the version."`
 
 				// Status The status of the version.
-				Status *string `json:"status,omitempty"`
+				Status *string `json:"status,omitempty" jsonschema:"description=The status of the version."`
 
 				// UpdatedOn The date and time when the version was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the version was last updated.,format=date-time"`
 
 				// WikiPageTitle The wiki page title of the version.
-				WikiPageTitle *string `json:"wiki_page_title,omitempty"`
+				WikiPageTitle *string `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
 			} `json:"versions,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -34734,56 +34734,56 @@ func ParseVersionsCreateResponse(rsp *http.Response) (*VersionsCreateResponse, e
 			// Version A single version.
 			Version *struct {
 				// CreatedOn The date and time when the version was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the version was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Description The description of the version.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the version."`
 
 				// DueDate The date when the version was expired.
-				DueDate *openapi_types.Date `json:"due_date,omitempty"`
+				DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The date when the version was expired.,format=date"`
 
 				// EstimatedHours The estimated hours of the version.
-				EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+				EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the version."`
 
 				// Id The ID of the version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the version."`
 
 				// Name The name of the version.
-				Name    *string `json:"name,omitempty"`
+				Name    *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// Sharing The sharing of the version.
-				Sharing *string `json:"sharing,omitempty"`
+				Sharing *string `json:"sharing,omitempty" jsonschema:"description=The sharing of the version."`
 
 				// SpentHours The spent hours of the version.
-				SpentHours *float32 `json:"spent_hours,omitempty"`
+				SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the version."`
 
 				// Status The status of the version.
-				Status *string `json:"status,omitempty"`
+				Status *string `json:"status,omitempty" jsonschema:"description=The status of the version."`
 
 				// UpdatedOn The date and time when the version was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the version was last updated.,format=date-time"`
 
 				// WikiPageTitle The wiki page title of the version.
-				WikiPageTitle *string `json:"wiki_page_title,omitempty"`
-			} `json:"version,omitempty"`
+				WikiPageTitle *string `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+			} `json:"version,omitempty" jsonschema:"description=A single version."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -34825,34 +34825,34 @@ func ParseWikiShowRootResponse(rsp *http.Response) (*WikiShowRootResponse, error
 				Attachments *[]WikiShowRoot_200_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 
 				// Comments The comments of the wiki.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 				// CreatedOn The date and time when the wiki was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 				Parent    *struct {
 					// Title The parent title of the wiki.
-					Title *string `json:"title,omitempty"`
+					Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 				} `json:"parent,omitempty"`
 
 				// Text The text of the wiki.
-				Text *string `json:"text,omitempty"`
+				Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 				// Title The title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 				// UpdatedOn The date and time when the wiki was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 				// Version The version of the wiki.
-				Version *int `json:"version,omitempty"`
-			} `json:"wiki_page,omitempty"`
+				Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+			} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -34882,20 +34882,20 @@ func ParseWikiIndexResponse(rsp *http.Response) (*WikiIndexResponse, error) {
 		var dest struct {
 			WikiPages *[]struct {
 				// CreatedOn The date and time when the wiki was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 				Parent    *struct {
 					// Title The parent title of the wiki.
-					Title *string `json:"title,omitempty"`
+					Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 				} `json:"parent,omitempty"`
 
 				// Title The title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 				// UpdatedOn The date and time when the wiki was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 				// Version The version of the wiki.
-				Version *int `json:"version,omitempty"`
+				Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
 			} `json:"wiki_pages,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -34945,34 +34945,34 @@ func ParseWikiShowResponse(rsp *http.Response) (*WikiShowResponse, error) {
 				Attachments *[]WikiShow_200_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 
 				// Comments The comments of the wiki.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 				// CreatedOn The date and time when the wiki was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 				Parent    *struct {
 					// Title The parent title of the wiki.
-					Title *string `json:"title,omitempty"`
+					Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 				} `json:"parent,omitempty"`
 
 				// Text The text of the wiki.
-				Text *string `json:"text,omitempty"`
+				Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 				// Title The title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 				// UpdatedOn The date and time when the wiki was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 				// Version The version of the wiki.
-				Version *int `json:"version,omitempty"`
-			} `json:"wiki_page,omitempty"`
+				Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+			} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35005,34 +35005,34 @@ func ParseWikiUpdatePatchResponse(rsp *http.Response) (*WikiUpdatePatchResponse,
 				Attachments *[]WikiUpdatePatch_201_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 
 				// Comments The comments of the wiki.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 				// CreatedOn The date and time when the wiki was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 				Parent    *struct {
 					// Title The parent title of the wiki.
-					Title *string `json:"title,omitempty"`
+					Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 				} `json:"parent,omitempty"`
 
 				// Text The text of the wiki.
-				Text *string `json:"text,omitempty"`
+				Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 				// Title The title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 				// UpdatedOn The date and time when the wiki was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 				// Version The version of the wiki.
-				Version *int `json:"version,omitempty"`
-			} `json:"wiki_page,omitempty"`
+				Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+			} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35074,34 +35074,34 @@ func ParseWikiUpdatePutResponse(rsp *http.Response) (*WikiUpdatePutResponse, err
 				Attachments *[]WikiUpdatePut_201_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 
 				// Comments The comments of the wiki.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 				// CreatedOn The date and time when the wiki was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 				Parent    *struct {
 					// Title The parent title of the wiki.
-					Title *string `json:"title,omitempty"`
+					Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 				} `json:"parent,omitempty"`
 
 				// Text The text of the wiki.
-				Text *string `json:"text,omitempty"`
+				Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 				// Title The title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 				// UpdatedOn The date and time when the wiki was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 				// Version The version of the wiki.
-				Version *int `json:"version,omitempty"`
-			} `json:"wiki_page,omitempty"`
+				Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+			} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35175,34 +35175,34 @@ func ParseWikiShowVersionResponse(rsp *http.Response) (*WikiShowVersionResponse,
 				Attachments *[]WikiShowVersion_200_WikiPage_Attachments_Item `json:"attachments,omitempty"`
 				Author      *struct {
 					// Id The ID of the author.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the author."`
 
 					// Name The name of the author.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the author."`
 				} `json:"author,omitempty"`
 
 				// Comments The comments of the wiki.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the wiki."`
 
 				// CreatedOn The date and time when the wiki was created.
-				CreatedOn *time.Time `json:"created_on,omitempty"`
+				CreatedOn *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the wiki was created.,format=date-time"`
 				Parent    *struct {
 					// Title The parent title of the wiki.
-					Title *string `json:"title,omitempty"`
+					Title *string `json:"title,omitempty" jsonschema:"description=The parent title of the wiki."`
 				} `json:"parent,omitempty"`
 
 				// Text The text of the wiki.
-				Text *string `json:"text,omitempty"`
+				Text *string `json:"text,omitempty" jsonschema:"description=The text of the wiki."`
 
 				// Title The title of the wiki.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the wiki."`
 
 				// UpdatedOn The date and time when the wiki was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the wiki was last updated.,format=date-time"`
 
 				// Version The version of the wiki.
-				Version *int `json:"version,omitempty"`
-			} `json:"wiki_page,omitempty"`
+				Version *int `json:"version,omitempty" jsonschema:"description=The version of the wiki."`
+			} `json:"wiki_page,omitempty" jsonschema:"description=A single wiki."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35263,26 +35263,26 @@ func ParseQueriesIndexResponse(rsp *http.Response) (*QueriesIndexResponse, error
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of queries returned in the result set.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of queries returned in the result set."`
 
 			// Offset The offset of the first query in the result set.
-			Offset  *int `json:"offset,omitempty"`
+			Offset  *int `json:"offset,omitempty" jsonschema:"description=The offset of the first query in the result set."`
 			Queries *[]struct {
 				// Id The unique identifier of the query.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the query."`
 
 				// IsPublic Whether the query is public.
-				IsPublic *bool `json:"is_public,omitempty"`
+				IsPublic *bool `json:"is_public,omitempty" jsonschema:"description=Whether the query is public."`
 
 				// Name The name of the query.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the query."`
 
 				// ProjectId The unique identifier of the project.
-				ProjectId *int `json:"project_id,omitempty"`
+				ProjectId *int `json:"project_id,omitempty" jsonschema:"description=The unique identifier of the project."`
 			} `json:"queries,omitempty"`
 
 			// TotalCount The total number of queries returned.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of queries returned."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35329,20 +35329,20 @@ func ParseIssueRelationsShowResponse(rsp *http.Response) (*IssueRelationsShowRes
 			// Relation Represents a single issue relation.
 			Relation *struct {
 				// Delay The delay of the relation.
-				Delay *int `json:"delay,omitempty"`
+				Delay *int `json:"delay,omitempty" jsonschema:"description=The delay of the relation."`
 
 				// Id The ID of the relation.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the relation."`
 
 				// IssueId The ID of the issue.
-				IssueId *int `json:"issue_id,omitempty"`
+				IssueId *int `json:"issue_id,omitempty" jsonschema:"description=The ID of the issue."`
 
 				// IssueToId The ID of the issue to.
-				IssueToId *int `json:"issue_to_id,omitempty"`
+				IssueToId *int `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue to."`
 
 				// RelationType The relation type of the relation.
-				RelationType *string `json:"relation_type,omitempty"`
-			} `json:"relation,omitempty"`
+				RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation."`
+			} `json:"relation,omitempty" jsonschema:"description=Represents a single issue relation."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35372,10 +35372,10 @@ func ParseRolesIndexResponse(rsp *http.Response) (*RolesIndexResponse, error) {
 		var dest struct {
 			Roles *[]struct {
 				// Id The unique identifier of the role.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the role."`
 
 				// Name The name of the role.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 			} `json:"roles,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -35407,24 +35407,24 @@ func ParseRolesShowResponse(rsp *http.Response) (*RolesShowResponse, error) {
 			// Role Represents a single role with additional details.
 			Role *struct {
 				// Assignable Whether the role is assignable.
-				Assignable *bool `json:"assignable,omitempty"`
+				Assignable *bool `json:"assignable,omitempty" jsonschema:"description=Whether the role is assignable."`
 
 				// Id The unique identifier of the role.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the role."`
 
 				// IssuesVisibility The visibility of issues for this role.
-				IssuesVisibility *string `json:"issues_visibility,omitempty"`
+				IssuesVisibility *string `json:"issues_visibility,omitempty" jsonschema:"description=The visibility of issues for this role."`
 
 				// Name The name of the role.
-				Name        *string   `json:"name,omitempty"`
+				Name        *string   `json:"name,omitempty" jsonschema:"description=The name of the role."`
 				Permissions *[]string `json:"permissions,omitempty"`
 
 				// TimeEntriesVisibility The time entries visibility of the role.
-				TimeEntriesVisibility *string `json:"time_entries_visibility,omitempty"`
+				TimeEntriesVisibility *string `json:"time_entries_visibility,omitempty" jsonschema:"description=The time entries visibility of the role."`
 
 				// UsersVisibility The users visibility of the role.
-				UsersVisibility *string `json:"users_visibility,omitempty"`
-			} `json:"role,omitempty"`
+				UsersVisibility *string `json:"users_visibility,omitempty" jsonschema:"description=The users visibility of the role."`
+			} `json:"role,omitempty" jsonschema:"description=Represents a single role with additional details."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35453,32 +35453,32 @@ func ParseSearchIndexResponse(rsp *http.Response) (*SearchIndexResponse, error) 
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of search results returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of search results returned in the list."`
 
 			// Offset The offset of the first search result in the list.
-			Offset  *int `json:"offset,omitempty"`
+			Offset  *int `json:"offset,omitempty" jsonschema:"description=The offset of the first search result in the list."`
 			Results *[]struct {
 				// Datetime The date and time when the search result was created.
-				Datetime *time.Time `json:"datetime,omitempty"`
+				Datetime *time.Time `json:"datetime,omitempty" jsonschema:"description=The date and time when the search result was created.,format=date-time"`
 
 				// Description The description of the search result.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the search result."`
 
 				// Id The ID of the search result.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the search result."`
 
 				// Title The title of the search result.
-				Title *string `json:"title,omitempty"`
+				Title *string `json:"title,omitempty" jsonschema:"description=The title of the search result."`
 
 				// Type The type of the search result.
-				Type *string `json:"type,omitempty"`
+				Type *string `json:"type,omitempty" jsonschema:"description=The type of the search result."`
 
 				// Url The url of the search result.
-				Url *string `json:"url,omitempty"`
+				Url *string `json:"url,omitempty" jsonschema:"description=The url of the search result."`
 			} `json:"results,omitempty"`
 
 			// TotalCount The total number of search results.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of search results."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35523,69 +35523,69 @@ func ParseTimelogIndexResponse(rsp *http.Response) (*TimelogIndexResponse, error
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of time entries returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of time entries returned in the list."`
 
 			// Offset The offset of the first time entry in the list.
-			Offset      *int `json:"offset,omitempty"`
+			Offset      *int `json:"offset,omitempty" jsonschema:"description=The offset of the first time entry in the list."`
 			TimeEntries *[]struct {
 				Activity *struct {
 					// Id The ID of the activity.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 					// Name The name of the activity.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 				} `json:"activity,omitempty"`
 
 				// Comments The comments of the time entry.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 				// CreatedOn The date and time when the time entry was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Hours The hours of the time entry.
-				Hours *float32 `json:"hours,omitempty"`
+				Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 				// Id The ID of the time entry.
-				Id    *int `json:"id,omitempty"`
+				Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 				Issue *struct {
 					// Id The ID of the issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 				} `json:"issue,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// SpentOn The date when the time entry was spent.
-				SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+				SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 				// UpdatedOn The date and time when the time entry was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 				User      *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
 			} `json:"time_entries,omitempty"`
 
 			// TotalCount The total number of time entries.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of time entries."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35617,59 +35617,59 @@ func ParseTimelogCreateResponse(rsp *http.Response) (*TimelogCreateResponse, err
 			TimeEntry *struct {
 				Activity *struct {
 					// Id The ID of the activity.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 					// Name The name of the activity.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 				} `json:"activity,omitempty"`
 
 				// Comments The comments of the time entry.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 				// CreatedOn The date and time when the time entry was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Hours The hours of the time entry.
-				Hours *float32 `json:"hours,omitempty"`
+				Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 				// Id The ID of the time entry.
-				Id    *int `json:"id,omitempty"`
+				Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 				Issue *struct {
 					// Id The ID of the issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 				} `json:"issue,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// SpentOn The date when the time entry was spent.
-				SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+				SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 				// UpdatedOn The date and time when the time entry was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 				User      *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
-			} `json:"time_entry,omitempty"`
+			} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35738,59 +35738,59 @@ func ParseTimelogShowResponse(rsp *http.Response) (*TimelogShowResponse, error) 
 			TimeEntry *struct {
 				Activity *struct {
 					// Id The ID of the activity.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the activity."`
 
 					// Name The name of the activity.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the activity."`
 				} `json:"activity,omitempty"`
 
 				// Comments The comments of the time entry.
-				Comments *string `json:"comments,omitempty"`
+				Comments *string `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
 
 				// CreatedOn The date and time when the time entry was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the time entry was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Hours The hours of the time entry.
-				Hours *float32 `json:"hours,omitempty"`
+				Hours *float32 `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
 
 				// Id The ID of the time entry.
-				Id    *int `json:"id,omitempty"`
+				Id    *int `json:"id,omitempty" jsonschema:"description=The ID of the time entry."`
 				Issue *struct {
 					// Id The ID of the issue.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the issue."`
 				} `json:"issue,omitempty"`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// SpentOn The date when the time entry was spent.
-				SpentOn *openapi_types.Date `json:"spent_on,omitempty"`
+				SpentOn *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The date when the time entry was spent.,format=date"`
 
 				// UpdatedOn The date and time when the time entry was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the time entry was last updated.,format=date-time"`
 				User      *struct {
 					// Id The ID of the user.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 					// Name The name of the user.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the user."`
 				} `json:"user,omitempty"`
-			} `json:"time_entry,omitempty"`
+			} `json:"time_entry,omitempty" jsonschema:"description=A single time entry."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -35877,21 +35877,21 @@ func ParseTrackersIndexResponse(rsp *http.Response) (*TrackersIndexResponse, err
 			Trackers *[]struct {
 				DefaultStatus *struct {
 					// Id The unique identifier of the default status.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the default status."`
 
 					// Name The name of the default status.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the default status."`
 				} `json:"default_status,omitempty"`
 
 				// Description A description of the tracker.
-				Description           *string   `json:"description,omitempty"`
+				Description           *string   `json:"description,omitempty" jsonschema:"description=A description of the tracker."`
 				EnabledStandardFields *[]string `json:"enabled_standard_fields,omitempty"`
 
 				// Id The unique identifier of the tracker.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The unique identifier of the tracker."`
 
 				// Name The name of the tracker.
-				Name *string `json:"name,omitempty"`
+				Name *string `json:"name,omitempty" jsonschema:"description=The name of the tracker."`
 			} `json:"trackers,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -35922,10 +35922,10 @@ func ParseAttachmentsUploadResponse(rsp *http.Response) (*AttachmentsUploadRespo
 		var dest struct {
 			Upload *struct {
 				// Id The ID of the attachment.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the attachment."`
 
 				// Token The token of the attachment.
-				Token *string `json:"token,omitempty"`
+				Token *string `json:"token,omitempty" jsonschema:"description=The token of the attachment."`
 			} `json:"upload,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -35980,74 +35980,74 @@ func ParseUsersIndexResponse(rsp *http.Response) (*UsersIndexResponse, error) {
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest struct {
 			// Limit The maximum number of users returned in the list.
-			Limit *int `json:"limit,omitempty"`
+			Limit *int `json:"limit,omitempty" jsonschema:"description=The maximum number of users returned in the list."`
 
 			// Offset The offset of the first user in the list.
-			Offset *int `json:"offset,omitempty"`
+			Offset *int `json:"offset,omitempty" jsonschema:"description=The offset of the first user in the list."`
 
 			// TotalCount The total number of users.
-			TotalCount *int `json:"total_count,omitempty"`
+			TotalCount *int `json:"total_count,omitempty" jsonschema:"description=The total number of users."`
 			Users      *[]struct {
 				// Admin The administrative of the user.
-				Admin      *bool `json:"admin,omitempty"`
+				Admin      *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 				AuthSource *struct {
 					// Id The ID of the auth source.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the auth source."`
 
 					// Name The name of the auth source.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the auth source."`
 				} `json:"auth_source,omitempty"`
 
 				// AvatarUrl The avatar URL of the user.
-				AvatarUrl *string `json:"avatar_url,omitempty"`
+				AvatarUrl *string `json:"avatar_url,omitempty" jsonschema:"description=The avatar URL of the user."`
 
 				// CreatedOn The date and time when the user was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the user was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Firstname The firstname of the user.
-				Firstname *string `json:"firstname,omitempty"`
+				Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// LastLoginOn The date and time when the user was last logon.
-				LastLoginOn *time.Time `json:"last_login_on,omitempty"`
+				LastLoginOn *time.Time `json:"last_login_on,omitempty" jsonschema:"description=The date and time when the user was last logon.,format=date-time"`
 
 				// Lastname The lastname of the user.
-				Lastname *string `json:"lastname,omitempty"`
+				Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 				// Login The login of the user.
-				Login *string `json:"login,omitempty"`
+				Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 				// Mail The mail of the user.
-				Mail *string `json:"mail,omitempty"`
+				Mail *string `json:"mail,omitempty" jsonschema:"description=The mail of the user."`
 
 				// PasswdChangedOn The date and time when the user was change password.
-				PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty"`
+				PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty" jsonschema:"description=The date and time when the user was change password.,format=date-time"`
 
 				// Status The status of the user. Possible values are:
 				// - `0`: anonymous
 				// - `1`: active
 				// - `2`: registered
 				// - `3`: locked
-				Status *int `json:"status,omitempty"`
+				Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked"`
 
 				// TwofaScheme The 2FA scheme of the user.
-				TwofaScheme *string `json:"twofa_scheme,omitempty"`
+				TwofaScheme *string `json:"twofa_scheme,omitempty" jsonschema:"description=The 2FA scheme of the user."`
 
 				// UpdatedOn The date and time when the user was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the user was last updated.,format=date-time"`
 			} `json:"users,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
@@ -36079,97 +36079,97 @@ func ParseUsersCreateResponse(rsp *http.Response) (*UsersCreateResponse, error) 
 			// User A single user.
 			User *struct {
 				// Admin The administrative of the user.
-				Admin *bool `json:"admin,omitempty"`
+				Admin *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 
 				// ApiKey The API key of the user.
-				ApiKey     *string `json:"api_key,omitempty"`
+				ApiKey     *string `json:"api_key,omitempty" jsonschema:"description=The API key of the user."`
 				AuthSource *struct {
 					// Id The ID of the auth source.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the auth source."`
 
 					// Name The name of the auth source.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the auth source."`
 				} `json:"auth_source,omitempty"`
 
 				// AvatarUrl The avatar URL of the user.
-				AvatarUrl *string `json:"avatar_url,omitempty"`
+				AvatarUrl *string `json:"avatar_url,omitempty" jsonschema:"description=The avatar URL of the user."`
 
 				// CreatedOn The date and time when the user was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the user was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Firstname The firstname of the user.
-				Firstname *string `json:"firstname,omitempty"`
+				Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 				Groups    *[]struct {
 					// Id The ID of the group.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 					// Name The name of the group.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 				} `json:"groups,omitempty"`
 
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// LastLoginOn The date and time when the user was last logon.
-				LastLoginOn *time.Time `json:"last_login_on,omitempty"`
+				LastLoginOn *time.Time `json:"last_login_on,omitempty" jsonschema:"description=The date and time when the user was last logon.,format=date-time"`
 
 				// Lastname The lastname of the user.
-				Lastname *string `json:"lastname,omitempty"`
+				Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 				// Login The login of the user.
-				Login *string `json:"login,omitempty"`
+				Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 				// Mail The mail of the user.
-				Mail        *string `json:"mail,omitempty"`
+				Mail        *string `json:"mail,omitempty" jsonschema:"description=The mail of the user."`
 				Memberships *[]struct {
 					// Id The ID of the mebership.
-					Id      *int `json:"id,omitempty"`
+					Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the mebership."`
 					Project *struct {
 						// Id The ID of the project.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 						// Name The name of the project.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 					} `json:"project,omitempty"`
 					Roles *[]struct {
 						// Id The ID of the role.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 						// Inherited Whether the role is inherited from a parent project.
-						Inherited *bool `json:"inherited,omitempty"`
+						Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 						// Name The name of the role.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 					} `json:"roles,omitempty"`
 				} `json:"memberships,omitempty"`
 
 				// PasswdChangedOn The date and time when the user was change password.
-				PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty"`
+				PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty" jsonschema:"description=The date and time when the user was change password.,format=date-time"`
 
 				// Status The status of the user. Possible values are:
 				// - `0`: anonymous
 				// - `1`: active
 				// - `2`: registered
 				// - `3`: locked
-				Status *int `json:"status,omitempty"`
+				Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked"`
 
 				// TwofaScheme The 2FA scheme of the user.
-				TwofaScheme *string `json:"twofa_scheme,omitempty"`
+				TwofaScheme *string `json:"twofa_scheme,omitempty" jsonschema:"description=The 2FA scheme of the user."`
 
 				// UpdatedOn The date and time when the user was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
-			} `json:"user,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the user was last updated.,format=date-time"`
+			} `json:"user,omitempty" jsonschema:"description=A single user."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -36237,97 +36237,97 @@ func ParseUsersShowResponse(rsp *http.Response) (*UsersShowResponse, error) {
 			// User A single user.
 			User *struct {
 				// Admin The administrative of the user.
-				Admin *bool `json:"admin,omitempty"`
+				Admin *bool `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
 
 				// ApiKey The API key of the user.
-				ApiKey     *string `json:"api_key,omitempty"`
+				ApiKey     *string `json:"api_key,omitempty" jsonschema:"description=The API key of the user."`
 				AuthSource *struct {
 					// Id The ID of the auth source.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the auth source."`
 
 					// Name The name of the auth source.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the auth source."`
 				} `json:"auth_source,omitempty"`
 
 				// AvatarUrl The avatar URL of the user.
-				AvatarUrl *string `json:"avatar_url,omitempty"`
+				AvatarUrl *string `json:"avatar_url,omitempty" jsonschema:"description=The avatar URL of the user."`
 
 				// CreatedOn The date and time when the user was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the user was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Firstname The firstname of the user.
-				Firstname *string `json:"firstname,omitempty"`
+				Firstname *string `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 				Groups    *[]struct {
 					// Id The ID of the group.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the group."`
 
 					// Name The name of the group.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 				} `json:"groups,omitempty"`
 
 				// Id The ID of the user.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the user."`
 
 				// LastLoginOn The date and time when the user was last logon.
-				LastLoginOn *time.Time `json:"last_login_on,omitempty"`
+				LastLoginOn *time.Time `json:"last_login_on,omitempty" jsonschema:"description=The date and time when the user was last logon.,format=date-time"`
 
 				// Lastname The lastname of the user.
-				Lastname *string `json:"lastname,omitempty"`
+				Lastname *string `json:"lastname,omitempty" jsonschema:"description=The lastname of the user."`
 
 				// Login The login of the user.
-				Login *string `json:"login,omitempty"`
+				Login *string `json:"login,omitempty" jsonschema:"description=The login of the user."`
 
 				// Mail The mail of the user.
-				Mail        *string `json:"mail,omitempty"`
+				Mail        *string `json:"mail,omitempty" jsonschema:"description=The mail of the user."`
 				Memberships *[]struct {
 					// Id The ID of the mebership.
-					Id      *int `json:"id,omitempty"`
+					Id      *int `json:"id,omitempty" jsonschema:"description=The ID of the mebership."`
 					Project *struct {
 						// Id The ID of the project.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 						// Name The name of the project.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 					} `json:"project,omitempty"`
 					Roles *[]struct {
 						// Id The ID of the role.
-						Id *int `json:"id,omitempty"`
+						Id *int `json:"id,omitempty" jsonschema:"description=The ID of the role."`
 
 						// Inherited Whether the role is inherited from a parent project.
-						Inherited *bool `json:"inherited,omitempty"`
+						Inherited *bool `json:"inherited,omitempty" jsonschema:"description=Whether the role is inherited from a parent project."`
 
 						// Name The name of the role.
-						Name *string `json:"name,omitempty"`
+						Name *string `json:"name,omitempty" jsonschema:"description=The name of the role."`
 					} `json:"roles,omitempty"`
 				} `json:"memberships,omitempty"`
 
 				// PasswdChangedOn The date and time when the user was change password.
-				PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty"`
+				PasswdChangedOn *time.Time `json:"passwd_changed_on,omitempty" jsonschema:"description=The date and time when the user was change password.,format=date-time"`
 
 				// Status The status of the user. Possible values are:
 				// - `0`: anonymous
 				// - `1`: active
 				// - `2`: registered
 				// - `3`: locked
-				Status *int `json:"status,omitempty"`
+				Status *int `json:"status,omitempty" jsonschema:"description=The status of the user. Possible values are: - \"0\": anonymous - \"1\": active - \"2\": registered - \"3\": locked"`
 
 				// TwofaScheme The 2FA scheme of the user.
-				TwofaScheme *string `json:"twofa_scheme,omitempty"`
+				TwofaScheme *string `json:"twofa_scheme,omitempty" jsonschema:"description=The 2FA scheme of the user."`
 
 				// UpdatedOn The date and time when the user was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
-			} `json:"user,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the user was last updated.,format=date-time"`
+			} `json:"user,omitempty" jsonschema:"description=A single user."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -36430,56 +36430,56 @@ func ParseVersionsShowResponse(rsp *http.Response) (*VersionsShowResponse, error
 			// Version A single version.
 			Version *struct {
 				// CreatedOn The date and time when the version was created.
-				CreatedOn    *time.Time `json:"created_on,omitempty"`
+				CreatedOn    *time.Time `json:"created_on,omitempty" jsonschema:"description=The date and time when the version was created.,format=date-time"`
 				CustomFields *[]struct {
 					// Id The ID of the custom field.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
 
 					// Multiple Whether the custom field can have multiple values.
-					Multiple *bool `json:"multiple,omitempty"`
+					Multiple *bool `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
 
 					// Name The name of the custom field.
-					Name  *string     `json:"name,omitempty"`
+					Name  *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
 					Value interface{} `json:"value,omitempty"`
 				} `json:"custom_fields,omitempty"`
 
 				// Description The description of the version.
-				Description *string `json:"description,omitempty"`
+				Description *string `json:"description,omitempty" jsonschema:"description=The description of the version."`
 
 				// DueDate The date when the version was expired.
-				DueDate *openapi_types.Date `json:"due_date,omitempty"`
+				DueDate *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The date when the version was expired.,format=date"`
 
 				// EstimatedHours The estimated hours of the version.
-				EstimatedHours *float32 `json:"estimated_hours,omitempty"`
+				EstimatedHours *float32 `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the version."`
 
 				// Id The ID of the version.
-				Id *int `json:"id,omitempty"`
+				Id *int `json:"id,omitempty" jsonschema:"description=The ID of the version."`
 
 				// Name The name of the version.
-				Name    *string `json:"name,omitempty"`
+				Name    *string `json:"name,omitempty" jsonschema:"description=The name of the version."`
 				Project *struct {
 					// Id The ID of the project.
-					Id *int `json:"id,omitempty"`
+					Id *int `json:"id,omitempty" jsonschema:"description=The ID of the project."`
 
 					// Name The name of the project.
-					Name *string `json:"name,omitempty"`
+					Name *string `json:"name,omitempty" jsonschema:"description=The name of the project."`
 				} `json:"project,omitempty"`
 
 				// Sharing The sharing of the version.
-				Sharing *string `json:"sharing,omitempty"`
+				Sharing *string `json:"sharing,omitempty" jsonschema:"description=The sharing of the version."`
 
 				// SpentHours The spent hours of the version.
-				SpentHours *float32 `json:"spent_hours,omitempty"`
+				SpentHours *float32 `json:"spent_hours,omitempty" jsonschema:"description=The spent hours of the version."`
 
 				// Status The status of the version.
-				Status *string `json:"status,omitempty"`
+				Status *string `json:"status,omitempty" jsonschema:"description=The status of the version."`
 
 				// UpdatedOn The date and time when the version was last updated.
-				UpdatedOn *time.Time `json:"updated_on,omitempty"`
+				UpdatedOn *time.Time `json:"updated_on,omitempty" jsonschema:"description=The date and time when the version was last updated.,format=date-time"`
 
 				// WikiPageTitle The wiki page title of the version.
-				WikiPageTitle *string `json:"wiki_page_title,omitempty"`
-			} `json:"version,omitempty"`
+				WikiPageTitle *string `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+			} `json:"version,omitempty" jsonschema:"description=A single version."`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
