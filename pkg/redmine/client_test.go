@@ -631,7 +631,7 @@ func TestIssueRelationsCreateWithResponse(t *testing.T) {
 	body := IssueRelationsCreateJSONRequestBody{
 		Relation: &struct {
 			IssueToId    *string `json:"issue_to_id,omitempty" jsonschema:"description=The ID of the issue to. Values should be separated by a comma \"\\,\"."`
-			RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation.  Possible values are:  - \"relates\"  - \"duplicates\"  - \"duplicated\"  - \"blocks\"  - \"blocked\"  - \"precedes\"  - \"follows\"  - \"copied_to\"  - \"copied_from\",enum=relates,enum=duplicates,enum=duplicated,enum=blocks,enum=blocked,enum=precedes,enum=follows,enum=copied_to,enum=copied_from"`
+			RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation. Possible values are: - \"relates\" - \"duplicates\" - \"duplicated\" - \"blocks\" - \"blocked\" - \"precedes\" - \"follows\" - \"copied_to\" - \"copied_from\",enum=relates,enum=duplicates,enum=duplicated,enum=blocks,enum=blocked,enum=precedes,enum=follows,enum=copied_to,enum=copied_from"`
 		}{
 			IssueToId:    &issueToId,
 			RelationType: &relationType,

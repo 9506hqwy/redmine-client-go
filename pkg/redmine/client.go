@@ -1288,7 +1288,7 @@ type IssueRelationsCreateJSONBody struct {
 		//  - `follows`
 		//  - `copied_to`
 		//  - `copied_from`
-		RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation.  Possible values are:  - \"relates\"  - \"duplicates\"  - \"duplicated\"  - \"blocks\"  - \"blocked\"  - \"precedes\"  - \"follows\"  - \"copied_to\"  - \"copied_from\",enum=relates,enum=duplicates,enum=duplicated,enum=blocks,enum=blocked,enum=precedes,enum=follows,enum=copied_to,enum=copied_from"`
+		RelationType *string `json:"relation_type,omitempty" jsonschema:"description=The relation type of the relation. Possible values are: - \"relates\" - \"duplicates\" - \"duplicated\" - \"blocks\" - \"blocked\" - \"precedes\" - \"follows\" - \"copied_to\" - \"copied_from\",enum=relates,enum=duplicates,enum=duplicated,enum=blocks,enum=blocked,enum=precedes,enum=follows,enum=copied_to,enum=copied_from"`
 	} `json:"relation,omitempty" jsonschema:"description=Represents a new issue relation to be created."`
 }
 
@@ -1748,7 +1748,7 @@ type ProjectsIndexCsvParams_Query struct {
 	// examples:
 	// - public only: `1`
 	// - public or private: `0|1`
-	IsPublic *string `json:"is_public,omitempty" jsonschema:"description=The expression of visibility of the project. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": private - \"1\": public  examples: - public only: \"1\" - public or private: \"0|1\""`
+	IsPublic *string `json:"is_public,omitempty" jsonschema:"description=The expression of visibility of the project. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": private - \"1\": public examples: - public only: \"1\" - public or private: \"0|1\""`
 
 	// Name The expression of name of the project.
 	// The expression format is "\<operator>\<value>".
@@ -1770,7 +1770,7 @@ type ProjectsIndexCsvParams_Query struct {
 	// examples:
 	// - active or closed: `1|5`
 	// - not closed: `!5`
-	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the project. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"5\": closed  examples: - active or closed: \"1|5\" - not closed: \"!5\""`
+	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the project. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"5\": closed examples: - active or closed: \"1|5\" - not closed: \"!5\""`
 
 	// UpdatedOn The expression of updated_on of the project.
 	// The expression format is "[operator]\<value>".
@@ -1840,7 +1840,7 @@ type ProjectsIndexParams_Query struct {
 	// examples:
 	// - public only: `1`
 	// - public or private: `0|1`
-	IsPublic *string `json:"is_public,omitempty" jsonschema:"description=The expression of visibility of the project. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": private - \"1\": public  examples: - public only: \"1\" - public or private: \"0|1\""`
+	IsPublic *string `json:"is_public,omitempty" jsonschema:"description=The expression of visibility of the project. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": private - \"1\": public examples: - public only: \"1\" - public or private: \"0|1\""`
 
 	// Name The expression of name of the project.
 	// The expression format is "\<operator>\<value>".
@@ -1862,7 +1862,7 @@ type ProjectsIndexParams_Query struct {
 	// examples:
 	// - active or closed: `1|5`
 	// - not closed: `!5`
-	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the project. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"5\": closed  examples: - active or closed: \"1|5\" - not closed: \"!5\""`
+	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the project. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"5\": closed examples: - active or closed: \"1|5\" - not closed: \"!5\""`
 
 	// UpdatedOn The expression of updated_on of the project.
 	// The expression format is "[operator]\<value>".
@@ -4087,7 +4087,7 @@ type UsersIndexCsvParams_Query struct {
 	// examples:
 	// - administrator: `1`
 	// - non administrator: `0`
-	Admin *string `json:"admin,omitempty" jsonschema:"description=The expression of administrative of the user. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": no - \"1\": yes  examples: - administrator: \"1\" - non administrator: \"0\""`
+	Admin *string `json:"admin,omitempty" jsonschema:"description=The expression of administrative of the user. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": no - \"1\": yes examples: - administrator: \"1\" - non administrator: \"0\""`
 
 	// AuthSourceId The expression of auth source id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
@@ -4144,7 +4144,7 @@ type UsersIndexCsvParams_Query struct {
 	// examples:
 	// - active or locked: `1|3`
 	// - not locked: `!3`
-	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"2\": registered - \"3\": locked  examples: - active or locked: \"1|3\" - not locked: \"!3\""`
+	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"2\": registered - \"3\": locked examples: - active or locked: \"1|3\" - not locked: \"!3\""`
 
 	// TwofaScheme The expression of 2FA scheme id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
@@ -4193,7 +4193,7 @@ type UsersIndexParams_Query struct {
 	// examples:
 	// - administrator: `1`
 	// - non administrator: `0`
-	Admin *string `json:"admin,omitempty" jsonschema:"description=The expression of administrative of the user. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": no - \"1\": yes  examples: - administrator: \"1\" - non administrator: \"0\""`
+	Admin *string `json:"admin,omitempty" jsonschema:"description=The expression of administrative of the user. The expression format is \"<operator><values>\". Values should be separated by a pipe \"|\". Possible values are: - \"0\": no - \"1\": yes examples: - administrator: \"1\" - non administrator: \"0\""`
 
 	// AuthSourceId The expression of auth source id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
@@ -4250,7 +4250,7 @@ type UsersIndexParams_Query struct {
 	// examples:
 	// - active or locked: `1|3`
 	// - not locked: `!3`
-	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"2\": registered - \"3\": locked  examples: - active or locked: \"1|3\" - not locked: \"!3\""`
+	Status *string `json:"status,omitempty" jsonschema:"description=The expression of status of the user. The expression format is \"[operator]<values>\". Values should be separated by a pipe \"|\". Possible values are: - \"1\": active - \"2\": registered - \"3\": locked examples: - active or locked: \"1|3\" - not locked: \"!3\""`
 
 	// TwofaScheme The expression of 2FA scheme id of the user.
 	// The expression format is "[operator]\<values>". Values should be separated by a pipe "|".
