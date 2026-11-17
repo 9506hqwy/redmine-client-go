@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	openapi_types "github.com/oapi-codegen/runtime/types"
+	openapitypes "github.com/oapi-codegen/runtime/types"
 )
 
 var (
@@ -37,7 +37,7 @@ var (
 	wikiVersion          = 1
 )
 
-func basicAuth(ctx context.Context, req *http.Request) error {
+func basicAuth(_ context.Context, req *http.Request) error {
 	req.SetBasicAuth("admin", "admin")
 	return nil
 }
@@ -73,13 +73,13 @@ func assertHTTPStatus(t *testing.T, resp *http.Response, msg any) {
 
 func assertResponseBody(t *testing.T, resp any) {
 	if reflect.ValueOf(resp).IsNil() {
-		t.Errorf("Error: No Content")
+		t.Error("Error: No Content")
 	}
 }
 
 func assertJson(t *testing.T, resp any) {
 	if reflect.ValueOf(resp).IsNil() {
-		t.Errorf("Error: No Content")
+		t.Error("Error: No Content")
 	}
 }
 
@@ -92,14 +92,16 @@ func assertLength(t *testing.T, data any, source []byte) {
 	}
 }
 
+//revive:disable:cognitive-complexity
+
 func assertCustomField(t *testing.T, cf *struct {
-	Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-	Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-	Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-	Value    interface{} `json:"value,omitempty"`
+	Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+	Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+	Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+	Value    any     `json:"value,omitempty"`
 }) {
 	if cf.Multiple != nil && *cf.Multiple {
-		arr, ok := (cf.Value).([]interface{})
+		arr, ok := (cf.Value).([]any)
 		if !ok {
 			t.Errorf("%s = %v", *cf.Name, cf.Value)
 		}
@@ -117,6 +119,8 @@ func assertCustomField(t *testing.T, cf *struct {
 		}
 	}
 }
+
+//revive:enable:cognitive-complexity
 
 func TestMain(m *testing.M) {
 	m.Run()
@@ -252,7 +256,7 @@ func TestCustomFieldsIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.CustomFields)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestEnumerationsIndexDocumentCategoryWithResponse(t *testing.T) {
@@ -264,7 +268,7 @@ func TestEnumerationsIndexDocumentCategoryWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.DocumentCategories)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestEnumerationsIndexIssuePriorityWithResponse(t *testing.T) {
@@ -276,7 +280,7 @@ func TestEnumerationsIndexIssuePriorityWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.IssuePriorities)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestEnumerationsIndexTimeEntryActivityWithResponse(t *testing.T) {
@@ -288,7 +292,7 @@ func TestEnumerationsIndexTimeEntryActivityWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.TimeEntryActivities)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestFilesCreateWithResponse(t *testing.T) {
@@ -386,12 +390,12 @@ func TestGroupsCreateWithResponse(t *testing.T) {
 	name := t.Name()
 	body := GroupsCreateJSONRequestBody{
 		Group: &struct {
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 			Name          *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			TwofaRequired *bool   `json:"twofa_required,omitempty" jsonschema:"description=The 2FA required of the group."`
@@ -464,12 +468,12 @@ func TestGroupsUpdatePatchWithResponse(t *testing.T) {
 	name := t.Name()
 	body := GroupsUpdatePatchJSONRequestBody{
 		Group: &struct {
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 			Name          *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			TwofaRequired *bool   `json:"twofa_required,omitempty" jsonschema:"description=The 2FA required of the group."`
@@ -487,22 +491,22 @@ func TestGroupsUpdatePatchWithResponse(t *testing.T) {
 func TestGroupsUpdatePutWithResponse(t *testing.T) {
 	c := newClient(t)
 
-	custom_values := map[string]interface{}{
+	custom_values := map[string]any{
 		"19": "aaa",
 	}
 	custom_field_id := 20
-	custom_field_value := interface{}("bbb")
+	custom_field_value := any("bbb")
 	name := t.Name()
 	twofaRequired := true
 	userIds := []int{userId}
 	body := GroupsUpdatePutJSONRequestBody{
 		Group: &struct {
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 			Name          *string `json:"name,omitempty" jsonschema:"description=The name of the group."`
 			TwofaRequired *bool   `json:"twofa_required,omitempty" jsonschema:"description=The 2FA required of the group."`
@@ -510,10 +514,10 @@ func TestGroupsUpdatePutWithResponse(t *testing.T) {
 		}{
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			}{
 				{
 					Id:    &custom_field_id,
@@ -673,7 +677,7 @@ func TestIssueRelationsShowWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Relation)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestIssuesCreateProjectWithResponse(t *testing.T) {
@@ -682,32 +686,32 @@ func TestIssuesCreateProjectWithResponse(t *testing.T) {
 	subject := t.Name()
 	body := IssuesCreateProjectJSONRequestBody{
 		Issue: &struct {
-			AssignedToId      *int                    `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
-			CategoryId        *int                    `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			AssignedToId      *int            `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
+			CategoryId        *int            `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			DeletedAttachmentIds *[]int              `json:"deleted_attachment_ids,omitempty"`
-			Description          *string             `json:"description,omitempty" jsonschema:"description=The description of the issue."`
-			DoneRatio            *int                `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
-			DueDate              *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
-			EstimatedHours       *float32            `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
-			FixedVersionId       *int                `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
-			IsPrivate            *bool               `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
-			Notes                *string             `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
-			ParentIssueId        *int                `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
-			PriorityId           *int                `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
-			PrivateNotes         *bool               `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
-			ProjectId            *string             `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
-			StartDate            *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
-			StatusId             *int                `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
-			Subject              *string             `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
-			TrackerId            *int                `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
-			WatcherUserIds       *[]int              `json:"watcher_user_ids,omitempty"`
+			DeletedAttachmentIds *[]int             `json:"deleted_attachment_ids,omitempty"`
+			Description          *string            `json:"description,omitempty" jsonschema:"description=The description of the issue."`
+			DoneRatio            *int               `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
+			DueDate              *openapitypes.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
+			EstimatedHours       *float32           `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
+			FixedVersionId       *int               `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
+			IsPrivate            *bool              `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
+			Notes                *string            `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
+			ParentIssueId        *int               `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
+			PriorityId           *int               `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
+			PrivateNotes         *bool              `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
+			ProjectId            *string            `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
+			StartDate            *openapitypes.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
+			StatusId             *int               `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
+			Subject              *string            `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
+			TrackerId            *int               `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
+			WatcherUserIds       *[]int             `json:"watcher_user_ids,omitempty"`
 		}{
 			Subject: &subject,
 		},
@@ -718,7 +722,7 @@ func TestIssuesCreateProjectWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON201)
 	assertJson(t, resp.JSON201.Issue)
-	//assertLength(t, resp.JSON201, resp.Body)
+	// assertLength(t, resp.JSON201, resp.Body)
 }
 
 func TestIssuesCreateWithResponse(t *testing.T) {
@@ -727,32 +731,32 @@ func TestIssuesCreateWithResponse(t *testing.T) {
 	subject := t.Name()
 	body := IssuesCreateJSONRequestBody{
 		Issue: &struct {
-			AssignedToId      *int                    `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
-			CategoryId        *int                    `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			AssignedToId      *int            `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
+			CategoryId        *int            `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			DeletedAttachmentIds *[]int              `json:"deleted_attachment_ids,omitempty"`
-			Description          *string             `json:"description,omitempty" jsonschema:"description=The description of the issue."`
-			DoneRatio            *int                `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
-			DueDate              *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
-			EstimatedHours       *float32            `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
-			FixedVersionId       *int                `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
-			IsPrivate            *bool               `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
-			Notes                *string             `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
-			ParentIssueId        *int                `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
-			PriorityId           *int                `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
-			PrivateNotes         *bool               `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
-			ProjectId            *string             `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
-			StartDate            *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
-			StatusId             *int                `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
-			Subject              *string             `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
-			TrackerId            *int                `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
-			WatcherUserIds       *[]int              `json:"watcher_user_ids,omitempty"`
+			DeletedAttachmentIds *[]int             `json:"deleted_attachment_ids,omitempty"`
+			Description          *string            `json:"description,omitempty" jsonschema:"description=The description of the issue."`
+			DoneRatio            *int               `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
+			DueDate              *openapitypes.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
+			EstimatedHours       *float32           `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
+			FixedVersionId       *int               `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
+			IsPrivate            *bool              `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
+			Notes                *string            `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
+			ParentIssueId        *int               `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
+			PriorityId           *int               `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
+			PrivateNotes         *bool              `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
+			ProjectId            *string            `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
+			StartDate            *openapitypes.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
+			StatusId             *int               `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
+			Subject              *string            `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
+			TrackerId            *int               `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
+			WatcherUserIds       *[]int             `json:"watcher_user_ids,omitempty"`
 		}{
 			Subject:   &subject,
 			ProjectId: &projectIdentifier,
@@ -765,7 +769,7 @@ func TestIssuesCreateWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON201)
 	assertJson(t, resp.JSON201.Issue)
-	//assertLength(t, resp.JSON201, resp.Body)
+	// assertLength(t, resp.JSON201, resp.Body)
 }
 
 func TestIssuesDestroyWithResponse(t *testing.T) {
@@ -838,7 +842,7 @@ func TestIssuesIndexProjectWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Issues)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestIssuesIndexWithResponse(t *testing.T) {
@@ -850,7 +854,7 @@ func TestIssuesIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Issues)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestIssuesShowPdfWithResponse(t *testing.T) {
@@ -885,7 +889,7 @@ func TestIssuesShowWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Issue)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestIssueStatusesIndexWithResponse(t *testing.T) {
@@ -897,7 +901,7 @@ func TestIssueStatusesIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.IssueStatuses)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestIssuesUpdatePatchWithResponse(t *testing.T) {
@@ -906,32 +910,32 @@ func TestIssuesUpdatePatchWithResponse(t *testing.T) {
 	subject := t.Name()
 	body := IssuesUpdatePatchJSONRequestBody{
 		Issue: &struct {
-			AssignedToId      *int                    `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
-			CategoryId        *int                    `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			AssignedToId      *int            `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
+			CategoryId        *int            `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			DeletedAttachmentIds *[]int              `json:"deleted_attachment_ids,omitempty"`
-			Description          *string             `json:"description,omitempty" jsonschema:"description=The description of the issue."`
-			DoneRatio            *int                `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
-			DueDate              *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
-			EstimatedHours       *float32            `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
-			FixedVersionId       *int                `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
-			IsPrivate            *bool               `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
-			Notes                *string             `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
-			ParentIssueId        *int                `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
-			PriorityId           *int                `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
-			PrivateNotes         *bool               `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
-			ProjectId            *string             `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
-			StartDate            *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
-			StatusId             *int                `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
-			Subject              *string             `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
-			TrackerId            *int                `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
-			WatcherUserIds       *[]int              `json:"watcher_user_ids,omitempty"`
+			DeletedAttachmentIds *[]int             `json:"deleted_attachment_ids,omitempty"`
+			Description          *string            `json:"description,omitempty" jsonschema:"description=The description of the issue."`
+			DoneRatio            *int               `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
+			DueDate              *openapitypes.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
+			EstimatedHours       *float32           `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
+			FixedVersionId       *int               `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
+			IsPrivate            *bool              `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
+			Notes                *string            `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
+			ParentIssueId        *int               `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
+			PriorityId           *int               `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
+			PrivateNotes         *bool              `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
+			ProjectId            *string            `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
+			StartDate            *openapitypes.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
+			StatusId             *int               `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
+			Subject              *string            `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
+			TrackerId            *int               `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
+			WatcherUserIds       *[]int             `json:"watcher_user_ids,omitempty"`
 		}{
 			Subject:   &subject,
 			ProjectId: &projectIdentifier,
@@ -943,14 +947,16 @@ func TestIssuesUpdatePatchWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 }
 
+//revive:disable:function-length
+
 func TestIssuesUpdatePutWithResponse(t *testing.T) {
 	c := newClient(t)
 
-	custom_values := map[string]interface{}{
+	custom_values := map[string]any{
 		"3": "1",
 	}
 	custom_field_id := 4
-	custom_field_value := interface{}(versionId)
+	custom_field_value := any(versionId)
 	description := t.Name() + "Description"
 	doneRatio := 10
 	estimatedHours := float32(5)
@@ -966,41 +972,41 @@ func TestIssuesUpdatePutWithResponse(t *testing.T) {
 	watcherUserIds := []int{userId}
 	body := IssuesUpdatePutJSONRequestBody{
 		Issue: &struct {
-			AssignedToId      *int                    `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
-			CategoryId        *int                    `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			AssignedToId      *int            `json:"assigned_to_id,omitempty" jsonschema:"description=The assigned to id id of the issue."`
+			CategoryId        *int            `json:"category_id,omitempty" jsonschema:"description=The category id of the issue."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			DeletedAttachmentIds *[]int              `json:"deleted_attachment_ids,omitempty"`
-			Description          *string             `json:"description,omitempty" jsonschema:"description=The description of the issue."`
-			DoneRatio            *int                `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
-			DueDate              *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
-			EstimatedHours       *float32            `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
-			FixedVersionId       *int                `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
-			IsPrivate            *bool               `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
-			Notes                *string             `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
-			ParentIssueId        *int                `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
-			PriorityId           *int                `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
-			PrivateNotes         *bool               `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
-			ProjectId            *string             `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
-			StartDate            *openapi_types.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
-			StatusId             *int                `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
-			Subject              *string             `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
-			TrackerId            *int                `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
-			WatcherUserIds       *[]int              `json:"watcher_user_ids,omitempty"`
+			DeletedAttachmentIds *[]int             `json:"deleted_attachment_ids,omitempty"`
+			Description          *string            `json:"description,omitempty" jsonschema:"description=The description of the issue."`
+			DoneRatio            *int               `json:"done_ratio,omitempty" jsonschema:"description=The done ratio of the issue."`
+			DueDate              *openapitypes.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the issue.,format=date"`
+			EstimatedHours       *float32           `json:"estimated_hours,omitempty" jsonschema:"description=The estimated hours of the issue."`
+			FixedVersionId       *int               `json:"fixed_version_id,omitempty" jsonschema:"description=The fixed version id of the issue."`
+			IsPrivate            *bool              `json:"is_private,omitempty" jsonschema:"description=The private of the issue."`
+			Notes                *string            `json:"notes,omitempty" jsonschema:"description=The notes of the issue."`
+			ParentIssueId        *int               `json:"parent_issue_id,omitempty" jsonschema:"description=The parent ID of the issue."`
+			PriorityId           *int               `json:"priority_id,omitempty" jsonschema:"description=The priority id of the issue."`
+			PrivateNotes         *bool              `json:"private_notes,omitempty" jsonschema:"description=The private notes of the issue."`
+			ProjectId            *string            `json:"project_id,omitempty" jsonschema:"description=The project ID or identifier of the issue."`
+			StartDate            *openapitypes.Date `json:"start_date,omitempty" jsonschema:"description=The start date of the issue.,format=date"`
+			StatusId             *int               `json:"status_id,omitempty" jsonschema:"description=The status id of the issue."`
+			Subject              *string            `json:"subject,omitempty" jsonschema:"description=The subject of the issue."`
+			TrackerId            *int               `json:"tracker_id,omitempty" jsonschema:"description=The tracker id of the issue."`
+			WatcherUserIds       *[]int             `json:"watcher_user_ids,omitempty"`
 		}{
 			AssignedToId:      &userId,
 			CategoryId:        &issueCategoryId,
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			}{
 				{
 					Id:    &custom_field_id,
@@ -1009,7 +1015,7 @@ func TestIssuesUpdatePutWithResponse(t *testing.T) {
 			},
 			Description: &description,
 			DoneRatio:   &doneRatio,
-			DueDate: &openapi_types.Date{
+			DueDate: &openapitypes.Date{
 				Time: time.Now().AddDate(0, 0, 3),
 			},
 			EstimatedHours: &estimatedHours,
@@ -1020,7 +1026,7 @@ func TestIssuesUpdatePutWithResponse(t *testing.T) {
 			PriorityId:     &priorityId,
 			PrivateNotes:   &privateNotes,
 			ProjectId:      &projectIdentifier,
-			StartDate: &openapi_types.Date{
+			StartDate: &openapitypes.Date{
 				Time: time.Now(),
 			},
 			StatusId:       &statusId,
@@ -1034,6 +1040,8 @@ func TestIssuesUpdatePutWithResponse(t *testing.T) {
 	assertError(t, err)
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 }
+
+//revive:enable:function-length
 
 func TestJournalsUpdatePatchWithResponse(t *testing.T) {
 	c := newClient(t)
@@ -1168,14 +1176,14 @@ func TestMyAccountPutWithResponse(t *testing.T) {
 	firstNam := t.Name()
 	body := MyAccountPutJSONRequestBody{
 		User: &struct {
-			Admin             *bool                   `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
-			AuthSourceId      *int                    `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			Admin             *bool           `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
+			AuthSourceId      *int            `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 			Firstname          *string   `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 			GeneratePassword   *bool     `json:"generate_password,omitempty" jsonschema:"description=The generate password of the user."`
@@ -1208,7 +1216,7 @@ func TestMyAccountWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.User)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestNewsCreateProjectWithResponse(t *testing.T) {
@@ -1375,18 +1383,18 @@ func TestProjectsCreateWithResponse(t *testing.T) {
 
 	name := t.Name()
 	identifier := projectIdentifier + "-01"
-	custom_values := map[string]interface{}{
+	custom_values := map[string]any{
 		"1": "aaa",
 		"2": &[]string{"a", "c"},
 	}
 	body := ProjectsCreateJSONRequestBody{}
 	body.Project = &struct {
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+		CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
-			Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-			Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-			Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-			Value    interface{} `json:"value,omitempty"`
+			Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+			Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+			Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+			Value    any     `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 		DefaultAssignedToId *int      `json:"default_assigned_to_id,omitempty" jsonschema:"description=The ID of the default assignee of the project."`
 		DefaultIssueQueryId *int      `json:"default_issue_query_id,omitempty" jsonschema:"description=The ID of the default issue query of the project"`
@@ -1413,7 +1421,7 @@ func TestProjectsCreateWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON201)
 	assertJson(t, resp.JSON201.Project)
-	//assertLength(t, resp.JSON201, resp.Body)
+	// assertLength(t, resp.JSON201, resp.Body)
 }
 
 func TestProjectsDestroyWithResponse(t *testing.T) {
@@ -1454,7 +1462,7 @@ func TestProjectsIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Projects)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 
 	// Check custom fields.
 	for _, p := range *resp.JSON200.Projects {
@@ -1512,12 +1520,12 @@ func TestProjectsUpdatePatchWithResponse(t *testing.T) {
 	name := t.Name()
 	body := ProjectsUpdatePatchJSONRequestBody{
 		Project: &struct {
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 			DefaultAssignedToId *int      `json:"default_assigned_to_id,omitempty" jsonschema:"description=The ID of the default assignee of the project."`
 			DefaultIssueQueryId *int      `json:"default_issue_query_id,omitempty" jsonschema:"description=The ID of the default issue query of the project"`
@@ -1545,11 +1553,11 @@ func TestProjectsUpdatePatchWithResponse(t *testing.T) {
 func TestProjectsUpdatePutWithResponse(t *testing.T) {
 	c := newClient(t)
 
-	custom_values := map[string]interface{}{
+	custom_values := map[string]any{
 		"1": "aaa",
 	}
 	custom_field_id := 2
-	custom_field_value := interface{}("a")
+	custom_field_value := any("a")
 	defaultIssueQueryId := 2
 	description := t.Name() + "Description"
 	enabledModuleNames := []string{"issue_tracking", "wiki"}
@@ -1562,12 +1570,12 @@ func TestProjectsUpdatePutWithResponse(t *testing.T) {
 	trackerIds := []int{trackerId}
 	body := ProjectsUpdatePutJSONRequestBody{
 		Project: &struct {
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 			DefaultAssignedToId *int      `json:"default_assigned_to_id,omitempty" jsonschema:"description=The ID of the default assignee of the project."`
 			DefaultIssueQueryId *int      `json:"default_issue_query_id,omitempty" jsonschema:"description=The ID of the default issue query of the project"`
@@ -1585,10 +1593,10 @@ func TestProjectsUpdatePutWithResponse(t *testing.T) {
 		}{
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			}{
 				{
 					Id:    &custom_field_id,
@@ -1625,7 +1633,7 @@ func TestQueriesIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Queries)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestRepositoriesAddRelatedIssueWithResponse(t *testing.T) {
@@ -1685,7 +1693,7 @@ func TestSearchIndexProjectWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Results)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestSearchIndexWithResponse(t *testing.T) {
@@ -1700,7 +1708,7 @@ func TestSearchIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Results)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestTimelogCreateIssueWithResponse(t *testing.T) {
@@ -1709,20 +1717,20 @@ func TestTimelogCreateIssueWithResponse(t *testing.T) {
 	hours := float32(1.0)
 	body := TimelogCreateIssueJSONRequestBody{
 		TimeEntry: &struct {
-			ActivityId        *int                    `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
-			Comments          *string                 `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			ActivityId        *int            `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
+			Comments          *string         `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			Hours     *float32            `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
-			IssueId   *int                `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
-			ProjectId *int                `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
-			SpentOn   *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
-			UserId    *int                `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+			Hours     *float32           `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
+			IssueId   *int               `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
+			ProjectId *int               `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
+			SpentOn   *openapitypes.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
+			UserId    *int               `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
 		}{
 			ActivityId: &activityId,
 			Hours:      &hours,
@@ -1740,20 +1748,20 @@ func TestTimelogCreateProjectWithResponse(t *testing.T) {
 	hours := float32(1.0)
 	body := TimelogCreateProjectJSONRequestBody{
 		TimeEntry: &struct {
-			ActivityId        *int                    `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
-			Comments          *string                 `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			ActivityId        *int            `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
+			Comments          *string         `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			Hours     *float32            `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
-			IssueId   *int                `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
-			ProjectId *int                `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
-			SpentOn   *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
-			UserId    *int                `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+			Hours     *float32           `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
+			IssueId   *int               `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
+			ProjectId *int               `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
+			SpentOn   *openapitypes.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
+			UserId    *int               `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
 		}{
 			ActivityId: &activityId,
 			Hours:      &hours,
@@ -1771,20 +1779,20 @@ func TestTimelogCreateWithResponse(t *testing.T) {
 	hours := float32(0.5)
 	body := TimelogCreateJSONRequestBody{
 		TimeEntry: &struct {
-			ActivityId        *int                    `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
-			Comments          *string                 `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			ActivityId        *int            `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
+			Comments          *string         `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			Hours     *float32            `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
-			IssueId   *int                `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
-			ProjectId *int                `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
-			SpentOn   *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
-			UserId    *int                `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+			Hours     *float32           `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
+			IssueId   *int               `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
+			ProjectId *int               `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
+			SpentOn   *openapitypes.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
+			UserId    *int               `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
 		}{
 			ActivityId: &activityId,
 			Hours:      &hours,
@@ -1835,7 +1843,7 @@ func TestTimelogIndexProjectWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.TimeEntries)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestTimelogIndexWithResponse(t *testing.T) {
@@ -1847,7 +1855,7 @@ func TestTimelogIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.TimeEntries)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestTimelogShowWithResponse(t *testing.T) {
@@ -1859,7 +1867,7 @@ func TestTimelogShowWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.TimeEntry)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestTimelogUpdatePatchWithResponse(t *testing.T) {
@@ -1868,20 +1876,20 @@ func TestTimelogUpdatePatchWithResponse(t *testing.T) {
 	hours := float32(1.5)
 	body := TimelogUpdatePatchJSONRequestBody{
 		TimeEntry: &struct {
-			ActivityId        *int                    `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
-			Comments          *string                 `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			ActivityId        *int            `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
+			Comments          *string         `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			Hours     *float32            `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
-			IssueId   *int                `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
-			ProjectId *int                `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
-			SpentOn   *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
-			UserId    *int                `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+			Hours     *float32           `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
+			IssueId   *int               `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
+			ProjectId *int               `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
+			SpentOn   *openapitypes.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
+			UserId    *int               `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
 		}{
 			Hours:     &hours,
 			ProjectId: &projectId,
@@ -1898,37 +1906,37 @@ func TestTimelogUpdatePutWithResponse(t *testing.T) {
 
 	activityId := 9
 	comments := t.Name() + "Comments"
-	custom_values := map[string]interface{}{
+	custom_values := map[string]any{
 		"5": "1",
 	}
 	custom_field_id := 6
-	custom_field_value := interface{}(userId)
+	custom_field_value := any(userId)
 	hours := float32(2.0)
 	body := TimelogUpdatePutJSONRequestBody{
 		TimeEntry: &struct {
-			ActivityId        *int                    `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
-			Comments          *string                 `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			ActivityId        *int            `json:"activity_id,omitempty" jsonschema:"description=The activity ID of the time entry."`
+			Comments          *string         `json:"comments,omitempty" jsonschema:"description=The comments of the time entry."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			Hours     *float32            `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
-			IssueId   *int                `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
-			ProjectId *int                `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
-			SpentOn   *openapi_types.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
-			UserId    *int                `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
+			Hours     *float32           `json:"hours,omitempty" jsonschema:"description=The hours of the time entry."`
+			IssueId   *int               `json:"issue_id,omitempty" jsonschema:"description=The issue ID of the time entry."`
+			ProjectId *int               `json:"project_id,omitempty" jsonschema:"description=The project ID of the time entry."`
+			SpentOn   *openapitypes.Date `json:"spent_on,omitempty" jsonschema:"description=The spent on of the time entry.,format=date"`
+			UserId    *int               `json:"user_id,omitempty" jsonschema:"description=The user ID of the time entry."`
 		}{
 			ActivityId:        &activityId,
 			Comments:          &comments,
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			}{
 				{
 					Id:    &custom_field_id,
@@ -1955,7 +1963,7 @@ func TestTrackersIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Trackers)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestUsersCreateWithResponse(t *testing.T) {
@@ -1970,14 +1978,14 @@ func TestUsersCreateWithResponse(t *testing.T) {
 	mail := "testuser@example.com"
 	body := UsersCreateJSONRequestBody{}
 	body.User = &struct {
-		Admin             *bool                   `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
-		AuthSourceId      *int                    `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
-		CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+		Admin             *bool           `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
+		AuthSourceId      *int            `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
+		CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 		CustomFields      *[]struct {
-			Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-			Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-			Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-			Value    interface{} `json:"value,omitempty"`
+			Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+			Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+			Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+			Value    any     `json:"value,omitempty"`
 		} `json:"custom_fields,omitempty"`
 		Firstname          *string   `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 		GeneratePassword   *bool     `json:"generate_password,omitempty" jsonschema:"description=The generate password of the user."`
@@ -2005,7 +2013,7 @@ func TestUsersCreateWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON201)
 	assertJson(t, resp.JSON201.User)
-	//assertLength(t, resp.JSON201, resp.Body)
+	// assertLength(t, resp.JSON201, resp.Body)
 }
 
 func TestUsersDestroyWithResponse(t *testing.T) {
@@ -2044,7 +2052,7 @@ func TestUsersIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Users)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestUsersShowWithResponse(t *testing.T) {
@@ -2063,7 +2071,7 @@ func TestUsersShowWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.User)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestUsersUpdatePatchWithResponse(t *testing.T) {
@@ -2072,14 +2080,14 @@ func TestUsersUpdatePatchWithResponse(t *testing.T) {
 	firstname := t.Name()[:30]
 	body := UsersUpdatePatchJSONRequestBody{
 		User: &struct {
-			Admin             *bool                   `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
-			AuthSourceId      *int                    `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			Admin             *bool           `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
+			AuthSourceId      *int            `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 			Firstname          *string   `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 			GeneratePassword   *bool     `json:"generate_password,omitempty" jsonschema:"description=The generate password of the user."`
@@ -2103,6 +2111,8 @@ func TestUsersUpdatePatchWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 }
 
+//revive:disable:function-length
+
 func TestUsersUpdatePutWithResponse(t *testing.T) {
 	c := newClient(t)
 
@@ -2121,11 +2131,11 @@ func TestUsersUpdatePutWithResponse(t *testing.T) {
 	warnOnLeavingUnsaved := "1" // true(1) or false(0)
 	sendInformation := false
 	admin := true
-	custom_values := map[string]interface{}{
+	custom_values := map[string]any{
 		"11": "1", // boot: true(1) or false(0)
 	}
 	custom_field_id := 12
-	custom_field_value := interface{}("text")
+	custom_field_value := any("text")
 	firstname := (t.Name() + "Firstname")[:30]
 	generatePassword := false
 	groupIds := []int{groupId}
@@ -2168,14 +2178,14 @@ func TestUsersUpdatePutWithResponse(t *testing.T) {
 		},
 		SendInformation: &sendInformation,
 		User: &struct {
-			Admin             *bool                   `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
-			AuthSourceId      *int                    `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			Admin             *bool           `json:"admin,omitempty" jsonschema:"description=The administrative of the user."`
+			AuthSourceId      *int            `json:"auth_source_id,omitempty" jsonschema:"description=The auth source id of the user."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
 			Firstname          *string   `json:"firstname,omitempty" jsonschema:"description=The firstname of the user."`
 			GeneratePassword   *bool     `json:"generate_password,omitempty" jsonschema:"description=The generate password of the user."`
@@ -2193,10 +2203,10 @@ func TestUsersUpdatePutWithResponse(t *testing.T) {
 			Admin:             &admin,
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			}{
 				{
 					Id:    &custom_field_id,
@@ -2222,27 +2232,29 @@ func TestUsersUpdatePutWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 }
 
+//revive:enable:function-length
+
 func TestVersionsCreateWithResponse(t *testing.T) {
 	c := newClient(t)
 
 	name := t.Name()
 	body := VersionsCreateJSONRequestBody{
 		Version: &struct {
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			DefaultProjectVersion *bool               `json:"default_project_version,omitempty" jsonschema:"description=The default project version of the version."`
-			Description           *string             `json:"description,omitempty" jsonschema:"description=The description of the version."`
-			DueDate               *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the version.,format=date"`
-			EffectiveDate         *openapi_types.Date `json:"effective_date,omitempty" jsonschema:"description=The effective date of the version.,format=date"`
-			Name                  *string             `json:"name,omitempty" jsonschema:"description=The name of the version."`
-			Sharing               *string             `json:"sharing,omitempty" jsonschema:"description=The sharing of the version. Possible values are: - \"none\" - \"descendants\" - \"hierarchy\" - \"tree\" - \"system\",enum=none,enum=descendants,enum=hierarchy,enum=tree,enum=system"`
-			Status                *string             `json:"status,omitempty" jsonschema:"description=The status of the version. Possible values are: - \"open\" - \"locked\" - \"closed\",enum=open,enum=locked,enum=closed"`
-			WikiPageTitle         *string             `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+			DefaultProjectVersion *bool              `json:"default_project_version,omitempty" jsonschema:"description=The default project version of the version."`
+			Description           *string            `json:"description,omitempty" jsonschema:"description=The description of the version."`
+			DueDate               *openapitypes.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the version.,format=date"`
+			EffectiveDate         *openapitypes.Date `json:"effective_date,omitempty" jsonschema:"description=The effective date of the version.,format=date"`
+			Name                  *string            `json:"name,omitempty" jsonschema:"description=The name of the version."`
+			Sharing               *string            `json:"sharing,omitempty" jsonschema:"description=The sharing of the version. Possible values are: - \"none\" - \"descendants\" - \"hierarchy\" - \"tree\" - \"system\",enum=none,enum=descendants,enum=hierarchy,enum=tree,enum=system"`
+			Status                *string            `json:"status,omitempty" jsonschema:"description=The status of the version. Possible values are: - \"open\" - \"locked\" - \"closed\",enum=open,enum=locked,enum=closed"`
+			WikiPageTitle         *string            `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
 		}{
 			Name: &name,
 		},
@@ -2272,7 +2284,7 @@ func TestVersionsIndexWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Versions)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestVersionsShowTxtWithResponse(t *testing.T) {
@@ -2294,7 +2306,7 @@ func TestVersionsShowWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON200)
 	assertJson(t, resp.JSON200.Version)
-	//assertLength(t, resp.JSON200, resp.Body)
+	// assertLength(t, resp.JSON200, resp.Body)
 }
 
 func TestVersionsUpdatePatchWithResponse(t *testing.T) {
@@ -2303,21 +2315,21 @@ func TestVersionsUpdatePatchWithResponse(t *testing.T) {
 	name := t.Name()
 	body := VersionsUpdatePatchJSONRequestBody{
 		Version: &struct {
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			DefaultProjectVersion *bool               `json:"default_project_version,omitempty" jsonschema:"description=The default project version of the version."`
-			Description           *string             `json:"description,omitempty" jsonschema:"description=The description of the version."`
-			DueDate               *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the version.,format=date"`
-			EffectiveDate         *openapi_types.Date `json:"effective_date,omitempty" jsonschema:"description=The effective date of the version.,format=date"`
-			Name                  *string             `json:"name,omitempty" jsonschema:"description=The name of the version."`
-			Sharing               *string             `json:"sharing,omitempty" jsonschema:"description=The sharing of the version. Possible values are: - \"none\" - \"descendants\" - \"hierarchy\" - \"tree\" - \"system\",enum=none,enum=descendants,enum=hierarchy,enum=tree,enum=system"`
-			Status                *string             `json:"status,omitempty" jsonschema:"description=The status of the version. Possible values are: - \"open\" - \"locked\" - \"closed\",enum=open,enum=locked,enum=closed"`
-			WikiPageTitle         *string             `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+			DefaultProjectVersion *bool              `json:"default_project_version,omitempty" jsonschema:"description=The default project version of the version."`
+			Description           *string            `json:"description,omitempty" jsonschema:"description=The description of the version."`
+			DueDate               *openapitypes.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the version.,format=date"`
+			EffectiveDate         *openapitypes.Date `json:"effective_date,omitempty" jsonschema:"description=The effective date of the version.,format=date"`
+			Name                  *string            `json:"name,omitempty" jsonschema:"description=The name of the version."`
+			Sharing               *string            `json:"sharing,omitempty" jsonschema:"description=The sharing of the version. Possible values are: - \"none\" - \"descendants\" - \"hierarchy\" - \"tree\" - \"system\",enum=none,enum=descendants,enum=hierarchy,enum=tree,enum=system"`
+			Status                *string            `json:"status,omitempty" jsonschema:"description=The status of the version. Possible values are: - \"open\" - \"locked\" - \"closed\",enum=open,enum=locked,enum=closed"`
+			WikiPageTitle         *string            `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
 		}{
 			Name: &name,
 		},
@@ -2337,35 +2349,35 @@ func TestVersionsUpdatePutWithResponse(t *testing.T) {
 	sharing := "tree"
 	status := "open"
 	wikiTitle := "wiki"
-	custom_values := map[string]interface{}{
+	custom_values := map[string]any{
 		"7": "aaaa",
 	}
 	custom_field_id := 8
-	custom_field_value := interface{}(0.1)
+	custom_field_value := any(0.1)
 	body := VersionsUpdatePutJSONRequestBody{
 		Version: &struct {
-			CustomFieldValues *map[string]interface{} `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
+			CustomFieldValues *map[string]any `json:"custom_field_values,omitempty" jsonschema:"description=The values of the custom fields."`
 			CustomFields      *[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			} `json:"custom_fields,omitempty"`
-			DefaultProjectVersion *bool               `json:"default_project_version,omitempty" jsonschema:"description=The default project version of the version."`
-			Description           *string             `json:"description,omitempty" jsonschema:"description=The description of the version."`
-			DueDate               *openapi_types.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the version.,format=date"`
-			EffectiveDate         *openapi_types.Date `json:"effective_date,omitempty" jsonschema:"description=The effective date of the version.,format=date"`
-			Name                  *string             `json:"name,omitempty" jsonschema:"description=The name of the version."`
-			Sharing               *string             `json:"sharing,omitempty" jsonschema:"description=The sharing of the version. Possible values are: - \"none\" - \"descendants\" - \"hierarchy\" - \"tree\" - \"system\",enum=none,enum=descendants,enum=hierarchy,enum=tree,enum=system"`
-			Status                *string             `json:"status,omitempty" jsonschema:"description=The status of the version. Possible values are: - \"open\" - \"locked\" - \"closed\",enum=open,enum=locked,enum=closed"`
-			WikiPageTitle         *string             `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
+			DefaultProjectVersion *bool              `json:"default_project_version,omitempty" jsonschema:"description=The default project version of the version."`
+			Description           *string            `json:"description,omitempty" jsonschema:"description=The description of the version."`
+			DueDate               *openapitypes.Date `json:"due_date,omitempty" jsonschema:"description=The due date of the version.,format=date"`
+			EffectiveDate         *openapitypes.Date `json:"effective_date,omitempty" jsonschema:"description=The effective date of the version.,format=date"`
+			Name                  *string            `json:"name,omitempty" jsonschema:"description=The name of the version."`
+			Sharing               *string            `json:"sharing,omitempty" jsonschema:"description=The sharing of the version. Possible values are: - \"none\" - \"descendants\" - \"hierarchy\" - \"tree\" - \"system\",enum=none,enum=descendants,enum=hierarchy,enum=tree,enum=system"`
+			Status                *string            `json:"status,omitempty" jsonschema:"description=The status of the version. Possible values are: - \"open\" - \"locked\" - \"closed\",enum=open,enum=locked,enum=closed"`
+			WikiPageTitle         *string            `json:"wiki_page_title,omitempty" jsonschema:"description=The wiki page title of the version."`
 		}{
 			CustomFieldValues: &custom_values,
 			CustomFields: &[]struct {
-				Id       *int        `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
-				Multiple *bool       `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
-				Name     *string     `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
-				Value    interface{} `json:"value,omitempty"`
+				Id       *int    `json:"id,omitempty" jsonschema:"description=The ID of the custom field."`
+				Multiple *bool   `json:"multiple,omitempty" jsonschema:"description=Whether the custom field can have multiple values."`
+				Name     *string `json:"name,omitempty" jsonschema:"description=The name of the custom field."`
+				Value    any     `json:"value,omitempty"`
 			}{
 				{
 					Id:    &custom_field_id,
@@ -2374,7 +2386,7 @@ func TestVersionsUpdatePutWithResponse(t *testing.T) {
 			},
 			DefaultProjectVersion: &defaultProjectVersion,
 			Description:           &description,
-			EffectiveDate: &openapi_types.Date{
+			EffectiveDate: &openapitypes.Date{
 				Time: time.Now(),
 			},
 			Name:          &name,
@@ -2599,5 +2611,5 @@ func TestWikiUpdatePutWithResponse(t *testing.T) {
 	assertHTTPStatus(t, resp.HTTPResponse, resp.Body)
 	assertResponseBody(t, resp.JSON201)
 	assertJson(t, resp.JSON201.WikiPage)
-	//assertLength(t, resp.JSON201, resp.Body)
+	// assertLength(t, resp.JSON201, resp.Body)
 }

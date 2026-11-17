@@ -9,7 +9,7 @@ import (
 	client "github.com/9506hqwy/redmine-client-go/pkg/redmine"
 )
 
-func basicAuth(ctx context.Context, req *http.Request) error {
+func basicAuth(_ context.Context, req *http.Request) error {
 	req.SetBasicAuth("admin", "admin")
 	return nil
 }
@@ -33,6 +33,6 @@ func main() {
 	}
 
 	for _, cf := range *resp.JSON200.CustomFields {
-		fmt.Printf("%s Type:%s Format:%s\n", *cf.Name, *cf.CustomizedType, *cf.FieldFormat)
+		_, _ = fmt.Printf("%s Type:%s Format:%s\n", *cf.Name, *cf.CustomizedType, *cf.FieldFormat)
 	}
 }
