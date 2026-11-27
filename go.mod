@@ -11,7 +11,7 @@ tool (
 	honnef.co/go/tools/cmd/staticcheck
 )
 
-require github.com/oapi-codegen/runtime v1.9.0
+require github.com/oapi-codegen/runtime v1.9.1
 
 require (
 	codeberg.org/chavacava/garif v0.2.1 // indirect
